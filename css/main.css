@@ -1,0 +1,168 @@
+body {
+  background-color: #E0DFDF;
+  font-size: 16px;
+  color: #111F4D;
+  font-family: "Roboto", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111F4D;
+  font-weight: bold; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h4 {
+  font-size: 1.75rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h6 {
+  font-size: 1.25rem; }
+
+p, a {
+  font-size: 1rem;
+  color: #111F4D; }
+
+button.btn, a.btn {
+  font-family: "Work Sans", sans-serif; }
+
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1440px; } }
+section .container.section-container {
+  padding: 4.5rem 1.5rem; }
+
+.maxNet-btn {
+  border-radius: 0.5rem;
+  border: 1px solid #ffffff;
+  padding: 1rem 1.75rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block; }
+  .maxNet-btn:hover {
+    color: #ffffff; }
+
+section#main_top_banner .section-container {
+  min-height: 383px;
+  background: url("../images/main_top_banner_bg.png") #003893 no-repeat;
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  section#main_top_banner .section-container .main_top_banner_header {
+    color: #ffffff;
+    margin-bottom: 4rem; }
+    section#main_top_banner .section-container .main_top_banner_header::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      transform: translateY(1.125rem); }
+  section#main_top_banner .section-container .main_top_banner_text {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem; }
+  section#main_top_banner .section-container .main_top_banner_button {
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden; }
+    section#main_top_banner .section-container .main_top_banner_button::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      background: #90007C;
+      top: 0;
+      left: 50%;
+      transition: all 300ms ease-in-out; }
+    section#main_top_banner .section-container .main_top_banner_button:hover {
+      color: white;
+      box-shadow: none;
+      border-color: #90007C;
+      border-radius: 0.5rem; }
+      section#main_top_banner .section-container .main_top_banner_button:hover:before {
+        background-color: #90007C;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+        transition: all 300ms ease-in-out; }
+    section#main_top_banner .section-container .main_top_banner_button .text {
+      z-index: 2;
+      position: relative; }
+
+section#main_services .service_card {
+  border: 1px solid #969696; }
+  section#main_services .service_card_link {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+    padding: 2.75rem 2.75rem 1.75rem 2.75rem;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    background-size: 100%;
+    transition: all 0.5s ease-in-out; }
+    section#main_services .service_card_link::after {
+      content: "";
+      display: block;
+      background-color: #ffffff;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      opacity: 1;
+      transition: all 0.3s ease-in-out; }
+    section#main_services .service_card_link:hover {
+      background-size: 110%; }
+      section#main_services .service_card_link:hover::after {
+        opacity: 0.25; }
+  section#main_services .service_card_header {
+    z-index: 2;
+    position: relative;
+    line-height: 37px;
+    min-height: 115px;
+    margin-bottom: 3.25rem;
+    position: relative; }
+    section#main_services .service_card_header::after {
+      position: absolute;
+      width: 100%;
+      display: block;
+      content: "";
+      height: 2px;
+      background-color: #B824A4;
+      bottom: -1.75rem; }
+  section#main_services .service_card_text {
+    z-index: 2;
+    position: relative;
+    min-height: 80px;
+    margin-bottom: 0;
+    line-height: 27px; }
+  section#main_services .service_card_chevron {
+    z-index: 2;
+    position: relative;
+    margin-bottom: 0;
+    display: block;
+    text-align: right;
+    width: 100%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -48,7 +48,7 @@ section
 .maxNet-btn
   border-radius: .5rem
   border: 1px solid $text_color_white
-  padding: 1rem 1.75rem
+  padding: .75rem 1.75rem
   color: $text_color_white
   position: relative
   display: inline-block
@@ -73,6 +73,47 @@ section
     background-color: $main_blue
     color: $text_color_white
     border-color: $main_blue
+
+
+.maxNet_check_wrap
+  input[type="checkbox"]
+    display: none
+  input[type="checkbox"]:checked + label
+    //background: #808080
+  input[type="checkbox"]:checked + label:after
+    transform: scale(.8)
+  label
+    display: block
+    box-sizing: border-box
+    width: 25px
+    height: 25px
+    border: 2px solid $main_purple
+    //border-radius: 50%
+    position: relative
+    cursor: pointer
+    transition: .2s
+  label:before
+    content: ''
+    position: absolute
+    display: block
+    height: 300%
+    width: 300%
+    top: -100%
+    left: -100%
+    z-index: -1
+    border-radius: 50%
+    transition: .3s
+  label:after
+    content: ''
+    display: block
+    height: 100%
+    width: 100%
+    background: url('../images/icons/check-solid.svg') center center no-repeat
+    background-size: contain
+    transform: scale(0)
+    transition: .2s
+  label:active:before
+    //background: #808080
 
 
 section#main_top_banner
@@ -370,7 +411,7 @@ section#main_tariff_plans
 
 section#main_news
   .section-container
-    background-color: $text_color_white
+    background-color: $background_grey
   .news_section_wrap
     .static_wrap
       .social_link_wrap
@@ -441,6 +482,115 @@ section#main_news
                 transform: scale(1)
 
 
+section#main_slider
+  .main_slider_container
+    background-color: $text_color_white
+    padding: 4.5rem 6rem 2.5rem 1.5rem
+    .section-container_body
+      position: relative
+    .main_slider_wrap_item
+      padding: 0 1rem
+      outline: none !important
+      box-shadow: none !important
+      .slider_content
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 3.75rem .5rem 6.25rem 1.75rem
+        &_header
+          h2
+            color: $main_purple
+        &_body
+          //flex-grow: 2
+          min-height: 230px
+          p
+            font-size: 1.875rem
+            font-weight: 900
+            line-height: 2rem
+          ul
+            list-style-type: none
+            padding: 0
+            li
+              font-size: 1.25rem
+        &_btn
+          margin-top: auto
+    .main_slider_arrows_wrap
+      position: absolute
+      top: calc(3.75rem + 6px)
+      right: 7rem
+      width: 32px
+      display: flex
+      button
+        border: none
+        outline: none !important
+        box-shadow: none !important
+        background-color: transparent
+        font-size: 3rem
+        color: $main_blue
+        margin-right: 2rem
+        transition: all .3s ease-in-out
+        &:hover
+          color: $main_purple
+      .slick-disabled
+        opacity: 0
 
 
+section#main_form
+  .section-container
+    background-color: $main_blue
+    .form_section_title_wrap
+      padding-top: 4rem
+      .form_section_title_header
+        color: $text_color_white
+        line-height: 4rem
+        margin-bottom: 2.5rem
+      .form_section_title_sub_text
+        font-size: 1.25rem
+        color: $text_color_white
+        line-height: 1.7rem
+    .main_form_wrap
+      background-color: $text_color_white
+      padding: 4rem
+      label
+        margin-bottom: 0
+        cursor: pointer
+      .check_group
+        .checkbox_wrap
+          padding: 0
+          margin-bottom: 1rem
+          &:nth-child(2n+1)
+            padding: 0 .5rem 0 0
+          &:nth-child(2n)
+            padding: 0 0 0 .5rem
+          &_content
+            background-color: #F5F5F5
+            transition: all .3s ease-in-out
+            border: 1px solid $dark_grey
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 1rem
+            &.checked
+              background-color: #D2D2E6
+      .input_group
+        .input_wrap
+          padding: 0
+          margin-bottom: 1rem
+          &:nth-child(1)
+            padding-right: .5rem
+          &:nth-child(2)
+            padding-left: .5rem
+          input
+            width: 100%
+            padding: 1rem
+        .confirm_wrap
+          display: flex
+          padding: 0
+          margin-top: 1.15rem
+          .maxNet_check_wrap
+            margin-right: .75rem
+      .btn_wrap
+        padding: 0
+        //margin-top: 4rem
+        margin: 4rem -15px 0 -15px
 

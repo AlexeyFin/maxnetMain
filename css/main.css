@@ -47,7 +47,7 @@ section .section-container {
 .maxNet-btn {
   border-radius: 0.5rem;
   border: 1px solid #ffffff;
-  padding: 1rem 1.75rem;
+  padding: 0.75rem 1.75rem;
   color: #ffffff;
   position: relative;
   display: inline-block;
@@ -72,6 +72,40 @@ section .section-container {
     background-color: #003893;
     color: #ffffff;
     border-color: #003893; }
+
+.maxNet_check_wrap input[type="checkbox"] {
+  display: none; }
+.maxNet_check_wrap input[type="checkbox"]:checked + label:after {
+  transform: scale(0.8); }
+.maxNet_check_wrap label {
+  display: block;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #B824A4;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s; }
+.maxNet_check_wrap label:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 300%;
+  width: 300%;
+  top: -100%;
+  left: -100%;
+  z-index: -1;
+  border-radius: 50%;
+  transition: 0.3s; }
+.maxNet_check_wrap label:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url("../images/icons/check-solid.svg") center center no-repeat;
+  background-size: contain;
+  transform: scale(0);
+  transition: 0.2s; }
 
 section#main_top_banner .section-container {
   min-height: 383px;
@@ -356,7 +390,7 @@ section#main_tariff_plans .tariff_item {
     margin-bottom: 0.75rem; }
 
 section#main_news .section-container {
-  background-color: #ffffff; }
+  background-color: #E0DFDF; }
 section#main_news .news_section_wrap .static_wrap .social_link_wrap {
   margin-bottom: 1.5rem; }
   section#main_news .news_section_wrap .static_wrap .social_link_wrap .social_link {
@@ -418,5 +452,109 @@ section#main_news .news_section_wrap .dynamic_wrap .news_wrap .news_item {
       transform: scale(0); }
     section#main_news .news_section_wrap .dynamic_wrap .news_wrap .news_item .news_text:hover::after {
       transform: scale(1); }
+
+section#main_slider .main_slider_container {
+  background-color: #ffffff;
+  padding: 4.5rem 6rem 2.5rem 1.5rem; }
+  section#main_slider .main_slider_container .section-container_body {
+    position: relative; }
+  section#main_slider .main_slider_container .main_slider_wrap_item {
+    padding: 0 1rem;
+    outline: none !important;
+    box-shadow: none !important; }
+    section#main_slider .main_slider_container .main_slider_wrap_item .slider_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 3.75rem 0.5rem 6.25rem 1.75rem; }
+      section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_header h2 {
+        color: #B824A4; }
+      section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body {
+        min-height: 230px; }
+        section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body p {
+          font-size: 1.875rem;
+          font-weight: 900;
+          line-height: 2rem; }
+        section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body ul {
+          list-style-type: none;
+          padding: 0; }
+          section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body ul li {
+            font-size: 1.25rem; }
+      section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_btn {
+        margin-top: auto; }
+  section#main_slider .main_slider_container .main_slider_arrows_wrap {
+    position: absolute;
+    top: calc(3.75rem + 6px);
+    right: 7rem;
+    width: 32px;
+    display: flex; }
+    section#main_slider .main_slider_container .main_slider_arrows_wrap button {
+      border: none;
+      outline: none !important;
+      box-shadow: none !important;
+      background-color: transparent;
+      font-size: 3rem;
+      color: #003893;
+      margin-right: 2rem;
+      transition: all 0.3s ease-in-out; }
+      section#main_slider .main_slider_container .main_slider_arrows_wrap button:hover {
+        color: #B824A4; }
+    section#main_slider .main_slider_container .main_slider_arrows_wrap .slick-disabled {
+      opacity: 0; }
+
+section#main_form .section-container {
+  background-color: #003893; }
+  section#main_form .section-container .form_section_title_wrap {
+    padding-top: 4rem; }
+    section#main_form .section-container .form_section_title_wrap .form_section_title_header {
+      color: #ffffff;
+      line-height: 4rem;
+      margin-bottom: 2.5rem; }
+    section#main_form .section-container .form_section_title_wrap .form_section_title_sub_text {
+      font-size: 1.25rem;
+      color: #ffffff;
+      line-height: 1.7rem; }
+  section#main_form .section-container .main_form_wrap {
+    background-color: #ffffff;
+    padding: 4rem; }
+    section#main_form .section-container .main_form_wrap label {
+      margin-bottom: 0;
+      cursor: pointer; }
+    section#main_form .section-container .main_form_wrap .check_group .checkbox_wrap {
+      padding: 0;
+      margin-bottom: 1rem; }
+      section#main_form .section-container .main_form_wrap .check_group .checkbox_wrap:nth-child(2n+1) {
+        padding: 0 0.5rem 0 0; }
+      section#main_form .section-container .main_form_wrap .check_group .checkbox_wrap:nth-child(2n) {
+        padding: 0 0 0 0.5rem; }
+      section#main_form .section-container .main_form_wrap .check_group .checkbox_wrap_content {
+        background-color: #F5F5F5;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid #D2D2E6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem; }
+        section#main_form .section-container .main_form_wrap .check_group .checkbox_wrap_content.checked {
+          background-color: #D2D2E6; }
+    section#main_form .section-container .main_form_wrap .input_group .input_wrap {
+      padding: 0;
+      margin-bottom: 1rem; }
+      section#main_form .section-container .main_form_wrap .input_group .input_wrap:nth-child(1) {
+        padding-right: 0.5rem; }
+      section#main_form .section-container .main_form_wrap .input_group .input_wrap:nth-child(2) {
+        padding-left: 0.5rem; }
+      section#main_form .section-container .main_form_wrap .input_group .input_wrap input {
+        width: 100%;
+        padding: 1rem; }
+    section#main_form .section-container .main_form_wrap .input_group .confirm_wrap {
+      display: flex;
+      padding: 0;
+      margin-top: 1.15rem; }
+      section#main_form .section-container .main_form_wrap .input_group .confirm_wrap .maxNet_check_wrap {
+        margin-right: 0.75rem; }
+    section#main_form .section-container .main_form_wrap .btn_wrap {
+      padding: 0;
+      margin: 4rem -15px 0 -15px; }
 
 /*# sourceMappingURL=main.css.map */

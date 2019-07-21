@@ -119,6 +119,45 @@ section
     z-index: 2
     position: relative
 
+.maxNet-btn-horizontal
+  background-color: transparent
+  position: relative
+  z-index: 2
+  display: inline-block
+  box-shadow: 0px 4px 10px 2px rgba(black, 0.2)
+  overflow: hidden
+  &::before
+    position: absolute
+    content: ''
+    width: 0
+    height: 100%
+    background: $purple_hovered
+    top: 0
+    left: 50%
+    transition: all 300ms ease-in-out
+  &:hover
+    color: white
+    box-shadow: none
+    border-color: $purple_hovered
+    border-radius: .5rem
+    &:before
+      background-color: $purple_hovered
+      position: absolute
+      content: ''
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0%
+      z-index: -1
+      transition: all 300ms ease-in-out
+  .text
+    z-index: 2
+    position: relative
+
+.simple_blue_btn
+  color: $main_blue
+  border: 1px solid $main_blue
+
 .maxNet_check_wrap
   input[type="checkbox"]
     display: none
@@ -157,7 +196,63 @@ section
     transform: scale(0)
     transition: .2s
   label:active:before
-    //background: #808080
+.maxNet_rotate_card
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  perspective: 1000px
+  flex-direction: column
+  .front,.back
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    transition: all 1s ease-in-out
+    backface-visibility: hidden
+    border-radius: 10px
+    .img_wrap
+      display: flex
+      justify-content: center
+      align-items: center
+      min-height: 190px
+    p
+      margin-top: auto
+  .front
+    background: inherit
+  .back
+    background-color: inherit
+    transform: rotateY(180deg)
+
+  &:hover
+    .front
+      transform: rotateY(180deg)
+    .back
+      transform: rotateY(360deg)
+
+
+// Colored border top
+
+.orange-top
+  border-top-color: #FF7A00 !important
+.dark-blue-top
+  border-top-color: $text_color_dark !important
+.yellow-top
+  border-top-color: #FFDC00 !important
+.light-blue-top
+  border-top-color: #479AFB !important
+.purple-top
+  border-top-color: $main_purple !important
+.dark-top
+  border-top-color: #4D4D4D !important
+.red-top
+  border-top-color: #FB3569 !important
+// End colored border top
 
 
 section#main_top_banner
@@ -758,6 +853,45 @@ section#about_partners
       .partner
         height: 62px
 
+
+section#express_help
+  .section-container
+    background-color: $text_color_white
+    .help_cards_wrap
+      .help_card_wrap
+        padding: 0 1.75rem
+        margin-bottom: 3.5rem
+        .help_card
+          border: 1px solid #969696
+          border-top: 8px solid
+          width: 100%
+          height: 360px
+          padding: 1.5rem
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          &_header
+            margin-bottom: 40px
+          &_content
+            flex: 1 1 auto
+            font-family: 'Roboto', sans-serif
+            font-size: 1.25rem
+            font-weight: 300
+            line-height: 27px
+            color: $text_color_dark
+            a
+              font-weight: 400
+              color: $main_blue
+              text-decoration: underline
+              font-size: 1.25rem
+              line-height: 27px
+            ol,ul
+              padding-left: 20px
+
+          &_btn
+            width: 172px
+            button,a
+              width: 100%
 
 
 

@@ -119,6 +119,45 @@ section .section-container {
     z-index: 2;
     position: relative; }
 
+.maxNet-btn-horizontal {
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden; }
+  .maxNet-btn-horizontal::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #90007C;
+    top: 0;
+    left: 50%;
+    transition: all 300ms ease-in-out; }
+  .maxNet-btn-horizontal:hover {
+    color: white;
+    box-shadow: none;
+    border-color: #90007C;
+    border-radius: 0.5rem; }
+    .maxNet-btn-horizontal:hover:before {
+      background-color: #90007C;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0%;
+      z-index: -1;
+      transition: all 300ms ease-in-out; }
+  .maxNet-btn-horizontal .text {
+    z-index: 2;
+    position: relative; }
+
+.simple_blue_btn {
+  color: #003893;
+  border: 1px solid #003893; }
+
 .maxNet_check_wrap input[type="checkbox"] {
   display: none; }
 .maxNet_check_wrap input[type="checkbox"]:checked + label:after {
@@ -152,6 +191,64 @@ section .section-container {
   background-size: contain;
   transform: scale(0);
   transition: 0.2s; }
+
+.maxNet_rotate_card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  flex-direction: column; }
+  .maxNet_rotate_card .front, .maxNet_rotate_card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    backface-visibility: hidden;
+    border-radius: 10px; }
+    .maxNet_rotate_card .front .img_wrap, .maxNet_rotate_card .back .img_wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 190px; }
+    .maxNet_rotate_card .front p, .maxNet_rotate_card .back p {
+      margin-top: auto; }
+  .maxNet_rotate_card .front {
+    background: inherit; }
+  .maxNet_rotate_card .back {
+    background-color: inherit;
+    transform: rotateY(180deg); }
+  .maxNet_rotate_card:hover .front {
+    transform: rotateY(180deg); }
+  .maxNet_rotate_card:hover .back {
+    transform: rotateY(360deg); }
+
+.orange-top {
+  border-top-color: #FF7A00 !important; }
+
+.dark-blue-top {
+  border-top-color: #111F4D !important; }
+
+.yellow-top {
+  border-top-color: #FFDC00 !important; }
+
+.light-blue-top {
+  border-top-color: #479AFB !important; }
+
+.purple-top {
+  border-top-color: #B824A4 !important; }
+
+.dark-top {
+  border-top-color: #4D4D4D !important; }
+
+.red-top {
+  border-top-color: #FB3569 !important; }
 
 section#main_top_banner .section-container {
   min-height: 383px;
@@ -710,6 +807,42 @@ section#about_partners .partners_container {
     flex-wrap: wrap; }
     section#about_partners .partners_container .partners_wrap .partner {
       height: 62px; }
+
+section#express_help .section-container {
+  background-color: #ffffff; }
+  section#express_help .section-container .help_cards_wrap .help_card_wrap {
+    padding: 0 1.75rem;
+    margin-bottom: 3.5rem; }
+    section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card {
+      border: 1px solid #969696;
+      border-top: 8px solid;
+      width: 100%;
+      height: 360px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_header {
+        margin-bottom: 40px; }
+      section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_content {
+        flex: 1 1 auto;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 27px;
+        color: #111F4D; }
+        section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_content a {
+          font-weight: 400;
+          color: #003893;
+          text-decoration: underline;
+          font-size: 1.25rem;
+          line-height: 27px; }
+        section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_content ol, section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_content ul {
+          padding-left: 20px; }
+      section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_btn {
+        width: 172px; }
+        section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_btn button, section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_btn a {
+          width: 100%; }
 
 section#about_carrier .section-container {
   background-color: #ffffff; }

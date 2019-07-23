@@ -854,6 +854,40 @@ section#about_partners
         height: 62px
 
 
+section#about_carrier
+  .section-container
+    background-color: $text_color_white
+    .carrier_wrap
+      margin-top: 6rem
+      margin-bottom: 6rem
+
+      .carrier-img
+        border: 1px solid #003893
+        border-right: none
+        &_item
+          height: 177px
+          &.icon
+            display: flex
+            justify-content: center
+            align-items: center
+          &.photo
+            background-size: cover
+            background-repeat: no-repeat
+      .carrier-content
+
+        background-color: $main_blue
+        padding: 3rem 3rem 4rem 3rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        .carrier-content_title
+          color: $text_color_white
+          width: 66.66%
+          font-size: 3.5rem
+        .carrier-content_btn
+          width: 220px
+
+
 section#express_help
   .section-container
     background-color: $text_color_white
@@ -894,41 +928,63 @@ section#express_help
               width: 100%
 
 
-
-section#about_carrier
+section#FAQ
   .section-container
     background-color: $text_color_white
-    .carrier_wrap
-      margin-top: 6rem
-      margin-bottom: 6rem
-
-      .carrier-img
-        border: 1px solid #003893
-        border-right: none
-        &_item
-          height: 177px
-          &.icon
-            display: flex
-            justify-content: center
-            align-items: center
-          &.photo
-            background-size: cover
-            background-repeat: no-repeat
-      .carrier-content
-
-        background-color: $main_blue
-        padding: 3rem 3rem 4rem 3rem
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        .carrier-content_title
-          color: $text_color_white
-          width: 66.66%
-          font-size: 3.5rem
-        .carrier-content_btn
-          width: 220px
-
-
+    border: 1px solid
+    padding: 4.5rem 0
+    &_body
+      .faq_wrap
+        .accordion
+          .card
+            .card-header
+              background-color: $text_color_white
+              padding: 0 2.25rem
+              border-bottom: none
+              h5
+                button
+                  width: 100%
+                  text-align: left
+                  display: flex
+                  justify-content: space-between
+                  align-items: center
+                  color: $text_color_dark
+                  font-family: 'Roboto', sans-serif
+                  line-height: 21px
+                  font-weight: 500
+                  font-size: 1.125rem
+                  text-decoration: none
+                  border-radius: 0
+                  border-bottom: 1px solid $main_purple
+                  transition: all .3s ease-in-out
+                  padding: .5rem 0
+                  .icon
+                    width: 30px
+                    height: 30px
+                    border: 1px solid $text_color_dark
+                    border-radius: 50%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-weight: 900
+                    font-family: "Font Awesome 5 Free"
+                    font-style: normal
+                    &::before
+                      content: '\f00d'
+                  &.collapsed
+                    border-bottom: 1px solid transparent
+                    .icon
+                      &::before
+                        content: "\f078"
+            .card-body
+              padding: 1.25rem 2.25rem
+              font-weight: 300
+              a
+                font-weight: 400
+                color: $main_blue
+                text-decoration: underline
+                //font-size: 1.25rem
+                line-height: 27px
 
 
 

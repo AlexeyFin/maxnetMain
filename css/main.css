@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #E0DFDF;
   font-size: 16px;
@@ -808,6 +809,36 @@ section#about_partners .partners_container {
     section#about_partners .partners_container .partners_wrap .partner {
       height: 62px; }
 
+section#about_carrier .section-container {
+  background-color: #ffffff; }
+  section#about_carrier .section-container .carrier_wrap {
+    margin-top: 6rem;
+    margin-bottom: 6rem; }
+    section#about_carrier .section-container .carrier_wrap .carrier-img {
+      border: 1px solid #003893;
+      border-right: none; }
+      section#about_carrier .section-container .carrier_wrap .carrier-img_item {
+        height: 177px; }
+        section#about_carrier .section-container .carrier_wrap .carrier-img_item.icon {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        section#about_carrier .section-container .carrier_wrap .carrier-img_item.photo {
+          background-size: cover;
+          background-repeat: no-repeat; }
+    section#about_carrier .section-container .carrier_wrap .carrier-content {
+      background-color: #003893;
+      padding: 3rem 3rem 4rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      section#about_carrier .section-container .carrier_wrap .carrier-content .carrier-content_title {
+        color: #ffffff;
+        width: 66.66%;
+        font-size: 3.5rem; }
+      section#about_carrier .section-container .carrier_wrap .carrier-content .carrier-content_btn {
+        width: 220px; }
+
 section#express_help .section-container {
   background-color: #ffffff; }
   section#express_help .section-container .help_cards_wrap .help_card_wrap {
@@ -844,35 +875,55 @@ section#express_help .section-container {
         section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_btn button, section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_btn a {
           width: 100%; }
 
-section#about_carrier .section-container {
-  background-color: #ffffff; }
-  section#about_carrier .section-container .carrier_wrap {
-    margin-top: 6rem;
-    margin-bottom: 6rem; }
-    section#about_carrier .section-container .carrier_wrap .carrier-img {
-      border: 1px solid #003893;
-      border-right: none; }
-      section#about_carrier .section-container .carrier_wrap .carrier-img_item {
-        height: 177px; }
-        section#about_carrier .section-container .carrier_wrap .carrier-img_item.icon {
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-        section#about_carrier .section-container .carrier_wrap .carrier-img_item.photo {
-          background-size: cover;
-          background-repeat: no-repeat; }
-    section#about_carrier .section-container .carrier_wrap .carrier-content {
-      background-color: #003893;
-      padding: 3rem 3rem 4rem 3rem;
+section#FAQ .section-container {
+  background-color: #ffffff;
+  border: 1px solid;
+  padding: 4.5rem 0; }
+  section#FAQ .section-container_body .faq_wrap .accordion .card .card-header {
+    background-color: #ffffff;
+    padding: 0 2.25rem;
+    border-bottom: none; }
+    section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button {
+      width: 100%;
+      text-align: left;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      section#about_carrier .section-container .carrier_wrap .carrier-content .carrier-content_title {
-        color: #ffffff;
-        width: 66.66%;
-        font-size: 3.5rem; }
-      section#about_carrier .section-container .carrier_wrap .carrier-content .carrier-content_btn {
-        width: 220px; }
+      justify-content: space-between;
+      align-items: center;
+      color: #111F4D;
+      font-family: "Roboto", sans-serif;
+      line-height: 21px;
+      font-weight: 500;
+      font-size: 1.125rem;
+      text-decoration: none;
+      border-radius: 0;
+      border-bottom: 1px solid #B824A4;
+      transition: all 0.3s ease-in-out;
+      padding: 0.5rem 0; }
+      section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button .icon {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #111F4D;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        font-style: normal; }
+        section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button .icon::before {
+          content: ""; }
+      section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button.collapsed {
+        border-bottom: 1px solid transparent; }
+        section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button.collapsed .icon::before {
+          content: ""; }
+  section#FAQ .section-container_body .faq_wrap .accordion .card .card-body {
+    padding: 1.25rem 2.25rem;
+    font-weight: 300; }
+    section#FAQ .section-container_body .faq_wrap .accordion .card .card-body a {
+      font-weight: 400;
+      color: #003893;
+      text-decoration: underline;
+      line-height: 27px; }
 
 footer {
   display: flex;

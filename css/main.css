@@ -877,7 +877,6 @@ section#express_help .section-container {
 
 section#FAQ .section-container {
   background-color: #ffffff;
-  border: 1px solid;
   padding: 4.5rem 0; }
   section#FAQ .section-container_body .faq_wrap .accordion .card .card-header {
     background-color: #ffffff;
@@ -924,6 +923,85 @@ section#FAQ .section-container {
       color: #003893;
       text-decoration: underline;
       line-height: 27px; }
+
+section#FAQ_theme_search .section-container {
+  background-color: #ffffff; }
+  section#FAQ_theme_search .section-container_header.advanced_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    section#FAQ_theme_search .section-container_header.advanced_header h2 {
+      text-align: left; }
+      section#FAQ_theme_search .section-container_header.advanced_header h2::after {
+        display: none; }
+    section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap {
+      display: flex;
+      justify-content: flex-end; }
+      section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
+        padding: 1rem 1.875rem;
+        font-size: 0.875rem;
+        border: 1px solid #9E9E9E;
+        width: 380px;
+        color: #111F4D;
+        letter-spacing: 1.08px;
+        font-family: "Roboto", sans-serif;
+        border-radius: 0.25rem 0 0 0.25rem;
+        border-right: none; }
+        section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input:focus, section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input:after {
+          outline: none;
+          box-shadow: none; }
+      section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap button {
+        padding: 1rem 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007AFF;
+        border: 1px solid #007AFF;
+        border-radius: 0 0.25rem 0.25rem 0;
+        color: #ffffff;
+        transition: all 0.3s ease-in-out; }
+  section#FAQ_theme_search .section-container .keywords_list_wrap .keywords_list {
+    list-style-type: none;
+    margin-bottom: 2.5rem; }
+    section#FAQ_theme_search .section-container .keywords_list_wrap .keywords_list li {
+      margin-bottom: 1.25rem; }
+      section#FAQ_theme_search .section-container .keywords_list_wrap .keywords_list li a {
+        color: #111F4D;
+        font-weight: 300;
+        line-height: 1.2rem;
+        transition: all 0.3s ease-in-out;
+        text-decoration-color: #B824A4; }
+      section#FAQ_theme_search .section-container .keywords_list_wrap .keywords_list li:first-child {
+        font-weight: 700;
+        font-size: 1.125rem;
+        letter-spacing: 0.015rem;
+        position: relative; }
+        section#FAQ_theme_search .section-container .keywords_list_wrap .keywords_list li:first-child::before {
+          position: absolute;
+          display: block;
+          content: "";
+          background-color: #81A8E9;
+          height: 100%;
+          width: 4px;
+          left: -1.25rem; }
+
+section#FAQ_directory .directory_content_wrap .directory_content_text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 3.25rem; }
+section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input {
+  width: 360px;
+  padding: 0.5rem 1.25rem;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  border: 1px solid #9E9E9E;
+  color: #111F4D;
+  letter-spacing: 1.08px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0.25rem; }
+  section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input:focus, section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input:after {
+    outline: none;
+    box-shadow: none; }
 
 footer {
   display: flex;

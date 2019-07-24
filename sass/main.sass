@@ -931,7 +931,6 @@ section#express_help
 section#FAQ
   .section-container
     background-color: $text_color_white
-    border: 1px solid
     padding: 4.5rem 0
     &_body
       .faq_wrap
@@ -983,10 +982,96 @@ section#FAQ
                 font-weight: 400
                 color: $main_blue
                 text-decoration: underline
-                //font-size: 1.25rem
                 line-height: 27px
 
 
+section#FAQ_theme_search
+  .section-container
+    background-color: $text_color_white
+    &_header.advanced_header
+      display: flex
+      justify-content: space-between
+      align-items: center
+      h2
+        text-align: left
+        &::after
+          display: none
+      .search_form
+        .search_wrap
+          display: flex
+          justify-content: flex-end
+          input
+            padding: 1rem 1.875rem
+            font-size: .875rem
+            border: 1px solid #9E9E9E
+            width: 380px
+            color: $text_color_dark
+            letter-spacing: 1.08px
+            font-family: "Roboto", sans-serif
+            border-radius: .25rem 0 0 .25rem
+            border-right: none
+            &:focus,&:after
+              outline: none
+              box-shadow: none
+          button
+            padding: 1rem 1.25rem
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #007AFF
+            border: 1px solid #007AFF
+            border-radius: 0 .25rem .25rem 0
+            color: $text_color_white
+            transition: all .3s ease-in-out
+    .keywords_list_wrap
+      .keywords_list
+        list-style-type: none
+        margin-bottom: 2.5rem
+        li
+          margin-bottom: 1.25rem
+          a
+            color: $text_color_dark
+            font-weight: 300
+            line-height: 1.2rem
+            transition: all .3s ease-in-out
+            text-decoration-color: $main_purple
+          &:first-child
+            font-weight: 700
+            font-size: 1.125rem
+            letter-spacing: 0.015rem
+            position: relative
+            &::before
+              position: absolute
+              display: block
+              content: ''
+              background-color: $light_blue
+              height: 100%
+              width: 4px
+              left: -1.25rem
+
+
+
+
+section#FAQ_directory
+  .directory_content_wrap
+    .directory_content_text
+      font-size: 1.25rem
+      line-height: 1.75rem
+      margin-bottom: 3.25rem
+    .get_directory_form_wrap
+      input
+        width: 360px
+        padding: .5rem 1.25rem
+        box-sizing: border-box
+        font-size: .875rem
+        border: 1px solid #9E9E9E
+        color: $text_color_dark
+        letter-spacing: 1.08px
+        font-family: "Roboto", sans-serif
+        border-radius: .25rem
+        &:focus,&:after
+          outline: none
+          box-shadow: none
 
 
 

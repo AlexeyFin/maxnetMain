@@ -255,6 +255,12 @@ section
 // End colored border top
 
 
+
+.blue_block
+  width: 100%
+  background-color: $main_blue
+  height: 381px
+
 section#main_top_banner
   .section-container
     min-height: 383px
@@ -1050,8 +1056,6 @@ section#FAQ_theme_search
               left: -1.25rem
 
 
-
-
 section#FAQ_directory
   .directory_content_wrap
     .directory_content_text
@@ -1074,9 +1078,28 @@ section#FAQ_directory
           box-shadow: none
 
 
-
-
-
+section#news_content_section
+  .section-container
+    background-color: $background_grey
+    padding-top: 0
+    &_body
+      display: flex
+      justify-content: center
+      padding: 0 8rem 4.5rem 8rem
+  .news_wrap
+    width: 100%
+    border: 1px solid
+    margin-top: -315px
+    &_header
+      margin-bottom: 3rem
+      h4
+        font-size: 1.875rem
+        color: $text_color_white
+    &_content
+      width: 100%
+      background-color: $text_color_white
+      height: 340px
+      padding: 2.5rem 4.25rem
 
 
 

@@ -251,6 +251,11 @@ section .section-container {
 .red-top {
   border-top-color: #FB3569 !important; }
 
+.blue_block {
+  width: 100%;
+  background-color: #003893;
+  height: 381px; }
+
 section#main_top_banner .section-container {
   min-height: 383px;
   background: url("../images/main_top_banner_bg.png") #003893 no-repeat;
@@ -1002,6 +1007,28 @@ section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input {
   section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input:focus, section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input:after {
     outline: none;
     box-shadow: none; }
+
+section#news_content_section .section-container {
+  background-color: #E0DFDF;
+  padding-top: 0; }
+  section#news_content_section .section-container_body {
+    display: flex;
+    justify-content: center;
+    padding: 0 8rem 4.5rem 8rem; }
+section#news_content_section .news_wrap {
+  width: 100%;
+  border: 1px solid;
+  margin-top: -315px; }
+  section#news_content_section .news_wrap_header {
+    margin-bottom: 3rem; }
+    section#news_content_section .news_wrap_header h4 {
+      font-size: 1.875rem;
+      color: #ffffff; }
+  section#news_content_section .news_wrap_content {
+    width: 100%;
+    background-color: #ffffff;
+    height: 340px;
+    padding: 2.5rem 4.25rem; }
 
 footer {
   display: flex;

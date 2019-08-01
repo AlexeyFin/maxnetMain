@@ -236,6 +236,19 @@ section
       transform: rotateY(360deg)
 
 
+.maxNet_easy_form
+  input
+    border: none
+    border-bottom: 1px solid $main_purple
+    min-width: 460px
+    padding: .75rem
+    color: $text_color_dark
+    letter-spacing: 1.08px
+    margin-bottom: 2rem
+    &:focus,&:active
+      outline: none
+      box-shadow: none
+
 // Colored border top
 
 .orange-top
@@ -1082,13 +1095,13 @@ section#news_content_section
   .section-container
     background-color: $background_grey
     padding-top: 0
+    padding-bottom: 0
     &_body
       display: flex
       justify-content: center
       padding: 0 8rem 4.5rem 8rem
   .news_wrap
     width: 100%
-    border: 1px solid
     margin-top: -315px
     &_header
       margin-bottom: 3rem
@@ -1099,7 +1112,55 @@ section#news_content_section
       width: 100%
       background-color: $text_color_white
       padding: 2.5rem 4.25rem
+      .news_date
+        p
+          font-size: 1.25rem
+          line-height: 1.875rem
+          color: #81A8E9
+          margin-bottom: 1.25rem
+      .news_text
+        &,p
+          margin-bottom: 4.75rem
+          font-size: 1.25rem
+          line-height: 1.875rem
+          font-weight: 500
+          color: $text_color_dark
+      .news_img_wrap
+        img
+          width: 100%
+    .news_navigation
+      display: flex
+      justify-content: space-between
+      padding: 2.25rem 4.25rem 1.25rem 4.25rem
+      background-color: $text_color_white
+      .news_nav_link
+        color: $text_color_dark
+        line-height: 19px
+        font-weight: 900
+        text-decoration: none
+        transition: all .3s ease-in-out
+        &:hover
+          color: $main_purple
+    .news_bottom_img_wrap
+      padding: 0 4.25rem 4.25rem 4.25rem
+      background-color: $text_color_white
+      display: flex
+      justify-content: center
+      img
+        margin-top: -46px
 
+
+section#news_want_to_know_more
+  .section-container
+    background-color: $text_color_white
+    .want_to_know_more_wrap
+      margin-top: 1.25rem
+    .want_to_know_more_content
+      display: flex
+      flex-direction: column
+      justify-content: center
+      &_header
+        margin-bottom: 4rem
 
 
 footer

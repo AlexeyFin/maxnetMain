@@ -54,6 +54,8 @@ section
           background-color: $main_purple
           content: ''
           margin-top: 1rem
+  .white-section
+    background: $text_color_white
 
 .maxNet-btn
   border-radius: .5rem
@@ -66,6 +68,8 @@ section
   transition: all .3s ease-in-out
   &:hover
     color: $text_color_white
+    text-decoration: none
+
 
 .maxNet-btn-purple
   border-color: $main_purple
@@ -273,6 +277,70 @@ section
   width: 100%
   background-color: $main_blue
   height: 381px
+
+
+//  Card slider
+.card_slider
+  &_item
+    padding: 1rem
+    &:focus,&:active
+      outline: none
+  .slick-arrow
+    position: absolute
+    top: 50%
+    border-radius: 50%
+    background-color: $text_color_white
+    color: $text_color_dark
+    border: none
+    font-size: 1.25rem
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 50px
+    height: 50px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    opacity: 1
+    transition: all .3s ease-in-out
+    &:focus,&:active
+      outline: none
+  .slick-arrow-right
+    right: -3.5rem
+  .slick-arrow-left
+    left: -3.5rem
+  .slick-disabled
+    opacity: 0
+
+
+// End of Card slider
+
+//Data Item
+.data_item
+  padding: 1rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  .img_wrap
+    width: 140px
+    height: 140px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 1.5rem
+    border-radius: 50%
+  .text_wrap
+    font-size: 1.25rem
+    text-align: center
+    font-weight: 300
+    line-height: 27px
+  &.grey_data_item
+    .img_wrap
+      background-color: $footer_grey
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25)
+  &.transparent_data_item
+    .img_wrap
+      border: 1px solid #81A8E9
+// End of Data Item
+
 
 section#main_top_banner
   .section-container
@@ -1161,6 +1229,143 @@ section#news_want_to_know_more
       justify-content: center
       &_header
         margin-bottom: 4rem
+
+
+section#video_banner
+  .video-banner-container
+    background-color: $main_blue
+    min-height: 383px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .video-banner-title
+      width: 475px
+      margin-bottom: 2rem
+      h2
+        color: $text_color_white
+        font-size: 1.875rem
+        text-align: center
+        line-height: 35px
+
+
+section#video_about
+  .section-container
+    background-color: $text_color_white
+  .video_about_content
+    .content_text
+      font-size: 1.25rem
+      font-weight: 300
+      line-height: 27px
+      margin-bottom: 3.5rem
+    .list_title
+      font-size: 1.875rem
+      font-weight: 400
+      margin-bottom: 1.25rem
+    .video_list
+      padding-left: 0
+      li
+        list-style-type: none
+        font-size: 1.25rem
+        font-weight: 300
+        &::before
+          content: '-'
+          margin-right: .75rem
+
+
+section#video_main_section
+  .section-container
+    background-color: #F2F4FB
+    .section_sub_title
+      margin-bottom: 2.5rem
+  .video_tariff_card
+    padding: 1.5rem 1rem 2rem 1rem
+    position: relative
+    background-color: $text_color_white
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+    border-radius: .25rem
+    margin-bottom: 4.25rem
+    .tariff_title
+      padding-left: 1rem
+      font-size: 1.875rem
+      margin-bottom: 0
+      font-weight: bold
+    .camera_count
+      padding-left: 1rem
+      color: #003893
+      font-size: 1.25rem
+      display: flex
+      align-items: center
+      .info
+        font-size: .75rem
+        border: 1px solid $text_color_dark
+        border-radius: 50%
+        margin-left: .75rem
+        width: 20px
+        height: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+    .options_list
+      margin-top: 1.75rem
+      margin-bottom: 5rem
+      padding-left: 0
+      li
+        list-style-type: none
+    .price
+      text-align: center
+      margin-bottom: 1.5rem
+      font-size: 1.25rem
+      font-weight: 500
+    .get_btn_wrap
+      display: flex
+      justify-content: center
+      a,button
+        min-width: 180px
+    .ask_wrap
+      text-align: center
+      margin-top: 2rem
+      a
+        line-height: 1.25rem
+        font-weight: 500
+        text-decoration: underline
+        transition: all .3s ease-in-out
+        &:hover
+          color: $main_purple
+    .camera_icon
+      position: absolute
+      top: 0
+      right: 0
+      padding: 0.5rem 0.5rem 1.25rem 1.25rem
+      border-radius: 0 .25rem 0 60px
+      background-color: rgba(150, 180, 255, 0.15)
+      &.gold
+        background-color: rgba(255, 218, 68, 0.8) !important
+        img
+          opacity: .55
+
+
+section#get_consultation
+  .consultation-container
+    background-color: #468CFF
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2rem 9rem
+    p
+      margin-bottom: 0
+      color: $text_color_white
+      font-size: 1.875rem
+      font-weight: bold
+    .link_wrap
+      i
+        font-size: 1.5rem
+        color: #FFDD00
+      a
+        color: $text_color_white
+        font-size: 1.875rem
+        text-decoration: none
+
 
 
 footer

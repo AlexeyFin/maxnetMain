@@ -1367,6 +1367,78 @@ section#get_consultation
         text-decoration: none
 
 
+section#equipment_catalog
+  .equipment_catalog_wrap
+    .small_item
+      border: 1px solid #969696
+      &_content
+        padding: 40px 26px 26px 26px
+        background-repeat: no-repeat
+        background-position: 125px 10px
+        display: block
+        height: 100%
+        width: 100%
+        text-decoration: none
+        .title
+          font-size: 1.875rem
+          font-weight: bold
+          line-height: 37px
+          padding-bottom: 45px
+          position: relative
+          margin-bottom: 1rem
+          &::after
+            position: absolute
+            bottom: 0
+            display: block
+            width: 100%
+            content: ''
+            height: 1px
+            background-color: $main_purple
+        .description
+          font-weight: 300
+          font-size: 1.25rem
+          line-height: 27px
+          margin-bottom: 1rem
+        .arrow
+          display: flex
+          justify-content: flex-end
+          font-size: 1.5rem
+          transition: all .3s ease-in-out
+        &:hover
+          .arrow
+            color: $main_purple
+    .big_item
+      border: 1px solid #969696
+      .item_content
+        padding: 48px 26px
+        display: block
+        text-decoration: none
+        height: 100%
+        width: 100%
+        .title
+          font-size: 1.875rem
+          font-weight: bold
+          line-height: 37px
+          position: relative
+          margin-bottom: 40px
+
+        .description
+          display: flex
+          align-items: center
+
+          .text
+            font-weight: 300
+            font-size: 20px
+            line-height: 27px
+          .icon
+            font-size: 1.5rem
+            margin-left: 1.5rem
+            transition: all .3s ease-in-out
+      &:hover
+        .description
+          .icon
+            color: $main_purple
+
 
 footer
   display: flex

@@ -58,6 +58,8 @@ section .section-container {
         margin-top: 1rem; }
 section .white-section {
   background: #ffffff; }
+section .grey-section {
+  background-color: #F2F4FB; }
 
 .maxNet-btn {
   border-radius: 0.5rem;
@@ -235,6 +237,14 @@ section .white-section {
   .maxNet_rotate_card:hover .back {
     transform: rotateY(360deg); }
 
+.maxNet-btn-white {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #003893; }
+  .maxNet-btn-white:hover {
+    background-color: transparent;
+    color: #ffffff; }
+
 .maxNet_easy_form input {
   border: none;
   border-bottom: 1px solid #B824A4;
@@ -361,6 +371,21 @@ section .white-section {
         .data-table-list-item .value .currency {
           font-size: 1rem;
           font-weight: 300; }
+
+.maxNet-table thead tr th {
+  font-family: "Roboto", sans-serif;
+  padding: 1.5rem 0.75rem;
+  font-weight: 400;
+  font-size: 1rem; }
+  .maxNet-table thead tr th:first-child {
+    color: #003893; }
+.maxNet-table tbody tr td {
+  border: none;
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif; }
+  .maxNet-table tbody tr td:first-child {
+    padding-left: 2.25rem;
+    font-weight: 300; }
 
 section#main_top_banner .section-container {
   min-height: 383px;
@@ -989,11 +1014,11 @@ section#express_help .section-container {
 section#FAQ .section-container {
   background-color: #ffffff;
   padding: 4.5rem 0; }
-  section#FAQ .section-container_body .faq_wrap .accordion .card .card-header {
+  section#FAQ .section-container_body .accordion .card .card-header {
     background-color: #ffffff;
     padding: 0 2.25rem;
     border-bottom: none; }
-    section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button {
+    section#FAQ .section-container_body .accordion .card .card-header h5 button {
       width: 100%;
       text-align: left;
       display: flex;
@@ -1009,7 +1034,7 @@ section#FAQ .section-container {
       border-bottom: 1px solid #B824A4;
       transition: all 0.3s ease-in-out;
       padding: 0.5rem 0; }
-      section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button .icon {
+      section#FAQ .section-container_body .accordion .card .card-header h5 button .icon {
         width: 30px;
         height: 30px;
         border: 1px solid #111F4D;
@@ -1020,16 +1045,16 @@ section#FAQ .section-container {
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
         font-style: normal; }
-        section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button .icon::before {
+        section#FAQ .section-container_body .accordion .card .card-header h5 button .icon::before {
           content: ""; }
-      section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button.collapsed {
+      section#FAQ .section-container_body .accordion .card .card-header h5 button.collapsed {
         border-bottom: 1px solid transparent; }
-        section#FAQ .section-container_body .faq_wrap .accordion .card .card-header h5 button.collapsed .icon::before {
+        section#FAQ .section-container_body .accordion .card .card-header h5 button.collapsed .icon::before {
           content: ""; }
-  section#FAQ .section-container_body .faq_wrap .accordion .card .card-body {
+  section#FAQ .section-container_body .accordion .card .card-body {
     padding: 1.25rem 2.25rem;
     font-weight: 300; }
-    section#FAQ .section-container_body .faq_wrap .accordion .card .card-body a {
+    section#FAQ .section-container_body .accordion .card .card-body a {
       font-weight: 400;
       color: #003893;
       text-decoration: underline;
@@ -1429,6 +1454,78 @@ section#service_0000 .all_tariff_link {
     section#service_0000 .all_tariff_link a:hover {
       color: #B824A4; }
 
+section#about_hosting .features_wrap_title {
+  color: #003893;
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 37px;
+  margin-bottom: 3rem; }
+section#about_hosting .features_wrap .features_list {
+  padding: 0 80px; }
+  section#about_hosting .features_wrap .features_list_item {
+    margin-bottom: 1.5rem; }
+    section#about_hosting .features_wrap .features_list_item_title {
+      position: relative;
+      display: flex;
+      align-items: center; }
+      section#about_hosting .features_wrap .features_list_item_title h6 {
+        font-family: "Work Sans", sans-serif;
+        font-size: 1.25rem;
+        line-height: 2rem; }
+      section#about_hosting .features_wrap .features_list_item_title img {
+        position: absolute;
+        left: -80px; }
+    section#about_hosting .features_wrap .features_list_item_text p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 25px; }
+
+section#speed_test .speed-test-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 3.5rem;
+  border: 1px solid black;
+  background-color: #ffffff; }
+  section#speed_test .speed-test-item .title {
+    margin-bottom: 2rem; }
+  section#speed_test .speed-test-item .text {
+    margin-bottom: 1.875rem; }
+    section#speed_test .speed-test-item .text p {
+      text-align: center; }
+  section#speed_test .speed-test-item .btn_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 153px;
+    width: 154px;
+    border-radius: 50%;
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(180deg, #b52ba2 0%, #007ef9 100%); }
+    section#speed_test .speed-test-item .btn_wrap .speed_link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #ffffff;
+      color: #B824A4;
+      font-weight: 900;
+      font-size: 1.25rem;
+      text-decoration: none; }
+  section#speed_test .speed-test-item.dark {
+    background-color: #111F4D; }
+    section#speed_test .speed-test-item.dark .title h5 {
+      color: #ffffff; }
+    section#speed_test .speed-test-item.dark .text p {
+      color: #ffffff; }
+    section#speed_test .speed-test-item.dark .btn_wrap .speed_link {
+      background-color: #111F4D;
+      color: #479AFB; }
+
 .dual_poster_item {
   border: 1px solid #969696;
   padding: 2.875rem 2.5rem 0 2.5rem; }
@@ -1462,6 +1559,15 @@ section#service_0000 .all_tariff_link {
       color: #ffffff; }
       .dual_poster_item.dark-item .link_wrap a:hover {
         color: #B824A4; }
+
+.satellite_connection {
+  margin-top: 9rem; }
+  .satellite_connection .title {
+    width: 60%;
+    margin-bottom: 2.5rem; }
+    .satellite_connection .title h5 {
+      font-size: 1.25rem;
+      font-weight: 400; }
 
 #get_equipment .modal-dialog {
   max-width: 600px; }
@@ -1498,6 +1604,100 @@ section#service_0000 .all_tariff_link {
       border-top: none; }
       #get_equipment .modal-dialog .modal-content .modal-footer button {
         min-width: 200px; }
+
+.card_slider_item {
+  padding: 1.5rem 1rem 2rem 1rem;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  margin-bottom: 4.25rem; }
+  .card_slider_item .tariff_title {
+    padding-left: 1rem;
+    font-size: 1.875rem;
+    margin-bottom: 0;
+    font-weight: bold; }
+  .card_slider_item .count {
+    padding-left: 1rem;
+    color: #003893;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center; }
+    .card_slider_item .count .info {
+      font-size: 0.75rem;
+      border: 1px solid #111F4D;
+      border-radius: 50%;
+      margin-left: 0.75rem;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .card_slider_item .options_list {
+    margin-top: 1.75rem;
+    margin-bottom: 5rem;
+    padding-left: 0; }
+    .card_slider_item .options_list li {
+      list-style-type: none; }
+  .card_slider_item .price {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500; }
+  .card_slider_item .get_btn_wrap {
+    display: flex;
+    justify-content: center; }
+    .card_slider_item .get_btn_wrap a, .card_slider_item .get_btn_wrap button {
+      min-width: 180px; }
+  .card_slider_item .ask_wrap {
+    text-align: center;
+    margin-top: 2rem; }
+    .card_slider_item .ask_wrap a {
+      line-height: 1.25rem;
+      font-weight: 500;
+      text-decoration: underline;
+      transition: all 0.3s ease-in-out; }
+      .card_slider_item .ask_wrap a:hover {
+        color: #B824A4; }
+  .card_slider_item .side_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 0.5rem 1.25rem 1.25rem;
+    border-radius: 0 0.25rem 0 60px;
+    background-color: rgba(150, 180, 255, 0.15); }
+    .card_slider_item .side_icon.gold {
+      background-color: rgba(255, 218, 68, 0.8) !important; }
+      .card_slider_item .side_icon.gold img {
+        opacity: 0.55; }
+
+.whois_card {
+  width: 264px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #81A8E9;
+  padding: 2.5rem 1.25rem;
+  background-image: url("../images/_.png");
+  background-repeat: no-repeat;
+  background-position: center 18px; }
+  .whois_card .title {
+    color: #F2F4FB;
+    font-size: 1.875rem;
+    margin-bottom: 3rem; }
+  .whois_card .text {
+    color: #F2F4FB;
+    font-size: 1.25rem;
+    line-height: 27px;
+    margin-bottom: 2rem; }
+  .whois_card .logo_wrap {
+    margin-bottom: 1rem; }
+  .whois_card .btn_wrap {
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 2.75rem; }
 
 footer {
   display: flex;

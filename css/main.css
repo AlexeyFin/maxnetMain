@@ -50,7 +50,8 @@ section .section-container {
       text-align: center; }
       section .section-container_header h2:after {
         display: block;
-        width: 680px;
+        min-width: 680px;
+        width: 100%;
         height: 2px;
         background-color: #B824A4;
         content: "";
@@ -324,6 +325,42 @@ section .white-section {
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25); }
   .data_item.transparent_data_item .img_wrap {
     border: 1px solid #81A8E9; }
+
+.data-table {
+  border-top: 1px solid #C8C8C8;
+  padding-top: 1.25rem; }
+  .data-table_header {
+    color: #003893; }
+  .data-table_body {
+    margin-top: 1.25rem;
+    padding: 1.25rem 1.75rem;
+    background-color: #E5E5E5;
+    border: 1px solid #ffffff; }
+    .data-table_body:nth-child(2n+1) {
+      background-color: rgba(229, 229, 229, 0.6); }
+  .data-table-big-item {
+    font-size: 1.875rem;
+    font-weight: bold;
+    line-height: 2.25rem; }
+  .data-table-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0; }
+    .data-table-list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 27px;
+      font-weight: 300; }
+      .data-table-list-item:last-child {
+        margin-bottom: 0; }
+      .data-table-list-item .value {
+        font-weight: 400; }
+        .data-table-list-item .value .currency {
+          font-size: 1rem;
+          font-weight: 300; }
 
 section#main_top_banner .section-container {
   min-height: 383px;
@@ -1352,6 +1389,79 @@ section#equipment_store .store_wrap .store-item {
     align-items: center; }
     section#equipment_store .store_wrap .store-item .item_control .price .count {
       font-size: 30px; }
+
+section#landline_city .poster_wrap {
+  margin-top: 6rem;
+  border: 1px solid black; }
+  section#landline_city .poster_wrap .poster-img {
+    display: flex;
+    align-items: flex-end; }
+    section#landline_city .poster_wrap .poster-img img {
+      margin-bottom: -4px;
+      margin-left: 2px; }
+  section#landline_city .poster_wrap .poster-content {
+    padding: 3.75rem; }
+    section#landline_city .poster_wrap .poster-content .poster_main_header {
+      font-size: 3.4375rem;
+      margin-bottom: 0;
+      color: #003893; }
+    section#landline_city .poster_wrap .poster-content .poster_sub_header {
+      font-size: 1.875rem;
+      color: #003893;
+      margin-bottom: 1.875rem; }
+    section#landline_city .poster_wrap .poster-content .poster-text {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-bottom: 2.5rem; }
+
+section#service_0000 .all_tariff_link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+  align-items: center; }
+  section#service_0000 .all_tariff_link a {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    color: #111F4D;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.3s ease-in-out; }
+    section#service_0000 .all_tariff_link a:hover {
+      color: #B824A4; }
+
+.dual_poster_item {
+  border: 1px solid #969696;
+  padding: 2.875rem 2.5rem 0 2.5rem; }
+  .dual_poster_item_title h4 {
+    font-size: 1.875rem;
+    margin-bottom: 2.5rem; }
+  .dual_poster_item .link_wrap {
+    margin-bottom: 6rem; }
+    .dual_poster_item .link_wrap a {
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      font-family: "Roboto", sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #111F4D; }
+      .dual_poster_item .link_wrap a:hover {
+        color: #B824A4; }
+      .dual_poster_item .link_wrap a .text {
+        font-size: 1.25rem;
+        font-weight: 300; }
+  .dual_poster_item .img_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  .dual_poster_item.dark-item {
+    background-color: #003893; }
+    .dual_poster_item.dark-item .dual_poster_item_title h4 {
+      color: #ffffff; }
+    .dual_poster_item.dark-item .link_wrap a {
+      color: #ffffff; }
+      .dual_poster_item.dark-item .link_wrap a:hover {
+        color: #B824A4; }
 
 #get_equipment .modal-dialog {
   max-width: 600px; }

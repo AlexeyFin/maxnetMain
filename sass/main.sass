@@ -454,6 +454,21 @@ section
 
 //
 
+.maxNet-input
+  border-color: #B4B4B4
+  border-radius: 0
+  padding: 1rem
+  margin: 0 .5rem
+  transition: all .3s ease-in-out
+  min-height: 50px
+
+  &:focus,&:after
+    outline: none
+    box-shadow: none
+    border-color: $main_purple
+
+
+
 //MaxNet table
 .maxNet-table
   thead
@@ -1949,7 +1964,15 @@ section#speed_test
           color: #479AFB
 
 
-
+section#result_section
+  .request_wrap
+    margin-top: 124px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 248px
+    &_btn
+      width: 436px
 
 
 .dual_poster
@@ -2176,6 +2199,15 @@ section#speed_test
     width: 100%
     padding: 0 1rem
     margin-bottom: 2.75rem
+
+
+form[name="check_form"]
+  input[name="street_name"]
+    width: 300px
+  input[name="build_number"],input[name="porch_number"]
+    width: 100px
+
+
 
 footer
   display: flex

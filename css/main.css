@@ -372,6 +372,18 @@ section .grey-section {
           font-size: 1rem;
           font-weight: 300; }
 
+.maxNet-input {
+  border-color: #B4B4B4;
+  border-radius: 0;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease-in-out;
+  min-height: 50px; }
+  .maxNet-input:focus, .maxNet-input:after {
+    outline: none;
+    box-shadow: none;
+    border-color: #B824A4; }
+
 .maxNet-table thead tr th {
   font-family: "Roboto", sans-serif;
   padding: 1.5rem 0.75rem;
@@ -1526,6 +1538,15 @@ section#speed_test .speed-test-item {
       background-color: #111F4D;
       color: #479AFB; }
 
+section#result_section .request_wrap {
+  margin-top: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 248px; }
+  section#result_section .request_wrap_btn {
+    width: 436px; }
+
 .dual_poster_item {
   border: 1px solid #969696;
   padding: 2.875rem 2.5rem 0 2.5rem; }
@@ -1698,6 +1719,11 @@ section#speed_test .speed-test-item {
     width: 100%;
     padding: 0 1rem;
     margin-bottom: 2.75rem; }
+
+form[name="check_form"] input[name="street_name"] {
+  width: 300px; }
+form[name="check_form"] input[name="build_number"], form[name="check_form"] input[name="porch_number"] {
+  width: 100px; }
 
 footer {
   display: flex;

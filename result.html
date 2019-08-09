@@ -33,31 +33,28 @@
 </header>
 <main style=" margin-top: 60px">
 
-<section id="check_section">
-    <div class="container section-container white-section">
-        <div class="section-container_header">
-            <h5 class="text-center">
-                Проверить возможность подключения по Вашему адресу
-            </h5>
-        </div>
+    <section id="result_section">
+        <div class="container section-container white-section">
+            <div class="section-container_header">
+                <h5 class="text-center">
+                    Результат проверки адреса
+                </h5>
+            </div>
 
-        <div class="section-container_body">
-            <form name="check_form">
-                <div class="form-group inline-form-wrap d-flex justify-content-center align-items-center">
-                    <input type="text" class="form-control maxNet-input" placeholder="Название улицы" name="street_name" id="street_name">
-                    <input type="text" class="form-control maxNet-input" placeholder="Дом" name="build_number" id="build_number">
-                    <input type="text" class="form-control maxNet-input" placeholder="Подъезд" name="porch_number" id="porch_number">
-                    <button type="submit" class="btn maxNet-btn maxNet-btn-purple ml-2">Проверить адрес</button>
-                    
+            <div class="section-container_body ">
+                <div class="result_wrap d-flex justify-content-center">
+                    <p class="check_result text-center px-5" style="max-width: 950px">
+                        Ваш дом по адресу <b>улица Генерала Кузнецова, дом 12, подъезд 1</b> подключен к сети «Макснет» и доступны услуги Интернета, Телевидения и Телефонии. <a style="color: #003893; text-decoration: underline" href="#">Проверить другой адрес</a>
+                    </p>
                 </div>
-            </form>
-            
-            <div style="margin-top: 96px; " class="img_wrap d-flex justify-content-center">
-                <img style="border-bottom: 1px solid black" src="images/Maxnet-Character.png" alt="">
+
+                <div class="request_wrap">
+                    <button class="btn maxNet-btn maxNet-btn-purple request_wrap_btn">Оставить заявку</button>
+                </div>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 </main>
 <footer>

@@ -399,6 +399,64 @@ section .grey-section {
     padding-left: 2.25rem;
     font-weight: 300; }
 
+header .top_nav_menu {
+  background-color: #F2F4FB; }
+  header .top_nav_menu .top_nav_container {
+    padding: 0.125rem 284px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+    header .top_nav_menu .top_nav_container ul {
+      width: 100%;
+      border-bottom: none; }
+      header .top_nav_menu .top_nav_container ul li a {
+        background-color: transparent;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #111F4D;
+        transition: all 0.3s ease-in-out;
+        border: none !important; }
+        header .top_nav_menu .top_nav_container ul li a:hover {
+          border: none;
+          box-shadow: none; }
+      header .top_nav_menu .top_nav_container ul li::after {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: #B824A4;
+        transform: translateY(6px) scale(0);
+        transition: all 0.3s ease-in-out; }
+      header .top_nav_menu .top_nav_container ul li:hover::after {
+        transform: translateY(6px) scale(1); }
+      header .top_nav_menu .top_nav_container ul li.active::after {
+        transform: translateY(6px) scale(1); }
+    header .top_nav_menu .top_nav_container .top_nav_form {
+      display: flex;
+      flex-wrap: nowrap; }
+      header .top_nav_menu .top_nav_container .top_nav_form button {
+        margin-right: 0.5rem;
+        border: none;
+        background-color: transparent; }
+      header .top_nav_menu .top_nav_container .top_nav_form input {
+        border: none;
+        border-bottom: 1px solid #111F4D;
+        background-color: transparent;
+        border-radius: 0; }
+        header .top_nav_menu .top_nav_container .top_nav_form input:focus, header .top_nav_menu .top_nav_container .top_nav_form input:active {
+          outline: none;
+          box-shadow: none; }
+header .cd-primary-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+header .cd-logo {
+  left: 20em; }
+header .cd-header-buttons {
+  right: 20em; }
+
 section#main_top_banner .section-container {
   min-height: 383px;
   background: url("../images/main_top_banner_bg.png") #003893 no-repeat;

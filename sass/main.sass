@@ -184,6 +184,27 @@ section
     z-index: 2
     position: relative
 
+.maxNet-btn-white-transparent
+  background-color: white
+  color: $text_color_dark
+  border-color: white
+  &:hover
+    background-color: transparent
+    color: white
+.maxNet-btn-transparent-white
+  background-color: transparent
+  border-color: white
+  color: white
+  &:hover
+    background-color: white
+    color: $main_blue
+.maxNet-btn-blue-transparent-to-purple
+  color: $main_blue
+  border: 1px solid $main_blue
+  &:hover
+    background-color: $main_purple
+    border-color: $main_purple
+    color: $text_color_white
 .simple_blue_btn
   color: $main_blue
   border: 1px solid $main_blue
@@ -196,7 +217,6 @@ section
   //background: #808080
   input[type="checkbox"]:checked + label:after
     transform: scale(.8)
-
   label
     display: block
     box-sizing: border-box
@@ -230,7 +250,47 @@ section
     transform: scale(0)
     transition: .2s
 
-  label:active:before
+.maxNet_radio_wrap
+  input[type="radio"]
+    display: none
+
+  input[type="radio"]:checked + label
+  //background: #808080
+  input[type="radio"]:checked + label:after
+    transform: scale(.5)
+  label
+    display: block
+    box-sizing: border-box
+    width: 25px
+    height: 25px
+    border: 2px solid $main_purple
+    border-radius: 50%
+    position: relative
+    cursor: pointer
+    transition: .2s
+
+  label:before
+    content: ''
+    position: absolute
+    display: block
+    height: 300%
+    width: 300%
+    top: -100%
+    left: -100%
+    z-index: -1
+    border-radius: 50%
+    transition: .3s
+
+  label:after
+    content: ''
+    display: block
+    height: 100%
+    width: 100%
+    background: url('../images/icons/record-button.svg') center center no-repeat
+    background-size: contain
+    transform: scale(0)
+    transition: .2s
+
 
 .maxNet_rotate_card
   position: relative
@@ -492,6 +552,43 @@ section
         &:first-child
           padding-left: 2.25rem
           font-weight: 300
+
+
+.tv-table
+  thead
+    tr
+      th
+        border-bottom: 0
+        font-size: 1.25rem
+        text-transform: uppercase
+        color: $main_blue
+        text-align: center
+
+  tbody
+    tr
+      td
+        text-align: center
+      td:first-child
+        font-size: 20px !important
+        font-weight: 300 !important
+        color: $text_color_dark !important
+        text-align: left
+        padding-left: 2px
+      &.text_row
+        td
+          font-size: 1rem
+      &.check_row
+        td
+          color: #003893
+      &.bold_row
+        td
+          font-size: 1.25rem
+          font-weight: 700
+      &.bg-grey
+        td
+          background-color: #EBEBEB
+
+
 
 section#main_top_banner
   .section-container
@@ -2199,6 +2296,116 @@ section#result_section
     width: 100%
     padding: 0 1rem
     margin-bottom: 2.75rem
+
+
+.select_tv_tariff_wrap
+  margin-top: 70px
+  .tv_radio_nav
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.2)
+    //border: 1px solid black
+    .title
+      display: flex
+      justify-content: center
+      align-items: center
+      font-weight: 700
+      font-size: 1.875rem
+      padding: 28px
+    .checkbox_wrap_content
+      display: flex
+      justify-content: center
+      align-items: center
+      &:last-child
+        margin-right: 60px
+      .maxNet_radio_wrap
+        order: -1
+        margin-right: .75rem
+
+  .tv_packages_wrap
+    margin-top: 56px
+    .equipment_banner
+      padding: 30px 37px
+      background-color: #81A8E9
+      width: 294px
+      box-sizing: border-box
+      .title
+        font-size: 1.875rem
+        color: $text_color_white
+        margin-bottom: 38px
+      .img_wrap
+        margin-bottom: 48px
+      .btn_wrap
+        margin-bottom: 1rem
+    .tv_package
+      border: 1px solid #C8C8C8
+      background-color: #F5F5F5
+      padding: 24px 32px 0 32px
+      border-radius: .125rem
+      margin-bottom: 1rem
+      .package_title
+        border-right: 2px solid $main_purple
+        h5
+          font-weight: 400
+          font-size: 1.875rem
+      .package_img
+        p
+          width: 430px
+          font-size: 14px
+          font-weight: 300
+          margin-top: 64px
+      p.default
+        font-size: 1rem
+        color: $text_color_dark
+      .chanel_count
+        font-size: 1.875rem
+        color: $main_purple
+      .list_link
+        margin-top: 1rem
+        a
+          font-weight: 700
+          text-decoration: none
+          transition: all .3s ease-in-out
+          color: $text_color_dark
+          .text
+            text-decoration: underline
+          &:hover
+            color: $main_purple
+      .right-part
+        padding: 24px 0
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        .price
+          font-size: 1.25rem
+          font-weight: 900
+          margin-bottom: 28px
+        .btn_wrap
+          .btn
+            min-width: 220px
+      &.basic_package
+        background-color: white
+        border-color: #D2D2E6
+        border-width: 2px
+        margin-bottom: 60px
+    .additional_packages_title
+      margin-bottom: 2rem
+      h5
+        font-size: 1.875rem
+        font-weight: 400
+        display: flex
+        align-items: center
+        .icon
+          width: 37px
+          height: 37px
+          border: 1.5px solid #C8C8C8
+          border-radius: 50%
+          display: flex
+          justify-content: center
+          align-items: center
+          font-size: 1rem
+          color: #81A8E9
+          margin-right: 1rem
+
 
 
 form[name="check_form"]

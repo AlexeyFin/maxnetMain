@@ -162,6 +162,30 @@ section .grey-section {
     z-index: 2;
     position: relative; }
 
+.maxNet-btn-white-transparent {
+  background-color: white;
+  color: #111F4D;
+  border-color: white; }
+  .maxNet-btn-white-transparent:hover {
+    background-color: transparent;
+    color: white; }
+
+.maxNet-btn-transparent-white {
+  background-color: transparent;
+  border-color: white;
+  color: white; }
+  .maxNet-btn-transparent-white:hover {
+    background-color: white;
+    color: #003893; }
+
+.maxNet-btn-blue-transparent-to-purple {
+  color: #003893;
+  border: 1px solid #003893; }
+  .maxNet-btn-blue-transparent-to-purple:hover {
+    background-color: #B824A4;
+    border-color: #B824A4;
+    color: #ffffff; }
+
 .simple_blue_btn {
   color: #003893;
   border: 1px solid #003893; }
@@ -196,6 +220,41 @@ section .grey-section {
   height: 100%;
   width: 100%;
   background: url("../images/icons/check-solid.svg") center center no-repeat;
+  background-size: contain;
+  transform: scale(0);
+  transition: 0.2s; }
+
+.maxNet_radio_wrap input[type="radio"] {
+  display: none; }
+.maxNet_radio_wrap input[type="radio"]:checked + label:after {
+  transform: scale(0.5); }
+.maxNet_radio_wrap label {
+  display: block;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #B824A4;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s; }
+.maxNet_radio_wrap label:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 300%;
+  width: 300%;
+  top: -100%;
+  left: -100%;
+  z-index: -1;
+  border-radius: 50%;
+  transition: 0.3s; }
+.maxNet_radio_wrap label:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url("../images/icons/record-button.svg") center center no-repeat;
   background-size: contain;
   transform: scale(0);
   transition: 0.2s; }
@@ -399,63 +458,29 @@ section .grey-section {
     padding-left: 2.25rem;
     font-weight: 300; }
 
-header .top_nav_menu {
-  background-color: #F2F4FB; }
-  header .top_nav_menu .top_nav_container {
-    padding: 0.125rem 284px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; }
-    header .top_nav_menu .top_nav_container ul {
-      width: 100%;
-      border-bottom: none; }
-      header .top_nav_menu .top_nav_container ul li a {
-        background-color: transparent;
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 16px;
-        color: #111F4D;
-        transition: all 0.3s ease-in-out;
-        border: none !important; }
-        header .top_nav_menu .top_nav_container ul li a:hover {
-          border: none;
-          box-shadow: none; }
-      header .top_nav_menu .top_nav_container ul li::after {
-        display: block;
-        content: "";
-        height: 2px;
-        width: 100%;
-        background-color: #B824A4;
-        transform: translateY(6px) scale(0);
-        transition: all 0.3s ease-in-out; }
-      header .top_nav_menu .top_nav_container ul li:hover::after {
-        transform: translateY(6px) scale(1); }
-      header .top_nav_menu .top_nav_container ul li.active::after {
-        transform: translateY(6px) scale(1); }
-    header .top_nav_menu .top_nav_container .top_nav_form {
-      display: flex;
-      flex-wrap: nowrap; }
-      header .top_nav_menu .top_nav_container .top_nav_form button {
-        margin-right: 0.5rem;
-        border: none;
-        background-color: transparent; }
-      header .top_nav_menu .top_nav_container .top_nav_form input {
-        border: none;
-        border-bottom: 1px solid #111F4D;
-        background-color: transparent;
-        border-radius: 0; }
-        header .top_nav_menu .top_nav_container .top_nav_form input:focus, header .top_nav_menu .top_nav_container .top_nav_form input:active {
-          outline: none;
-          box-shadow: none; }
-header .cd-primary-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center; }
-header .cd-logo {
-  left: 20em; }
-header .cd-header-buttons {
-  right: 20em; }
+.tv-table thead tr th {
+  border-bottom: 0;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #003893;
+  text-align: center; }
+.tv-table tbody tr td {
+  text-align: center; }
+.tv-table tbody tr td:first-child {
+  font-size: 20px !important;
+  font-weight: 300 !important;
+  color: #111F4D !important;
+  text-align: left;
+  padding-left: 2px; }
+.tv-table tbody tr.text_row td {
+  font-size: 1rem; }
+.tv-table tbody tr.check_row td {
+  color: #003893; }
+.tv-table tbody tr.bold_row td {
+  font-size: 1.25rem;
+  font-weight: 700; }
+.tv-table tbody tr.bg-grey td {
+  background-color: #EBEBEB; }
 
 section#main_top_banner .section-container {
   min-height: 383px;
@@ -1777,6 +1802,110 @@ section#result_section .request_wrap {
     width: 100%;
     padding: 0 1rem;
     margin-bottom: 2.75rem; }
+
+.select_tv_tariff_wrap {
+  margin-top: 70px; }
+  .select_tv_tariff_wrap .tv_radio_nav {
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.2); }
+    .select_tv_tariff_wrap .tv_radio_nav .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.875rem;
+      padding: 28px; }
+    .select_tv_tariff_wrap .tv_radio_nav .checkbox_wrap_content {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .select_tv_tariff_wrap .tv_radio_nav .checkbox_wrap_content:last-child {
+        margin-right: 60px; }
+      .select_tv_tariff_wrap .tv_radio_nav .checkbox_wrap_content .maxNet_radio_wrap {
+        order: -1;
+        margin-right: 0.75rem; }
+  .select_tv_tariff_wrap .tv_packages_wrap {
+    margin-top: 56px; }
+    .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner {
+      padding: 30px 37px;
+      background-color: #81A8E9;
+      width: 294px;
+      box-sizing: border-box; }
+      .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .title {
+        font-size: 1.875rem;
+        color: #ffffff;
+        margin-bottom: 38px; }
+      .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .img_wrap {
+        margin-bottom: 48px; }
+      .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .btn_wrap {
+        margin-bottom: 1rem; }
+    .select_tv_tariff_wrap .tv_packages_wrap .tv_package {
+      border: 1px solid #C8C8C8;
+      background-color: #F5F5F5;
+      padding: 24px 32px 0 32px;
+      border-radius: 0.125rem;
+      margin-bottom: 1rem; }
+      .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_title {
+        border-right: 2px solid #B824A4; }
+        .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_title h5 {
+          font-weight: 400;
+          font-size: 1.875rem; }
+      .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_img p {
+        width: 430px;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 64px; }
+      .select_tv_tariff_wrap .tv_packages_wrap .tv_package p.default {
+        font-size: 1rem;
+        color: #111F4D; }
+      .select_tv_tariff_wrap .tv_packages_wrap .tv_package .chanel_count {
+        font-size: 1.875rem;
+        color: #B824A4; }
+      .select_tv_tariff_wrap .tv_packages_wrap .tv_package .list_link {
+        margin-top: 1rem; }
+        .select_tv_tariff_wrap .tv_packages_wrap .tv_package .list_link a {
+          font-weight: 700;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          color: #111F4D; }
+          .select_tv_tariff_wrap .tv_packages_wrap .tv_package .list_link a .text {
+            text-decoration: underline; }
+          .select_tv_tariff_wrap .tv_packages_wrap .tv_package .list_link a:hover {
+            color: #B824A4; }
+      .select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part {
+        padding: 24px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part .price {
+          font-size: 1.25rem;
+          font-weight: 900;
+          margin-bottom: 28px; }
+        .select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part .btn_wrap .btn {
+          min-width: 220px; }
+      .select_tv_tariff_wrap .tv_packages_wrap .tv_package.basic_package {
+        background-color: white;
+        border-color: #D2D2E6;
+        border-width: 2px;
+        margin-bottom: 60px; }
+    .select_tv_tariff_wrap .tv_packages_wrap .additional_packages_title {
+      margin-bottom: 2rem; }
+      .select_tv_tariff_wrap .tv_packages_wrap .additional_packages_title h5 {
+        font-size: 1.875rem;
+        font-weight: 400;
+        display: flex;
+        align-items: center; }
+        .select_tv_tariff_wrap .tv_packages_wrap .additional_packages_title h5 .icon {
+          width: 37px;
+          height: 37px;
+          border: 1.5px solid #C8C8C8;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1rem;
+          color: #81A8E9;
+          margin-right: 1rem; }
 
 form[name="check_form"] input[name="street_name"] {
   width: 300px; }

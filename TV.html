@@ -11,7 +11,7 @@
 
 
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Work+Sans&display=swap&subset=cyrillic"
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700,900&display=swap"
           rel="stylesheet">
 
     <!--Font Awesome-->
@@ -141,7 +141,7 @@
                                     <div class="maxNet_radio_wrap">
                                         <input onchange="toggle_check(this)"
                                                type="radio" class="maxNet-checkbox"
-                                               name="internet" id="internet_input" checked>
+                                               name="internet" id="internet_input" value="web-tv" checked>
                                         <label for="internet_input"></label>
                                     </div>
                                     <!-- /.maxNet_check_wrap -->
@@ -152,7 +152,7 @@
 
                                     <div class="maxNet_radio_wrap">
                                         <input onchange="toggle_check(this)"
-                                               type="radio" class="maxNet-checkbox" name="internet"
+                                               type="radio" class="maxNet-checkbox" value="iptv" name="internet"
                                                id="internet_input1">
                                         <label for="internet_input1"></label>
                                     </div>
@@ -163,7 +163,7 @@
                                     <label for="internet_input2">DVB-C</label>
 
                                     <div class="maxNet_radio_wrap">
-                                        <input onchange="toggle_check(this)" type="radio" class="maxNet-checkbox"
+                                        <input onchange="toggle_check(this)" type="radio" value="dvb-c" class="maxNet-checkbox"
                                                name="internet"
                                                id="internet_input2">
                                         <label for="internet_input2"></label>
@@ -175,7 +175,7 @@
                                     <label for="internet_input3">АКТВ</label>
 
                                     <div class="maxNet_radio_wrap">
-                                        <input onchange="toggle_check(this)" type="radio" class="maxNet-checkbox"
+                                        <input onchange="toggle_check(this)" type="radio" value="aktv" class="maxNet-checkbox"
                                                name="internet" id="internet_input3">
                                         <label for="internet_input3"></label>
                                     </div>
@@ -185,8 +185,6 @@
                             </div>
                         </form>
                     </div>
-
-
                     <div class="tv_packages_wrap">
                         <div class="row">
                             <div class="col-md-4 equipment_banner_wrap">
@@ -208,7 +206,7 @@
                             </div>
                             <div class="col packages_wrap">
 
-                                <div class="tv_package basic_package">
+                                <div class="tv_package basic_package" data-filter="web-tv" id="basic_package_web-tv">
                                     <div class="row">
                                         <div class="col-5 left-part">
                                             <div class="package_title">
@@ -250,6 +248,48 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="tv_package basic_package" data-filter="aktv, dvb-c, iptv" id="basic_package_other">
+                                    <div class="row">
+                                        <div class="col-5 left-part">
+                                            <div class="package_title">
+                                                <h5>
+                                                    Базовый
+                                                    <img style="display: inline"
+                                                         src="images/icons/TV-paket-icon(1-bazovyi).png" alt="">
+                                                    <p class="default">
+                                                        ТВ-пакет
+                                                    </p>
+                                                </h5>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col middle-part">
+                                            <div class="chanel_count">
+                                                70
+                                                <p class="default">
+                                                    кол-во каналов
+                                                </p>
+                                            </div>
+
+                                            <div class="list_link">
+                                                <a href="#" class="show_list">
+                                                    » <span class="text">список</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4 right-part">
+                                            <div class="price">
+                                                30 грн. / месяц
+                                            </div>
+
+                                            <div class="btn_wrap">
+                                                <a href="#" class="btn maxNet-btn maxNet-btn-purple">Подключить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="additional_packages_wrap">
                                     <div class="additional_packages_title">
@@ -261,7 +301,7 @@
                                         </h5>
                                     </div>
 
-                                    <div class=" tv_package" id="football_hd_package">
+                                    <div class=" tv_package additional_package" data-filter="iptv, dvb-c" id="football_hd_package">
                                         <div class="row">
                                             <div class="col-5 left-part">
                                                 <div class="package_title">
@@ -304,7 +344,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" tv_package" id="entertaining_package">
+                                    <div class=" tv_package additional_package" data-filter="iptv" id="entertaining_package">
                                         <div class="row">
                                             <div class="col-5 left-part">
                                                 <div class="package_title">
@@ -347,7 +387,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" tv_package" id="adult_package">
+                                    <div class=" tv_package additional_package" data-filter="iptv, dvb-c" id="adult_package">
                                         <div class="row">
                                             <div class="col-5 left-part">
                                                 <div class="package_title">
@@ -394,7 +434,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" tv_package" id="expanded_package">
+                                    <div class=" tv_package additional_package" data-filter="iptv, dvb-c, web-tv" id="expanded_package">
                                         <div class="row">
                                             <div class="col-5 left-part">
                                                 <div class="package_title">
@@ -437,7 +477,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" tv_package" id="informative_package">
+                                    <div class=" tv_package additional_package" data-filter="iptv, dvb-c, web-tv" id="informative_package">
                                         <div class="row">
                                             <div class="col-5 left-part">
                                                 <div class="package_title">
@@ -480,7 +520,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" tv_package" id="movie_hit_package">
+                                    <div class=" tv_package additional_package" data-filter="iptv, dvb-c, web-tv" id="movie_hit_package">
                                         <div class="row">
                                             <div class="col-5 left-part">
                                                 <div class="package_title">
@@ -523,7 +563,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" tv_package" id="sport_package">
+                                    <div class=" tv_package additional_package" data-filter="iptv, dvb-c, web-tv" id="sport_package">
                                         <div class="row">
                                             <div class="col-5 left-part">
                                                 <div class="package_title">
@@ -566,7 +606,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" tv_package" id="hd_package">
+                                    <div class=" tv_package additional_package" data-filter="iptv, dvb-c, web-tv" id="hd_package">
                                         <div class="row">
                                             <div class="col-5 left-part">
                                                 <div class="package_title">
@@ -609,7 +649,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" tv_package" id="hd_vip_package">
+                                    <div class=" tv_package additional_package" data-filter="iptv, dvb-c, web-tv" id="hd_vip_package">
                                         <div class="row">
                                             <div class="col-5 left-part">
                                                 <div class="package_title">
@@ -657,6 +697,10 @@
 
                             </div>
                         </div>
+                    </div>
+                    <div class="tv_get_more_info d-flex justify-content-around align-items-center">
+                        <p class="mb-0">Подробнее о пакетах телевидения  <i class="fas fa-long-arrow-alt-right ml-2"></i></p>
+                        <button class="btn maxNet-btn maxNet-btn-purple">Заказать звонок</button>
                     </div>
                 </div>
             </div>
@@ -1166,6 +1210,9 @@
         });
 
 
+        hide_tv_packages('web-tv')
+
+
     });
 
     function toggle_check(elem) {
@@ -1182,10 +1229,29 @@
 
 
     const tv_form = document.forms['tv_package_select_form'];
+    const tv_packages = Array.from(document.querySelectorAll('.tv_package'));
 
     tv_form.addEventListener('change', e => {
-        console.log(e.target.value)
+        hide_tv_packages(e.target.value)
     });
+
+
+    const hide_tv_packages = function (type) {
+        let packages = tv_packages.filter(item => {
+            if (item.dataset['filter'].indexOf(type) + 1) {
+                item.classList.remove('d-none');
+                return item
+            } else {
+                item.classList.add('d-none')
+            }
+        });
+
+        if (packages.length <= 1) {
+            document.querySelector('.additional_packages_title').classList.add('d-none')
+        } else {
+            document.querySelector('.additional_packages_title').classList.remove('d-none')
+        }
+    }
 
 
 </script>

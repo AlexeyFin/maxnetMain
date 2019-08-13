@@ -47,7 +47,6 @@ button.btn, a.btn
 section
   .section-container
     padding: 4.5rem 9rem
-
     &_header
       margin-bottom: 4.5rem
       display: flex
@@ -64,6 +63,11 @@ section
           background-color: $main_purple
           content: ''
           margin-top: 1rem
+    &_left_header
+      justify-content: flex-start
+      h3
+        font-size: 1.875rem
+
 
   .white-section
     background: $text_color_white
@@ -402,7 +406,7 @@ section
 
   .slick-arrow
     position: absolute
-    top: 50%
+    top: calc(50% - 50px)
     border-radius: 50%
     background-color: $text_color_white
     color: $text_color_dark
@@ -453,6 +457,17 @@ section
     text-align: center
     font-weight: 300
     line-height: 27px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    small
+      opacity: .5
+    a
+      font-family: "Roboto", sans-serif
+      font-weight: 700
+      font-size: 1rem
+      text-decoration: underline
+      color: $text_color_dark
 
   &.grey_data_item
     .img_wrap
@@ -2185,13 +2200,15 @@ section#result_section
 .card_slider
   &_item
     .item_card
-    padding: 1.5rem 1rem 2rem 1rem
-    position: relative
-    background-color: $text_color_white
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
-    border-radius: .25rem
-    margin-bottom: 4.25rem
-
+      padding: 1.5rem 1rem 2rem 1rem
+      position: relative
+      background-color: $text_color_white
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+      border-radius: .25rem
+      margin-bottom: 4.25rem
+      display: flex
+      flex-direction: column
+      justify-content: space-between
     .tariff_title
       padding-left: 1rem
       font-size: 1.875rem
@@ -2220,9 +2237,20 @@ section#result_section
       margin-top: 1.75rem
       margin-bottom: 5rem
       padding-left: 0
-
       li
         list-style-type: none
+      &.titled_option_list
+        li
+          padding-left: 1.3em
+          &:before
+            content: "-"
+            display: inline-block
+            margin-left: -1.3em /* same as padding-left set on li */
+            width: 1em /* same as padding-left set on li */
+        li:first-child
+          padding-left: 0
+          &:before
+            content: none
 
     .price
       text-align: center
@@ -2240,7 +2268,6 @@ section#result_section
     .ask_wrap
       text-align: center
       margin-top: 2rem
-
       a
         line-height: 1.25rem
         font-weight: 500
@@ -2249,7 +2276,6 @@ section#result_section
 
         &:hover
           color: $main_purple
-
     .side_icon
       position: absolute
       top: 0
@@ -2263,7 +2289,22 @@ section#result_section
 
         img
           opacity: .55
-
+    &.internet-slider-item
+      display: flex
+      justify-content: center
+      .item_card
+        min-height: 492px
+        width: 300px
+        margin-bottom: 1.25rem
+        .count
+          margin-bottom: auto
+          font-weight: 300
+          font-size: 1.25rem
+        .options_list
+          padding-left: 1rem
+          flex: 1 1 auto
+          margin-bottom: 2.25rem
+          border-bottom: 2px solid $main_purple
 
 .whois_card
   width: 264px
@@ -2405,7 +2446,108 @@ section#result_section
           font-size: 1rem
           color: #81A8E9
           margin-right: 1rem
+  .tv_get_more_info
+    margin-top: 124px
+    p
+      font-size: 1.875rem
+      font-weight: 700
+    .btn
+      width: 300px
 
+
+
+.light_title
+  font-size: 1.25rem
+  text-transform: uppercase
+  color: #969696
+  font-weight: 400
+
+.light_blue_title
+  font-size: 1.25rem
+  text-transform: uppercase
+  color: $main_blue
+  font-weight: 400
+
+.fw-300
+  font-weight: 300
+.light_link
+  color: $main_blue
+  text-decoration: underline
+section.internet_data_wrap
+  .internet-nav_wrap
+    border-top: 2px solid #C8C8C8
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 1rem 1rem .75rem
+
+    .internet_nav_link_wrap
+      margin: 0 36px
+      a.internet_nav_link
+        text-decoration: none
+        font-size: 15px
+        font-weight: 500
+        font-family: "Roboto", sans-serif
+        color: $text_color_dark
+        transition: all .3s ease-in-out
+        position: relative
+        &:hover
+          color: $main_purple
+        &::after
+          content: ''
+          position: absolute
+          border: 10px solid transparent
+          border-bottom: 10px solid transparent
+          left: calc(50% - 5px)
+          bottom: -15px
+        &.active
+          color: $main_purple
+          &::after
+            border-bottom-color: #D2D2E6
+  .internet_tariff_main_wrap
+    background-color: #D2D2E6
+    padding: 48px
+
+
+.slide_check_wrap
+  .checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    margin: 10px 0 0 20px
+    + label
+      position: relative
+      padding: 0 0 0 60px
+      cursor: pointer
+      &:before
+        content: ''
+        position: absolute
+        top: -4px
+        left: 0
+        width: 50px
+        height: 27px
+        border-radius: 13px
+        background: #FFFFFF
+        //box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2)
+        transition: .2s
+      &:after
+        content: ''
+        position: absolute
+        top: -2px
+        left: 2px
+        width: 22px
+        height: 22px
+        border-radius: 10px
+        background: #969696
+        box-shadow: inset 0px -5px 4px rgba(0, 0, 0, 0.25)
+        transition: .2s
+    &:checked + label
+      &:before
+        background: #FFFFFF
+      &:after
+        left: 26px
+        background: #003893
+        box-shadow: inset 0px -5px 4px rgba(0, 0, 0, 0.25)
 
 
 form[name="check_form"]
@@ -2416,6 +2558,38 @@ form[name="check_form"]
 
 
 
+.recommended_img_wrap
+  width: 286px
+  height: 286px
+  border: 1px solid $main_blue
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  p
+    width: 165px
+    font-size: 14px
+    font-weight: 300
+    text-align: center
+    margin-bottom: 0
+
+
+.get_call_section
+  background-color: #003893
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 45px
+  h6
+    color: $text_color_white
+    margin-right: 86px
+  button
+    width: 300px
+
+
+.space-left
+  padding-left: 100px
 footer
   display: flex
   flex-direction: column

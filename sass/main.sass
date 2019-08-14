@@ -400,9 +400,135 @@ section
 .card_slider
   &_item
     padding: 1rem
-
     &:focus, &:active
       outline: none
+    .item_card
+      padding: 1.5rem 1rem 2rem 1rem
+      position: relative
+      background-color: $text_color_white
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+      border-radius: .25rem
+      margin-bottom: 4.25rem
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .tariff_title
+        padding-left: 1rem
+        font-size: 1.875rem
+        margin-bottom: 0
+        font-weight: bold
+      .count
+        padding-left: 1rem
+        color: #003893
+        font-size: 1.25rem
+        line-height: 25px
+        display: flex
+        align-items: center
+        .info
+          font-size: .75rem
+          border: 1px solid $text_color_dark
+          border-radius: 50%
+          margin-left: .75rem
+          width: 20px
+          height: 20px
+          display: flex
+          justify-content: center
+          align-items: center
+
+      .options_list
+        margin-top: 1.75rem
+        margin-bottom: 5rem
+        padding-left: 0
+        li
+          list-style-type: none
+        &.titled_option_list
+          li
+            padding-left: 1.3em
+            &:before
+              content: "-"
+              display: inline-block
+              margin-left: -1.3em /* same as padding-left set on li */
+              width: 1em /* same as padding-left set on li */
+          li:first-child
+            padding-left: 0
+            &:before
+              content: none
+
+      .price
+        text-align: center
+        margin-bottom: 1.5rem
+        font-size: 1.25rem
+        font-weight: 500
+        line-height: 25px
+
+      .get_btn_wrap
+        display: flex
+        justify-content: center
+
+        a, button
+          min-width: 180px
+
+      .ask_wrap
+        text-align: center
+        margin-top: 2rem
+        a
+          line-height: 1.25rem
+          font-weight: 500
+          text-decoration: underline
+          transition: all .3s ease-in-out
+
+          &:hover
+            color: $main_purple
+      .side_icon
+        position: absolute
+        top: 0
+        right: 0
+        padding: 0.5rem 0.5rem 1.25rem 1.25rem
+        border-radius: 0 .25rem 0 60px
+        background-color: rgba(150, 180, 255, 0.15)
+
+        &.gold
+          background-color: rgba(255, 218, 68, 0.8) !important
+
+          img
+            opacity: .55
+  .internet-slider-item
+    display: flex
+    justify-content: center
+    .item_card
+      height: 492px
+      width: 300px
+      margin-bottom: 1.25rem
+      &_data
+        flex: 1 1 auto
+        margin-bottom: 2.25rem
+        border-bottom: 2px solid $main_purple
+        padding: 1.75rem 1rem 1rem 1rem
+        p
+          font-size: 1.25rem
+          font-weight: 300
+          display: flex
+          flex-direction: column
+          line-height: 25px
+          &:last-child
+            margin-bottom: 0
+        a
+          font-size: 1.25rem
+          color: $main_blue
+          font-weight: 300
+          text-decoration: underline
+        &.bgi-left-bottom
+          background-position: right bottom
+          background-repeat: no-repeat
+      .count
+        margin-bottom: auto
+        font-weight: 300
+        font-size: 1.25rem
+      .options_list
+        padding-left: 1rem
+        margin-bottom: auto
+        margin-top: auto
+
 
   .slick-arrow
     position: absolute
@@ -432,6 +558,10 @@ section
 
   .slick-disabled
     opacity: 0
+
+
+.card_slider
+  &_item
 
 
 // End of Card slider
@@ -2197,114 +2327,7 @@ section#result_section
           min-width: 200px
 
 
-.card_slider
-  &_item
-    .item_card
-      padding: 1.5rem 1rem 2rem 1rem
-      position: relative
-      background-color: $text_color_white
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
-      border-radius: .25rem
-      margin-bottom: 4.25rem
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-    .tariff_title
-      padding-left: 1rem
-      font-size: 1.875rem
-      margin-bottom: 0
-      font-weight: bold
 
-    .count
-      padding-left: 1rem
-      color: #003893
-      font-size: 1.25rem
-      display: flex
-      align-items: center
-
-      .info
-        font-size: .75rem
-        border: 1px solid $text_color_dark
-        border-radius: 50%
-        margin-left: .75rem
-        width: 20px
-        height: 20px
-        display: flex
-        justify-content: center
-        align-items: center
-
-    .options_list
-      margin-top: 1.75rem
-      margin-bottom: 5rem
-      padding-left: 0
-      li
-        list-style-type: none
-      &.titled_option_list
-        li
-          padding-left: 1.3em
-          &:before
-            content: "-"
-            display: inline-block
-            margin-left: -1.3em /* same as padding-left set on li */
-            width: 1em /* same as padding-left set on li */
-        li:first-child
-          padding-left: 0
-          &:before
-            content: none
-
-    .price
-      text-align: center
-      margin-bottom: 1.5rem
-      font-size: 1.25rem
-      font-weight: 500
-
-    .get_btn_wrap
-      display: flex
-      justify-content: center
-
-      a, button
-        min-width: 180px
-
-    .ask_wrap
-      text-align: center
-      margin-top: 2rem
-      a
-        line-height: 1.25rem
-        font-weight: 500
-        text-decoration: underline
-        transition: all .3s ease-in-out
-
-        &:hover
-          color: $main_purple
-    .side_icon
-      position: absolute
-      top: 0
-      right: 0
-      padding: 0.5rem 0.5rem 1.25rem 1.25rem
-      border-radius: 0 .25rem 0 60px
-      background-color: rgba(150, 180, 255, 0.15)
-
-      &.gold
-        background-color: rgba(255, 218, 68, 0.8) !important
-
-        img
-          opacity: .55
-    &.internet-slider-item
-      display: flex
-      justify-content: center
-      .item_card
-        min-height: 492px
-        width: 300px
-        margin-bottom: 1.25rem
-        .count
-          margin-bottom: auto
-          font-weight: 300
-          font-size: 1.25rem
-        .options_list
-          padding-left: 1rem
-          flex: 1 1 auto
-          margin-bottom: 2.25rem
-          border-bottom: 2px solid $main_purple
 
 .whois_card
   width: 264px
@@ -2588,8 +2611,60 @@ form[name="check_form"]
     width: 300px
 
 
+
+.content-banner
+  .banner-wrap
+    background-color: $main_blue
+    .banner-text
+      padding-top: 3rem
+      &_header
+        margin-bottom: 42px
+        h4
+          font-size: 4rem
+          font-weight: 500
+          color: $text_color_white
+          margin-bottom: 0
+        p
+          padding-left: 64px
+          font-size: 1.5rem
+          line-height: 40px
+          color: $text_color_white
+      &_body
+        padding-left: 64px
+        .text_wrap
+          margin-bottom: 53px
+          ul,p
+            color: $text_color_white
+            font-size: 1.875rem
+            line-height: 37px
+          ul
+            padding-left: 21px
+        .btn_wrap
+          .btn
+            width: 316px
+    .negative-mt
+      margin-top: -40px
+
+
 .space-left
   padding-left: 100px
+
+.info
+  text-align: center
+  font-weight: 300
+  font-size: 1.25rem
+  color: #646464
+
+.text-item
+  margin-bottom: 4rem
+  p,h6,ul
+    font-size: 1.25rem
+    font-weight: 300
+  h6
+    font-weight: 700
+  ul
+    padding-left: 21px
+
 footer
   display: flex
   flex-direction: column

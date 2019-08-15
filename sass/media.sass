@@ -1,0 +1,77 @@
+@import "colors"
+
+@media screen and (max-width: 1366px)
+  section
+    .section-container
+      padding: 2.25rem 4.5rem
+
+  section#main_top_banner
+    .section-container
+      background-size: cover
+
+  section#main_services
+    .service_card
+      &_header
+        font-size: 1.65rem
+      &_link
+        padding: 1.5rem
+
+  section#main_tariff_plans
+    .tariff_title
+      &_header
+        font-size: 3rem
+    .tariff_item
+      &_header
+        h4
+          font-size: 2rem
+  section#main_slider
+    .main_slider_container
+      .main_slider_wrap
+        &_item
+          .slider_img
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            img
+              width: 100%
+
+@media screen and (max-width: 1024px)
+  section#main_services
+    .service_card
+      &_header
+        font-size: 1.25rem
+      &_link
+        padding: 1.25rem
+  section#main_tariff_plans
+    .tariff_title
+      &_header
+        font-size: 4rem
+      &_text
+        font-size: 1.75rem
+      &_link_wrap
+        .tariff_title_link
+          font-size: 1.75rem
+        .text
+          font-size: 1.75rem
+    .tariff_item
+      &_header
+        h4
+          font-size: 3.25rem
+      &_list_wrap
+        &_title
+          font-size: 2rem
+        &_list
+          font-size: 1.75rem
+      &_price_wrap
+        p.price
+          font-size: 2.25rem
+  section#main_slider
+    .main_slider_container
+      .main_slider_arrows_wrap
+        top: 380px
+
+  section#main_form
+    .section-container
+      .form_section_title_wrap
+        .form_section_title_header
+          font-size: 3rem

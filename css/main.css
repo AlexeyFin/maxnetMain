@@ -878,7 +878,7 @@ section#main_tariff_plans .tariff_item {
         content: "-";
         font-weight: 900;
         position: absolute;
-        left: 0; }
+        left: -2px; }
     section#main_tariff_plans .tariff_item_list_wrap::before {
       display: block;
       content: "";
@@ -898,6 +898,8 @@ section#main_tariff_plans .tariff_item {
 
 section#main_news .section-container {
   background-color: #E0DFDF; }
+section#main_news .news_section_wrap .static_wrap img {
+  width: 100%; }
 section#main_news .news_section_wrap .static_wrap .social_link_wrap {
   margin-bottom: 1.5rem; }
   section#main_news .news_section_wrap .static_wrap .social_link_wrap .social_link {

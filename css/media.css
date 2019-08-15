@@ -1,0 +1,79 @@
+@media screen and (max-width: 1366px) {
+  section .section-container {
+    padding: 2.25rem 4.5rem;
+  }
+
+  section#main_top_banner .section-container {
+    background-size: cover;
+  }
+
+  section#main_services .service_card_header {
+    font-size: 1.65rem;
+  }
+  section#main_services .service_card_link {
+    padding: 1.5rem;
+  }
+
+  section#main_tariff_plans .tariff_title_header {
+    font-size: 3rem;
+  }
+  section#main_tariff_plans .tariff_item_header h4 {
+    font-size: 2rem;
+  }
+
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section#main_services .service_card_header {
+    font-size: 1.25rem;
+  }
+  section#main_services .service_card_link {
+    padding: 1.25rem;
+  }
+
+  section#main_tariff_plans .tariff_title_header {
+    font-size: 4rem;
+  }
+  section#main_tariff_plans .tariff_title_text {
+    font-size: 1.75rem;
+  }
+  section#main_tariff_plans .tariff_title_link_wrap .tariff_title_link {
+    font-size: 1.75rem;
+  }
+  section#main_tariff_plans .tariff_title_link_wrap .text {
+    font-size: 1.75rem;
+  }
+  section#main_tariff_plans .tariff_item_header h4 {
+    font-size: 3.25rem;
+  }
+  section#main_tariff_plans .tariff_item_list_wrap_title {
+    font-size: 2rem;
+  }
+  section#main_tariff_plans .tariff_item_list_wrap_list {
+    font-size: 1.75rem;
+  }
+  section#main_tariff_plans .tariff_item_price_wrap p.price {
+    font-size: 2.25rem;
+  }
+
+  section#main_slider .main_slider_container .main_slider_arrows_wrap {
+    top: 380px;
+  }
+
+  section#main_form .section-container .form_section_title_wrap .form_section_title_header {
+    font-size: 3rem;
+  }
+}

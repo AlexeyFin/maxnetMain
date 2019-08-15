@@ -3,37 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b014a83b-26fa-4c0d-beb6-afad6e01b66d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check.html" beforeDir="false" afterPath="$PROJECT_DIR$/check.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/site_nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/site_nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Max-net-blog.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Maxnet-Konek-Rekomendui.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Maxnet-Konek-Sedmoi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Maxnet-Konek.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/business-laptop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/maxnet_is_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/maxnet_is_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/maxnet_is_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/maxnet_is_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/maxnet_is_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/maxnet_is_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/main_sub_banner_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/main_top_banner_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/news-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cd-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/cd-logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/line-icon-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/line-icon-1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/line-icon-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/line-icon-2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/line-icon-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/line-icon-3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/line-icon-4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/line-icon-4.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/line-icon-5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/line-icon-5.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/line-icon-6.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/line-icon-6.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/line-icon-7.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/line-icon-7.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/line-icon-8.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/line-icon-8.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Maxnet-Character.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/video.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +35,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test/header" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -71,14 +48,14 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/icons" />
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images/icons" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/images/icons" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -141,7 +118,8 @@
       <workItem from="1565245041433" duration="23427000" />
       <workItem from="1565331141869" duration="4793000" />
       <workItem from="1565678127524" duration="19838000" />
-      <workItem from="1565764334779" duration="16830000" />
+      <workItem from="1565764334779" duration="17688000" />
+      <workItem from="1565850590334" duration="7013000" />
     </task>
     <servers />
   </component>

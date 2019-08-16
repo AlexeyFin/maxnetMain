@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (max-width: 1366px) {
   section .section-container {
     padding: 2.25rem 4.5rem;
@@ -37,6 +38,10 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  section .section-container {
+    padding: 2.25rem 2.5rem;
+  }
+
   section#main_services .service_card_header {
     font-size: 1.25rem;
   }
@@ -75,5 +80,302 @@
 
   section#main_form .section-container .form_section_title_wrap .form_section_title_header {
     font-size: 3rem;
+  }
+
+  footer section#footer .footer_container .footer_middle .phone_numbers {
+    margin-top: 1.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .section-container {
+    padding: 2rem 1.5rem;
+  }
+
+  section#main_top_banner .section-container {
+    background-position: center;
+  }
+  section#main_top_banner .section-container .main_top_banner_header {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  section#main_services .service_card_header {
+    min-height: 50px;
+    font-size: 1.5rem;
+  }
+
+  section#main_sub_banner .main_sub_banner_header {
+    font-size: 3rem;
+  }
+
+  section#main_tariff_plans .tariff_title_header {
+    font-size: 3rem;
+  }
+  section#main_tariff_plans .tariff_item_header h4 {
+    font-size: 2.5rem;
+  }
+  section#main_tariff_plans .tariff_item_list_wrap_list {
+    font-size: 1.5rem;
+  }
+  section#main_tariff_plans .tariff_item_list_wrap_title {
+    font-size: 1.75rem;
+  }
+  section#main_tariff_plans .tariff_item_price_wrap p.price {
+    font-size: 1.75rem;
+  }
+
+  section#main_news .news_section_wrap .static_wrap {
+    display: none;
+  }
+
+  section#main_slider .main_slider_container .main_slider_arrows_wrap {
+    top: 335px;
+  }
+
+  section#main_form .section-container .form_section_title_wrap {
+    padding-top: 2.25rem;
+  }
+  section#main_form .section-container .form_section_title_wrap .form_section_title_header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+  section#main_form .section-container .form_section_title_wrap .form_section_title_sub_text {
+    text-align: center;
+  }
+
+  section#main_slider .main_slider_container {
+    padding-top: 1rem;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content {
+    padding: 1.75rem 0.5rem 3.25rem 1.75rem;
+  }
+
+  footer section#footer_menu .menu_group {
+    margin-bottom: 2rem;
+  }
+
+  footer section#footer .footer_container .footer_middle .social_links, footer section#footer .footer_container .footer_middle .mobile_application {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  section .section-container {
+    padding: 1.75rem 0.75rem;
+  }
+  section .section-container_header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 2.5rem;
+  }
+  section .section-container_header h2 {
+    text-align: left;
+    color: #003893;
+    font-size: 3rem;
+  }
+  section .section-container_header h2::after {
+    display: none;
+  }
+
+  section#main_top_banner .section-container {
+    background-position: left;
+  }
+  section#main_top_banner .section-container .main_top_banner_header {
+    font-weight: 900;
+    margin-bottom: 1.75rem;
+  }
+  section#main_top_banner .section-container .main_top_banner_header::after {
+    display: none;
+  }
+  section#main_top_banner .section-container .main_top_banner_text {
+    display: none;
+  }
+  section#main_top_banner .section-container .btn_wrap {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  section#main_services .service_card {
+    border: none;
+  }
+  section#main_services .service_card .service_card_link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #B824A4;
+  }
+  section#main_services .service_card .service_card_link .service_card_text {
+    display: none;
+  }
+  section#main_services .service_card .service_card_link .service_card_header {
+    margin-bottom: 0;
+    border: none;
+    width: 75%;
+  }
+  section#main_services .service_card .service_card_link .service_card_header::after {
+    display: none;
+  }
+  section#main_services .service_card .service_card_link .service_card_chevron {
+    width: 25%;
+  }
+
+  section#main_mobile_tariff_plans {
+    display: block;
+  }
+  section#main_mobile_tariff_plans .section-container_header {
+    margin-bottom: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#main_mobile_tariff_plans .section-container_header h2 {
+    text-align: left;
+    font-size: 3rem;
+  }
+  section#main_mobile_tariff_plans .section-container_header h2::after {
+    display: none;
+  }
+  section#main_mobile_tariff_plans .section-container_header h3 {
+    font-size: 2rem;
+  }
+  section#main_mobile_tariff_plans .section-container_header h2, section#main_mobile_tariff_plans .section-container_header h3 {
+    font-weight: 700;
+    color: #003893;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card {
+    margin-bottom: 1.25rem;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-header {
+    background-color: #ffffff;
+    border-top: 2px solid #003893;
+    border-bottom: 2px solid #D2D2E6;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-header h5 {
+    font-weight: 900;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-header h5 button {
+    color: #111F4D;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 1.25rem;
+    padding: 1.25rem 0.75rem;
+    background-size: contain;
+    background-position: 90%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-header h5 button .marker {
+    font-family: "Font Awesome 5 Free", sans-serif;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-header h5 button .marker i::before {
+    content: "";
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-header h5 button.collapsed {
+    background-position: 160%;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-header h5 button.collapsed .marker i::before {
+    content: "";
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body {
+    padding: 0;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body .mobile_tariff_title {
+    padding: 1.5rem 2rem;
+    border-bottom: 2px solid #D2D2E6;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body .mobile_tariff_title h5 {
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body .mobile_tariff_title p {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body .mobile_tariff_body {
+    padding: 1.5rem 2rem;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body .mobile_tariff_body p.description {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 42px;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body .mobile_tariff_body .btn_wrap {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body .mobile_tariff_body .btn_wrap .btn {
+    width: 100%;
+  }
+
+  section.mobile_proposition_banner {
+    display: block;
+  }
+
+  section#main_news .section-container {
+    background-color: #ffffff;
+  }
+
+  section#main_slider .main_slider_container {
+    background-color: #E0DFDF;
+    padding: 1.5rem 4rem 1.5rem 1.5rem;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content {
+    padding-bottom: 0.25rem;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_btn {
+    display: none;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_header {
+    margin-bottom: 0.75rem;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_header h2 {
+    color: #003893;
+    font-size: 3rem;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body {
+    min-height: auto;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body p {
+    font-weight: 300;
+    font-size: 1.25rem;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body ul {
+    display: none;
+  }
+
+  section#main_slider .main_slider_container .main_slider_arrows_wrap {
+    right: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: 280px;
+  }
+  section#main_slider .main_slider_container .main_slider_arrows_wrap button {
+    color: #ffffff;
+  }
+
+  section#main_form .section-container .main_form_wrap {
+    padding: 1rem;
+  }
+  section#main_form .section-container .main_form_wrap .check_group {
+    display: none;
   }
 }

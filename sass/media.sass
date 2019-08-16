@@ -36,6 +36,10 @@
               width: 100%
 
 @media screen and (max-width: 1024px)
+  section
+    .section-container
+      padding: 2.25rem 2.5rem
+
   section#main_services
     .service_card
       &_header
@@ -75,3 +79,235 @@
       .form_section_title_wrap
         .form_section_title_header
           font-size: 3rem
+  footer
+    section#footer
+      .footer_container
+        .footer_middle
+          .phone_numbers
+            margin-top: 1.5rem
+            justify-content: center
+            text-align: center
+
+@media screen and (max-width: 768px)
+  section
+    .section-container
+      padding: 2rem 1.5rem
+  section#main_top_banner
+    .section-container
+      background-position: center
+      .main_top_banner_header
+        text-align: center
+        font-size: 3.5rem
+  section#main_services
+    .service_card_header
+      min-height: 50px
+      font-size: 1.5rem
+  section#main_sub_banner
+    .main_sub_banner_header
+      font-size: 3rem
+  section#main_tariff_plans
+    .tariff_title_header
+      font-size: 3rem
+    .tariff_item_header
+      h4
+        font-size: 2.5rem
+    .tariff_item_list_wrap_list
+      font-size: 1.5rem
+    .tariff_item_list_wrap_title
+      font-size: 1.75rem
+    .tariff_item_price_wrap
+      p.price
+        font-size: 1.75rem
+  section#main_news
+    .news_section_wrap
+      .static_wrap
+        display: none
+  section#main_slider
+    .main_slider_container
+      .main_slider_arrows_wrap
+        top: 335px
+
+  section#main_form
+    .section-container
+      .form_section_title_wrap
+        padding-top: 2.25rem
+        .form_section_title_header
+          font-size: 2.5rem
+          text-align: center
+          margin-bottom: 1.25rem
+        .form_section_title_sub_text
+          text-align: center
+  section#main_slider
+    .main_slider_container
+      padding-top: 1rem
+      .main_slider_wrap_item
+        .slider_content
+          padding: 1.75rem 0.5rem 3.25rem 1.75rem
+  footer section#footer_menu
+    .menu_group
+      margin-bottom: 2rem
+  footer section#footer
+    .footer_container
+      .footer_middle
+        .social_links,.mobile_application
+          justify-content: space-between
+          margin-top: 1.5rem
+
+
+@media screen and (max-width: 540px)
+  section
+    .section-container
+      padding: 1.75rem .75rem
+      &_header
+        justify-content: flex-start
+        margin-bottom: 2.5rem
+        h2
+          text-align: left
+          color: $main_blue
+          font-size: 3rem
+          &::after
+            display: none
+
+  section#main_top_banner
+    .section-container
+      background-position: left
+      .main_top_banner_header
+        font-weight: 900
+        margin-bottom: 1.75rem
+        &::after
+          display: none
+      .main_top_banner_text
+        display: none
+      .btn_wrap
+        flex: 1 1 auto
+  section#main_services
+    .service_card
+      border: none
+      .service_card_link
+        flex-direction: row
+        align-items: center
+        border-bottom: 1px solid $main_purple
+
+        .service_card_text
+          display: none
+        .service_card_header
+          margin-bottom: 0
+          border: none
+          width: 75%
+          &::after
+            display: none
+        .service_card_chevron
+          width: 25%
+  section#main_mobile_tariff_plans
+    display: block
+    .section-container
+      &_header
+        margin-bottom: 1rem
+        flex-direction: column
+        h2
+          text-align: left
+          font-size: 3rem
+          &::after
+            display: none
+        h3
+          font-size: 2rem
+        h2,h3
+          font-weight: 700
+          color: $main_blue
+      &_body
+        .mobile_tariff_card
+          margin-bottom: 1.25rem
+          .tariff-header
+            background-color: $text_color_white
+            border-top: 2px solid $main_blue
+            border-bottom: 2px solid $dark_grey
+            h5
+              font-weight: 900
+              button
+                color: $text_color_dark
+                text-decoration: underline
+                font-weight: 900
+                font-size: 1.25rem
+                padding: 1.25rem .75rem
+                background-size: contain
+                background-position: 90%
+                transition: all .5s ease-in-out
+                .marker
+                  font-family: 'Font Awesome 5 Free', sans-serif
+                  i::before
+                    content: '\f068'
+
+                &.collapsed
+                  background-position: 160%
+                  .marker
+                    i::before
+                      content: "\f067"
+
+          .tariff-body
+            padding: 0
+            .mobile_tariff_title
+              padding: 1.5rem 2rem
+              border-bottom: 2px solid $dark_grey
+              h5
+                font-size: 1.25rem
+                font-weight: 900
+              p
+                margin-bottom: 0
+                font-size: 1.25rem
+            .mobile_tariff_body
+              padding: 1.5rem 2rem
+              p.description
+                font-size: 1rem
+                font-weight: 300
+                margin-bottom: 42px
+              .btn_wrap
+                width: 100%
+                padding: 0 2rem
+                .btn
+                  width: 100%
+
+
+  section.mobile_proposition_banner
+    display: block
+  section#main_news
+    .section-container
+      background-color: $text_color_white
+  section#main_slider
+    .main_slider_container
+      background-color: $background_grey
+      padding: 1.5rem 4rem 1.5rem 1.5rem
+      .main_slider_wrap
+        &_item
+          .slider_content
+            padding-bottom: .25rem
+            &_btn
+              display: none
+            &_header
+              margin-bottom: .75rem
+              h2
+                color: $main_blue
+                font-size: 3rem
+            &_body
+              min-height: auto
+              p
+                font-weight: 300
+                font-size: 1.25rem
+              ul
+                display: none
+
+  section#main_slider
+    .main_slider_container
+      .main_slider_arrows_wrap
+        right: auto
+        width: 100%
+        display: flex
+        justify-content: space-between
+        top: 280px
+        button
+          color: $text_color_white
+  section#main_form
+    .section-container
+      .main_form_wrap
+        padding: 1rem
+        .check_group
+          display: none

@@ -92,6 +92,16 @@
             margin-top: 1.5rem
             justify-content: center
             text-align: center
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          padding: 0 1rem
+          .help_card
+            height: 450px
+        .maxNet_rotate_card
+          .front,.back
+            padding: 0 1rem
 
 @media screen and (max-width: 768px)
   section
@@ -157,9 +167,14 @@
         .social_links,.mobile_application
           justify-content: space-between
           margin-top: 1.5rem
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          .help_card
+            height: 360px
 
-
-@media screen and (max-width: 540px)
+@media screen and (max-width: 576px)
   section
     .section-container
       padding: 1.75rem .75rem
@@ -346,7 +361,24 @@
           flex-wrap: wrap
           display: flex
           justify-content: flex-end
-
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          .help_card
+            height: 430px
+            padding: 1.15rem
+  section#FAQ
+    .section-container
+      .section-container_header
+        padding: 0 0.75rem
+    .faq_img
+      display: none
+  section#FAQ_directory
+    form
+      button.maxNet-btn
+        min-width: 175px
+        padding: 0.75rem
 
 
 
@@ -358,8 +390,39 @@
   section#main_slider
     .main_slider_container
       padding: 1.5rem .5rem 1.5rem 1.5rem
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap.maxNet_rotate_card
+          min-height: 360px
+          height: 100%
+        .help_card_wrap
+          .help_card
+            min-height: 360px
+
+
+@media screen and (max-width: 414px)
+  section#FAQ_theme_search
+    .section-container_header.advanced_header
+      .search_form
+        .search_wrap
+          input
+            max-width: 310px
+  section#FAQ_directory
+    form
+      .form-content
+        flex-wrap: wrap
+        button.maxNet-btn
+          margin-top: .75rem
+          min-width: 175px
+          width: 100%
+          padding: 0.75rem
 
 @media screen and (max-width: 375px)
+  section
+    .section-container_header
+      h2
+        font-size: 2rem
   section#main_form
     .section-container
       .form_section_title_wrap
@@ -400,3 +463,26 @@
   footer section#footer_menu
     .menu_group_item_title
       min-height: 1px
+  section#FAQ_theme_search
+    .section-container_header.advanced_header
+      .search_form
+        .search_wrap
+          input
+            max-width: 275px
+  section#FAQ
+    .section-container_body
+      .accordion
+        .card
+          .card-header
+            padding: 0 1.25rem
+
+@media screen and (max-width: 320px)
+  section#FAQ_theme_search
+    .section-container_header.advanced_header
+      .search_form
+        .search_wrap
+          input
+            padding: .875rem 1.25rem
+            max-width: 240px
+
+

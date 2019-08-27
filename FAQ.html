@@ -23,6 +23,7 @@
 
     <!--Custom Styles-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <title>MaxNet</title>
 </head>
@@ -41,7 +42,7 @@
             <!-- /.section-container_header -->
             <div class="section-container_body">
                 <div class="row help_cards_wrap">
-                    <div class="col-md-4 help_card_wrap">
+                    <div class="col-lg-4 col-sm-6 col-12 help_card_wrap">
                         <div class="help_card orange-top">
                             <div class="help_card_header">
                                 <h6>Проверка баланса</h6>
@@ -64,8 +65,8 @@
                         <!-- /.help_card -->
                     </div>
                     <!-- /.col-md-4 help_card_wrap -->
-                    <div class="col-md-4 help_card_wrap maxNet_rotate_card">
-                        <div style="padding: 0 1.75rem;" class="front">
+                    <div  class="col-lg-4 col-sm-6 col-12  help_card_wrap maxNet_rotate_card">
+                        <div  class="front">
                             <div class="help_card  dark-blue-top">
 
                                 <div class="help_card_header">
@@ -86,7 +87,7 @@
                             </div>
                         </div>
                         <!-- /.front -->
-                        <div class="back" style="padding: 0 1.75rem;">
+                        <div class="back" >
                             <div class="help_card dark-blue-top" style="background-image: url('images/Protokol_Photo.png')">
 
                             </div>
@@ -95,7 +96,7 @@
                         <!-- /.back -->
                     </div>
                     <!-- /.col-md-4 help_card_wrap -->
-                    <div class="col-md-4 help_card_wrap">
+                    <div class="col-lg-4 col-sm-6 col-12 help_card_wrap">
                         <div class="help_card yellow-top">
                             <div class="help_card_header">
                                 <h6>Оплата услуг</h6>
@@ -120,7 +121,7 @@
                         <!-- /.help_card -->
                     </div>
                     <!-- /.col-md-4 help_card_wrap -->
-                    <div class="col-md-4 help_card_wrap">
+                    <div class="col-lg-4 col-sm-6 col-12 help_card_wrap">
                         <div class="help_card light-blue-top">
                             <div class="help_card_header">
                                 <h6>Восстановление пароля</h6>
@@ -146,7 +147,7 @@
                         <!-- /.help_card -->
                     </div>
                     <!-- /.col-md-4 help_card_wrap -->
-                    <div class="col-md-4 help_card_wrap">
+                    <div class="col-lg-4 col-sm-6 col-12 help_card_wrap">
                         <div class="help_card purple-top">
                             <div class="help_card_header">
                                 <h6>Смена тарифа</h6>
@@ -165,7 +166,7 @@
                         <!-- /.help_card -->
                     </div>
                     <!-- /.col-md-4 help_card_wrap -->
-                    <div class="col-md-4 help_card_wrap">
+                    <div class="col-lg-4 col-sm-6 col-12 help_card_wrap">
                         <div class="help_card dark-top">
                             <div class="help_card_header">
                                 <h6>Отложенный платеж</h6>
@@ -186,7 +187,7 @@
                         <!-- /.help_card -->
                     </div>
                     <!-- /.col-md-4 help_card_wrap -->
-                    <div class="col-md-4 help_card_wrap">
+                    <div class="col-lg-4 col-sm-6 col-12 help_card_wrap">
                         <div class="help_card red-top">
                             <div class="help_card_header">
                                 <h6>Нет интернета</h6>
@@ -212,7 +213,7 @@
                         <!-- /.help_card -->
                     </div>
                     <!-- /.col-md-4 help_card_wrap -->
-                    <div class="col-md-4 help_card_wrap">
+                    <div class="col-lg-4 col-sm-6 col-12 help_card_wrap">
                         <div class="help_card dark-blue-top">
                             <div class="help_card_header">
                                 <h6>Перед паникой</h6>
@@ -227,7 +228,7 @@
                         <!-- /.help_card -->
                     </div>
                     <!-- /.col-md-4 help_card_wrap -->
-                    <div class="col-md-4 help_card_wrap">
+                    <div class="col-lg-4 col-sm-6 col-12 help_card_wrap">
                         <div class="help_card red-top">
                             <div class="help_card_header">
                                 <h6>Техническая поддержка</h6>
@@ -470,19 +471,26 @@
     <section id="FAQ_theme_search">
         <div class="container section-container">
             <div class="section-container_header advanced_header">
-                <h2>Поиск по темам</h2>
-                <form name="theme_search" class="search_form">
-                    <div class="form-group search_wrap">
-                        <input type="text" name="search_value" placeholder="Введите ключевое слово">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                    <!-- /.form-group serach_wrap -->
-                </form>
+                <div class="row">
+                    <div class="col-lg-7 col-12"><h2 class="text-sm-center text-left text-lg-left">Поиск по темам</h2></div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-lg-5 col-12 d-flex align-items-center justify-content-center justify-content-lg-end"><form name="theme_search" class="search_form">
+                        <div class="form-group search_wrap">
+                            <input type="text" name="search_value" placeholder="Введите ключевое слово">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                        <!-- /.form-group serach_wrap -->
+                    </form></div>
+                    <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
+
+
             </div>
             <!-- /.section-container_header advanced_header -->
             <div class="section-container_body">
                 <div class="row keywords_list_wrap">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <ul class="keywords_list">
                             <li>Lorem ipsum dolor sit amet.</li>
                             <li><a href="#">Lorem ipsum dolor sit?</a></li>
@@ -501,7 +509,7 @@
                         <!-- /.keywords_list -->
                     </div>
                     <!-- /.col-md-4 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
 
                         <ul class="keywords_list">
                             <li>Lorem ipsum dolor sit amet.</li>
@@ -517,7 +525,7 @@
                         <!-- /.keywords_list -->
                     </div>
                     <!-- /.col-md-4 -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
 
                         <ul class="keywords_list">
                             <li>Lorem ipsum dolor sit amet.</li>
@@ -544,16 +552,16 @@
             </div>
             <!-- /.section-container_header -->
             <div class="section-container_body d-flex justify-content-center">
-                <div class="directory_content_wrap col-7">
+                <div class="directory_content_wrap col-lg-9 col-xl-7">
                     <p class="directory_content_text">
                         Хотите знать о дополнительных возможностях абонента и самостоятельно настраивать оборудование?
                     </p>
                     <!-- /.directory_content_text -->
                     <div class="get_directory_form_wrap">
                         <form name="get_directory">
-                            <div class="form-group form-content d-flex justify-content-between">
+                            <div class="form-group form-content d-flex justify-content-start flex-wrap flex-sm-nowrap">
                                 <input type="email" name="email" required>
-                                <button class="btn maxNet-btn maxNet-btn-purple">
+                                <button class="btn maxNet-btn maxNet-btn-purple  ">
                                     Жду справочник
                                 </button>
                                 <!-- /.btn maxNet-btn maxNet-btn-purple -->
@@ -573,7 +581,7 @@
     <!-- /#FAQ_directory -->
 
 </main>
-<footer>
+<footer class="d-none">
     <section id="footer_menu">
         <div class="container section-container">
             <div class="row justify-content-between">
@@ -987,7 +995,7 @@
         <!-- /.container section-container -->
     </section>
     <!-- /#footer_menu -->
-    <section id="footer">
+    <section id="footer" cla>
         <div class="container footer_container">
             <div class="footer_top">
                 <h6>

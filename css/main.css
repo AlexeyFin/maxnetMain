@@ -1583,6 +1583,15 @@ section#main_form .section-container .main_form_wrap .input_group .confirm_wrap 
 section#main_form .section-container .main_form_wrap .input_group .confirm_wrap .maxNet_check_wrap {
   margin-right: 0.75rem;
 }
+section#main_form .section-container .main_form_wrap .select-group {
+  display: none;
+}
+section#main_form .section-container .main_form_wrap .select-group select {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0;
+  border-color: #A9A9A9;
+}
 section#main_form .section-container .main_form_wrap .btn_wrap {
   padding: 0;
   margin: 4rem -15px 0 -15px;
@@ -3436,6 +3445,9 @@ footer section#footer .footer_container .footer_middle .social_links .social_lin
 footer section#footer .footer_container .footer_middle .social_links .social_links_item:hover {
   background-color: transparent;
   color: #ffffff;
+}
+footer section#footer .footer_container .footer_middle .blog_link {
+  display: none;
 }
 footer section#footer .footer_container .footer_bottom p {
   text-align: center;

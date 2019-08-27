@@ -34,6 +34,11 @@
             justify-content: flex-end
             img
               width: 100%
+  section#main_form
+    .section-container
+      .form_section_title_wrap
+        .form_section_title_header
+          font-size: 3.75rem
 
 @media screen and (max-width: 1024px)
   section
@@ -311,3 +316,87 @@
         padding: 1rem
         .check_group
           display: none
+        .input_group
+          .input_wrap
+            padding: 15px
+            padding-bottom: 0
+            &:nth-child(2)
+              padding-left: 15px
+            &:nth-child(1)
+              padding-bottom: 0
+              padding-right: 15px
+          .confirm_wrap
+            padding-left: 15px
+        .btn_wrap
+          padding: 0 15px
+        .select-group
+          display: block
+  footer section#footer
+    .footer_container
+      padding-top: 0.5rem
+      .footer_top
+        display: none
+      .footer_middle
+        margin: 0
+        margin-bottom: 2rem
+        border-top: none
+        .phone_numbers
+          display: none
+        .mobile_application
+          flex-wrap: wrap
+          display: flex
+          justify-content: flex-end
+
+
+
+
+@media screen and (max-width: 475px)
+  section#main_sub_banner
+    .main_sub_banner_header
+      font-size: 2.5rem
+      font-weight: 900
+  section#main_slider
+    .main_slider_container
+      padding: 1.5rem .5rem 1.5rem 1.5rem
+
+@media screen and (max-width: 375px)
+  section#main_form
+    .section-container
+      .form_section_title_wrap
+        .form_section_title_header
+          line-height: 3rem
+
+  section#main_slider
+    .main_slider_container
+      .main_slider_arrows_wrap
+        top: 335px
+  footer section#footer
+    .footer_container
+      .footer_middle
+        .social_links
+          border-bottom: 2px solid #FFFFFF
+          margin-bottom: 1rem
+          padding-bottom: .75rem
+        .mobile_application
+          border-bottom: 2px solid #FFFFFF
+          margin-bottom: 1.25rem
+          .application_link
+            width: 25%
+            margin-bottom: .75rem
+
+        .social_links
+          .social_links_item
+            width: 20px
+            height: 20px
+            font-size: .875rem
+        .blog_link
+          display: flex
+          justify-content: space-between
+
+
+  footer section#footer_menu
+    .menu_group
+      margin-bottom: 0
+  footer section#footer_menu
+    .menu_group_item_title
+      min-height: 1px

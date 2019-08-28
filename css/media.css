@@ -214,7 +214,16 @@
       width: 100%;
       text-align: center;
       margin-right: auto;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+
+  section#check_section form .form-group {
+    flex-wrap: wrap;
+    padding: 0 3rem; }
+    section#check_section form .form-group button {
+      margin-top: 1.5rem;
+      width: 100%; }
+    section#check_section form .form-group input[name="street_name"] {
+      width: 320px576; } }
 @media screen and (max-width: 576px) {
   section .section-container {
     padding: 1.75rem 0.75rem; }
@@ -438,7 +447,15 @@
       line-height: 1.5rem;
       margin-bottom: 2.75rem; }
   section#news_content_section .news_wrap .news_navigation {
-    padding: 2.25rem 2.25rem 1.25rem 2.25rem; } }
+    padding: 2.25rem 2.25rem 1.25rem 2.25rem; }
+
+  section#check_section form .form-group {
+    justify-content: space-between; }
+    section#check_section form .form-group input[name="street_name"] {
+      width: 100%; }
+    section#check_section form .form-group input[name="build_number"], section#check_section form .form-group input[name="porch_number"] {
+      width: 45%;
+      margin-top: 1rem; } }
 @media screen and (max-width: 475px) {
   main {
     overflow-x: hidden; }
@@ -493,7 +510,10 @@
     font-size: 1.5rem; }
 
   section#video_about .video_about_content .content_text {
-    font-size: 1.15rem; } }
+    font-size: 1.15rem; }
+
+  section#check_section form .form-group {
+    padding: 0 2rem; } }
 @media screen and (max-width: 414px) {
   section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
     max-width: 310px; }
@@ -513,7 +533,10 @@
       justify-content: center;
       flex-wrap: wrap;
       width: 100%;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+
+  section#check_section form .form-group {
+    padding: 0; } }
 @media screen and (max-width: 375px) {
   section .section-container_header h2 {
     font-size: 2rem; }
@@ -570,6 +593,10 @@
 @media screen and (max-width: 320px) {
   section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
     padding: 0.875rem 1.25rem;
-    max-width: 240px; } }
+    max-width: 240px; }
+
+  section#check_section form .form-group input[name="build_number"], section#check_section form .form-group input[name="porch_number"] {
+    width: 43%;
+    margin-top: 1rem; } }
 
 /*# sourceMappingURL=media.css.map */

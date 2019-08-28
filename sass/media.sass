@@ -286,6 +286,16 @@
         text-align: center
         margin-right: auto
         margin-bottom: 1rem
+  section#check_section
+    form
+      .form-group
+        flex-wrap: wrap
+        padding: 0 3rem
+        button
+          margin-top: 1.5rem
+          width: 100%
+        input[name="street_name"]
+          width: 320px576
 
 
 @media screen and (max-width: 576px)
@@ -537,6 +547,15 @@
     .news_wrap
       .news_navigation
         padding: 2.25rem 2.25rem 1.25rem 2.25rem
+  section#check_section
+    form
+      .form-group
+        justify-content: space-between
+        input[name="street_name"]
+          width: 100%
+        input[name="build_number"],input[name="porch_number"]
+          width: 45%
+          margin-top: 1rem
 
 
 @media screen and (max-width: 475px)
@@ -607,6 +626,10 @@
     .video_about_content
       .content_text
         font-size: 1.15rem
+  section#check_section
+    form
+      .form-group
+        padding: 0 2rem
 
 
 @media screen and (max-width: 414px)
@@ -634,6 +657,10 @@
         flex-wrap: wrap
         width: 100%
         margin-bottom: 1rem
+  section#check_section
+    form
+      .form-group
+        padding: 0
 @media screen and (max-width: 375px)
   section
     .section-container_header
@@ -722,4 +749,11 @@
           input
             padding: .875rem 1.25rem
             max-width: 240px
+  section#check_section
+    form
+      .form-group
+        input[name="build_number"],input[name="porch_number"]
+          width: 43%
+          margin-top: 1rem
+
 

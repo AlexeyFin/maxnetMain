@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b014a83b-26fa-4c0d-beb6-afad6e01b66d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check.html" beforeDir="false" afterPath="$PROJECT_DIR$/check.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/video.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47354499">
+    <splitter split-orientation="horizontal" split-proportion="0.58201057">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -30,11 +26,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/video.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="937" column="38" selection-start-line="937" selection-start-column="38" selection-end-line="937" selection-end-column="38" />
+                <state relative-caret-position="134">
+                  <caret line="941" column="12" lean-forward="true" selection-start-line="941" selection-start-column="12" selection-end-line="949" selection-end-column="20" />
                   <folding>
                     <element signature="n#link#0;n#head#0;n#html#0;n#!!top" />
                     <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
@@ -267,27 +263,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sass/media.sass">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/check.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="574">
-                  <caret line="723" column="25" selection-start-line="723" selection-start-column="25" selection-end-line="723" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#146#198#0" />
-                    <element signature="e#223#320#0" />
-                    <element signature="e#241#319#0" />
-                    <element signature="e#349#474#0" />
-                    <element signature="e#367#405#0" />
-                    <element signature="e#423#474#0" />
-                    <element signature="e#438#474#0" />
-                    <element signature="e#497#722#0" />
-                    <element signature="e#524#722#0" />
-                    <element signature="e#548#722#0" />
-                    <element signature="e#585#722#0" />
-                    <element signature="e#743#860#0" />
-                    <element signature="e#766#860#0" />
-                    <element signature="e#797#860#0" />
-                  </folding>
+                <state relative-caret-position="315">
+                  <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -299,9 +279,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/media.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="523">
-                  <caret line="712" column="28" selection-start-line="712" selection-start-column="28" selection-end-line="712" selection-end-column="28" />
+                <state relative-caret-position="394">
+                  <caret line="755" column="19" selection-start-line="755" selection-start-column="19" selection-end-line="755" selection-end-column="19" />
                   <folding>
+                    <element signature="e#56#1430#0" />
                     <element signature="e#66#119#0" />
                     <element signature="e#146#198#0" />
                     <element signature="e#223#320#0" />
@@ -325,6 +306,8 @@
                     <element signature="e#1133#1169#0" />
                     <element signature="e#1201#1260#0" />
                     <element signature="e#1288#1344#0" />
+                    <element signature="e#1364#1429#0" />
+                    <element signature="e#1465#3451#0" />
                     <element signature="e#1311#1364#0" />
                     <element signature="e#1389#1486#0" />
                     <element signature="e#1407#1486#0" />
@@ -360,6 +343,8 @@
                     <element signature="e#3005#3097#0" />
                     <element signature="e#3033#3097#0" />
                     <element signature="e#3129#3188#0" />
+                    <element signature="e#3380#3450#0" />
+                    <element signature="e#3408#3450#0" />
                     <element signature="e#3237#3286#0" />
                     <element signature="e#3313#3452#0" />
                     <element signature="e#3336#3452#0" />
@@ -413,7 +398,12 @@
                     <element signature="e#5988#6031#0" />
                     <element signature="e#6075#6211#0" />
                     <element signature="e#6512#6640#0" />
-                    <element signature="e#6251#12683#0" />
+                    <element signature="e#6540#6659#0" />
+                    <element signature="e#6602#6640#0" />
+                    <element signature="e#6687#6918#0" />
+                    <element signature="e#6715#6918#0" />
+                    <element signature="e#6817#6918#0" />
+                    <element signature="e#6943#7143#0" />
                     <element signature="e#6261#6532#0" />
                     <element signature="e#6284#6531#0" />
                     <element signature="e#6329#6531#0" />
@@ -495,6 +485,8 @@
                     <element signature="e#12470#12595#0" />
                     <element signature="e#12512#12594#0" />
                     <element signature="e#12611#12682#0" />
+                    <element signature="e#13440#13505#0" />
+                    <element signature="e#13470#13505#0" />
                     <element signature="e#12748#12822#0" />
                     <element signature="e#12776#12822#0" />
                     <element signature="e#12845#12913#0" />
@@ -519,6 +511,10 @@
                     <element signature="e#13959#14073#0" />
                     <element signature="e#13985#14073#0" />
                     <element signature="e#14804#14896#0" />
+                    <element signature="e#14832#14896#0" />
+                    <element signature="e#14858#14896#0" />
+                    <element signature="e#15025#15096#0" />
+                    <element signature="e#15050#15096#0" />
                     <element signature="e#14141#14271#0" />
                     <element signature="e#14187#14271#0" />
                     <element signature="e#14206#14271#0" />
@@ -527,6 +523,10 @@
                     <element signature="e#14305#14479#0" />
                     <element signature="e#14325#14479#0" />
                     <element signature="e#14375#14479#0" />
+                    <element signature="e#15529#15699#0" />
+                    <element signature="e#15557#15726#0" />
+                    <element signature="e#15574#15699#0" />
+                    <element signature="e#15764#17677#0" />
                     <element signature="e#14528#14590#0" />
                     <element signature="e#14558#14590#0" />
                     <element signature="e#14611#14728#0" />
@@ -561,7 +561,9 @@
                     <element signature="e#16191#16299#0" />
                     <element signature="e#16229#16299#0" />
                     <element signature="e#16255#16299#0" />
-                    <element signature="e#16337#16532#0" />
+                    <element signature="e#17569#17664#0" />
+                    <element signature="e#17597#17664#0" />
+                    <element signature="e#17623#17664#0" />
                     <element signature="e#16364#16531#0" />
                     <element signature="e#16410#16531#0" />
                     <element signature="e#16429#16531#0" />
@@ -600,6 +602,7 @@
         <option value="$PROJECT_DIR$/FAQ.html" />
         <option value="$PROJECT_DIR$/sass/main.sass" />
         <option value="$PROJECT_DIR$/video.html" />
+        <option value="$PROJECT_DIR$/check.html" />
         <option value="$PROJECT_DIR$/sass/media.sass" />
       </list>
     </option>
@@ -725,7 +728,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8660000" />
+    <option name="totallyTimeSpent" value="9397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1920" height="1050" extended-state="6" />
@@ -847,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="937" column="38" selection-start-line="937" selection-start-column="38" selection-end-line="937" selection-end-column="38" />
+        <state relative-caret-position="134">
+          <caret line="941" column="12" lean-forward="true" selection-start-line="941" selection-start-column="12" selection-end-line="949" selection-end-column="20" />
           <folding>
             <element signature="n#link#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#link#1;n#head#0;n#html#0;n#!!top" />
@@ -1080,11 +1083,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/check.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/media.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="712" column="28" selection-start-line="712" selection-start-column="28" selection-end-line="712" selection-end-column="28" />
+        <state relative-caret-position="394">
+          <caret line="755" column="19" selection-start-line="755" selection-start-column="19" selection-end-line="755" selection-end-column="19" />
           <folding>
+            <element signature="e#56#1430#0" />
             <element signature="e#66#119#0" />
             <element signature="e#146#198#0" />
             <element signature="e#223#320#0" />
@@ -1108,6 +1119,8 @@
             <element signature="e#1133#1169#0" />
             <element signature="e#1201#1260#0" />
             <element signature="e#1288#1344#0" />
+            <element signature="e#1364#1429#0" />
+            <element signature="e#1465#3451#0" />
             <element signature="e#1311#1364#0" />
             <element signature="e#1389#1486#0" />
             <element signature="e#1407#1486#0" />
@@ -1143,6 +1156,8 @@
             <element signature="e#3005#3097#0" />
             <element signature="e#3033#3097#0" />
             <element signature="e#3129#3188#0" />
+            <element signature="e#3380#3450#0" />
+            <element signature="e#3408#3450#0" />
             <element signature="e#3237#3286#0" />
             <element signature="e#3313#3452#0" />
             <element signature="e#3336#3452#0" />
@@ -1196,7 +1211,12 @@
             <element signature="e#5988#6031#0" />
             <element signature="e#6075#6211#0" />
             <element signature="e#6512#6640#0" />
-            <element signature="e#6251#12683#0" />
+            <element signature="e#6540#6659#0" />
+            <element signature="e#6602#6640#0" />
+            <element signature="e#6687#6918#0" />
+            <element signature="e#6715#6918#0" />
+            <element signature="e#6817#6918#0" />
+            <element signature="e#6943#7143#0" />
             <element signature="e#6261#6532#0" />
             <element signature="e#6284#6531#0" />
             <element signature="e#6329#6531#0" />
@@ -1278,6 +1298,8 @@
             <element signature="e#12470#12595#0" />
             <element signature="e#12512#12594#0" />
             <element signature="e#12611#12682#0" />
+            <element signature="e#13440#13505#0" />
+            <element signature="e#13470#13505#0" />
             <element signature="e#12748#12822#0" />
             <element signature="e#12776#12822#0" />
             <element signature="e#12845#12913#0" />
@@ -1302,6 +1324,10 @@
             <element signature="e#13959#14073#0" />
             <element signature="e#13985#14073#0" />
             <element signature="e#14804#14896#0" />
+            <element signature="e#14832#14896#0" />
+            <element signature="e#14858#14896#0" />
+            <element signature="e#15025#15096#0" />
+            <element signature="e#15050#15096#0" />
             <element signature="e#14141#14271#0" />
             <element signature="e#14187#14271#0" />
             <element signature="e#14206#14271#0" />
@@ -1310,6 +1336,10 @@
             <element signature="e#14305#14479#0" />
             <element signature="e#14325#14479#0" />
             <element signature="e#14375#14479#0" />
+            <element signature="e#15529#15699#0" />
+            <element signature="e#15557#15726#0" />
+            <element signature="e#15574#15699#0" />
+            <element signature="e#15764#17677#0" />
             <element signature="e#14528#14590#0" />
             <element signature="e#14558#14590#0" />
             <element signature="e#14611#14728#0" />
@@ -1344,7 +1374,9 @@
             <element signature="e#16191#16299#0" />
             <element signature="e#16229#16299#0" />
             <element signature="e#16255#16299#0" />
-            <element signature="e#16337#16532#0" />
+            <element signature="e#17569#17664#0" />
+            <element signature="e#17597#17664#0" />
+            <element signature="e#17623#17664#0" />
             <element signature="e#16364#16531#0" />
             <element signature="e#16410#16531#0" />
             <element signature="e#16429#16531#0" />

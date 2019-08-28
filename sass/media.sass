@@ -53,6 +53,9 @@
     .equipment_catalog_wrap
       .small_item
         padding: 0
+  section#news_content_section
+    .section-container_body
+      padding: 0 5rem 4rem 5rem
 
 
 @media screen and (max-width: 1024px)
@@ -134,6 +137,9 @@
     .equipment_catalog_wrap
       .small_item_content
         background-position: 80px 10px
+  section#news_content_section
+    .section-container_body
+      padding: 0 4rem 4rem 4rem
 
 @media screen and (max-width: 768px)
   section
@@ -231,6 +237,29 @@
         background-position: 180px 10px
         .title
           padding-bottom: 90px
+  section#news_content_section
+    .section-container_body
+      padding: 0 2rem 4rem 2rem
+      .news_wrap
+        .news_bottom_img_wrap
+          img
+            margin-top: 12px
+  section#news_want_to_know_more
+    .want_to_know_more_wrap
+      .want_to_know_more_img
+        display: none
+      .want_to_know_more_content
+        &_header
+          h4
+            text-align: center
+        &_form
+          .maxNet_easy_form
+            display: flex
+            flex-direction: column
+            align-items: center
+            input
+              width: 100%
+
 
 @media screen and (max-width: 576px)
   section
@@ -468,6 +497,19 @@
       .store-item
         .item_control
           justify-content: center
+  section#news_content_section
+    .section-container_body
+      padding: 0 1.5rem 4rem 1.5rem
+    .news_wrap_content
+      padding: 2rem 3rem
+      .news_text
+        font-size: 1rem
+        line-height: 1.5rem
+        margin-bottom: 2.75rem
+
+    .news_wrap
+      .news_navigation
+        padding: 2.25rem 2.25rem 1.25rem 2.25rem
 
 
 @media screen and (max-width: 475px)
@@ -506,6 +548,24 @@
       margin: 0
       .small_item_content
         background-position: 240px 10px
+  section#news_content_section
+    .news_wrap
+      .news_navigation
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        .news_link_wrap
+          margin-bottom: 1rem
+
+  section#news_want_to_know_more
+    .want_to_know_more_wrap
+      .want_to_know_more_content_form
+        .maxNet_easy_form
+          .form-group
+            width: 75%
+          input
+            min-width: 100%
+
 
 
 @media screen and (max-width: 414px)
@@ -586,6 +646,17 @@
     .equipment_catalog_wrap
       .small_item_content
         background-position: 190px 10px
+  section#news_content_section
+    .section-container_body
+      padding: 0 0.5rem 4rem 0.5rem
+      .news_wrap_content
+        padding: 2rem 1rem
+  section#news_want_to_know_more
+    .want_to_know_more_wrap
+      .want_to_know_more_content_form
+        .maxNet_easy_form
+          .form-group
+            width: 95%
 @media screen and (max-width: 320px)
   section#FAQ_theme_search
     .section-container_header.advanced_header
@@ -594,5 +665,4 @@
           input
             padding: .875rem 1.25rem
             max-width: 240px
-
 

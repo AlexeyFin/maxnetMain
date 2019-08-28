@@ -39,6 +39,21 @@
       .form_section_title_wrap
         .form_section_title_header
           font-size: 3.75rem
+  section#about_partners
+    .partners_container
+
+      .partners_wrap
+        justify-content: center
+        .partner_logo
+          width: 18%
+          margin-bottom: 1rem
+        .partner
+          height: 62px
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .small_item
+        padding: 0
+
 
 @media screen and (max-width: 1024px)
   section
@@ -102,6 +117,23 @@
         .maxNet_rotate_card
           .front,.back
             padding: 0 1rem
+  section#about_carrier
+    .section-container
+      .carrier_wrap
+        .carrier-content
+          .carrier-content_title
+            font-size: 3rem
+  section#about_stages_of_development
+    .about_slider_container
+      .icon_wrap
+        top: -70px
+  section#about_about_company
+    .about_services_item
+      height: 300px
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .small_item_content
+        background-position: 80px 10px
 
 @media screen and (max-width: 768px)
   section
@@ -173,6 +205,32 @@
         .help_card_wrap
           .help_card
             height: 360px
+  section#about_about_company
+    .about_services_item
+      height: 200px
+  section#about_stages_of_development
+    .about_slider_container
+      .icon_wrap
+        top: -95px
+      .slider_arrows_wrap
+        top: -3rem
+  section#about_partners
+    .partners_container
+      .partners_wrap
+        .partner_logo
+          width: 25%
+  section#about_carrier
+    .section-container
+      .carrier_wrap
+        .carrier-content
+          .carrier-content_title
+            font-size: 2.25rem
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .small_item_content
+        background-position: 180px 10px
+        .title
+          padding-bottom: 90px
 
 @media screen and (max-width: 576px)
   section
@@ -379,7 +437,37 @@
       button.maxNet-btn
         min-width: 175px
         padding: 0.75rem
-
+  section#about_about_company
+    .about_services_item:nth-child(4)
+      border: 2px none #003893
+      border-right-style: solid
+  section#about_stages_of_development
+    display: none
+  section#about_partners
+    .partners_container
+      .partners_wrap
+        .partner_logo
+          width: 33%
+  section#about_carrier
+    overflow-x: hidden
+    .section-container
+      .carrier_wrap
+        margin-top: 4rem
+        margin-bottom: 3rem
+        .carrier-content
+          .carrier-content_title
+            width: 100%
+            margin-bottom: 1.25rem
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      margin: 0
+      .small_item_content
+        background-position: 120px 10px
+  section#equipment_store
+    .store_wrap
+      .store-item
+        .item_control
+          justify-content: center
 
 
 @media screen and (max-width: 475px)
@@ -399,6 +487,25 @@
         .help_card_wrap
           .help_card
             min-height: 360px
+  section#about_partners
+    .partners_container
+      .partners_wrap
+        .partner_logo
+          width: 49%
+          display: flex
+          justify-content: center
+          align-items: center
+  section#about_carrier
+    .section-container .carrier_wrap
+      margin-top: 2.5rem
+      margin-bottom: 2rem
+  section#about_maxnet_is
+    overflow-x: hidden
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      margin: 0
+      .small_item_content
+        background-position: 240px 10px
 
 
 @media screen and (max-width: 414px)
@@ -475,7 +582,10 @@
         .card
           .card-header
             padding: 0 1.25rem
-
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .small_item_content
+        background-position: 190px 10px
 @media screen and (max-width: 320px)
   section#FAQ_theme_search
     .section-container_header.advanced_header

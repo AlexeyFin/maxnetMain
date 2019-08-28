@@ -6,6 +6,7 @@ body
   font-size: 16px
   color: $text_color_dark
   font-family: 'Roboto', sans-serif
+  overflow-x: hidden
 
 h1, h2, h3, h4, h5, h6
   color: $text_color_dark
@@ -36,6 +37,9 @@ p, a
 a
   font-family: 'Work Sans', sans-serif
 
+img
+  width: 100%
+
 
 button.btn, a.btn
   font-family: 'Work Sans', sans-serif
@@ -43,6 +47,25 @@ button.btn, a.btn
 @media screen and (min-width: 1500px)
   .container
     max-width: 1440px
+
+
+.sub_header
+  background-color: #81A8E9
+  padding: 20px
+  &_content
+    display: flex
+    justify-content: center
+    .sub_header_message,.sub_header_link
+      color: $text_color_white
+      margin-bottom: 0
+    .sub_header_message
+      font-size: 1rem
+      font-weight: 500
+    .sub_header_link
+      margin-left: 1.25rem
+      font-family: "Work Sans", sans-serif
+      font-weight: 900
+      text-decoration: underline
 
 section
   .section-container
@@ -1452,6 +1475,8 @@ section#about_stages_of_development
     .about_slider_wrap_item
       outline: none !important
       box-shadow: none !important
+      img
+        width: 100%
 
     .slider_arrows_wrap
       position: absolute
@@ -1501,6 +1526,7 @@ section#about_partners
 
       .partner
         height: 62px
+        width: 100%
 
 
 section#about_carrier

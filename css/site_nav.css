@@ -71,7 +71,7 @@ Main components
 }
 
 .cd-main-header {
-  min-height: 50px;
+  min-height: 80px;
   background: #ffffff;
   z-index: 3;
 }
@@ -126,15 +126,15 @@ Main components
 }
 @media only screen and (min-width: 1170px) {
   .cd-logo {
-    top: 26px;
-    left: 4em;
+    top: 20px;
+    left: 22%;
   }
 }
 
 .cd-header-buttons {
   position: absolute;
   display: inline-block;
-  top: 3px;
+  top: calc(50% - 22px);
   right: 5%;
 }
 .cd-header-buttons li {
@@ -152,7 +152,7 @@ Main components
 @media only screen and (min-width: 1170px) {
   .cd-header-buttons {
     top: 18px;
-    right: 4em;
+    right: 22%;
   }
 }
 
@@ -513,7 +513,7 @@ Main components
 @media only screen and (min-width: 1170px) {
   .cd-primary-nav {
     position: static;
-    padding: 0 150px 0 0;
+    padding: 0 27% 0 0;
     height: auto;
     width: auto;
     float: right;
@@ -570,19 +570,23 @@ Main components
     height: 80px;
     line-height: 80px;
     padding: 0 10px;
-    color: #2e3233;
+    color: #111F4D;
     overflow: visible;
     border-bottom: none;
     -webkit-transition: color 0.3s, box-shadow 0.3s;
     -moz-transition: color 0.3s, box-shadow 0.3s;
     transition: color 0.3s, box-shadow 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
   }
   .cd-primary-nav > li > a:hover {
-    color: #69aa6f;
+    color: #B824A4;
+    text-decoration: none;
   }
   .cd-primary-nav > li > a.selected {
-    color: #69aa6f;
-    box-shadow: inset 0 -2px 0 #69aa6f;
+    color: #B824A4;
+    box-shadow: inset 0 -2px 0 #B824A4;
   }
   .cd-primary-nav .go-back, .cd-primary-nav .see-all {
     display: none;
@@ -649,14 +653,15 @@ Main components
     transition: color 0.2s, background 0.2s, border 0.2s;
   }
   .cd-primary-nav .cd-secondary-nav > .see-all a:hover, .cd-primary-nav .cd-nav-gallery > .see-all a:hover, .cd-primary-nav .cd-nav-icons > .see-all a:hover {
-    background: #2e3233;
-    border-color: #2e3233;
-    color: #ffffff;
+    /*background: #2e3233;*/
+    /*border-color: #2e3233;*/
+    /*color: #ffffff;*/
   }
   .cd-primary-nav .cd-secondary-nav > li {
     /* change the height according to your needs - you can even set height: auto */
-    height: 340px;
+    /*height: 280px;*/
     /* here you set the number of columns - use width percentage */
+    height: auto;
     width: 23%;
     float: left;
     margin-right: 2.66%;
@@ -673,10 +678,10 @@ Main components
   }
   .cd-primary-nav .cd-secondary-nav > li > a {
     /* secondary nav title */
-    color: #69aa6f;
+    color:  #111F4D;
     font-weight: bold;
-    font-size: 1.6rem;
-    margin-bottom: .6em;
+    font-size: 18px;
+    margin-bottom: 29px;
   }
   .cd-primary-nav .cd-secondary-nav a {
     height: 30px;
@@ -684,10 +689,11 @@ Main components
     padding: 0 18% 0 0;
     color: #2e3233;
     border-bottom: none;
-    font-size: 1.4rem;
+    font-size: 14px;
   }
   .cd-primary-nav .cd-secondary-nav a:hover {
-    color: #69aa6f;
+    color: #003893;
+    text-decoration: none;
   }
   .cd-primary-nav .cd-secondary-nav ul {
     /* Force Hardware Acceleration in WebKit */
@@ -882,23 +888,23 @@ Main components
   .cd-primary-nav > .has-children > a::after {
     right: 7px;
   }
-  .cd-primary-nav > .has-children > a.selected::before, .cd-primary-nav > .has-children > a.selected::after {
-    width: 14px;
-  }
-  .cd-primary-nav > .has-children > a.selected::before {
-    -webkit-transform: translateX(5px) rotate(-45deg);
-    -moz-transform: translateX(5px) rotate(-45deg);
-    -ms-transform: translateX(5px) rotate(-45deg);
-    -o-transform: translateX(5px) rotate(-45deg);
-    transform: translateX(5px) rotate(-45deg);
-  }
-  .cd-primary-nav > .has-children > a.selected::after {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+  /*.cd-primary-nav > .has-children > a.selected::before, .cd-primary-nav > .has-children > a.selected::after {*/
+  /*  width: 14px;*/
+  /*}*/
+  /*.cd-primary-nav > .has-children > a.selected::before {*/
+  /*  -webkit-transform: translateX(5px) rotate(-45deg);*/
+  /*  -moz-transform: translateX(5px) rotate(-45deg);*/
+  /*  -ms-transform: translateX(5px) rotate(-45deg);*/
+  /*  -o-transform: translateX(5px) rotate(-45deg);*/
+  /*  transform: translateX(5px) rotate(-45deg);*/
+  /*}*/
+  /*.cd-primary-nav > .has-children > a.selected::after {*/
+  /*  -webkit-transform: rotate(45deg);*/
+  /*  -moz-transform: rotate(45deg);*/
+  /*  -ms-transform: rotate(45deg);*/
+  /*  -o-transform: rotate(45deg);*/
+  /*  transform: rotate(45deg);*/
+  /*}*/
 
   .cd-secondary-nav > .has-children > a::before, .cd-secondary-nav > .has-children > a::after {
     /* remove arrows on secondary nav titles */
@@ -1063,5 +1069,73 @@ support for no js
 
   .no-js .nav-is-fixed .cd-primary-nav {
     position: fixed;
+  }
+}
+
+@media screen and (min-width: 1025px){
+  .cd-primary-nav .cd-secondary-nav, .cd-primary-nav .cd-nav-gallery, .cd-primary-nav .cd-nav-icons{
+    display: flex;
+    justify-content: center;
+    padding: 50px 180px;
+    padding-bottom: 90px;
+  }
+  .cd-primary-nav .cd-secondary-nav ul{
+    padding-left: 0;
+  }
+  .cd-primary-nav .cd-secondary-nav > li{
+    border: none;
+    padding-left: 48px;
+    margin-right: 0;
+  }
+  .inline-nav{
+    padding-bottom: 0 !important;
+  }
+  .inline-nav li a{
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+.dropdown .nav-dropdown{
+  background: transparent;
+}
+.dropdown .dropdown-menu .dropdown-item{
+  color: #111F4D;
+  border: none;
+}
+.dropdown .dropdown-menu .dropdown-item:active{
+  background: white;
+}
+.cd-additional-link{
+
+}
+.cd-additional-link a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  z-index: 3;
+}
+@media screen and (max-width: 1720px) {
+  .cd-logo{
+    left: 12%;
+  }
+  .cd-header-buttons{
+    right: 12%;
+  }
+  .cd-primary-nav{
+    padding-right: 20%;
+  }
+}
+@media screen and (max-width: 1024px){
+  .cd-primary-nav{
+    padding-right: 0;
   }
 }

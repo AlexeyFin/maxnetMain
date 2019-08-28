@@ -23,6 +23,7 @@
 
     <!--Custom Styles-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <title>MaxNet</title>
 </head>
@@ -315,8 +316,8 @@
                     <h5>Что нужно знать</h5>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4 data_item grey_data_item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-sm-6 data_item grey_data_item">
                         <div class="img_wrap">
                             <img src="images/icons/Vector.svg" alt="">
                         </div>
@@ -324,7 +325,7 @@
                             Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
                         </div>
                     </div>
-                    <div class="col-md-4 data_item grey_data_item">
+                    <div class="col-md-4 col-sm-6 data_item grey_data_item">
                         <div class="img_wrap">
                             <img src="images/icons/Vector.svg" alt="">
                         </div>
@@ -332,7 +333,7 @@
                             Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
                         </div>
                     </div>
-                    <div class="col-md-4 data_item grey_data_item">
+                    <div class="col-md-4 col-sm-6 data_item grey_data_item">
                         <div class="img_wrap">
                             <img src="images/icons/Vector.svg" alt="">
                         </div>
@@ -353,8 +354,8 @@
                     <h5>Преимущества</h5>
                 </div>
 
-                <div class="row mt-4">
-                    <div class="col-md-4 data_item transparent_data_item">
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-md-4 col-sm-6 data_item transparent_data_item">
                         <div class="img_wrap">
                             <img src="images/icons/Vector.svg" alt="">
                         </div>
@@ -362,7 +363,7 @@
                             Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
                         </div>
                     </div>
-                    <div class="col-md-4 data_item transparent_data_item">
+                    <div class="col-md-4 col-sm-6 data_item transparent_data_item">
                         <div class="img_wrap">
                             <img src="images/icons/Vector.svg" alt="">
                         </div>
@@ -370,7 +371,7 @@
                             Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
                         </div>
                     </div>
-                    <div class="col-md-4 data_item transparent_data_item">
+                    <div class="col-md-4 col-sm-6 data_item transparent_data_item">
                         <div class="img_wrap">
                             <img src="images/icons/Vector.svg" alt="">
                         </div>
@@ -392,7 +393,7 @@
     </section>
 
 </main>
-<footer>
+<footer class="d-none">
     <section id="footer_menu">
         <div class="container section-container">
             <div class="row justify-content-between">
@@ -897,6 +898,58 @@
             infinite: false,
             nextArrow: '<button class="slick-arrow-right  slick-arrow"><i class="fas fa-chevron-right"></i></button>',
             prevArrow: '<button class="slick-arrow-left  slick-arrow"><i class="fas fa-chevron-left"></i></button>',
+            responsive:  [
+                {
+                    breakpoint: 1367,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        autoplay: true,
+                        arrows: true
+                    }
+                },
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        arrows: false,
+                        autoplay: true,
+                        infinite: true,
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        autoplay: true,
+                        arrows: false
+
+                    }
+                },
+                {
+                    breakpoint: 475,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        autoplay: true,
+                        infinity: true
+
+                    }
+                },
+                // {
+                //     breakpoint: 375,
+                //     settings: {
+                //         arrow: false,
+                //         slidesToShow: 1,
+                //         slidesToScroll: 1
+                //
+                //     }
+                // }
+
+            ]
 
         });
 

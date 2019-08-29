@@ -21,8 +21,13 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
 
+    <!--Tooltipster-->
+    <link rel="stylesheet" href="css/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="css/tooltipster-sideTip-shadow.min.css">
+
     <!--Custom Styles-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <title>MaxNet</title>
 </head>
@@ -41,7 +46,7 @@
             </h2>
         </div>
         <div class="section-container_body">
-            <p class="about text-center px-5 mb-5">
+            <p class="about text-center px-xl-3 mb-5">
                 На SSD дисках Ваш сайт будет работать в 5 раз быстрее, чем на HDD-дисках. Применение SSD дисков актуально для интернет-магазинов, больших баз данных, высоконагруженных систем и т. д.
             </p>
 
@@ -52,15 +57,75 @@
                             <img src="images/icons/x5.png" alt="">
                         </div>
                         <h5 class="tariff_title">SSD 1 Gb</h5>
-                        <p class="count"> 53 грн / 1 месяц <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
+                        <p class="count">
+                            53 грн / 1 месяц
+                            <span class="info_icon custom_tooltip_price" data-tooltip-content="#tooltip_content_1">
+                            </span>
+
+
+                        </p>
                         <ul class="options_list">
                             <li> <i class="fas fa-check-square mr-1"></i> 1 сайт</li>
                             <li> <i class="fas fa-check-square mr-1"></i> 1 Gb на SSD диске</li>
                             <li> <i class="fas fa-check-square mr-1"></i> Неограниченное кол-во баз данных MySQL</li>
-                            <li> <i class="fas fa-check-square mr-1"></i> Стандартный технический пакет а</li>
+                            <li> <i class="fas fa-check-square mr-1"></i>
+                                Стандартный технический пакет
+                                <span class="info_icon custom_tooltip_details" data-tooltip-content="#details_tooltip_content_1">
+
+                                </span>
+                            </li>
                         </ul>
 
+                        <div class="tooltip_templates  d-none">
+                            <div class="price_tooltip" id="tooltip_content_1">
+                                <p>1 год <span class="text_blue"> 120 грн</span></p>
+                                <p>1 год <span class="text_blue"> 120 грн</span></p>
+                                <p>1 год <span class="text_blue"> 120 грн</span></p>
+                                <p>1 год <span class="text_blue"> 120 грн</span></p>
+                            </div>
+                         </div>
 
+                        <div class="tooltip_templates  d-none">
+                            <div class="detail_tooltip" id="details_tooltip_content_1">
+                                <p>
+                                    <img src="images/icons/checked_green.svg" alt="">
+                                    <span>Неограниченный трафик </span>
+                                </p>
+                                <p>
+                                    <img src="images/icons/checked_green.svg" alt="">
+                                    <span>Неограниченный трафик </span>
+                                </p>
+                                <p>
+                                    <img src="images/icons/checked_green.svg" alt="">
+                                    <span>Неограниченный трафик </span>
+                                </p>
+                                <p>
+                                    <img src="images/icons/checked_green.svg" alt="">
+                                    <span>Неограниченный трафик </span>
+                                </p>
+                                <p>
+                                    <img src="images/icons/checked_green.svg" alt="">
+                                    <span>Неограниченный трафик </span>
+                                </p>
+                                <p>
+                                    <img src="images/icons/checked_green.svg" alt="">
+                                    <span>Неограниченный трафик </span>
+                                </p>
+                                <p>
+                                    <img src="images/icons/checked_green.svg" alt="">
+                                    <span>Неограниченный трафик </span>
+                                </p>
+                                <p>
+                                    <img src="images/icons/checked_green.svg" alt="">
+                                    <span>Неограниченный трафик </span>
+                                </p>
+                                <p>
+                                    <img src="images/icons/checked_green.svg" alt="">
+                                    <span>Неограниченный трафик </span>
+                                </p>
+
+                            </div>
+                         </div>
                         <div class="get_btn_wrap">
                             <a href="#" class="btn maxNet-btn maxNet-btn-purple">Заказать</a>
                         </div>
@@ -244,8 +309,18 @@
                         <div class="side_icon">
 
                         </div>
-                        <h5 class="tariff_title">Bronze</h5>
-                        <p class="count"> 53 грн / 1 месяц <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
+                        <h5 class="tariff_title">Iron
+                            <span class="info_icon custom_about_tooltip" data-tooltip-content="#about_tooltip_content_1"></span>
+
+                        </h5>
+                        <div class="tooltip_templates  d-none">
+                            <div class="about_tooltip" id="about_tooltip_content_1">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ducimus possimus quas! Consequuntur cumque ducimus iste nulla quae quibusdam reiciendis suscipit veritatis! Dignissimos dolorem iure, neque non numquam perferendis repellendus repudiandae tempora voluptate? Accusamus consequuntur eos exercitationem fugiat iusto nemo nostrum odio optio quibusdam sequi temporibus, veniam voluptatum.</p>
+
+                            </div>
+                        </div>
+                        <p class="count"> 53 грн / 1 месяц
+                            </p>
                         <ul class="options_list">
                             <li> <i class="fas fa-check-square mr-1"></i> 1 сайт</li>
                             <li> <i class="fas fa-check-square mr-1"></i> 1 Gb на SSD диске</li>
@@ -397,13 +472,13 @@
     <div class="container section-container white-section">
         <div class="section-container_body">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-12">
                     <div class="whois_card">
                         <h5 class="title">
                             Сервис Whois
                         </h5>
                         <p class="text">
-                            Введите домен, <br> IP-адрес — и получите полную информацию о владельце
+                            Введите домен,  IP-адрес — и получите полную информацию о владельце
                         </p>
                         
                         <div class="logo_wrap">
@@ -423,7 +498,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-12">
                     <div class="features_wrap">
                         <h5 class="features_wrap_title">
                             Хостинг-провайдер «Макснет» — это надежность и бесперебойность работы Вашего сайта
@@ -538,7 +613,7 @@
 </section>
 
 </main>
-<footer>
+<footer class="d-none">
     <section id="footer_menu">
         <div class="container section-container">
             <div class="row justify-content-between">
@@ -1025,6 +1100,7 @@
 
 
 <script src="script/slick.min.js"></script>
+<script src="script/tooltipster.bundle.min.js"></script>
 
 
 <script>
@@ -1033,10 +1109,58 @@
             nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',
             prevArrow: '<button class="slick-arrow-left"><i class="fas fa-arrow-left"></i></button>',
             slidesToShow: 4,
+            responsive:  [
+                {
+                    breakpoint: 1367,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        autoplay: true,
+                        arrows: true
+                    }
+                },
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        arrows: false,
+                        autoplay: true,
+                        infinite: true,
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        autoplay: true,
+                        arrows: false
+
+                    }
+                },
+                {
+                    breakpoint: 476,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        autoplay: true,
+                        infinity: true
+
+                    }
+                },
+
+
+            ]
 
         });
 
-
+        $('.custom_tooltip_price, .custom_tooltip_details, .custom_about_tooltip').tooltipster({
+            contentCloning: true,
+            theme: 'tooltipster-shadow',
+            trigger: 'hover'
+        });
 
 
     });

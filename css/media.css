@@ -105,7 +105,10 @@
     padding: 0 4rem 4rem 4rem; }
 
   section#get_consultation .consultation-container .text_wrap, section#get_consultation .consultation-container .link_wrap {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+
+  .satellite_connection .title {
+    width: 100%; } }
 @media screen and (max-width: 768px) {
   section .section-container {
     padding: 2rem 1.5rem; }
@@ -223,7 +226,18 @@
       margin-top: 1.5rem;
       width: 100%; }
     section#check_section form .form-group input[name="street_name"] {
-      width: 320px576; } }
+      width: 320px576; }
+
+  .data-table_body {
+    padding: 1rem 1.25rem; }
+    .data-table_body .data-table-big-item {
+      font-size: 1.5rem;
+      line-height: 2rem; }
+    .data-table_body .data-table-list-item {
+      font-size: 1rem; }
+
+  section#landline_city .poster_wrap .poster-content .poster_main_header {
+    font-size: 3rem; } }
 @media screen and (max-width: 576px) {
   section .section-container {
     padding: 1.75rem 0.75rem; }
@@ -328,6 +342,12 @@
             padding: 0 2rem; }
             section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body .mobile_tariff_body .btn_wrap .btn {
               width: 100%; }
+
+  .data-table {
+    margin: 0; }
+    .data-table_body {
+      margin-top: 0.5rem;
+      margin-bottom: 1.25rem; }
 
   section.mobile_proposition_banner {
     display: block; }
@@ -455,7 +475,19 @@
       width: 100%; }
     section#check_section form .form-group input[name="build_number"], section#check_section form .form-group input[name="porch_number"] {
       width: 45%;
-      margin-top: 1rem; } }
+      margin-top: 1rem; }
+
+  section#international_calls table.maxNet-table img {
+    display: none; }
+  section#international_calls table.maxNet-table thead tr th {
+    font-size: 0.85rem;
+    padding: 1.25rem 0.5rem; }
+  section#international_calls table.maxNet-table tbody tr td {
+    padding-left: 0.5rem;
+    font-size: 1rem; }
+
+  .satellite_connection {
+    margin-top: 4rem; } }
 @media screen and (max-width: 475px) {
   main {
     overflow-x: hidden; }
@@ -513,7 +545,13 @@
     font-size: 1.15rem; }
 
   section#check_section form .form-group {
-    padding: 0 2rem; } }
+    padding: 0 2rem; }
+
+  section#service_0000 .all_tariff_link a {
+    font-size: 1rem; }
+
+  .satellite_connection {
+    margin-top: 2.5rem; } }
 @media screen and (max-width: 414px) {
   section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
     max-width: 310px; }
@@ -536,7 +574,13 @@
       margin-bottom: 1rem; }
 
   section#check_section form .form-group {
-    padding: 0; } }
+    padding: 0; }
+
+  section#service_0000 .all_tariff_link a i {
+    display: none; }
+
+  section#international_calls table {
+    width: 460px; } }
 @media screen and (max-width: 375px) {
   section .section-container_header h2 {
     font-size: 2rem; }
@@ -589,7 +633,16 @@
     width: 95%; }
 
   section#video_banner .video-banner-container .video-banner-title h2 {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+
+  section#landline_city .poster_wrap .poster-content {
+    padding: 2.5rem; }
+    section#landline_city .poster_wrap .poster-content .poster_main_header {
+      font-size: 2.5rem; }
+    section#landline_city .poster_wrap .poster-content .poster_sub_header {
+      font-size: 1.5rem; }
+    section#landline_city .poster_wrap .poster-content .poster-text {
+      font-size: 1rem; } }
 @media screen and (max-width: 320px) {
   section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
     padding: 0.875rem 1.25rem;
@@ -597,6 +650,9 @@
 
   section#check_section form .form-group input[name="build_number"], section#check_section form .form-group input[name="porch_number"] {
     width: 43%;
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+
+  .data-table_body .data-table-list-item {
+    font-size: 0.85rem; } }
 
 /*# sourceMappingURL=media.css.map */

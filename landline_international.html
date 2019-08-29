@@ -23,6 +23,7 @@
 
     <!--Custom Styles-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <title>MaxNet</title>
 </head>
@@ -40,15 +41,16 @@
 
         </div>
         <div class="section-container_body">
-            <table class="table table-hover maxNet-table">
-                <thead>
+            <div class="table-responsive">
+                <table class="table table-hover   maxNet-table">
+                    <thead>
                     <tr>
                         <th>Тарифные зоны связи через услугу 00-00 (доллар США* / минута)</th>
-                        <th><img class="mr-3" src="images/icons/sun.png" alt=""> Рабочие дни 08:00-18:00</th>
-                        <th><img class="mr-3" src="images/icons/Ellipse.png" alt=""> выходные и праздники</th>
+                        <th><img class="mr-1" src="images/icons/sun.png" alt=""> Рабочие дни 08:00-18:00</th>
+                        <th><img class="mr-1" src="images/icons/Ellipse.png" alt=""> выходные и праздники</th>
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>Росcия, Белорусь, Молдова</td>
                         <td><img class="mr-3" src="images/icons/sun.png" alt=""> 0,3384 $</td>
@@ -70,8 +72,11 @@
                         <td> <img class="mr-3" src="images/icons/Ellipse.png" alt=""> 0,2664 $</td>
                     </tr>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.table-responsive -->
+
             <div class="satellite_connection">
                 <div class="title">
                     <h5>
@@ -81,16 +86,16 @@
 
                 </div>
                 <div class="row data-table">
-                    <div class="col-md-6 data-table_header">Направление</div>
-                    <div class="col-md-3 data-table_header">Стоимость ($ США* / мин)</div>
-                    <div class="col-md-6 data-table_body">
+                    <div class="col-md-8 order-1 order-md-1  data-table_header">Направление</div>
+                    <div class="col-md-4 order-3 order-md-2  col-lg-4 data-table_header">Стоимость ($ США* / мин)</div>
+                    <div class="col-md-8 order-2 order-md-3  data-table_body">
                         <ul class="data-table-list">
                             <li class="data-table-list-item">Инмарсат (коды направлений: 870, 871, 872, 873, 874)</li>
                             <li class="data-table-list-item">Emsat/Thuraya (код направления: 882)</li>
                             <li class="data-table-list-item">Iridium (код направления: 8816, 8817)</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 data-table_body">
+                    <div class="col-6 order-4  order-md-4 col-lg-4 data-table_body">
                         <ul class="data-table-list">
                             <li class="data-table-list-item justify-content-center">8,1 $</li>
                             <li class="data-table-list-item justify-content-center">4,63 $</li>
@@ -105,7 +110,7 @@
 </section>
 
 </main>
-<footer>
+<footer class="d-none">
     <section id="footer_menu">
         <div class="container section-container">
             <div class="row justify-content-between">

@@ -582,6 +582,8 @@ section .grey-section {
       font-size: 1.25rem;
       line-height: 27px;
       font-weight: 300; }
+      .data-table-list-item img {
+        width: auto; }
       .data-table-list-item:last-child {
         margin-bottom: 0; }
       .data-table-list-item .value {
@@ -616,6 +618,8 @@ section .grey-section {
   .maxNet-table tbody tr td:first-child {
     padding-left: 2.25rem;
     font-weight: 300; }
+.maxNet-table img {
+  width: auto; }
 
 .tv-table thead tr th {
   border-bottom: 0;

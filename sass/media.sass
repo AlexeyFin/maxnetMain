@@ -149,6 +149,9 @@
     .consultation-container
       .text_wrap,.link_wrap
         font-size: 1.5rem
+  .satellite_connection
+    .title
+      width: 100%
 
 @media screen and (max-width: 768px)
   section
@@ -296,7 +299,19 @@
           width: 100%
         input[name="street_name"]
           width: 320px576
-
+  .data-table_body
+    padding: 1rem 1.25rem
+    .data-table-big-item
+      font-size: 1.5rem
+      line-height: 2rem
+    .data-table-list
+      &-item
+        font-size: 1rem
+  section#landline_city
+    .poster_wrap
+      .poster-content
+        .poster_main_header
+          font-size: 3rem
 
 @media screen and (max-width: 576px)
   section
@@ -409,6 +424,12 @@
                 padding: 0 2rem
                 .btn
                   width: 100%
+
+  .data-table
+    margin: 0
+    &_body
+      margin-top: .5rem
+      margin-bottom: 1.25rem
 
 
   section.mobile_proposition_banner
@@ -556,7 +577,22 @@
         input[name="build_number"],input[name="porch_number"]
           width: 45%
           margin-top: 1rem
-
+  section#international_calls
+    table.maxNet-table
+      img
+        display: none
+      thead
+        tr
+          th
+            font-size: .85rem
+            padding: 1.25rem .5rem
+      tbody
+        tr
+          td
+            padding-left: .5rem
+            font-size: 1rem
+  .satellite_connection
+    margin-top: 4rem
 
 @media screen and (max-width: 475px)
   main
@@ -630,6 +666,12 @@
     form
       .form-group
         padding: 0 2rem
+  section#service_0000
+    .all_tariff_link
+      a
+        font-size: 1rem
+  .satellite_connection
+    margin-top: 2.5rem
 
 
 @media screen and (max-width: 414px)
@@ -661,6 +703,14 @@
     form
       .form-group
         padding: 0
+  section#service_0000
+    .all_tariff_link
+      a
+        i
+          display: none
+  section#international_calls
+    table
+      width: 460px
 @media screen and (max-width: 375px)
   section
     .section-container_header
@@ -738,7 +788,16 @@
       .video-banner-title
         h2
           font-size: 1.25rem
-
+  section#landline_city
+    .poster_wrap
+      .poster-content
+        padding: 2.5rem
+        .poster_main_header
+          font-size: 2.5rem
+        .poster_sub_header
+          font-size: 1.5rem
+        .poster-text
+          font-size: 1rem
 
 
 @media screen and (max-width: 320px)
@@ -755,5 +814,9 @@
         input[name="build_number"],input[name="porch_number"]
           width: 43%
           margin-top: 1rem
+  .data-table_body
+    .data-table-list-item
+      font-size: .85rem
+
 
 

@@ -2427,6 +2427,9 @@ section#result_section .request_wrap_btn {
   border-radius: 0.125rem;
   margin-bottom: 1rem;
 }
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package img {
+  width: auto;
+}
 .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_title {
   border-right: 2px solid #B824A4;
 }

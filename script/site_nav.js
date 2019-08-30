@@ -59,15 +59,19 @@ jQuery(document).ready(function($){
 	//open submenu
 	$('.has-children').children('a').on('click', function(event){
 		if( !checkWindowWidth() ) event.preventDefault();
+
 		var selected = $(this);
+
 		if( selected.next('ul').hasClass('is-hidden') ) {
 			//desktop version only
 			selected.addClass('selected').next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('moves-out');
 			selected.parent('.has-children').siblings('.has-children').children('ul').addClass('is-hidden').end().children('a').removeClass('selected');
 			$('.cd-overlay').addClass('is-visible');
+			console.log('1')
 		} else {
 			selected.removeClass('selected').next('ul').addClass('is-hidden').end().parent('.has-children').parent('ul').removeClass('moves-out');
 			$('.cd-overlay').removeClass('is-visible');
+			console.log('2')
 		}
 		toggleSearch('close');
 	});

@@ -873,6 +873,10 @@
   .select_tv_tariff_wrap .tv_get_more_info {
     margin-top: 64px;
   }
+
+  .channels_list_modal .modal-body {
+    max-height: 420px;
+  }
 }
 @media screen and (max-width: 414px) {
   section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
@@ -920,6 +924,13 @@
 
   .whois_card .text {
     margin-bottom: 3rem;
+  }
+
+  .channels_list_modal .modal-header h5 {
+    font-size: 1.25rem;
+  }
+  .channels_list_modal .modal-body {
+    max-height: 360px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1023,5 +1034,18 @@
 
   .data-table_body .data-table-list-item {
     font-size: 0.85rem;
+  }
+
+  .channels_list_modal .modal-header h5 {
+    font-size: 1.15rem;
+  }
+  .channels_list_modal .modal-body {
+    padding: 0;
+  }
+  .channels_list_modal .modal-body .row {
+    margin: 0;
+  }
+  .channels_list_modal .modal-body .row .col-6 {
+    padding: 0;
   }
 }

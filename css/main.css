@@ -3124,6 +3124,9 @@ form[name="check_form"] input[name="build_number"], form[name="check_form"] inpu
 .content-banner .banner-wrap .banner-text_body .btn_wrap .btn {
   width: 316px;
 }
+.content-banner .banner-wrap .banner-text_img {
+  display: none;
+}
 .content-banner .banner-wrap .negative-mt {
   margin-top: -40px;
 }

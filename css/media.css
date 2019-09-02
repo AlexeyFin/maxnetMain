@@ -414,21 +414,51 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  section.internet_data_wrap .internet-nav_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap {
+    width: 45%;
+    margin: 0 0 18px 0;
+  }
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap a.internet_nav_link {
+    font-size: 18px;
+  }
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap a.internet_nav_link::after {
+    display: none;
+  }
+  section.internet_data_wrap .data_item .text_wrap {
+    font-size: 1rem;
+  }
+
+  .space-left {
+    padding-left: 0;
+  }
+
+  .content-banner .banner-wrap .img_wrap {
+    display: none;
+  }
+  .content-banner .banner-wrap .banner-text_img {
+    margin: 3rem 0;
+    display: block;
+  }
 }
 @media screen and (max-width: 576px) {
   section .section-container {
-    padding: 1.75rem 0.75rem;
+    padding: 2.75rem 0.75rem;
   }
   section .section-container_header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
   }
   section .section-container_header h2 {
     text-align: left;
     color: #003893;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
   section .section-container_header h2::after {
     display: none;
@@ -815,6 +845,33 @@
   footer section#footer .footer_container .footer_middle .blog_link img {
     width: 150px;
   }
+
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap {
+    width: 50%;
+  }
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap a.internet_nav_link {
+    font-size: 14px;
+  }
+
+  .content-banner .banner-wrap .banner-text_header h4 {
+    font-size: 3rem;
+  }
+  .content-banner .banner-wrap .banner-text_body ul li {
+    font-size: 1.25rem;
+  }
+  .content-banner .banner-wrap .banner-text_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 2rem 0;
+  }
+  .content-banner .banner-wrap .banner-text_img img {
+    width: 320px;
+    height: 320px;
+  }
 }
 @media screen and (max-width: 475px) {
   main {
@@ -970,6 +1027,33 @@
   section#about_maxnet_is .section-container .maxnet_is_body .maxnet_is_item p {
     font-size: 1rem;
   }
+
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap {
+    width: 100%;
+    text-align: center;
+  }
+
+  .internet_equipment_table .light_title {
+    font-size: 1rem;
+  }
+  .internet_equipment_table .light_title span:last-child {
+    text-align: right;
+  }
+  .internet_equipment_table p {
+    font-size: 0.875rem;
+  }
+
+  .get_call_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .get_call_section h6 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 414px) {
   section .section-container {
@@ -1039,6 +1123,38 @@
   section#main_form .section-container .main_form_wrap .btn_wrap {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  section.internet_data_wrap .internet_tariff_main_wrap {
+    padding: 36px 12px;
+  }
+
+  .content-banner .banner-wrap .banner-text_body {
+    padding-left: 0;
+  }
+  .content-banner .banner-wrap .banner-text_body .btn_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-banner .banner-wrap .banner-text_header {
+    margin-bottom: 0;
+  }
+  .content-banner .banner-wrap .banner-text_header h4 {
+    font-size: 2.25rem;
+  }
+  .content-banner .banner-wrap .banner-text_header p {
+    font-size: 1rem;
+  }
+  .content-banner .banner-wrap .banner-text_img {
+    margin: 1rem 0;
+  }
+
+  .info {
+    font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1119,6 +1235,12 @@
   }
   section#landline_city .poster_wrap .poster-content .poster-text {
     font-size: 1rem;
+  }
+
+  .content-banner .banner-wrap .banner-text_img img {
+    height: 240px;
+    width: 240px;
+    margin-top: 0 !important;
   }
 }
 @media screen and (max-width: 320px) {

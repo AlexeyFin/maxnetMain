@@ -1351,65 +1351,8 @@
 
 
 <script src="script/slick.min.js"></script>
+<script src="script/app.js"></script>
 
-
-<script>
-    $(document).ready(function () {
-        $('#about_slider_wrap').slick({
-            appendArrows: '.slider_arrows_wrap',
-            nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',
-            prevArrow: '<button class="slick-arrow-left"><i class="fas fa-arrow-left"></i></button>',
-            fade: true,
-            infinite: false,
-            draggable: false
-        });
-
-
-        hide_tv_packages('web-tv')
-
-
-    });
-
-    function toggle_check(elem) {
-        let wrap = elem.closest('.checkbox_wrap_content');
-        if (!wrap) {
-            wrap = document.closest('.maxNet_radio_wrap')
-        }
-        if (elem.checked) {
-            wrap.classList.add('checked')
-        } else {
-            wrap.classList.remove('checked')
-        }
-    }
-
-
-    const tv_form = document.forms['tv_package_select_form'];
-    const tv_packages = Array.from(document.querySelectorAll('.tv_package'));
-
-    tv_form.addEventListener('change', e => {
-        hide_tv_packages(e.target.value)
-    });
-
-
-    const hide_tv_packages = function (type) {
-        let packages = tv_packages.filter(item => {
-            if (item.dataset['filter'].indexOf(type) + 1) {
-                item.classList.remove('d-none');
-                return item
-            } else {
-                item.classList.add('d-none')
-            }
-        });
-
-        if (packages.length <= 1) {
-            document.querySelector('.additional_packages_title').classList.add('d-none')
-        } else {
-            document.querySelector('.additional_packages_title').classList.remove('d-none')
-        }
-    }
-
-
-</script>
 
 
 </body>

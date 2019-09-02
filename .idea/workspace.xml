@@ -7,6 +7,8 @@
       <change beforePath="$PROJECT_DIR$/TV.html" beforeDir="false" afterPath="$PROJECT_DIR$/TV.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/check.html" beforeDir="false" afterPath="$PROJECT_DIR$/check.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/site_nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/site_nav.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-hosting.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-hosting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equipment.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equipment_store.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipment_store.html" afterDir="false" />
@@ -17,6 +19,8 @@
       <change beforePath="$PROJECT_DIR$/landline_city.html" beforeDir="false" afterPath="$PROJECT_DIR$/landline_city.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landline_international.html" beforeDir="false" afterPath="$PROJECT_DIR$/landline_international.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/video.html" afterDir="false" />
     </list>
@@ -44,7 +48,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/channels" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -134,6 +138,8 @@
       <workItem from="1566903715761" duration="7383000" />
       <workItem from="1567058617126" duration="19179000" />
       <workItem from="1567155746829" duration="15082000" />
+      <workItem from="1567414091216" duration="3223000" />
+      <workItem from="1567417342027" duration="3313000" />
     </task>
     <servers />
   </component>

@@ -662,8 +662,9 @@ Main components
     /*height: 280px;*/
     /* here you set the number of columns - use width percentage */
     height: auto;
-    width: 23%;
+    /*width: 23%;*/
     float: left;
+    width: 278px;
     margin-right: 2.66%;
     border-right: 1px solid #e2e3df;
     overflow: hidden;
@@ -1101,6 +1102,9 @@ support for no js
   }
   .inline-nav{
     padding-bottom: 0 !important;
+  }
+  .inline-nav li{
+    text-align: center;
   }
   .inline-nav li a{
     padding-right: 0;

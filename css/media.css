@@ -1194,7 +1194,7 @@
   }
 
   footer section#footer_menu .menu_group_item_title {
-    min-height: 1px;
+    min-height: 38px;
   }
 
   section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {

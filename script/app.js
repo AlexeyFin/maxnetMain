@@ -1,11 +1,23 @@
-$(document).ready(function () {
-    $("body").children().each(function() {
+
+    const tv_form = document.forms['tv_package_select_form'];
+    const tv_packages = Array.from(document.querySelectorAll('.tv_package'));
+
+    $("body").children().each(function () {
         document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
     });
 
-    $('#phone_number').inputmask("+38 (099) 999-99-99", { clearIncomplete  :  true});
-    $('#main_slider_wrap, #about_slider_wrap').slick({
+    $('#phone_number')? $('#phone_number').inputmask("+38 (099) 999-99-99", {clearIncomplete: true}): '';
+    $('#main_slider_wrap').slick({
         appendArrows: '.main_slider_arrows_wrap',
+        nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',
+        prevArrow: '<button class="slick-arrow-left"><i class="fas fa-arrow-left"></i></button>',
+        fade: true,
+        infinite: false,
+        draggable: false
+    });
+
+    $('#about_slider_wrap').slick({
+        appendArrows: '.slider_arrows_wrap',
         nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',
         prevArrow: '<button class="slick-arrow-left"><i class="fas fa-arrow-left"></i></button>',
         fade: true,
@@ -23,7 +35,7 @@ $(document).ready(function () {
         nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',
         prevArrow: '<button class="slick-arrow-left"><i class="fas fa-arrow-left"></i></button>',
         slidesToShow: 4,
-        responsive:  [
+        responsive: [
             {
                 breakpoint: 1367,
                 settings: {
@@ -80,7 +92,7 @@ $(document).ready(function () {
         prevArrow: '<button class="slick-arrow-left"><i class="fas fa-arrow-left"></i></button>',
         slidesToShow: 3,
         infinite: false,
-        responsive:  [
+        responsive: [
             {
                 breakpoint: 1367,
                 settings: {
@@ -138,7 +150,7 @@ $(document).ready(function () {
         infinite: false,
         nextArrow: '<button class="slick-arrow-right  slick-arrow"><i class="fas fa-chevron-right"></i></button>',
         prevArrow: '<button class="slick-arrow-left  slick-arrow"><i class="fas fa-chevron-left"></i></button>',
-        responsive:  [
+        responsive: [
             {
                 breakpoint: 1367,
                 settings: {
@@ -178,73 +190,69 @@ $(document).ready(function () {
                     infinity: true
 
                 }
-            },
-            // {
-            //     breakpoint: 375,
-            //     settings: {
-            //         arrow: false,
-            //         slidesToShow: 1,
-            //         slidesToScroll: 1
-            //
-            //     }
-            // }
+            }
 
         ]
 
     });
 
-    $('[data-toggle="tooltip"]').tooltip()
-
-    hide_tv_packages('web-tv')
-
-});
-
-function toggle_check(elem) {
-    let wrap = elem.closest('.checkbox_wrap_content');
-    if (!wrap) {
-        wrap = document.closest('.maxNet_radio_wrap')
-    }
-    if (elem.checked) {
-        wrap.classList.add('checked')
-    } else {
-        wrap.classList.remove('checked')
-    }
-}
+    $('[data-toggle="tooltip"]').tooltip();
 
 
-const tv_form = document.forms['tv_package_select_form'];
-const tv_packages = Array.from(document.querySelectorAll('.tv_package'));
-
-tv_form.addEventListener('change', e => {
-    hide_tv_packages(e.target.value)
-});
-
-
-const hide_tv_packages = function (type) {
-    let packages = tv_packages.filter(item => {
-        if (item.dataset['filter'].indexOf(type) + 1) {
-            item.classList.remove('d-none');
-            return item
-        } else {
-            item.classList.add('d-none')
+    function toggle_check(elem) {
+        let wrap = elem.closest('.checkbox_wrap_content');
+        if (!wrap) {
+            wrap = document.closest('.maxNet_radio_wrap')
         }
-    });
-
-    if (packages.length <= 1) {
-        document.querySelector('.additional_packages_title').classList.add('d-none')
-    } else {
-        document.querySelector('.additional_packages_title').classList.remove('d-none')
+        if (elem.checked) {
+            wrap.classList.add('checked')
+        } else {
+            wrap.classList.remove('checked')
+        }
     }
-}
 
-function toggle_check(elem) {
-    let wrap = elem.closest('.checkbox_wrap_content');
-    if (elem.checked){
-        wrap.classList.add('checked')
-    } else {
-        wrap.classList.remove('checked')
+    if (tv_form) {
+        tv_form.addEventListener('change', e => {
+            hide_tv_packages(e.target.value)
+        });
     }
-}
-function slider_link(elem) {
-    elem.checked? window.location = elem.dataset['onlink'] : window.location = elem.dataset['offlink'];
-}
+
+
+
+    function toggle_check(elem) {
+        let wrap = elem.closest('.checkbox_wrap_content');
+        if (elem.checked) {
+            wrap.classList.add('checked')
+        } else {
+            wrap.classList.remove('checked')
+        }
+    }
+
+    function slider_link(elem) {
+        elem.checked ? window.location = elem.dataset['onlink'] : window.location = elem.dataset['offlink'];
+    }
+
+    const hide_tv_packages = function (type) {
+        if (tv_form) {
+            let packages = tv_packages.filter(item => {
+                if (item.dataset['filter'].indexOf(type) + 1) {
+                    item.classList.remove('d-none');
+                    return item
+                } else {
+                    item.classList.add('d-none')
+                }
+            });
+
+            if (packages.length <= 1) {
+                document.querySelector('.additional_packages_title').classList.add('d-none')
+            } else {
+                document.querySelector('.additional_packages_title').classList.remove('d-none')
+            }
+        }
+
+    };
+
+    hide_tv_packages('web-tv');
+
+
+

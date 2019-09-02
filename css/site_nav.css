@@ -127,7 +127,7 @@ Main components
 @media only screen and (min-width: 1170px) {
   .cd-logo {
     top: 20px;
-    left: 22%;
+    left: 19%;
   }
 }
 
@@ -152,7 +152,7 @@ Main components
 @media only screen and (min-width: 1170px) {
   .cd-header-buttons {
     top: 18px;
-    right: 22%;
+    right: 19%;
   }
 }
 
@@ -424,7 +424,7 @@ Main components
 }
 .cd-primary-nav .see-all a {
   /* different style for the See all button on mobile and tablet */
-  color: #69aa6f;
+  color: #81A8E9;
 }
 .cd-primary-nav .cd-nav-gallery .cd-nav-item, .cd-primary-nav .cd-nav-icons .cd-nav-item {
   /* items with picture (or icon) and title */

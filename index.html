@@ -37,12 +37,21 @@
 
         <ul class="cd-header-buttons d-flex">
 
+            <li class="cd-additional-link dropdown ">
+                <a href="#" data-toggle="dropdown"   id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">Ru</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Ua</a>
+                    <a class="dropdown-item" href="#">En</a>
+                </div>
+
+            </li>
             <li class="cd-additional-link">
                 <a href="#" class="cd-login ">
                     <i class="fas fa-user"></i>
                 </a>
             </li>
             <li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
+
             <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
 
         </ul> <!-- cd-header-buttons -->
@@ -244,14 +253,7 @@
                     </ul>
                 </li>
 
-                <li class="has-children dropdown ">
-                    <a href="#" data-toggle="dropdown"  onclick="$('a.selected').click(); toggleClass(this, 'selected_true')" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">Ru</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Ua</a>
-                        <a class="dropdown-item" href="#">En</a>
-                    </div>
 
-                </li>
 
             </ul> <!-- primary-nav -->
         </nav> <!-- cd-nav -->
@@ -275,7 +277,7 @@
 <main class="cd-main-content" >
 <!--    <div class="cd-overlay"></div>-->
     <section id="main_top_banner">
-        <div class="container section-container">
+        <div class="container-fluid section-container">
             <h1 class="main_top_banner_header">
                 Подключай «Макснет»
             </h1>
@@ -383,10 +385,7 @@
             <div class="main_sub_banner_link_wrap portfolio-experiment">
                 <a href="#" class="main_sub_banner_link">
                     <span class="text">Подробнее</span>
-                    <span class="line -right"></span>
-                    <span class="line -top"></span>
-                    <span class="line -left"></span>
-                    <span class="line -bottom"></span>
+
                 </a>
             </div>
 
@@ -394,7 +393,7 @@
         <!-- /.container -->
     </section>
     <!-- /#main_sub_banner -->
-    <section class="d-none" id="main_tariff_plans">
+    <section class="" id="main_tariff_plans">
         <div class="container ">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-6 col-xl-3 tariff_title">
@@ -901,58 +900,70 @@
                                 <div class="form_wrap">
                                     <div class="form-group check_group">
                                         <div class="row">
-                                            <div class="col-xl-6 col-lg-12 px-lg-0 col-md-6 checkbox_wrap ">
-                                                <div class="checkbox_wrap_content">
-                                                    <label for="internet_input">Интернет</label>
+                                            <div class="col-xl-6 col-lg-12 px-lg-0 col-md-6  ">
+                                                <div class="checkbox_wrap">
+                                                    <div class="checkbox_wrap_content">
+                                                        <label for="internet_input">Интернет</label>
 
-                                                    <div class="maxNet_check_wrap">
-                                                        <input onchange="toggle_check(this)" type="checkbox" class="maxNet-checkbox" name="internet" id="internet_input">
-                                                        <label for="internet_input"></label>
+                                                        <div class="maxNet_check_wrap">
+                                                            <input onchange="toggle_check(this)" type="checkbox" class="maxNet-checkbox" name="internet" id="internet_input">
+                                                            <label for="internet_input"></label>
+                                                        </div>
+                                                        <!-- /.maxNet_check_wrap -->
                                                     </div>
-                                                    <!-- /.maxNet_check_wrap -->
                                                 </div>
+
                                                 <!-- /.checkbox_wrap_content -->
                                             </div>
                                             <!-- /.col-6 checkbox_wrap -->
-                                            <div class="col-xl-6 col-lg-12 px-lg-0 col-md-6 checkbox_wrap ">
-                                                <div class="checkbox_wrap_content">
-                                                    <label for="voice_input"> Телефонная связь</label>
+                                            <div class="col-xl-6 col-lg-12 px-lg-0 col-md-6  ">
+                                                <div class="checkbox_wrap">
+                                                    <div class="checkbox_wrap_content">
+                                                        <label for="voice_input"> Телефонная связь</label>
 
-                                                    <div class="maxNet_check_wrap">
-                                                        <input onchange="toggle_check(this)" type="checkbox" class="maxNet-checkbox" name="voice" id="voice_input">
-                                                        <label for="voice_input"> </label>
+                                                        <div class="maxNet_check_wrap">
+                                                            <input onchange="toggle_check(this)" type="checkbox" class="maxNet-checkbox" name="voice" id="voice_input">
+                                                            <label for="voice_input"> </label>
+                                                        </div>
+                                                        <!-- /.maxNet_check_wrap -->
                                                     </div>
-                                                    <!-- /.maxNet_check_wrap -->
+                                                    <!-- /.checkbox_wrap_content -->
                                                 </div>
-                                                <!-- /.checkbox_wrap_content -->
+
 
                                             </div>
                                             <!-- /.col-6 checkbox_wrap -->
-                                            <div class="col-xl-6 col-lg-12 px-lg-0 col-md-6 checkbox_wrap ">
-                                                <div class="checkbox_wrap_content">
-                                                    <label for="tv_input">Телевидение</label>
+                                            <div class="col-xl-6 col-lg-12 px-lg-0 col-md-6  ">
+                                                <div class="checkbox_wrap">
+                                                    <div class="checkbox_wrap_content">
+                                                        <label for="tv_input">Телевидение</label>
 
-                                                    <div class="maxNet_check_wrap">
-                                                        <input onchange="toggle_check(this)" type="checkbox" class="maxNet-checkbox" name="tv" id="tv_input">
-                                                        <label for="tv_input"></label>
+                                                        <div class="maxNet_check_wrap">
+                                                            <input onchange="toggle_check(this)" type="checkbox" class="maxNet-checkbox" name="tv" id="tv_input">
+                                                            <label for="tv_input"></label>
+                                                        </div>
+                                                        <!-- /.maxNet_check_wrap -->
                                                     </div>
-                                                    <!-- /.maxNet_check_wrap -->
+                                                    <!-- /.checkbox_wrap_content -->
                                                 </div>
-                                                <!-- /.checkbox_wrap_content -->
+
 
                                             </div>
                                             <!-- /.col-6 checkbox_wrap -->
-                                            <div class="col-xl-6 col-lg-12 px-lg-0 col-md-6 checkbox_wrap ">
-                                                <div class="checkbox_wrap_content">
-                                                    <label for="cctv_input">Видеонаблюдение</label>
+                                            <div class="col-xl-6 col-lg-12 px-lg-0 col-md-6  ">
+                                                <div class="checkbox_wrap">
+                                                    <div class="checkbox_wrap_content">
+                                                        <label for="cctv_input">Видеонаблюдение</label>
 
-                                                    <div class="maxNet_check_wrap">
-                                                        <input onchange="toggle_check(this)" type="checkbox" class="maxNet-checkbox" name="cctv" id="cctv_input">
-                                                        <label for="cctv_input"></label>
+                                                        <div class="maxNet_check_wrap">
+                                                            <input onchange="toggle_check(this)" type="checkbox" class="maxNet-checkbox" name="cctv" id="cctv_input">
+                                                            <label for="cctv_input"></label>
+                                                        </div>
+                                                        <!-- /.maxNet_check_wrap -->
                                                     </div>
-                                                    <!-- /.maxNet_check_wrap -->
+                                                    <!-- /.checkbox_wrap_content -->
                                                 </div>
-                                                <!-- /.checkbox_wrap_content -->
+
 
                                             </div>
                                             <!-- /.col-6 checkbox_wrap -->
@@ -973,11 +984,9 @@
                                     </div>
                                     <div class="form-group input_group">
                                         <div class="row">
-                                            <div class="col-xl-6 col-lg-12 col-md-6 px-lg-0 input_wrap">
-                                                <input type="text" name="name" placeholder="Ваше имя" required>
-                                            </div>
+
                                             <!-- /.col-6 -->
-                                            <div class="col-xl-6 col-lg-12 col-md-6 px-lg-0 input_wrap">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 px-lg-0 input_wrap">
                                                 <input type="email" name="email" placeholder="E-mail" required>
                                             </div>
                                             <!-- /.col-6 -->
@@ -1021,9 +1030,9 @@
     <section id="footer_menu">
         <div class="container section-container">
             <div class="row justify-content-between">
-                <div class="menu_group col-6 col-lg-6">
+                <div class="menu_group col-12 col-md-12 col-lg-6">
                     <div class="row">
-                        <div class="col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5> для дома</h5>
                             </div>
@@ -1061,7 +1070,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title"></div>
                             <!-- /.menu_group_item_title -->
                             <div class="menu_group_item_body">
@@ -1097,7 +1106,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title"></div>
                             <!-- /.menu_group_item_title -->
                             <div class="menu_group_item_body">
@@ -1129,9 +1138,9 @@
                     <!-- /.row -->
                 </div>
                 <!-- /.col-md-6 -->
-                <div class="menu_group col-6 col-lg-6">
+                <div class="menu_group col-12 col-md-12 col-lg-6">
                     <div class="row">
-                        <div class="col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5> Для бизнеса</h5>
                             </div>
@@ -1175,7 +1184,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title"></div>
                             <!-- /.menu_group_item_title -->
                             <div class="menu_group_item_body">
@@ -1208,7 +1217,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title"></div>
                             <!-- /.menu_group_item_title -->
                             <div class="menu_group_item_body">
@@ -1241,9 +1250,9 @@
                 </div>
                 <!-- /.col-md-6 -->
 
-                <div class="menu_group col-6 col-lg-6">
+                <div class="menu_group col-12 col-md-12 col-lg-6">
                     <div class="row">
-                        <div class="col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5> ПОДДЕРЖКА</h5>
                             </div>
@@ -1280,7 +1289,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5>компания</h5>
                             </div>
@@ -1324,7 +1333,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5>мой макснет</h5>
                             </div>
@@ -1354,9 +1363,9 @@
                     <!-- /.row -->
                 </div>
                 <!-- /.col-md-6 -->
-                <div class="menu_group col-6 col-lg-6">
+                <div class="menu_group col-12 col-md-12 col-lg-6">
                     <div class="row">
-                        <div class="col-md-4 menu_group_item">
+                        <div class=" col-5 col-md-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5>абоненту</h5>
                             </div>
@@ -1386,7 +1395,7 @@
                             </div>
                             <!-- /.menu_group_item_body -->
                         </div>
-                        <div class="col-md-8 menu_group_item">
+                        <div class=" col-7 col-md-8 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5>
                                     <i class="fas fa-phone" style="transform: rotate(90deg); margin-left: -1.25rem"></i>
@@ -1481,7 +1490,7 @@
                         Читайте блог
                     </div>
                     <a href="#" class="blog_img_link">
-                        <img src="images/Max-net-blog.svg" alt="">
+                        <img src="images/Maxnet-Blog-Logo-White.svg" alt="">
                     </a>
                 </div>
                 <!-- /.col-ml-4 -->
@@ -1512,6 +1521,7 @@
 
 <script src="script/modernizr.js"></script>
 <script src="script/site_nav.js"></script>
+
 <script src="script/slick.min.js"></script>
 
 

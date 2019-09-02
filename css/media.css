@@ -77,6 +77,18 @@
   .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_img p {
     width: 355px;
   }
+
+  section#main_slider .main_slider_container .main_slider_arrows_wrap {
+    top: calc(4.5rem + 6px);
+  }
+  section#main_slider .main_slider_container .main_slider_arrows_wrap button {
+    font-size: 2rem;
+  }
+
+  section#main_form .section-container .main_form_wrap .input_group .input_wrap input {
+    border: none;
+    border-bottom: 1px solid #D2D2E6;
+  }
 }
 @media screen and (max-width: 1024px) {
   section .section-container {
@@ -285,7 +297,7 @@
     background-position: 180px 10px;
   }
   section#equipment_catalog .equipment_catalog_wrap .small_item_content .title {
-    padding-bottom: 90px;
+    padding-bottom: 25px;
   }
 
   section#news_content_section .section-container_body {
@@ -354,7 +366,7 @@
     width: 100%;
   }
   section#check_section form .form-group input[name="street_name"] {
-    width: 320px576;
+    width: 320px;
   }
 
   .data-table_body {
@@ -382,6 +394,25 @@
 
   .features_wrap {
     margin-top: 1.5rem;
+  }
+
+  section#international_calls table tbody img {
+    display: none;
+  }
+
+  .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner {
+    width: 100%;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .title {
+    text-align: center;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .img_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 576px) {
@@ -600,6 +631,7 @@
 
   section#main_form .section-container .main_form_wrap {
     padding: 1rem;
+    margin-bottom: 3rem;
   }
   section#main_form .section-container .main_form_wrap .check_group {
     display: none;
@@ -623,6 +655,17 @@
   }
   section#main_form .section-container .main_form_wrap .select-group {
     display: block;
+  }
+  section#main_form .section-container .form_section_title_wrap {
+    padding-top: 1.25rem;
+    margin-bottom: 3.5rem;
+  }
+  section#main_form .section-container .form_section_title_wrap .form_section_title_header {
+    line-height: 2.75rem;
+  }
+
+  section#main_tariff_plans {
+    display: none;
   }
 
   footer section#footer .footer_container {
@@ -747,6 +790,30 @@
 
   .satellite_connection {
     margin-top: 4rem;
+  }
+
+  .sub_header_content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sub_header_content .sub_header_link {
+    margin-left: 0;
+  }
+
+  footer section#footer .footer_container .footer_middle .blog_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1.25rem;
+  }
+  footer section#footer .footer_container .footer_middle .blog_link img {
+    width: 150px;
   }
 }
 @media screen and (max-width: 475px) {
@@ -877,8 +944,41 @@
   .channels_list_modal .modal-body {
     max-height: 420px;
   }
+
+  .sub_header_content .sub_header_message {
+    font-size: 0.75rem;
+  }
+  .sub_header_content .sub_header_link {
+    font-size: 0.75rem;
+  }
+
+  section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  section#FAQ_directory .directory_content_wrap .get_directory_form_wrap button {
+    width: 100%;
+  }
+
+  section#about_maxnet_is .section-container .maxnet_is_body .maxnet_is_item .maxnet_img_wrap {
+    margin-bottom: 1.25rem;
+  }
+  section#about_maxnet_is .section-container .maxnet_is_body .maxnet_is_item .maxnet_is_title {
+    margin-bottom: 1.25rem;
+  }
+  section#about_maxnet_is .section-container .maxnet_is_body .maxnet_is_item p {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 414px) {
+  section .section-container {
+    padding: 2.75rem 0.75rem 1.5rem 0.75rem;
+  }
+  section .section-container_header {
+    margin-bottom: 1.5rem;
+  }
+
   section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
     max-width: 310px;
   }
@@ -932,6 +1032,14 @@
   .channels_list_modal .modal-body {
     max-height: 360px;
   }
+
+  section#main_form .section-container .main_form_wrap {
+    padding-top: 2rem;
+  }
+  section#main_form .section-container .main_form_wrap .btn_wrap {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 @media screen and (max-width: 375px) {
   section .section-container_header h2 {
@@ -963,14 +1071,6 @@
     width: 20px;
     height: 20px;
     font-size: 0.875rem;
-  }
-  footer section#footer .footer_container .footer_middle .blog_link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 
   footer section#footer_menu .menu_group {
@@ -1047,5 +1147,9 @@
   }
   .channels_list_modal .modal-body .row .col-6 {
     padding: 0;
+  }
+
+  section#equipment_catalog .equipment_catalog_wrap .small_item_content {
+    background-position: 140px 10px;
   }
 }

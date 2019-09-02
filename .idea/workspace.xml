@@ -3,11 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b014a83b-26fa-4c0d-beb6-afad6e01b66d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TV.html" beforeDir="false" afterPath="$PROJECT_DIR$/TV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/site_nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/site_nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landline_international.html" beforeDir="false" afterPath="$PROJECT_DIR$/landline_international.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_news.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,30 +28,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>help_card</find>
-      <find>sectio</find>
-      <find>data_i</find>
-      <find>data-ta</find>
-      <find>лиц</find>
-      <find>ta</find>
-      <find>tooltip_custom</find>
-      <find>custom_t</find>
-      <find>info</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>custom_tooltip_price</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="510" />
-    <option name="y" value="182" />
-    <option name="width" value="1910" />
-    <option name="height" value="820" />
   </component>
   <component name="ProjectId" id="1OpCx19SKMURALWN6uVv8K1Py49" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -143,6 +126,7 @@
       <workItem from="1565937008273" duration="19200000" />
       <workItem from="1566903715761" duration="7383000" />
       <workItem from="1567058617126" duration="19179000" />
+      <workItem from="1567155746829" duration="15082000" />
     </task>
     <servers />
   </component>

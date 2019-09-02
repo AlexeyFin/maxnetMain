@@ -803,9 +803,9 @@ section
 section#main_top_banner
   .section-container
     min-height: 383px
-    background: url("../images/main_top_banner.svg") $main_blue no-repeat
+    background: url("../images/subscribe-banner.png") $main_blue no-repeat
     background-size: cover
-    background-position: left
+    background-position: center
     display: flex
     flex-direction: column
     align-items: center
@@ -830,7 +830,7 @@ section#main_top_banner
       margin-bottom: 1.5rem
 
     .main_top_banner_button
-      background-color: transparent
+      background-color: $main_blue
       position: relative
       z-index: 2
       display: inline-block
@@ -842,19 +842,19 @@ section#main_top_banner
         content: ''
         width: 0
         height: 100%
-        background: $purple_hovered
+        background: $text_color_white
         top: 0
         left: 50%
         transition: all 300ms ease-in-out
 
       &:hover
-        color: white
+        color: $main_blue
         box-shadow: none
-        border-color: $purple_hovered
+        border-color: $text_color_white
         border-radius: .5rem
 
         &:before
-          background-color: $purple_hovered
+          background-color: $text_color_white
           position: absolute
           content: ''
           width: 100%
@@ -963,90 +963,8 @@ section#main_sub_banner
       cursor: pointer
       letter-spacing: 0.07em
       text-decoration: none
+      border-bottom: 1px solid $text_color_white
 
-      .text
-        font-family: 'Work Sans', sans-serif
-        transform: translate3d(0, 0.7em, 0)
-        display: block
-        transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s
-
-      &:after
-        position: absolute
-        content: ''
-        bottom: -2px
-        left: calc(0.7em * 1.2)
-        right: calc(0.7em * 1.2)
-        height: 2px
-        background: $text_color_white
-        transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s
-        transform-origin: left
-
-    .line
-      position: absolute
-      background: $text_color_white
-
-      &.-right, &.-left
-        width: 2px
-        bottom: -2px
-        top: -2px
-        transform: scale3d(1, 0, 1)
-
-      &.-top, &.-bottom
-        height: 2px
-        left: -2px
-        right: -2px
-        transform: scale3d(0, 1, 1)
-
-      &.-right
-        right: -2px
-        transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s
-        transform-origin: top
-
-      &.-top
-        top: -2px
-        transition: transform 0.08s linear 0.43s
-        transform-origin: left
-
-      &.-left
-        left: -2px
-        transition: transform 0.08s linear 0.51s
-        transform-origin: bottom
-
-      &.-bottom
-        bottom: -2px
-        transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01)
-        transform-origin: right
-
-    a
-      &:hover .text, &:active .text
-        transform: translate3d(0, 0, 0)
-        transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s
-
-      &:hover:after, &:active:after
-        transform: scale3d(0, 1, 1)
-        right: -2px
-        left: -2px
-        transform-origin: right
-        transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s
-
-      &:hover .line, &:active .line
-        transform: scale3d(1, 1, 1)
-
-      &:hover .line.-right, &:active .line.-right
-        transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s
-        transform-origin: bottom
-
-      &:hover .line.-top, &:active .line.-top
-        transition: transform 0.08s linear 0.4s
-        transform-origin: right
-
-      &:hover .line.-left, &:active .line.-left
-        transition: transform 0.08s linear 0.48s
-        transform-origin: top
-
-      &:hover .line.-bottom, &:active .line.-bottom
-        transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s
-        transform-origin: left
 
 
 section#main_tariff_plans
@@ -1204,7 +1122,7 @@ section#main_news
           &:hover
             .text
               color: $text_color_dark
-              font-size: 1.15rem
+
 
     .dynamic_wrap
       .news_wrap
@@ -1221,20 +1139,6 @@ section#main_news
             line-height: 1.75rem
             text-decoration: none
             color: $text_color_dark
-
-            &::after
-              display: block
-              content: ''
-              width: 100%
-              height: 2px
-              background-color: $main_blue
-              transition: all .3s ease-in-out
-              transform: scale(0)
-
-            &:hover
-              &::after
-                transform: scale(1)
-
 
 section#main_slider
   .main_slider_container
@@ -1329,14 +1233,9 @@ section#main_form
 
       .check_group
         .checkbox_wrap
-          padding: 0
+
           margin-bottom: 1rem
-
-          &:nth-child(2n+1)
-            padding: 0 .5rem 0 0
-
-          &:nth-child(2n)
-            padding: 0 0 0 .5rem
+          padding: 0 0.5rem
 
           &_content
             background-color: #F5F5F5
@@ -1526,10 +1425,12 @@ section#about_partners
       justify-content: space-between
       align-items: center
       flex-wrap: wrap
+      .partner_logo
+        display: flex
+        justify-content: center
 
       .partner
         height: 62px
-        width: 100%
 
 
 section#about_carrier
@@ -2059,7 +1960,8 @@ section#equipment_catalog
           font-size: 1.875rem
           font-weight: bold
           line-height: 37px
-          padding-bottom: 45px
+          height: 130px
+          padding-bottom: 25px
           position: relative
           margin-bottom: 1rem
 
@@ -2069,7 +1971,7 @@ section#equipment_catalog
             display: block
             width: 100%
             content: ''
-            height: 1px
+            height: 2px
             background-color: $main_purple
 
         .description
@@ -2118,6 +2020,10 @@ section#equipment_catalog
             font-size: 1.5rem
             margin-left: 1.5rem
             transition: all .3s ease-in-out
+        .img_wrap
+          img
+            width: 100%
+
 
       &:hover
         .description
@@ -2871,18 +2777,12 @@ footer
                 text-decoration: none
                 font-size: .875rem
                 color: $text_color_dark
+                transition: all .3s ease-in-out
 
-                &::after
-                  content: ''
-                  display: block
-                  height: 1px
-                  width: 100%
-                  background-color: $main_purple
-                  transition: all .3s ease-in-out
-                  transform: scale(0)
 
-                &:hover::after
-                  transform: scale(1)
+
+                &:hover
+                  color: $main_purple
 
           ul.big_margin_list
             li

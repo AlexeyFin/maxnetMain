@@ -37,14 +37,7 @@
 
         <ul class="cd-header-buttons d-flex">
 
-            <li class="cd-additional-link dropdown ">
-                <a href="#" data-toggle="dropdown"   id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">Ru</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Ua</a>
-                    <a class="dropdown-item" href="#">En</a>
-                </div>
 
-            </li>
             <li class="cd-additional-link">
                 <a href="#" class="cd-login ">
                     <i class="fas fa-user"></i>
@@ -252,7 +245,14 @@
 
                     </ul>
                 </li>
+                <li class="has-children dropdown ">
+                    <a href="#" data-toggle="dropdown" onclick="$('a.selected').click();"   id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">Ru</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Ua</a>
+                        <a class="dropdown-item" href="#">En</a>
+                    </div>
 
+                </li>
 
 
             </ul> <!-- primary-nav -->
@@ -260,7 +260,7 @@
 
         <div id="cd-search" class="cd-search">
             <form>
-                <input type="search" placeholder="Search...">
+                <input type="search" placeholder="Поиск">
             </form>
         </div>
     </div>

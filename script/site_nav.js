@@ -79,6 +79,7 @@ jQuery(document).ready(function($){
 	//submenu items - go back link
 	$('.go-back').on('click', function(){
 		$(this).parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('moves-out');
+		$(this).parent('ul').siblings('a.selected').removeClass('selected')
 	});
 
 	function closeNav() {

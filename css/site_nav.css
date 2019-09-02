@@ -513,7 +513,7 @@ Main components
 @media only screen and (min-width: 1170px) {
   .cd-primary-nav {
     position: static;
-    padding: 0 27% 0 0;
+    padding: 0 15% 0 0;
     height: auto;
     width: auto;
     float: right;
@@ -1072,11 +1072,23 @@ support for no js
   }
 }
 
+@media screen and (min-width: 1460px){
+  .cd-primary-nav .cd-secondary-nav, .cd-primary-nav .cd-nav-gallery, .cd-primary-nav .cd-nav-icons{
+    padding: 50px 10%;
+  }
+  .cd-primary-nav .cd-secondary-nav > li{
+    padding-left: 48px;
+  }
+  .cd-primary-nav {
+    padding: 0 25% 0 0;
+  }
+}
+
 @media screen and (min-width: 1025px){
   .cd-primary-nav .cd-secondary-nav, .cd-primary-nav .cd-nav-gallery, .cd-primary-nav .cd-nav-icons{
     display: flex;
     justify-content: center;
-    padding: 50px 180px;
+    padding: 50px 2%;
     padding-bottom: 90px;
   }
   .cd-primary-nav .cd-secondary-nav ul{
@@ -1084,7 +1096,7 @@ support for no js
   }
   .cd-primary-nav .cd-secondary-nav > li{
     border: none;
-    padding-left: 48px;
+    padding-left: 12px;
     margin-right: 0;
   }
   .inline-nav{
@@ -1131,8 +1143,17 @@ support for no js
     right: 12%;
   }
   .cd-primary-nav{
-    padding-right: 20%;
+    /*padding-right: 20%;*/
   }
+}
+@media screen  and (max-width: 1460px){
+  .cd-logo{
+    left: 6%;
+  }
+  .cd-header-buttons{
+    right: 6%;
+  }
+
 }
 @media screen and (max-width: 1024px){
   .cd-primary-nav{

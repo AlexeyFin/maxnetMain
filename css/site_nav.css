@@ -384,7 +384,7 @@ Main components
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  /*overflow: hidden;*/
   text-overflow: ellipsis;
   white-space: nowrap;
   border-bottom: 1px solid #3a3f40;
@@ -664,11 +664,11 @@ Main components
     height: auto;
     /*width: 23%;*/
     float: left;
-    width: 278px;
+    width: 240px;
     margin-right: 2.66%;
     border-right: 1px solid #e2e3df;
-    overflow: hidden;
-    overflow-x: hidden;
+    /*overflow: hidden;*/
+    /*overflow-x: hidden;*/
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }

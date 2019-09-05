@@ -41,7 +41,7 @@
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
-                    infinite: true,
+                    infinite: false,
                     autoplay: true,
                     arrows: true
                 }
@@ -51,7 +51,7 @@
                 settings: {
                     arrows: false,
                     autoplay: true,
-                    infinite: true,
+                    infinite: false,
                     slidesToShow: 3
                 }
             },
@@ -61,6 +61,7 @@
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     autoplay: true,
+                    infinite: false,
                     arrows: false
 
                 }
@@ -72,7 +73,7 @@
                     slidesToScroll: 1,
                     arrows: false,
                     autoplay: true,
-                    infinity: true
+                    infinity: false
 
                 }
             },

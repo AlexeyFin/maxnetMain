@@ -118,6 +118,22 @@
   footer section#footer .footer_container .footer_middle .title {
     margin-right: 1rem;
   }
+
+  section#about_partners .partners_container {
+    padding: 0 24px;
+  }
+
+  section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card {
+    height: 400px;
+  }
+  section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_header {
+    min-height: 64px;
+    margin-bottom: 24px;
+  }
+
+  section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input {
+    width: 330px;
+  }
 }
 @media screen and (max-width: 1024px) {
   section .section-container {
@@ -378,11 +394,24 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  section#get_consultation .consultation-container .text_wrap {
-    width: 100%;
-    text-align: center;
-    margin-right: auto;
-    margin-bottom: 1rem;
+  section#get_consultation .consultation-container .text_wrap, section#get_consultation .consultation-container .link_wrap {
+    width: 33%;
+    font-size: 1rem;
+  }
+  section#get_consultation .consultation-container .link_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#get_consultation .consultation-container .link_wrap a {
+    font-size: 1rem;
+  }
+  section#get_consultation .consultation-container .link_wrap i {
+    font-size: 1.25rem;
+    margin-right: 18px;
   }
 
   section#check_section form .form-group {
@@ -472,6 +501,14 @@
   .content-banner .banner-wrap .banner-text_img {
     margin: 3rem 0;
     display: block;
+  }
+
+  section#result_section .request_wrap {
+    margin-bottom: 48px;
+  }
+
+  .select_tv_tariff_wrap {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -901,6 +938,16 @@
     width: 320px;
     height: 320px;
   }
+
+  section#get_consultation .consultation-container .text_wrap, section#get_consultation .consultation-container .link_wrap {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 18px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.25rem;
+  }
 }
 @media screen and (max-width: 475px) {
   main {
@@ -1185,6 +1232,10 @@
   .info {
     font-size: 0.875rem;
   }
+
+  .animated_wrap {
+    left: -58px;
+  }
 }
 @media screen and (max-width: 375px) {
   section .section-container_header h2 {
@@ -1273,6 +1324,10 @@
   }
 }
 @media screen and (max-width: 320px) {
+  html, body, main {
+    overflow-x: hidden;
+  }
+
   section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
     padding: 0.875rem 1.25rem;
     max-width: 240px;

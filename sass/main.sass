@@ -2,7 +2,7 @@
 
 
 body
-  background-color: $background_grey
+  background-color: $text_color_white
   font-size: 16px
   color: $text_color_dark
   font-family: 'Roboto', sans-serif
@@ -528,6 +528,8 @@ section
             color: $main_purple
 
       .side_icon
+        height: 75px
+        width: 75px
         position: absolute
         top: 0
         right: 0
@@ -1798,7 +1800,8 @@ section#video_banner
         font-size: 1.875rem
         text-align: center
         line-height: 35px
-
+    .video-banner-btn
+      position: relative
 
 section#video_about
   .section-container
@@ -2037,7 +2040,7 @@ section#equipment_store
 
   .store_wrap
     .store-item
-      border-top: 4px dotted #000000
+      border-top: 2px dashed #000000
       padding: 40px 0
 
       .item_data
@@ -2071,7 +2074,7 @@ section#landline_city
       align-items: flex-end
 
       img
-        margin-bottom: -4px
+        margin-bottom: -2px
         margin-left: 2px
 
     .poster-content
@@ -2099,7 +2102,6 @@ section#service_0000
     justify-content: flex-end
     margin-top: 1.25rem
     align-items: center
-
     a
       font-size: 1.25rem
       text-decoration: underline
@@ -2110,7 +2112,10 @@ section#service_0000
 
       &:hover
         color: $main_purple
-
+  .about_service
+    p
+      font-size: 1.25rem
+      font-weight: 200
 
 section#about_hosting
   .features_wrap
@@ -2577,6 +2582,11 @@ section.internet_data_wrap
     z-index: -1
     opacity: 0
     margin: 10px 0 0 20px
+    &~label
+      color: #646464
+      font-weight: 900
+    &[checked]~label
+      color: $text_color_dark
 
     + label
       position: relative
@@ -2615,6 +2625,7 @@ section.internet_data_wrap
         left: 26px
         background: #003893
         box-shadow: inset 0px -5px 4px rgba(0, 0, 0, 0.25)
+
 
 
 form[name="check_form"]
@@ -2722,6 +2733,7 @@ form[name="check_form"]
   display: inline-block
   cursor: pointer
   margin-left: 8px
+  margin-bottom: -4px
 
 
 .text-item
@@ -2940,3 +2952,20 @@ footer
     overflow-y: auto
     img
       width: auto
+.interactive_list_item
+  font-weight: 300
+  text-decoration: underline
+  color: #003893
+  i
+    color: $text_color_dark
+
+.animated_wrap
+  position: absolute
+  width: 60px
+  height: 60px
+  top: calc(50% - 30px)
+  left: -75px
+  img
+    width: 100%
+
+

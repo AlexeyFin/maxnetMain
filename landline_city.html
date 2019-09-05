@@ -25,18 +25,18 @@
     <link rel="stylesheet" href="css/tooltipster-sideTip-shadow.min.css">
 
     <!--Site Nav-->
-    <link rel="stylesheet" href="css/site_nav.min.css">
+    <link rel="stylesheet" href="css/site_nav.css">
 
     <!--Custom Styles-->
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/media.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <title>MaxNet</title>
 </head>
 <body >
 <header>
     <div class=" cd-main-header">
-        <a class="cd-logo" href="#0"><img src="images/Maxnet-logo-2017-blue-ru-550x339.png" alt="Logo"></a>
+        <a class="cd-logo" href="#0"><img  src="images/Maxnet-logo-2017-blue-ru-550x339.png" alt="Logo"></a>
 
         <ul class="cd-header-buttons d-flex">
 
@@ -292,14 +292,32 @@
 
                     <div class="col-md-3 data-table_body order-2 order-md-4 d-flex justify-content-center  align-items-center">
                         <p class="data-table-big-item text-center">
-                            600 минут
+                            600 минут <span style="margin-bottom: 0" class="info_icon custom_tooltip_details" data-tooltip-content="#details_tooltip_content"></span>
                         </p>
+                        <div class="tooltip_templates  d-none" >
+                            <div class="price_tooltip" id="details_tooltip_content">
+                                <p style="font-weight: 300; text-align: left">
+                                    600 минут для звонков <br> на городские номера Харькова <br> включены в абонплату
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 data-table_body order-4 order-md-6">
                         <ul class="data-table-list">
                             <li class="data-table-list-item">
                                 <span class="text">Звонки на номера Макснет</span>
-                                <span class="value">безлимит</span>
+                                <span class="value">
+                                    безлимит
+                                    <span  class="info_icon custom_tooltip_details" data-tooltip-content="#details_tooltip_content_22"></span>
+
+                                </span>
+                                <div class="tooltip_templates  d-none" >
+                                    <div class="price_tooltip" id="details_tooltip_content_22">
+                                        <p style="font-weight: 300; text-align: left">
+                                            Неограниченное количество <br> минут на звонки в сети «Макснет»
+                                        </p>
+                                    </div>
+                                </div>
 
                             </li>
                             <li class="data-table-list-item">
@@ -327,7 +345,7 @@
                 <div class="poster_wrap">
                     <div class="row">
                         <div class="col-md-5 poster-img">
-                            <img src="images/poster.png" alt="">
+                            <img class="w-100" src="images/poster.png" alt="">
                         </div>
                         <div class="col-md-7 poster-content">
                             <h5 class="poster_main_header">Подключаем</h5>
@@ -445,13 +463,15 @@
     </section>
 
 </main>
+
+
 <footer>
     <section id="footer_menu">
         <div class="container section-container">
             <div class="row justify-content-between">
                 <div class="menu_group col-12 col-md-12 col-lg-6">
                     <div class="row">
-                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-6 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5> для дома</h5>
                             </div>
@@ -489,7 +509,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-6 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title"></div>
                             <!-- /.menu_group_item_title -->
                             <div class="menu_group_item_body">
@@ -525,7 +545,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-6 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title"></div>
                             <!-- /.menu_group_item_title -->
                             <div class="menu_group_item_body">
@@ -559,7 +579,7 @@
                 <!-- /.col-md-6 -->
                 <div class="menu_group col-12 col-md-12 col-lg-6">
                     <div class="row">
-                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-6 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5> Для бизнеса</h5>
                             </div>
@@ -603,7 +623,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-6 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title"></div>
                             <!-- /.menu_group_item_title -->
                             <div class="menu_group_item_body">
@@ -636,7 +656,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-6 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title"></div>
                             <!-- /.menu_group_item_title -->
                             <div class="menu_group_item_body">
@@ -671,7 +691,7 @@
 
                 <div class="menu_group col-12 col-md-12 col-lg-6">
                     <div class="row">
-                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-6 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5> ПОДДЕРЖКА</h5>
                             </div>
@@ -708,7 +728,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-6 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5>компания</h5>
                             </div>
@@ -752,7 +772,7 @@
                             <!-- /.menu_group_item_body -->
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-4 col-md-4 col-xl-4 col-lg-4 menu_group_item">
+                        <div class="col-6 col-md-4 col-xl-4 col-lg-4 menu_group_item">
                             <div class="menu_group_item_title">
                                 <h5>мой макснет</h5>
                             </div>

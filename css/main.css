@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: #E0DFDF;
+  background-color: #ffffff;
   font-size: 16px;
   color: #111F4D;
   font-family: "Roboto", sans-serif;
@@ -626,6 +626,8 @@ section .grey-section {
   color: #B824A4;
 }
 .card_slider_item .item_card .side_icon {
+  height: 75px;
+  width: 75px;
   position: absolute;
   top: 0;
   right: 0;
@@ -2087,6 +2089,9 @@ section#video_banner .video-banner-container .video-banner-title h2 {
   text-align: center;
   line-height: 35px;
 }
+section#video_banner .video-banner-container .video-banner-btn {
+  position: relative;
+}
 
 section#video_about .section-container {
   background-color: #ffffff;
@@ -2344,7 +2349,7 @@ section#equipment_store .filters_wrap {
   margin-bottom: 60px;
 }
 section#equipment_store .store_wrap .store-item {
-  border-top: 4px dotted #000000;
+  border-top: 2px dashed #000000;
   padding: 40px 0;
 }
 section#equipment_store .store_wrap .store-item .item_data .title {
@@ -2388,7 +2393,7 @@ section#landline_city .poster_wrap .poster-img {
           align-items: flex-end;
 }
 section#landline_city .poster_wrap .poster-img img {
-  margin-bottom: -4px;
+  margin-bottom: -2px;
   margin-left: 2px;
 }
 section#landline_city .poster_wrap .poster-content {
@@ -2433,6 +2438,10 @@ section#service_0000 .all_tariff_link a {
 }
 section#service_0000 .all_tariff_link a:hover {
   color: #B824A4;
+}
+section#service_0000 .about_service p {
+  font-size: 1.25rem;
+  font-weight: 200;
 }
 
 section#about_hosting .features_wrap_title {
@@ -2990,6 +2999,13 @@ section.internet_data_wrap .internet_tariff_main_wrap {
   opacity: 0;
   margin: 10px 0 0 20px;
 }
+.slide_check_wrap .checkbox ~ label {
+  color: #646464;
+  font-weight: 900;
+}
+.slide_check_wrap .checkbox[checked] ~ label {
+  color: #111F4D;
+}
 .slide_check_wrap .checkbox + label {
   position: relative;
   padding: 0 0 0 60px;
@@ -3152,6 +3168,7 @@ form[name="check_form"] input[name="build_number"], form[name="check_form"] inpu
   display: inline-block;
   cursor: pointer;
   margin-left: 8px;
+  margin-bottom: -4px;
 }
 
 .text-item {
@@ -3402,4 +3419,24 @@ footer section#footer .footer_container .footer_bottom p {
 }
 .channels_list_modal .modal-body img {
   width: auto;
+}
+
+.interactive_list_item {
+  font-weight: 300;
+  text-decoration: underline;
+  color: #003893;
+}
+.interactive_list_item i {
+  color: #111F4D;
+}
+
+.animated_wrap {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: calc(50% - 30px);
+  left: -75px;
+}
+.animated_wrap img {
+  width: 100%;
 }

@@ -3,12 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="b014a83b-26fa-4c0d-beb6-afad6e01b66d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TV.html" beforeDir="false" afterPath="$PROJECT_DIR$/TV.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check.html" beforeDir="false" afterPath="$PROJECT_DIR$/check.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/site_nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/site_nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/site_nav.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/site_nav.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-hosting.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-hosting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipment.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipment_store.html" beforeDir="false" afterPath="$PROJECT_DIR$/equipment_store.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet.html" beforeDir="false" afterPath="$PROJECT_DIR$/internet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/internet_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet_tv.html" beforeDir="false" afterPath="$PROJECT_DIR$/internet_tv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landline_city.html" beforeDir="false" afterPath="$PROJECT_DIR$/landline_city.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landline_international.html" beforeDir="false" afterPath="$PROJECT_DIR$/landline_international.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/video.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +54,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/gif" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,15 +67,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/gif" />
+      <recent name="$PROJECT_DIR$/images/channels" />
+      <recent name="$PROJECT_DIR$/images/icons" />
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images/icons" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images/channels" />
-      <recent name="$PROJECT_DIR$/images/icons" />
-      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,7 +147,11 @@
       <workItem from="1567155746829" duration="15082000" />
       <workItem from="1567414091216" duration="3223000" />
       <workItem from="1567417342027" duration="5245000" />
-      <workItem from="1567603233752" duration="2438000" />
+      <workItem from="1567603233752" duration="3064000" />
+      <workItem from="1567664583688" duration="7691000" />
+      <workItem from="1567673770562" duration="184000" />
+      <workItem from="1567674775431" duration="487000" />
+      <workItem from="1567675389505" duration="2443000" />
     </task>
     <servers />
   </component>

@@ -239,6 +239,15 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 800px) {
+  section .section-container_header h2 {
+    border: none;
+    font-size: 3.5rem;
+  }
+  section .section-container_header h2::after {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   section .section-container {
     padding: 2rem 1.5rem;
@@ -509,6 +518,13 @@
 
   .select_tv_tariff_wrap {
     margin-top: 40px;
+  }
+
+  .dual_poster_item .dual_poster_item_title h4 {
+    min-height: 144px;
+  }
+  .dual_poster_item .link_wrap a i {
+    margin-left: 14px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1138,6 +1154,9 @@
   section .section-container_header {
     margin-bottom: 1.5rem;
   }
+  section .section-container_header h2 {
+    font-size: 2.5rem;
+  }
 
   section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
     max-width: 310px;
@@ -1235,6 +1254,20 @@
 
   .animated_wrap {
     left: -58px;
+  }
+
+  section#main_sub_banner .container {
+    background-position: center;
+  }
+  section#main_sub_banner .main_sub_banner_link_wrap {
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+
+  section#equipment_catalog .equipment_catalog_wrap .big_item .item_content .description {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (max-width: 375px) {

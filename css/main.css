@@ -1111,13 +1111,14 @@ section#main_sub_banner .main_sub_banner_link_wrap a {
   color: white;
   padding: 0.7em calc(0.7em * 1.2);
   display: inline-block;
-  border: 2px solid transparent;
   position: relative;
   font-size: 1.15em;
   cursor: pointer;
   letter-spacing: 0.07em;
   text-decoration: none;
-  border-bottom: 1px solid #ffffff;
+  border: 1px solid #ffffff;
+  width: 240px;
+  border-radius: 0.5rem;
 }
 
 section#main_tariff_plans .tariff_title {
@@ -2581,8 +2582,9 @@ section#result_section .request_wrap_btn {
   padding: 2.875rem 2.5rem 0 2.5rem;
 }
 .dual_poster_item_title h4 {
+  min-height: 144px;
   font-size: 1.875rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.75rem;
 }
 .dual_poster_item .link_wrap {
   margin-bottom: 6rem;
@@ -2631,7 +2633,7 @@ section#result_section .request_wrap_btn {
   color: #ffffff;
 }
 .dual_poster_item.dark-item .link_wrap a:hover {
-  color: #B824A4;
+  color: #ffffff;
 }
 
 .satellite_connection {
@@ -3439,4 +3441,57 @@ footer section#footer .footer_container .footer_bottom p {
 }
 .animated_wrap img {
   width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right !important;
+  }
+  table td::before {
+    /** aria-label has no advantage, it won't be read inside a table
+     *content: attr(aria-label); */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    color: #111F4D;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .maxNet-table tbody tr td:first-child {
+    padding-left: 0.75rem;
+  }
 }

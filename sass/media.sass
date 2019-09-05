@@ -240,6 +240,16 @@
               width: 100%
 
 
+@media screen and (max-width: 800px)
+  section
+    .section-container_header
+      h2
+        border: none
+        font-size: 3.5rem
+        &::after
+          display: none
+
+
 @media screen and (max-width: 768px)
   section
     .section-container
@@ -457,6 +467,15 @@
       margin-bottom: 48px
   .select_tv_tariff_wrap
     margin-top: 40px
+  .dual_poster_item
+    .dual_poster_item_title
+      h4
+        min-height: 144px
+    .link_wrap
+      a
+        i
+          margin-left: 14px
+
 
 @media screen and (max-width: 576px)
   section
@@ -950,6 +969,8 @@
       padding: 2.75rem 0.75rem 1.5rem 0.75rem
       &_header
         margin-bottom: 1.5rem
+        h2
+          font-size: 2.5rem
   section#FAQ_theme_search
     .section-container_header.advanced_header
       .search_form
@@ -1027,6 +1048,18 @@
     font-size: 0.875rem
   .animated_wrap
     left: -58px
+  section#main_sub_banner
+    .container
+      background-position: center
+    .main_sub_banner_link_wrap
+      margin-top: 40px
+      margin-bottom: 90px
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .big_item
+        .item_content
+          .description
+            justify-content: space-between
 
 @media screen and (max-width: 375px)
   section

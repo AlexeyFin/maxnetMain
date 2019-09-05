@@ -1269,6 +1269,20 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+
+  section#news_content_section .section-container_body {
+    padding: 0;
+    padding-bottom: 4rem;
+  }
+  section#news_content_section .news_wrap_content {
+    padding: 2.5rem 1.25rem;
+  }
+  section#news_content_section .news_wrap .news_navigation {
+    padding: 2.25rem 1.25rem 1.25rem 1.25rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 @media screen and (max-width: 375px) {
   section .section-container_header h2 {

@@ -1,4 +1,33 @@
 @charset "UTF-8";
+@media screen and (max-width: 1500px) {
+  footer section#footer .footer_container .footer_middle {
+    margin: 0 0 2.5rem 0;
+  }
+  footer section#footer .footer_container .footer_middle .phone_numbers {
+    font-size: 1.15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer section#footer .footer_container .footer_middle .phone_numbers a.tel_link {
+    font-size: 1.15rem;
+  }
+  footer section#footer .footer_container .footer_middle .mobile_application .title {
+    margin-right: 1rem;
+  }
+  footer section#footer .footer_container .footer_middle .mobile_application .application_link {
+    margin-right: 0.75rem;
+  }
+  footer section#footer .footer_container .footer_middle .title {
+    margin-right: 1rem;
+  }
+}
 @media screen and (max-width: 1366px) {
   section .section-container {
     padding: 2.25rem 4.5rem;
@@ -237,6 +266,16 @@
   .select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part .btn_wrap .btn {
     min-width: 120px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  footer section#footer .footer_container .footer_middle .social_links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer section#footer .footer_container .footer_middle .social_links .title {
+    margin-right: auto;
   }
 }
 @media screen and (max-width: 800px) {

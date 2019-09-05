@@ -1,5 +1,25 @@
 @import "colors"
 
+@media screen and (max-width: 1500px)
+  footer
+    section#footer
+      .footer_container
+        .footer_middle
+          margin: 0 0 2.5rem 0
+          .phone_numbers
+            font-size: 1.15rem
+            display: flex
+            align-items: center
+            justify-content: center
+            a.tel_link
+              font-size: 1.15rem
+          .mobile_application
+            .title
+              margin-right: 1rem
+            .application_link
+              margin-right: .75rem
+          .title
+            margin-right: 1rem
 @media screen and (max-width: 1366px)
   section
     .section-container
@@ -238,6 +258,17 @@
             .btn
               min-width: 120px
               width: 100%
+
+
+@media screen and (max-width: 992px)
+  footer section#footer
+    .footer_container
+      .footer_middle
+        .social_links
+          justify-content: space-between
+
+          .title
+            margin-right: auto
 
 
 @media screen and (max-width: 800px)

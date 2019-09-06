@@ -28,6 +28,9 @@
   section#main_top_banner
     .section-container
       background-size: cover
+    .main_banner_arrows
+      width: 70%
+      left: 15%
 
   section#main_services
     .service_card
@@ -149,11 +152,28 @@
         input
           width: 330px
 
+@media screen and (max-width: 1200px)
+  section#main_slider
+    .main_slider_container
+      .main_slider_arrows_wrap
+        right: -10px
+  section#main_top_banner
+    .main_banner_arrows
+      width: 86%
+      left: 7%
+
 @media screen and (max-width: 1024px)
   section
     .section-container
       padding: 2.25rem 2.5rem
 
+  section#main_top_banner
+    .section-container
+      .main_top_banner_header
+        font-size: 3.75rem
+    .main_banner_arrows
+      width: 86%
+      left: 7%
   section#main_services
     .service_card
       &_header
@@ -186,8 +206,7 @@
   section#main_slider
     .main_slider_container
       .main_slider_arrows_wrap
-        top: 380px
-
+        right: 0
   section#main_form
     .section-container
       .form_section_title_wrap
@@ -261,6 +280,11 @@
 
 
 @media screen and (max-width: 992px)
+  section#main_top_banner
+    .section-container
+      padding: 2.75rem 2.5rem
+    .main_banner_arrows
+      top: 10px
   footer section#footer
     .footer_container
       .footer_middle
@@ -279,7 +303,21 @@
         font-size: 3.5rem
         &::after
           display: none
-
+  section#main_top_banner
+    .section-container
+      .main_top_banner_header
+        font-size: 3rem
+    .main_banner_arrows
+      width: 85%
+      left: 7.5%
+  .card_slider
+    margin-top: 70px
+    .slick-arrow
+      top: -56px
+    .slick-arrow-left
+      left: 1.5rem
+    .slick-arrow-right
+      right: 1.5rem
 
 @media screen and (max-width: 768px)
   section
@@ -290,10 +328,11 @@
       background-position: center
       .main_top_banner_header
         text-align: center
-        font-size: 3.5rem
+        //font-size: 3.5rem
   section#main_services
     .service_card_header
       min-height: 50px
+      width: 100%
       font-size: 1.5rem
   section#main_sub_banner
     .main_sub_banner_header
@@ -318,7 +357,7 @@
   section#main_slider
     .main_slider_container
       .main_slider_arrows_wrap
-        top: 335px
+        top: 48px
 
   section#main_form
     .section-container
@@ -534,6 +573,8 @@
         display: none
       .btn_wrap
         flex: 1 1 auto
+    .main_banner_arrows
+      top: 300px
   section#main_services
     .service_card
       border: none
@@ -1002,6 +1043,10 @@
         margin-bottom: 1.5rem
         h2
           font-size: 2.5rem
+  section#main_top_banner
+    .section-container
+      .main_top_banner_header
+        font-size: 2rem
   section#FAQ_theme_search
     .section-container_header.advanced_header
       .search_form

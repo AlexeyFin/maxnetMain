@@ -246,6 +246,50 @@ section .grey-section {
   position: relative;
 }
 
+.maxNet-btn-horizontal_transparent {
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  -webkit-box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.maxNet-btn-horizontal_transparent::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  top: 0;
+  left: 50%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.maxNet-btn-horizontal_transparent:hover {
+  color: #111F4D;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+  border-radius: 0.5rem;
+}
+.maxNet-btn-horizontal_transparent:hover:before {
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.maxNet-btn-horizontal_transparent .text {
+  z-index: 2;
+  position: relative;
+}
+
 .maxNet-btn-white-transparent {
   background-color: white;
   color: #111F4D;
@@ -926,8 +970,7 @@ section .grey-section {
 }
 
 section#main_top_banner .section-container {
-  min-height: 383px;
-  background: url("../images/subscribe-banner.png") #003893 no-repeat;
+  min-height: 412px;
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -966,7 +1009,7 @@ section#main_top_banner .section-container .main_top_banner_text {
 section#main_top_banner .section-container .main_top_banner_button {
   background-color: #003893;
   position: relative;
-  z-index: 2;
+  z-index: 100;
   display: inline-block;
   -webkit-box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
@@ -1005,6 +1048,31 @@ section#main_top_banner .section-container .main_top_banner_button:hover:before 
 section#main_top_banner .section-container .main_top_banner_button .text {
   z-index: 2;
   position: relative;
+}
+section#main_top_banner .main_banner_arrows {
+  position: absolute;
+  top: 30px;
+  left: 20%;
+  width: 60%;
+  height: 0 !important;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section#main_top_banner .main_banner_arrows .slick-arrow {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 36px;
+}
+section#main_top_banner .main_banner_arrows .slick-arrow:focus, section#main_top_banner .main_banner_arrows .slick-arrow:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }
 
 section#main_services .service_card {

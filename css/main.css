@@ -1787,6 +1787,7 @@ section#express_help .section-container {
 section#express_help .section-container .help_cards_wrap .help_card_wrap {
   padding: 0 1.75rem;
   margin-bottom: 3.5rem;
+  height: 100%;
 }
 section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card {
   border: 1px solid #969696;
@@ -2629,7 +2630,7 @@ section#speed_test .speed-test-item.dark .btn_wrap .speed_link {
 }
 
 section#result_section .request_wrap {
-  margin-top: 124px;
+  margin-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2639,7 +2640,7 @@ section#result_section .request_wrap {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 248px;
+  margin-bottom: 6px;
 }
 section#result_section .request_wrap_btn {
   width: 436px;

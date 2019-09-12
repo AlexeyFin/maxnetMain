@@ -43,7 +43,59 @@ $('.partners_wrap').slick({
     slidesToShow: 6,
     infinite: true,
     slidesToScroll: 1,
-    autoplay: true
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 1367,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+
+            }
+        },
+        {
+            breakpoint: 1025,
+            settings: {
+                arrows: false,
+                autoplay: true,
+                slidesToShow: 4,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 801,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                infinite: false,
+                arrows: true,
+
+            }
+        },
+        {
+            breakpoint: 568,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+
+            }
+        },
+        {
+            breakpoint: 414,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+
+            }
+        },
+
+
+    ]
+
 });
 $('#ssd_hosting_slider').slick({
     nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',

@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @media screen and (max-width: 1500px) {
+  section#main_services .service_card_header {
+    font-size: 1.5rem;
+  }
+
   footer section#footer .footer_container .footer_middle {
     margin: 0 0 2.5rem 0;
   }
@@ -42,7 +46,7 @@
   }
 
   section#main_services .service_card_header {
-    font-size: 1.65rem;
+    font-size: 1.25rem;
   }
   section#main_services .service_card_link {
     padding: 1.5rem;
@@ -125,6 +129,10 @@
 
   .card_slider_item .item_card .options_list {
     padding-left: 1rem;
+  }
+
+  section#main_tariff_plans .tariff_item {
+    border-left: 1px solid #969696;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -624,13 +632,25 @@
     margin-left: 14px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   section#tv_main .alternative_tv_table_wrap {
     display: block;
   }
 
   #tv_table {
     display: none;
+  }
+
+  .maxNet-table thead tr th img {
+    display: none;
+  }
+
+  footer section#footer .footer_container .footer_middle .mobile_application .application_link:last-child {
+    margin-right: 0;
+  }
+
+  section#express_help .section-container .help_cards_wrap .help_card_wrap {
+    min-height: 450px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -797,6 +817,10 @@
   .data-table_body {
     margin-top: 0.5rem;
     margin-bottom: 1.25rem;
+  }
+
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_img {
+    display: none;
   }
 
   section.mobile_proposition_banner {
@@ -1191,10 +1215,6 @@
     margin-bottom: 0;
   }
 
-  .additional_package {
-    display: none;
-  }
-
   .select_tv_tariff_wrap .tv_get_more_info {
     margin-top: 64px;
   }
@@ -1396,6 +1416,20 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+
+  footer {
+    overflow-x: hidden;
+  }
+
+  .select_tv_tariff_wrap .tv_packages_wrap .additional_packages_title h5 {
+    font-size: 1.25rem;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_title h5 {
+    font-size: 1.75rem;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_img {
+    display: none;
+  }
 }
 @media screen and (max-width: 375px) {
   section .section-container_header h2 {
@@ -1524,5 +1558,12 @@
 
   section#equipment_catalog .equipment_catalog_wrap .small_item_content {
     background-position: 140px 10px;
+  }
+
+  .select_tv_tariff_wrap .tv_packages_wrap .additional_packages_title h5 {
+    font-size: 1.25rem;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_title h5 {
+    font-size: 1.5rem;
   }
 }

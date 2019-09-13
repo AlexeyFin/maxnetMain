@@ -1,6 +1,9 @@
 @import "colors"
 
 @media screen and (max-width: 1500px)
+  section#main_services
+    .service_card_header
+      font-size: 1.5rem
   footer
     section#footer
       .footer_container
@@ -35,7 +38,7 @@
   section#main_services
     .service_card
       &_header
-        font-size: 1.65rem
+        font-size: 1.25rem
       &_link
         padding: 1.5rem
 
@@ -116,6 +119,9 @@
     .item_card
       .options_list
         padding-left: 1rem
+  section#main_tariff_plans
+    .tariff_item
+      border-left: 1px solid #969696
 
 @media screen and (max-width: 1280px)
   footer
@@ -555,12 +561,31 @@
           margin-left: 14px
 
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 767px)
   section#tv_main
     .alternative_tv_table_wrap
       display: block
   #tv_table
     display: none
+  .maxNet-table
+    thead
+      tr
+        th
+          img
+            display: none
+
+  footer
+    section#footer
+      .footer_container
+        .footer_middle
+          .mobile_application
+            .application_link:last-child
+              margin-right: 0
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          min-height: 450px
 
 @media screen and (max-width: 576px)
   section
@@ -682,6 +707,11 @@
       margin-top: .5rem
       margin-bottom: 1.25rem
 
+  .select_tv_tariff_wrap
+    .tv_packages_wrap
+      .tv_package
+        .package_img
+          display: none
 
   section.mobile_proposition_banner
     display: block
@@ -997,8 +1027,7 @@
           align-items: center
           .price
             margin-bottom: 0
-  .additional_package
-    display: none
+
   .select_tv_tariff_wrap
     .tv_get_more_info
       margin-top: 64px
@@ -1163,6 +1192,19 @@
       .news_navigation
         padding: 2.25rem 1.25rem 1.25rem 1.25rem
         justify-content: space-between
+  footer
+    overflow-x: hidden
+  .select_tv_tariff_wrap
+    .tv_packages_wrap
+      .additional_packages_title
+        h5
+          font-size: 1.25rem
+      .tv_package
+        .package_title
+          h5
+            font-size: 1.75rem
+        .package_img
+          display: none
 
 
 @media screen and (max-width: 375px)
@@ -1301,6 +1343,15 @@
     .equipment_catalog_wrap
       .small_item_content
         background-position: 140px 10px
+  .select_tv_tariff_wrap
+    .tv_packages_wrap
+      .additional_packages_title
+        h5
+          font-size: 1.25rem
+      .tv_package
+        .package_title
+          h5
+            font-size: 1.5rem
 
 
 

@@ -1,5 +1,3 @@
-const tv_form = document.forms['tv_package_select_form'];
-const tv_packages = Array.from(document.querySelectorAll('.tv_package'));
 
 $("body").children().each(function () {
     document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
@@ -240,12 +238,12 @@ $('.internet-slider').slick({
             }
         },
         {
-            breakpoint: 577,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                arrows: false
+                arrows: true
             }
         },
         {
@@ -328,46 +326,13 @@ function toggle_check(elem) {
     }
 }
 
-if (tv_form) {
-    tv_form.addEventListener('change', e => {
-        hide_tv_packages(e.target.value)
-    });
-}
 
-function toggle_check(elem) {
-    let wrap = elem.closest('.checkbox_wrap_content');
-    if (elem.checked) {
-        wrap.classList.add('checked')
-    } else {
-        wrap.classList.remove('checked')
-    }
-}
+
 
 function slider_link(elem) {
     elem.checked ? window.location = elem.dataset['onlink'] : window.location = elem.dataset['offlink'];
 }
 
-const hide_tv_packages = function (type) {
-    if (tv_form) {
-        let packages = tv_packages.filter(item => {
-            if (item.dataset['filter'].indexOf(type) + 1) {
-                item.classList.remove('d-none');
-                return item
-            } else {
-                item.classList.add('d-none')
-            }
-        });
-
-        if (packages.length <= 1) {
-            document.querySelector('.additional_packages_title').classList.add('d-none')
-        } else {
-            document.querySelector('.additional_packages_title').classList.remove('d-none')
-        }
-    }
-
-};
-
-hide_tv_packages('web-tv');
 
 
 

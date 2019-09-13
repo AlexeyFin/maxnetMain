@@ -854,6 +854,7 @@ section .grey-section {
 }
 .data-table_body {
   margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   padding: 1.25rem 1.75rem;
   background-color: #E5E5E5;
   border: 1px solid #ffffff;
@@ -1406,6 +1407,9 @@ section#main_slider .main_slider_container .main_slider_wrap_item {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
+section#main_slider .main_slider_container .main_slider_wrap_item .slider_img img {
+  width: 100%;
+}
 section#main_slider .main_slider_container .main_slider_wrap_item .slider_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1788,6 +1792,7 @@ section#express_help .section-container .help_cards_wrap .help_card_wrap {
   padding: 0 1.75rem;
   margin-bottom: 3.5rem;
   height: 100%;
+  min-height: 360px;
 }
 section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card {
   border: 1px solid #969696;
@@ -2988,9 +2993,6 @@ section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item .alternati
   font-size: 1.25rem;
   font-weight: 900;
   margin-bottom: 28px;
-}
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part .btn_wrap .btn {
-  min-width: 220px;
 }
 .select_tv_tariff_wrap .tv_packages_wrap .tv_package.basic_package {
   background-color: white;

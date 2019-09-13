@@ -2646,6 +2646,53 @@ section#result_section .request_wrap_btn {
   width: 436px;
 }
 
+section#tv_main .alternative_tv_table_wrap {
+  display: none;
+}
+section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item {
+  margin-top: 30px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #c8c8c8;
+}
+section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item .alternative_tv_table_body .title {
+  margin-bottom: 29px;
+}
+section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item .alternative_tv_table_body .title h3 {
+  font-size: 24px;
+  color: #003893;
+  text-align: center;
+  font-weight: 400;
+}
+section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item .alternative_tv_table_body .feature, section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item .alternative_tv_table_body .value {
+  margin-bottom: 14px;
+}
+section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item .alternative_tv_table_body .feature {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item .alternative_tv_table_body .value {
+  text-align: center;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item .alternative_tv_table_body .value span.check {
+  color: #003893;
+  font-size: 18px;
+}
+section#tv_main .alternative_tv_table_wrap .alternative_tv_table_item .alternative_tv_table_body .value span.big_text {
+  font-weight: 500;
+  font-size: 18px;
+}
+
 .dual_poster_item {
   border: 1px solid #969696;
   padding: 2.875rem 2.5rem 0 2.5rem;

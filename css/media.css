@@ -624,6 +624,15 @@
     margin-left: 14px;
   }
 }
+@media screen and (max-width: 600px) {
+  section#tv_main .alternative_tv_table_wrap {
+    display: block;
+  }
+
+  #tv_table {
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
   section .section-container {
     padding: 2.75rem 0.75rem;

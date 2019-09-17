@@ -23,6 +23,11 @@
               margin-right: .75rem
           .title
             margin-right: 1rem
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          height: 450px
 @media screen and (max-width: 1366px)
   section
     .section-container
@@ -150,8 +155,9 @@
     .section-container
       .help_cards_wrap
         .help_card_wrap
+          height: 420px
           .help_card
-            height: 400px
+            //height: 400px
             &_header
               min-height: 64px
               margin-bottom: 24px
@@ -170,7 +176,21 @@
     .main_banner_arrows
       width: 86%
       left: 7%
-
+  footer section#footer
+    .footer_container
+      .footer_middle
+        .phone_numbers,.mobile_application,.social_links,.blog_link
+          margin: 1.25rem 0
+          justify-content: center
+        .mobile_application
+          .application_link
+            margin-left: 1rem
+            margin-right: 0
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          height: 420px
 @media screen and (max-width: 1024px)
   section
     .section-container
@@ -234,11 +254,19 @@
       .help_cards_wrap
         .help_card_wrap
           padding: 0 1rem
-          .help_card
-            height: 450px
         .maxNet_rotate_card
           .front,.back
             padding: 0 1rem
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          margin-bottom: 2rem
+          &:last-child
+            margin-bottom: 0
+  section#FAQ
+    .section-container
+      padding: 2.5rem 0
   section#about_carrier
     .section-container
       .carrier_wrap
@@ -298,15 +326,21 @@
     .footer_container
       .footer_middle
         .social_links
-          justify-content: space-between
-
+          justify-content: center
           .title
-            margin-right: auto
+            margin-right: 1rem
+
   section#about_stages_of_development
     .about_slider_container
       .icon_wrap
         display: none
-
+  section#about_maxnet_is
+    .section-container
+      .maxnet_is_body
+        .maxnet_is_item
+          .maxnet_is_title
+            min-height: 60px
+            margin-bottom: 0.25rem
 
 @media screen and (max-width: 800px)
   section
@@ -402,8 +436,8 @@
     .section-container
       .help_cards_wrap
         .help_card_wrap
-          .help_card
-            min-height: 360px
+          min-height: 360px
+
   section#about_about_company
     .about_services_item
       height: 200px
@@ -542,9 +576,20 @@
       .img_wrap
         display: none
       .banner-text
+        &_header
+          h4
+            text-align: center
+            margin-bottom: 1rem
+          p
+            text-align: center
         &_img
           margin: 3rem 0
-          display: block
+          display: flex
+          justify-content: center
+        &_body
+          .text_wrap,.btn_wrap
+            display: flex
+            justify-content: center
   section#result_section
     .request_wrap
 
@@ -559,6 +604,16 @@
       a
         i
           margin-left: 14px
+  section#about_about_company
+    .content
+      margin-top: 1rem
+  section#FAQ_directory
+    .directory_content_wrap
+      .get_directory_form_wrap
+        input
+          width: 100%
+          padding: 1rem
+          margin-bottom: 1.25rem
 
 
 @media screen and (max-width: 767px)
@@ -581,11 +636,22 @@
           .mobile_application
             .application_link:last-child
               margin-right: 0
-  section#express_help
+
+  section#about_maxnet_is
     .section-container
-      .help_cards_wrap
-        .help_card_wrap
-          min-height: 450px
+      .maxnet_is_body
+        .maxnet_is_item
+          .maxnet_is_title
+            min-height: 30px
+  section#about_carrier
+    .section-container
+      .carrier_wrap
+        .carrier-content
+          padding: 1.75rem
+          .carrier-content_title
+            width: 100%
+            margin-bottom: 2rem
+
 
 @media screen and (max-width: 576px)
   section
@@ -795,7 +861,7 @@
         .mobile_application
           flex-wrap: wrap
           display: flex
-          justify-content: flex-end
+          justify-content: space-between
   section#express_help
     .section-container
       .help_cards_wrap
@@ -1052,12 +1118,11 @@
   section#about_maxnet_is
     .section-container
       .maxnet_is_body
-
         .maxnet_is_item
           .maxnet_img_wrap
             margin-bottom: 1.25rem
           .maxnet_is_title
-            margin-bottom: 1.25rem
+            min-height: 30px
           p
             font-size: 1rem
   section.internet_data_wrap
@@ -1078,6 +1143,14 @@
       text-align: center
       margin-bottom: 1.5rem
       margin-right: 0
+  section#FAQ_theme_search
+    .section-container_header.advanced_header
+      .search_form
+        .search_wrap
+          input
+            width: 260px
+  .mobile_bottom
+    display: block
 
 @media screen and (max-width: 414px)
   section
@@ -1126,7 +1199,7 @@
           display: none
   section#international_calls
     table
-      width: 460px
+      width: 100%
   .whois_card
     .text
       margin-bottom: 3rem
@@ -1242,6 +1315,12 @@
             height: 20px
             font-size: .875rem
 
+  section#about_carrier
+    .section-container
+      .carrier_wrap
+        .carrier-content
+          .carrier-content_title
+            font-size: 1.75rem
 
 
   footer section#footer_menu
@@ -1303,15 +1382,20 @@
     .footer_container
       .footer_middle
         .mobile_application
+          justify-content: space-between
           .title
             margin-bottom: .75rem
           .application_link
+            margin-left: 0.5rem
             i
-              font-size: 1.25rem
-
+              font-size: 1.15rem
+              margin-right: 0.5rem
+        .mobile_application,.social_links,.blog_link
+          padding-left: 0
+          padding-right: 0
 
 @media screen and (max-width: 320px)
-  html,body,main
+  html,main
     overflow-x: hidden
   section#FAQ_theme_search
     .section-container_header.advanced_header
@@ -1351,6 +1435,25 @@
       .tv_package
         .package_title
           h5
+            font-size: 1.5rem
+  footer
+    section#footer
+      .footer_container
+        .footer_middle
+          .social_links
+            flex-wrap: wrap
+            .title
+              width: 42%
+              margin-right: 0.25rem
+          .mobile_application
+            .title
+              margin-right: 0.25rem
+  section#about_carrier
+    .section-container
+      .carrier_wrap
+        .carrier-content
+          padding: 1.5rem
+          .carrier-content_title
             font-size: 1.5rem
 
 

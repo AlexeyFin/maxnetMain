@@ -576,20 +576,33 @@
       .img_wrap
         display: none
       .banner-text
+
         &_header
+          padding-left: 20%
           h4
-            text-align: center
+            //text-align: center
             margin-bottom: 1rem
           p
-            text-align: center
+            //text-align: center
+            font-size: 2.5rem
+            padding-left: 0
         &_img
           margin: 3rem 0
           display: flex
           justify-content: center
         &_body
+
+          padding-left: 0
+          .btn_wrap
+            button.maxNet-btn
+              font-size: 1.75rem
+              width: 100%
+              max-width: 460px
+
           .text_wrap,.btn_wrap
             display: flex
             justify-content: center
+
   section#result_section
     .request_wrap
 
@@ -1227,13 +1240,20 @@
           .btn_wrap
             display: flex
             justify-content: center
+            button.maxNet-btn
+              font-size: 1.25rem
 
         &_header
           margin-bottom: 0
+          padding-left: 12%
           h4
-            font-size: 2.25rem
+            font-size: 2.75rem
+            margin-bottom: 0.5rem
           p
-            font-size: 1rem
+            font-size: 2rem
+        &_img
+          img
+            margin-top: 0 !important
 
       .banner-text_img
         margin: 1rem 0
@@ -1373,6 +1393,11 @@
           font-size: 1rem
   .content-banner
     .banner-wrap
+      .banner-text
+        padding: 2.25rem 15px
+        &_body
+          .text_wrap
+            margin-bottom: 24px
       .banner-text_img
         img
           height: 240px
@@ -1456,5 +1481,15 @@
           .carrier-content_title
             font-size: 1.5rem
 
+  .content-banner
+    .banner-wrap
+      .banner-text
+        padding-top: 1.75rem
+        padding-bottom: 1rem
+        .banner-text_header
+          h4
+            font-size: 2.25rem
+          p
+            font-size: 1.5rem
 
 

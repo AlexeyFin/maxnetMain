@@ -3250,6 +3250,7 @@ form[name="check_form"] input[name="build_number"], form[name="check_form"] inpu
 }
 .content-banner .banner-wrap .banner-text {
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .content-banner .banner-wrap .banner-text_header {
   margin-bottom: 42px;

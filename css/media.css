@@ -644,12 +644,15 @@
   .content-banner .banner-wrap .img_wrap {
     display: none;
   }
+  .content-banner .banner-wrap .banner-text_header {
+    padding-left: 20%;
+  }
   .content-banner .banner-wrap .banner-text_header h4 {
-    text-align: center;
     margin-bottom: 1rem;
   }
   .content-banner .banner-wrap .banner-text_header p {
-    text-align: center;
+    font-size: 2.5rem;
+    padding-left: 0;
   }
   .content-banner .banner-wrap .banner-text_img {
     margin: 3rem 0;
@@ -659,6 +662,14 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .content-banner .banner-wrap .banner-text_body {
+    padding-left: 0;
+  }
+  .content-banner .banner-wrap .banner-text_body .btn_wrap button.maxNet-btn {
+    font-size: 1.75rem;
+    width: 100%;
+    max-width: 460px;
   }
   .content-banner .banner-wrap .banner-text_body .text_wrap, .content-banner .banner-wrap .banner-text_body .btn_wrap {
     display: -webkit-box;
@@ -1446,14 +1457,22 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .content-banner .banner-wrap .banner-text_body .btn_wrap button.maxNet-btn {
+    font-size: 1.25rem;
+  }
   .content-banner .banner-wrap .banner-text_header {
     margin-bottom: 0;
+    padding-left: 12%;
   }
   .content-banner .banner-wrap .banner-text_header h4 {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
   }
   .content-banner .banner-wrap .banner-text_header p {
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+  .content-banner .banner-wrap .banner-text_img img {
+    margin-top: 0 !important;
   }
   .content-banner .banner-wrap .banner-text_img {
     margin: 1rem 0;
@@ -1593,6 +1612,12 @@
     font-size: 1rem;
   }
 
+  .content-banner .banner-wrap .banner-text {
+    padding: 2.25rem 15px;
+  }
+  .content-banner .banner-wrap .banner-text_body .text_wrap {
+    margin-bottom: 24px;
+  }
   .content-banner .banner-wrap .banner-text_img img {
     height: 240px;
     width: 240px;
@@ -1678,6 +1703,17 @@
     padding: 1.5rem;
   }
   section#about_carrier .section-container .carrier_wrap .carrier-content .carrier-content_title {
+    font-size: 1.5rem;
+  }
+
+  .content-banner .banner-wrap .banner-text {
+    padding-top: 1.75rem;
+    padding-bottom: 1rem;
+  }
+  .content-banner .banner-wrap .banner-text .banner-text_header h4 {
+    font-size: 2.25rem;
+  }
+  .content-banner .banner-wrap .banner-text .banner-text_header p {
     font-size: 1.5rem;
   }
 }

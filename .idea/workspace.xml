@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet_tv.html" beforeDir="false" afterPath="$PROJECT_DIR$/internet_tv.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
     </list>
@@ -136,7 +135,7 @@
       <workItem from="1567750801415" duration="14282000" />
       <workItem from="1568279396744" duration="3474000" />
       <workItem from="1568355211243" duration="10449000" />
-      <workItem from="1568701179118" duration="13355000" />
+      <workItem from="1568701179118" duration="14209000" />
     </task>
     <servers />
   </component>

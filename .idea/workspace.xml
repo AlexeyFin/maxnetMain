@@ -3,11 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="b014a83b-26fa-4c0d-beb6-afad6e01b66d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TV.html" beforeDir="false" afterPath="$PROJECT_DIR$/TV.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landline_city.html" beforeDir="false" afterPath="$PROJECT_DIR$/landline_city.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landline_international.html" beforeDir="false" afterPath="$PROJECT_DIR$/landline_international.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet.html" beforeDir="false" afterPath="$PROJECT_DIR$/internet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/internet_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet_tv.html" beforeDir="false" afterPath="$PROJECT_DIR$/internet_tv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/video.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +143,7 @@
       <workItem from="1568355211243" duration="10449000" />
       <workItem from="1568701179118" duration="16062000" />
       <workItem from="1568791865228" duration="18148000" />
-      <workItem from="1568810839298" duration="553000" />
+      <workItem from="1568810839298" duration="4991000" />
     </task>
     <servers />
   </component>

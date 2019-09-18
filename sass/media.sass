@@ -420,7 +420,14 @@
           .text_wrap,.btn_wrap
             display: flex
             justify-content: center
-
+  section#get_consultation
+    .consultation-container
+      padding: 2rem
+      .text_wrap
+        font-size: 1.25rem
+      .link_wrap
+        .consult_link
+          font-size: 1.25rem
 
 @media screen and (max-width: 768px)
   section
@@ -679,7 +686,10 @@
       white-space: nowrap
       margin-right: 32px
       font-size: 1.25rem
-
+  section#video_main_section
+  .section-container
+    .section_sub_title
+      text-align: center
 
 @media screen and (max-width: 767px)
   section#tv_main
@@ -736,7 +746,15 @@
       .store-item
         .item_control
           justify-content: center
-
+  section#get_consultation
+    .consultation-container
+      flex-direction: column
+      .text_wrap,.link_wrap
+        width: 100%
+        display: flex
+        justify-content: center
+        margin-bottom: 1rem
+        text-align: center
 @media screen and (max-width: 576px)
   section
     .section-container
@@ -1101,7 +1119,16 @@
       width: 100%
     button
       width: auto
-
+  section#news_want_to_know_more
+    .section-container
+      .want_to_know_more_content_header
+        font-size: 3rem
+  .select_tv_tariff_wrap
+    .tv_packages_wrap
+      .tv_package
+        padding: 24px 16px 0 16px
+        .right-part
+          padding: 24px 16px
 @media screen and (max-width: 475px)
   main
     overflow-x: hidden
@@ -1164,6 +1191,7 @@
           .form-group
             width: 75%
           input
+            font-size: 0.75rem
             min-width: 100%
   section#video_banner
     .video-banner-container
@@ -1198,6 +1226,7 @@
           align-items: center
           .price
             margin-bottom: 0
+            padding-right: 6px
 
   .select_tv_tariff_wrap
     .tv_get_more_info
@@ -1264,6 +1293,10 @@
           h5
             button
               padding: 1.25rem 0
+  section#news_want_to_know_more
+    .section-container
+      .want_to_know_more_content_header
+        margin-bottom: 2rem
 
 @media screen and (max-width: 414px)
   section
@@ -1398,7 +1431,13 @@
             font-size: 1.75rem
         .package_img
           display: none
-
+  footer
+    section#footer
+      .footer_container
+        .footer_middle
+          .mobile_application
+            .application_link
+              justify-content: flex-end
 
 @media screen and (max-width: 375px)
   section

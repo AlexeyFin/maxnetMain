@@ -282,14 +282,14 @@ $(document).ready(function(){
             {
                 breakpoint: 1025,
                 settings: {
-                    arrows: false,
+                    arrows: true,
                     autoplay: true,
                     infinite: true,
                     slidesToShow: 3
                 }
             },
             {
-                breakpoint: 801,
+                breakpoint: 813,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -303,7 +303,7 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false,
+                    arrows: true,
                     autoplay: true,
                     infinity: true
 

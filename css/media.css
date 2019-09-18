@@ -447,6 +447,16 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  section#get_consultation .consultation-container {
+    padding: 2rem;
+  }
+  section#get_consultation .consultation-container .text_wrap {
+    font-size: 1.25rem;
+  }
+  section#get_consultation .consultation-container .link_wrap .consult_link {
+    font-size: 1.25rem;
+  }
 }
 @media screen and (max-width: 768px) {
   section .section-container {
@@ -769,6 +779,10 @@
     margin-right: 32px;
     font-size: 1.25rem;
   }
+
+  .section-container .section_sub_title {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px) {
   section#tv_main .alternative_tv_table_wrap {
@@ -824,6 +838,24 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  section#get_consultation .consultation-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#get_consultation .consultation-container .text_wrap, section#get_consultation .consultation-container .link_wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1288,6 +1320,17 @@
   .get_call_section button {
     width: auto;
   }
+
+  section#news_want_to_know_more .section-container .want_to_know_more_content_header {
+    font-size: 3rem;
+  }
+
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package {
+    padding: 24px 16px 0 16px;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part {
+    padding: 24px 16px;
+  }
 }
 @media screen and (max-width: 475px) {
   main {
@@ -1366,6 +1409,7 @@
     width: 75%;
   }
   section#news_want_to_know_more .want_to_know_more_wrap .want_to_know_more_content_form .maxNet_easy_form input {
+    font-size: 0.75rem;
     min-width: 100%;
   }
 
@@ -1408,6 +1452,7 @@
   }
   .select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part .price {
     margin-bottom: 0;
+    padding-right: 6px;
   }
 
   .select_tv_tariff_wrap .tv_get_more_info {
@@ -1484,6 +1529,10 @@
   }
   section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-header h5 button {
     padding: 1.25rem 0;
+  }
+
+  section#news_want_to_know_more .section-container .want_to_know_more_content_header {
+    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 414px) {
@@ -1647,6 +1696,12 @@
   }
   .select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_img {
     display: none;
+  }
+
+  footer section#footer .footer_container .footer_middle .mobile_application .application_link {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 @media screen and (max-width: 375px) {

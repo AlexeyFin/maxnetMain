@@ -72,14 +72,14 @@
           font-size: 3.75rem
   section#about_partners
     .partners_container
-
       .partners_wrap
         justify-content: center
         .partner_logo
           width: 18%
           margin-bottom: 1rem
         .partner
-          height: 62px
+          //height: 62px
+          width: 100%
   section#equipment_catalog
     .equipment_catalog_wrap
       .small_item
@@ -118,8 +118,6 @@
         .input_group
           .input_wrap
             input
-              //border: none
-              //border-bottom: 1px solid $dark_grey
   .card_slider_item
     .item_card
       .options_list
@@ -341,7 +339,13 @@
           .maxnet_is_title
             min-height: 60px
             margin-bottom: 0.25rem
-
+  section#about_stages_of_development
+    .about_slider_container
+      .slider_arrows_wrap
+        button
+          font-size: 2rem
+          &:first-child
+            margin-right: 2rem
 @media screen and (max-width: 800px)
   section
     .section-container_header
@@ -369,10 +373,13 @@
     .service_card
       .wrap
         justify-content: space-between
+
 @media screen and (max-width: 768px)
   section
     .section-container
       padding: 2rem 1.5rem
+      &_header
+        margin-bottom: 2rem
   section#main_top_banner
     .section-container
       background-position: center
@@ -680,8 +687,17 @@
           .carrier-content_title
             width: 100%
             margin-bottom: 2rem
-
-
+  section#about_stages_of_development
+    display: none
+  section#check_section
+    form
+      .form-group
+        justify-content: space-between
+        input[name="street_name"]
+          width: 100%
+        input[name="build_number"],input[name="porch_number"]
+          width: 45%
+          margin-top: 1rem
 @media screen and (max-width: 576px)
   section
     .section-container
@@ -917,8 +933,7 @@
     .about_services_item:nth-child(4)
       border: 2px none #003893
       border-right-style: solid
-  section#about_stages_of_development
-    display: none
+
   section#about_partners
     .partners_container
       .partners_wrap
@@ -1073,7 +1088,7 @@
   section#about_carrier
     .section-container .carrier_wrap
       margin-top: 2.5rem
-      margin-bottom: 2rem
+      margin-bottom: 0
   section#about_maxnet_is
     overflow-x: hidden
   section#main_news

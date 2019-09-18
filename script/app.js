@@ -40,7 +40,7 @@ $(document).ready(function(){
     });
     $('.partners_wrap').slick({
         arrows: false,
-        slidesToShow: 6,
+        slidesToShow: 8,
         infinite: true,
         slidesToScroll: 1,
         autoplay: true,
@@ -48,7 +48,7 @@ $(document).ready(function(){
             {
                 breakpoint: 1367,
                 settings: {
-                    slidesToShow: 5,
+                    slidesToShow: 6,
                     slidesToScroll: 1,
                     autoplay: true,
 
@@ -77,7 +77,7 @@ $(document).ready(function(){
             {
                 breakpoint: 568,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     autoplay: true,
 
@@ -86,7 +86,7 @@ $(document).ready(function(){
             {
                 breakpoint: 414,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     autoplay: true,
 

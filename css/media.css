@@ -92,7 +92,7 @@
     margin-bottom: 1rem;
   }
   section#about_partners .partners_container .partners_wrap .partner {
-    height: 62px;
+    width: 100%;
   }
 
   section#equipment_catalog .equipment_catalog_wrap .small_item {
@@ -347,6 +347,13 @@
     min-height: 60px;
     margin-bottom: 0.25rem;
   }
+
+  section#about_stages_of_development .about_slider_container .slider_arrows_wrap button {
+    font-size: 2rem;
+  }
+  section#about_stages_of_development .about_slider_container .slider_arrows_wrap button:first-child {
+    margin-right: 2rem;
+  }
 }
 @media screen and (max-width: 800px) {
   section .section-container_header h2 {
@@ -387,6 +394,9 @@
 @media screen and (max-width: 768px) {
   section .section-container {
     padding: 2rem 1.5rem;
+  }
+  section .section-container_header {
+    margin-bottom: 2rem;
   }
 
   section#main_top_banner .section-container {
@@ -755,6 +765,23 @@
     width: 100%;
     margin-bottom: 2rem;
   }
+
+  section#about_stages_of_development {
+    display: none;
+  }
+
+  section#check_section form .form-group {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section#check_section form .form-group input[name="street_name"] {
+    width: 100%;
+  }
+  section#check_section form .form-group input[name="build_number"], section#check_section form .form-group input[name="porch_number"] {
+    width: 45%;
+    margin-top: 1rem;
+  }
 }
 @media screen and (max-width: 576px) {
   section .section-container {
@@ -1066,10 +1093,6 @@
     border-right-style: solid;
   }
 
-  section#about_stages_of_development {
-    display: none;
-  }
-
   section#about_partners .partners_container .partners_wrap .partner_logo {
     width: 33%;
   }
@@ -1249,7 +1272,7 @@
 
   section#about_carrier .section-container .carrier_wrap {
     margin-top: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   section#about_maxnet_is {

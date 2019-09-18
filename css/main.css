@@ -79,6 +79,7 @@ button.btn, a.btn {
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 section .section-container {
@@ -983,7 +984,7 @@ section .grey-section {
 
 .mobile_bottom {
   display: none;
-  padding: 12px 24px 24px 24px;
+  padding: 12px 12px 24px 12px;
   background: #F2F4FB;
   position: -webkit-sticky;
   position: sticky;
@@ -998,8 +999,12 @@ section .grey-section {
 .mobile_bottom button {
   font-size: 14px !important;
   padding: 0.5rem 0.75rem !important;
+  width: 48%;
 }
 
+section#main_top_banner {
+  position: relative;
+}
 section#main_top_banner .section-container {
   min-height: 412px;
   background-size: cover;
@@ -1082,7 +1087,7 @@ section#main_top_banner .section-container .main_top_banner_button .text {
 }
 section#main_top_banner .main_banner_arrows {
   position: absolute;
-  top: 30px;
+  top: 80px;
   left: 20%;
   width: 60%;
   height: 0 !important;
@@ -1163,12 +1168,11 @@ section#main_services .service_card_header {
   font-size: 1.875rem;
   position: relative;
   line-height: 37px;
-  min-height: 115px;
+  min-height: 85px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-bottom: 3.25rem;
-  position: relative;
 }
 section#main_services .service_card_header::after {
   position: absolute;
@@ -1190,9 +1194,26 @@ section#main_services .service_card_chevron {
   z-index: 2;
   position: relative;
   margin-bottom: 0;
-  display: block;
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section#main_services .service_card .wrap {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 section#main_sub_banner .section-container {
@@ -1472,7 +1493,7 @@ section#main_slider .main_slider_container .main_slider_wrap_item .slider_conten
   font-size: 1.25rem;
 }
 section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_btn {
-  margin-top: auto;
+  margin-top: 48px;
 }
 section#main_slider .main_slider_container .main_slider_arrows_wrap {
   position: absolute;
@@ -1528,7 +1549,6 @@ section#main_form .section-container .main_form_wrap label {
 }
 section#main_form .section-container .main_form_wrap .check_group .checkbox_wrap {
   margin-bottom: 1rem;
-  padding: 0 0.5rem;
 }
 section#main_form .section-container .main_form_wrap .check_group .checkbox_wrap_content {
   background-color: #F5F5F5;
@@ -1556,6 +1576,11 @@ section#main_form .section-container .main_form_wrap .input_group .input_wrap {
 section#main_form .section-container .main_form_wrap .input_group .input_wrap input {
   width: 100%;
   padding: 1rem;
+}
+section#main_form .section-container .main_form_wrap .input_group .input_wrap .form-group .max-net-form-input {
+  padding: 1rem;
+  border-radius: 0;
+  height: 59px;
 }
 section#main_form .section-container .main_form_wrap .input_group .confirm_wrap {
   display: -webkit-box;
@@ -3341,49 +3366,57 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-footer section#footer_menu {
+footer section#mobile_footer_menu {
+  display: none;
+}
+footer section#mobile_footer_menu .menu_list_link_big {
+  font-size: 16px !important;
+  color: #003893 !important;
+  line-height: 23px !important;
+}
+footer section#footer_menu, footer section#mobile_footer_menu {
   background-color: #ffffff;
 }
-footer section#footer_menu .section-container {
+footer section#footer_menu .section-container, footer section#mobile_footer_menu .section-container {
   background-color: #ffffff;
   padding-bottom: 0;
 }
-footer section#footer_menu .menu_group {
+footer section#footer_menu .menu_group, footer section#mobile_footer_menu .menu_group {
   margin-bottom: 5rem;
   width: 48%;
 }
-footer section#footer_menu .menu_group_item_title {
+footer section#footer_menu .menu_group_item_title, footer section#mobile_footer_menu .menu_group_item_title {
   margin-bottom: 1.25rem;
   min-height: 22px;
 }
-footer section#footer_menu .menu_group_item_title h5 {
+footer section#footer_menu .menu_group_item_title h5, footer section#mobile_footer_menu .menu_group_item_title h5 {
   font-size: 1rem;
   text-transform: uppercase;
 }
-footer section#footer_menu .menu_group_item_body ul, footer section#footer_menu .menu_group_item_body ul.menu_list {
+footer section#footer_menu .menu_group_item_body ul, footer section#footer_menu .menu_group_item_body ul.menu_list, footer section#mobile_footer_menu .menu_group_item_body ul, footer section#mobile_footer_menu .menu_group_item_body ul.menu_list {
   list-style-type: none;
   padding: 0;
   margin-bottom: 1.5rem;
 }
-footer section#footer_menu .menu_group_item_body ul li.menu_list_title, footer section#footer_menu .menu_group_item_body ul.menu_list li.menu_list_title {
+footer section#footer_menu .menu_group_item_body ul li.menu_list_title, footer section#footer_menu .menu_group_item_body ul.menu_list li.menu_list_title, footer section#mobile_footer_menu .menu_group_item_body ul li.menu_list_title, footer section#mobile_footer_menu .menu_group_item_body ul.menu_list li.menu_list_title {
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
-footer section#footer_menu .menu_group_item_body ul li, footer section#footer_menu .menu_group_item_body ul.menu_list li {
+footer section#footer_menu .menu_group_item_body ul li, footer section#footer_menu .menu_group_item_body ul.menu_list li, footer section#mobile_footer_menu .menu_group_item_body ul li, footer section#mobile_footer_menu .menu_group_item_body ul.menu_list li {
   margin-bottom: 0.4rem;
   font-size: 0.875rem;
 }
-footer section#footer_menu .menu_group_item_body ul li a, footer section#footer_menu .menu_group_item_body ul.menu_list li a {
+footer section#footer_menu .menu_group_item_body ul li a, footer section#footer_menu .menu_group_item_body ul.menu_list li a, footer section#mobile_footer_menu .menu_group_item_body ul li a, footer section#mobile_footer_menu .menu_group_item_body ul.menu_list li a {
   text-decoration: none;
   font-size: 0.875rem;
   color: #111F4D;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-footer section#footer_menu .menu_group_item_body ul li a:hover, footer section#footer_menu .menu_group_item_body ul.menu_list li a:hover {
+footer section#footer_menu .menu_group_item_body ul li a:hover, footer section#footer_menu .menu_group_item_body ul.menu_list li a:hover, footer section#mobile_footer_menu .menu_group_item_body ul li a:hover, footer section#mobile_footer_menu .menu_group_item_body ul.menu_list li a:hover {
   color: #B824A4;
 }
-footer section#footer_menu .menu_group_item_body ul.big_margin_list li {
+footer section#footer_menu .menu_group_item_body ul.big_margin_list li, footer section#mobile_footer_menu .menu_group_item_body ul.big_margin_list li {
   margin-bottom: 1.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3393,10 +3426,10 @@ footer section#footer_menu .menu_group_item_body ul.big_margin_list li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-footer section#footer_menu .menu_group_item_body ul.big_margin_list li .title {
+footer section#footer_menu .menu_group_item_body ul.big_margin_list li .title, footer section#mobile_footer_menu .menu_group_item_body ul.big_margin_list li .title {
   color: #003893;
 }
-footer section#footer_menu .menu_group_item_body ul.big_margin_list li .content {
+footer section#footer_menu .menu_group_item_body ul.big_margin_list li .content, footer section#mobile_footer_menu .menu_group_item_body ul.big_margin_list li .content {
   font-weight: 900;
 }
 footer section#footer {
@@ -3594,6 +3627,10 @@ footer section#footer .footer_container .footer_bottom p {
 }
 .animated_wrap img {
   width: 100%;
+}
+
+.noSpace {
+  white-space: nowrap;
 }
 
 table {

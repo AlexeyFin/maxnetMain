@@ -346,7 +346,7 @@
           font-size: 2rem
           &:first-child
             margin-right: 2rem
-@media screen and (max-width: 800px)
+@media screen and (max-width: 812px)
   section
     .section-container_header
       h2
@@ -373,6 +373,54 @@
     .service_card
       .wrap
         justify-content: space-between
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .small_item_content
+        background-position: 90% 10px
+  section#equipment_store
+    .store_wrap
+      .store-item
+        .item_data
+          .equipment_store_link,.title
+            font-size: 24px
+  .space-left
+    padding-left: 0
+  section.internet_data_wrap
+    .internet-nav_wrap
+      .internet_nav_link_wrap
+        margin: 0 12px
+        text-align: center
+  .content-banner
+    .banner-wrap
+      .img_wrap
+        display: none
+      .banner-text
+        &_header
+          padding-left: 20%
+          h4
+            //text-align: center
+            margin-bottom: 1rem
+            font-size: 3rem
+          p
+            //text-align: center
+            font-size: 2rem
+            padding-left: 0
+        &_img
+          margin: 3rem 0
+          display: flex
+          justify-content: center
+        &_body
+          padding-left: 0
+          .btn_wrap
+            button.maxNet-btn
+              font-size: 1.75rem
+              width: 100%
+              max-width: 460px
+
+          .text_wrap,.btn_wrap
+            display: flex
+            justify-content: center
+
 
 @media screen and (max-width: 768px)
   section
@@ -449,6 +497,8 @@
         .social_links,.mobile_application
           justify-content: space-between
           margin-top: 1.5rem
+          .title
+            margin-right: auto
   section#express_help
     .section-container
       .help_cards_wrap
@@ -579,8 +629,11 @@
       .internet_nav_link_wrap
         width: 45%
         margin: 0 0 18px 0
+        text-align: center
+        padding: 0 0.5rem
         a.internet_nav_link
           font-size: 18px
+
           &::after
             display: none
     .data_item
@@ -588,37 +641,6 @@
         font-size: 1rem
   .space-left
     padding-left: 0
-  .content-banner
-    .banner-wrap
-      .img_wrap
-        display: none
-      .banner-text
-
-        &_header
-          padding-left: 20%
-          h4
-            //text-align: center
-            margin-bottom: 1rem
-          p
-            //text-align: center
-            font-size: 2.5rem
-            padding-left: 0
-        &_img
-          margin: 3rem 0
-          display: flex
-          justify-content: center
-        &_body
-
-          padding-left: 0
-          .btn_wrap
-            button.maxNet-btn
-              font-size: 1.75rem
-              width: 100%
-              max-width: 460px
-
-          .text_wrap,.btn_wrap
-            display: flex
-            justify-content: center
 
   section#result_section
     .request_wrap
@@ -651,6 +673,12 @@
         margin-bottom: 2rem
     section#footer_menu
       display: none
+  .get_call_section
+    h6
+      white-space: nowrap
+      margin-right: 32px
+      font-size: 1.25rem
+
 
 @media screen and (max-width: 767px)
   section#tv_main
@@ -698,6 +726,16 @@
         input[name="build_number"],input[name="porch_number"]
           width: 45%
           margin-top: 1rem
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .small_item_content
+        background-position: 90% 10px
+  section#equipment_store
+    .store_wrap
+      .store-item
+        .item_control
+          justify-content: center
+
 @media screen and (max-width: 576px)
   section
     .section-container
@@ -1052,7 +1090,16 @@
         .input_group
           .input_wrap
             margin-bottom: 0
-
+  .get_call_section
+    flex-wrap: wrap
+    h6
+      margin-right: 0
+      white-space: normal
+      text-align: center
+      margin-bottom: 1.25rem
+      width: 100%
+    button
+      width: auto
 
 @media screen and (max-width: 475px)
   main

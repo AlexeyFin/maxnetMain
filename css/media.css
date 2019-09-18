@@ -355,7 +355,7 @@
     margin-right: 2rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 812px) {
   section .section-container_header h2 {
     border: none;
     font-size: 3.5rem;
@@ -389,6 +389,63 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  section#equipment_catalog .equipment_catalog_wrap .small_item_content {
+    background-position: 90% 10px;
+  }
+
+  section#equipment_store .store_wrap .store-item .item_data .equipment_store_link, section#equipment_store .store_wrap .store-item .item_data .title {
+    font-size: 24px;
+  }
+
+  .space-left {
+    padding-left: 0;
+  }
+
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap {
+    margin: 0 12px;
+    text-align: center;
+  }
+
+  .content-banner .banner-wrap .img_wrap {
+    display: none;
+  }
+  .content-banner .banner-wrap .banner-text_header {
+    padding-left: 20%;
+  }
+  .content-banner .banner-wrap .banner-text_header h4 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .content-banner .banner-wrap .banner-text_header p {
+    font-size: 2rem;
+    padding-left: 0;
+  }
+  .content-banner .banner-wrap .banner-text_img {
+    margin: 3rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-banner .banner-wrap .banner-text_body {
+    padding-left: 0;
+  }
+  .content-banner .banner-wrap .banner-text_body .btn_wrap button.maxNet-btn {
+    font-size: 1.75rem;
+    width: 100%;
+    max-width: 460px;
+  }
+  .content-banner .banner-wrap .banner-text_body .text_wrap, .content-banner .banner-wrap .banner-text_body .btn_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -481,6 +538,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 1.5rem;
+  }
+  footer section#footer .footer_container .footer_middle .social_links .title, footer section#footer .footer_container .footer_middle .mobile_application .title {
+    margin-right: auto;
   }
 
   section#express_help .section-container .help_cards_wrap .help_card_wrap {
@@ -648,6 +708,8 @@
   section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap {
     width: 45%;
     margin: 0 0 18px 0;
+    text-align: center;
+    padding: 0 0.5rem;
   }
   section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap a.internet_nav_link {
     font-size: 18px;
@@ -661,45 +723,6 @@
 
   .space-left {
     padding-left: 0;
-  }
-
-  .content-banner .banner-wrap .img_wrap {
-    display: none;
-  }
-  .content-banner .banner-wrap .banner-text_header {
-    padding-left: 20%;
-  }
-  .content-banner .banner-wrap .banner-text_header h4 {
-    margin-bottom: 1rem;
-  }
-  .content-banner .banner-wrap .banner-text_header p {
-    font-size: 2.5rem;
-    padding-left: 0;
-  }
-  .content-banner .banner-wrap .banner-text_img {
-    margin: 3rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .content-banner .banner-wrap .banner-text_body {
-    padding-left: 0;
-  }
-  .content-banner .banner-wrap .banner-text_body .btn_wrap button.maxNet-btn {
-    font-size: 1.75rem;
-    width: 100%;
-    max-width: 460px;
-  }
-  .content-banner .banner-wrap .banner-text_body .text_wrap, .content-banner .banner-wrap .banner-text_body .btn_wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   section#result_section .request_wrap {
@@ -735,6 +758,12 @@
   }
   footer section#footer_menu {
     display: none;
+  }
+
+  .get_call_section h6 {
+    white-space: nowrap;
+    margin-right: 32px;
+    font-size: 1.25rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -781,6 +810,16 @@
   section#check_section form .form-group input[name="build_number"], section#check_section form .form-group input[name="porch_number"] {
     width: 45%;
     margin-top: 1rem;
+  }
+
+  section#equipment_catalog .equipment_catalog_wrap .small_item_content {
+    background-position: 90% 10px;
+  }
+
+  section#equipment_store .store_wrap .store-item .item_control {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1229,6 +1268,21 @@
 
   section#main_form .section-container .main_form_wrap .input_group .input_wrap {
     margin-bottom: 0;
+  }
+
+  .get_call_section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .get_call_section h6 {
+    margin-right: 0;
+    white-space: normal;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    width: 100%;
+  }
+  .get_call_section button {
+    width: auto;
   }
 }
 @media screen and (max-width: 475px) {

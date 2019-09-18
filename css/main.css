@@ -2476,10 +2476,20 @@ section#equipment_store .store_wrap .store-item {
   border-top: 2px dashed #000000;
   padding: 40px 0;
 }
+section#equipment_store .store_wrap .store-item .item_img img {
+  width: 100%;
+}
 section#equipment_store .store_wrap .store-item .item_data .title {
+  margin-bottom: 20px;
+}
+section#equipment_store .store_wrap .store-item .item_data .title, section#equipment_store .store_wrap .store-item .item_data .equipment_store_link {
   font-size: 30px;
   line-height: 37px;
   font-weight: 400;
+  color: #111F4D;
+}
+section#equipment_store .store_wrap .store-item .item_data .equipment_store_link {
+  text-decoration: underline;
 }
 section#equipment_store .store_wrap .store-item .item_data .description {
   font-weight: 300;

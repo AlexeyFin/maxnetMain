@@ -435,6 +435,9 @@
     background-position: 90% 10px;
   }
 
+  section#equipment_store .store_wrap .store-item .item_data .title {
+    margin-bottom: 32px;
+  }
   section#equipment_store .store_wrap .store-item .item_data .equipment_store_link, section#equipment_store .store_wrap .store-item .item_data .title {
     font-size: 24px;
   }
@@ -998,6 +1001,10 @@
   }
   .light_table tbody tr td {
     font-size: 16px;
+  }
+
+  section#equipment_store .store_wrap .store-item .maxNet-btn {
+    min-width: 180px;
   }
 }
 @media screen and (max-width: 576px) {

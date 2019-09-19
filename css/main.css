@@ -2189,6 +2189,9 @@ section#news_want_to_know_more .section-container {
 section#news_want_to_know_more .section-container .want_to_know_more_wrap {
   margin-top: 1.25rem;
 }
+section#news_want_to_know_more .section-container .want_to_know_more_img img {
+  width: 100%;
+}
 section#news_want_to_know_more .section-container .want_to_know_more_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2202,7 +2205,7 @@ section#news_want_to_know_more .section-container .want_to_know_more_content {
           justify-content: center;
 }
 section#news_want_to_know_more .section-container .want_to_know_more_content_header {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 section#video_banner .video-banner-container {

@@ -382,7 +382,6 @@
     .main_banner_arrows
       width: 95%
       left: 2.5%
-  .card_slider
   .maxNet-table
     thead
       tr
@@ -398,7 +397,6 @@
           text-align: center
           img
             display: none
-
     .slick-arrow
       top: 39%
       z-index: 1
@@ -482,6 +480,29 @@
             height: 50px
             width: 100%
             margin-bottom: 20px
+  section#news_content_section
+    .news_wrap
+      .news_bottom_img_wrap
+        display: flex
+        img
+          margin-top: 0
+  section#news_want_to_know_more
+    .want_to_know_more_wrap
+      .want_to_know_more_img
+        display: flex
+        justify-content: center
+        img
+          width: auto
+      .want_to_know_more_content
+        &_header
+          h4
+            text-align: center
+        &_form
+          form
+            display: flex
+            flex-direction: column
+            align-items: center
+
 
 @media screen and (max-width: 768px)
   section

@@ -633,6 +633,22 @@
   .dual_poster_item.dark-item .img_wrap {
     margin-bottom: 2.5rem;
   }
+
+  .features_wrap {
+    margin-top: 2.25rem;
+  }
+
+  .whois_card {
+    width: 100%;
+  }
+  .whois_card .text {
+    text-align: center;
+    margin-bottom: 4.5rem;
+    max-width: 540px;
+  }
+  .whois_card .btn_wrap {
+    max-width: 340px;
+  }
 }
 @media screen and (max-width: 768px) {
   section .section-container {
@@ -842,18 +858,6 @@
 
   section#landline_city .poster_wrap .poster-content .poster_main_header {
     font-size: 3rem;
-  }
-
-  .whois_card {
-    width: 100%;
-  }
-  .whois_card .text {
-    text-align: center;
-    margin-bottom: 4.5rem;
-  }
-
-  .features_wrap {
-    margin-top: 1.5rem;
   }
 
   section#international_calls table tbody img {
@@ -2030,6 +2034,10 @@
   section#landline_city .poster_wrap .poster-content .content_wrap .text_wrap {
     padding-left: 0;
     padding-bottom: 0;
+  }
+
+  section#about_hosting .features_wrap .features_list {
+    padding: 0 32px 0 80px;
   }
 }
 @media screen and (max-width: 375px) {

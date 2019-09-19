@@ -793,6 +793,10 @@ section .grey-section {
   opacity: 0;
 }
 
+.card_slider_item .item_card_data {
+  padding: 0 1rem;
+}
+
 .data_item {
   padding: 1rem;
   display: -webkit-box;

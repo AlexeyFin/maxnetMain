@@ -7,9 +7,11 @@
       <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landline_city.html" beforeDir="false" afterPath="$PROJECT_DIR$/landline_city.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-hosting.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-hosting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.min.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +141,7 @@
       <workItem from="1568701179118" duration="16062000" />
       <workItem from="1568791865228" duration="18148000" />
       <workItem from="1568810839298" duration="5706000" />
-      <workItem from="1568874053805" duration="24347000" />
+      <workItem from="1568874053805" duration="26699000" />
     </task>
     <servers />
   </component>

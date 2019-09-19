@@ -367,7 +367,7 @@
           font-size: 2rem
           &:first-child
             margin-right: 2rem
-@media screen and (max-width: 812px)
+@media screen and (max-width: 823px)
   section
     .section-container_header
       h2
@@ -508,6 +508,13 @@
             display: flex
             flex-direction: column
             align-items: center
+  section#check_section
+    form
+      .form-group
+        flex-wrap: wrap
+        justify-content: center
+        button.btn
+          margin-top: 24px
 
 
 @media screen and (max-width: 768px)
@@ -673,7 +680,6 @@
         padding: 0 3rem
         button
           margin-top: 1.5rem
-          width: 100%
         input[name="street_name"]
           width: 320px
   .data-table_body
@@ -826,6 +832,8 @@
     form
       .form-group
         justify-content: space-between
+        button
+          width: 100%
         input[name="street_name"]
           width: 100%
         input[name="build_number"],input[name="porch_number"]
@@ -882,6 +890,8 @@
       .store-item
         .maxNet-btn
           min-width: 180px
+
+
 @media screen and (max-width: 576px)
   section
     .section-container

@@ -380,7 +380,7 @@
     margin-right: 2rem;
   }
 }
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 823px) {
   section .section-container_header h2 {
     border: none;
     font-size: 3.5rem;
@@ -550,6 +550,17 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  section#check_section form .form-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#check_section form .form-group button.btn {
+    margin-top: 24px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -753,7 +764,6 @@
   }
   section#check_section form .form-group button {
     margin-top: 1.5rem;
-    width: 100%;
   }
   section#check_section form .form-group input[name="street_name"] {
     width: 320px;
@@ -934,6 +944,9 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  section#check_section form .form-group button {
+    width: 100%;
   }
   section#check_section form .form-group input[name="street_name"] {
     width: 100%;

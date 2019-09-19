@@ -1889,6 +1889,8 @@ section#express_help .section-container .help_cards_wrap .help_card_wrap .help_c
 }
 section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_btn button, section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card_btn a {
   width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 section#express_help .section-container .help_cards_wrap .maxNet_rotate_card .front, section#express_help .section-container .help_cards_wrap .maxNet_rotate_card .back {
   padding: 0 1.75rem;
@@ -2060,10 +2062,23 @@ section#FAQ_theme_search .section-container .keywords_list_wrap .keywords_list l
   left: -1.25rem;
 }
 
+section#FAQ_directory {
+  background-color: #e5e5e5;
+  background-position: center;
+  background-size: contain;
+}
 section#FAQ_directory .directory_content_wrap .directory_content_text {
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: 3.25rem;
+}
+section#FAQ_directory .directory_content_wrap .get_directory_form_wrap .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input {
   width: 360px;
@@ -2076,6 +2091,7 @@ section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input {
   letter-spacing: 1.08px;
   font-family: "Roboto", sans-serif;
   border-radius: 0.25rem;
+  margin-right: 28px;
 }
 section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input:focus, section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input:after {
   outline: none;

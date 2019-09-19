@@ -1619,6 +1619,7 @@ section#express_help
 
             button, a
               width: 100%
+              box-shadow: none
       .maxNet_rotate_card
         .front,.back
           padding: 0 1.75rem
@@ -1768,6 +1769,9 @@ section#FAQ_theme_search
 
 
 section#FAQ_directory
+  background-color: #e5e5e5
+  background-position: center
+  background-size: contain
   .directory_content_wrap
     .directory_content_text
       font-size: 1.25rem
@@ -1775,6 +1779,9 @@ section#FAQ_directory
       margin-bottom: 3.25rem
 
     .get_directory_form_wrap
+      .form-content
+        display: flex
+        justify-content: flex-start
       input
         width: 360px
         padding: .5rem 1.25rem
@@ -1785,6 +1792,7 @@ section#FAQ_directory
         letter-spacing: 1.08px
         font-family: "Roboto", sans-serif
         border-radius: .25rem
+        margin-right: 28px
 
         &:focus, &:after
           outline: none

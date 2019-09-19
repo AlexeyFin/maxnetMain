@@ -28,6 +28,11 @@
       .help_cards_wrap
         .help_card_wrap
           height: 450px
+  section#FAQ_directory
+    .directory_content_wrap
+      .get_directory_form_wrap
+        input
+          width: 320px
 @media screen and (max-width: 1366px)
   section
     .section-container
@@ -125,6 +130,12 @@
   section#main_tariff_plans
     .tariff_item
       border-left: 1px solid #969696
+  section#FAQ_directory
+    background-position: center
+    background-size: auto
+    .directory_content_wrap
+      padding: 0 36px 0 48px
+
 
 @media screen and (max-width: 1280px)
   footer
@@ -160,6 +171,8 @@
               min-height: 64px
               margin-bottom: 24px
   section#FAQ_directory
+    background-position: right
+    background-size: auto
     .directory_content_wrap
       .get_directory_form_wrap
         input
@@ -189,6 +202,9 @@
       .help_cards_wrap
         .help_card_wrap
           height: 420px
+  section#FAQ_directory
+    background-size: cover
+
 @media screen and (max-width: 1024px)
   section
     .section-container
@@ -313,7 +329,9 @@
             .btn
               min-width: 120px
               width: 100%
-
+  section#FAQ_directory
+    background-size: cover
+    background-position: bottom
 
 @media screen and (max-width: 992px)
   section#main_top_banner
@@ -428,7 +446,17 @@
       .link_wrap
         .consult_link
           font-size: 1.25rem
-
+  section#FAQ_directory
+    background-size: cover
+    background-position-x: -520px
+    .directory_content_wrap
+      .get_directory_form_wrap
+        .form-content
+          flex-wrap: wrap
+          input
+            height: 50px
+            width: 100%
+            margin-bottom: 20px
 @media screen and (max-width: 768px)
   section
     .section-container
@@ -440,7 +468,6 @@
       background-position: center
       .main_top_banner_header
         text-align: center
-        //font-size: 3.5rem
   section#main_services
     .service_card
       &_text
@@ -668,6 +695,7 @@
     .content
       margin-top: 1rem
   section#FAQ_directory
+    background-position: -450px
     .directory_content_wrap
       .get_directory_form_wrap
         input
@@ -755,6 +783,11 @@
         justify-content: center
         margin-bottom: 1rem
         text-align: center
+  section#FAQ_directory
+    background-position: -700px
+    .directory_content_wrap
+      padding: 0 48px 0 0
+
 @media screen and (max-width: 576px)
   section
     .section-container
@@ -982,6 +1015,14 @@
     .faq_img
       display: none
   section#FAQ_directory
+    background-position: center
+    .directory_content_wrap
+      padding: 0 24px
+      .directory_content_text
+        text-align: center
+      .get_directory_form_wrap
+        input
+          margin-right: 0
     form
       button.maxNet-btn
         min-width: 175px
@@ -1325,6 +1366,17 @@
           min-width: 175px
           width: 100%
           padding: 0.75rem
+  section#FAQ
+    .section-container_body
+      .accordion
+        .card
+          .card-header
+            h5
+              button
+                .text
+                  font-size: 1rem
+                .icon
+                  margin-left: 1rem
   section#get_consultation
     .consultation-container
       padding-bottom: 1rem
@@ -1438,7 +1490,12 @@
           .mobile_application
             .application_link
               justify-content: flex-end
-
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          .help_card
+            padding: 1.5rem 1.15rem 1.75rem 1.15rem
 @media screen and (max-width: 375px)
   section
     .section-container_header

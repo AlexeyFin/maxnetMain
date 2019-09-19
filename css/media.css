@@ -397,17 +397,16 @@
     left: 2.5%;
   }
 
-  .card_slider {
-    margin-top: 70px;
-  }
   .card_slider .slick-arrow {
-    top: -56px;
+    top: 39%;
+    z-index: 1;
+    color: #003893;
   }
   .card_slider .slick-arrow-left {
-    left: 1.5rem;
+    left: -48px;
   }
   .card_slider .slick-arrow-right {
-    right: 1.5rem;
+    right: -48px;
   }
 
   section#main_services .service_card .wrap {
@@ -825,6 +824,13 @@
   .section-container .section_sub_title {
     text-align: center;
   }
+
+  .card_slider .slick-arrow-left {
+    left: -24px;
+  }
+  .card_slider .slick-arrow-right {
+    right: -24px;
+  }
 }
 @media screen and (max-width: 767px) {
   section#tv_main .alternative_tv_table_wrap {
@@ -905,6 +911,24 @@
   }
   section#FAQ_directory .directory_content_wrap {
     padding: 0 48px 0 0;
+  }
+
+  section#main_top_banner .section-container .main_top_banner_header {
+    font-size: 3rem;
+  }
+  section#main_top_banner .main_banner_arrows {
+    width: 95%;
+    left: 2.5%;
+  }
+
+  .card_slider .slick-arrow {
+    top: 39%;
+    z-index: 1;
+    font-size: 2rem;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1891,6 +1915,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  section#video_banner .video-banner-btn .maxNet-btn {
+    padding: 0.75rem 1.25rem;
+  }
 }
 @media screen and (max-width: 320px) {
   html, main {
@@ -1970,5 +1998,13 @@
   }
   .mobile_bottom button {
     font-size: 12px !important;
+  }
+
+  section#video_banner .video-banner-btn .animated_wrap {
+    left: -48px;
+  }
+  section#video_banner .video-banner-btn .maxNet-btn {
+    background-color: #003893;
+    padding: 0.75rem 1rem;
   }
 }

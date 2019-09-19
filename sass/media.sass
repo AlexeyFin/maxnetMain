@@ -380,13 +380,19 @@
       width: 95%
       left: 2.5%
   .card_slider
-    margin-top: 70px
+
     .slick-arrow
-      top: -56px
+      top: 39%
+      z-index: 1
+      //font-size: 2rem
+      //background-color: transparent
+      //box-shadow: none
+      //border: none
+      color: $main_blue
     .slick-arrow-left
-      left: 1.5rem
+      left: -48px
     .slick-arrow-right
-      right: 1.5rem
+      right: -48px
   section#main_services
     .service_card
       .wrap
@@ -714,11 +720,15 @@
       white-space: nowrap
       margin-right: 32px
       font-size: 1.25rem
-  section#video_main_section
+
   .section-container
     .section_sub_title
       text-align: center
-
+  .card_slider
+    .slick-arrow-left
+      left: -24px
+    .slick-arrow-right
+      right: -24px
 @media screen and (max-width: 767px)
   section#tv_main
     .alternative_tv_table_wrap
@@ -787,7 +797,21 @@
     background-position: -700px
     .directory_content_wrap
       padding: 0 48px 0 0
-
+  section#main_top_banner
+    .section-container
+      .main_top_banner_header
+        font-size: 3rem
+    .main_banner_arrows
+      width: 95%
+      left: 2.5%
+  .card_slider
+    .slick-arrow
+      top: 39%
+      z-index: 1
+      font-size: 2rem
+      background-color: transparent
+      box-shadow: none
+      border: none
 @media screen and (max-width: 576px)
   section
     .section-container
@@ -1538,7 +1562,6 @@
           .carrier-content_title
             font-size: 1.75rem
 
-
   footer section#footer_menu
     .menu_group
       margin-bottom: 0
@@ -1614,7 +1637,10 @@
         .mobile_application,.social_links,.blog_link
           padding-left: 0
           padding-right: 0
-
+  section#video_banner
+    .video-banner-btn
+      .maxNet-btn
+        padding: 0.75rem 1.25rem
 @media screen and (max-width: 320px)
   html,main
     overflow-x: hidden
@@ -1692,3 +1718,10 @@
       font-size: 1rem
     button
       font-size: 12px !important
+  section#video_banner
+    .video-banner-btn
+      .animated_wrap
+        left: -48px
+      .maxNet-btn
+        background-color: $main_blue
+        padding: 0.75rem 1rem

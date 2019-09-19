@@ -428,6 +428,9 @@
             justify-content: space-between;
   }
 
+  section#equipment_catalog .equipment_catalog_wrap .big_item .item_content .description {
+    margin-bottom: 48px;
+  }
   section#equipment_catalog .equipment_catalog_wrap .small_item_content {
     background-position: 90% 10px;
   }
@@ -1684,6 +1687,14 @@
 
   section#news_want_to_know_more .section-container .want_to_know_more_content_header {
     margin-bottom: 2rem;
+  }
+
+  section#equipment_catalog .equipment_catalog_wrap .big_item .item_content .title {
+    font-size: 1.5rem;
+  }
+
+  section#equipment_catalog .equipment_catalog_wrap .small_item_content .title {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 414px) {

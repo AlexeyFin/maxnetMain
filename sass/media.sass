@@ -200,11 +200,31 @@
           height: 420px
   section#FAQ_directory
     background-size: cover
-
+  section#landline_city
+    .poster_wrap
+      .poster-img
+        display: none
+      .poster-content
+        padding: 2.5rem 2.5rem 0 0
+        .header_wrap
+          padding-left: 2.5rem
+          margin-bottom: 2.25rem
+        .content_wrap
+          display: flex
+          .img_wrap
+            display: flex
+            align-items: flex-end
+            width: 40%
+          .text_wrap
+            width: 60%
+            padding-left: 2.5rem
+            padding-bottom: 2.5rem
 @media screen and (max-width: 1024px)
   section
     .section-container
       padding: 2.25rem 2.5rem
+      &_header
+        margin-bottom: 2.25rem
 
   section#main_top_banner
     .section-container
@@ -515,7 +535,29 @@
         justify-content: center
         button.btn
           margin-top: 24px
-
+  .data-table_body
+    padding: 1rem 1.25rem
+    .data-table-big-item
+      font-size: 1.5rem
+      line-height: 2rem
+      margin-bottom: 0
+    .data-table-list
+      &-item
+        font-size: 1rem
+        .text
+          max-width: 200px
+  .dual_poster_item
+    padding: 2.5rem 2.5rem 0 2.5rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .link_wrap
+      margin-bottom: 4rem
+      .text
+        max-width: 210px
+    &.dark-item
+      .img_wrap
+        margin-bottom: 2.5rem
 
 @media screen and (max-width: 768px)
   section
@@ -682,14 +724,7 @@
           margin-top: 1.5rem
         input[name="street_name"]
           width: 320px
-  .data-table_body
-    padding: 1rem 1.25rem
-    .data-table-big-item
-      font-size: 1.5rem
-      line-height: 2rem
-    .data-table-list
-      &-item
-        font-size: 1rem
+
   section#landline_city
     .poster_wrap
       .poster-content
@@ -785,7 +820,9 @@
   section.internet_data_wrap
     .internet-nav_wrap
       padding: 1rem 1rem 0
-
+  section#result_section
+    .request_wrap_btn
+      max-width: 300px
 @media screen and (max-width: 767px)
   section
     .section-container_left_header
@@ -890,7 +927,25 @@
       .store-item
         .maxNet-btn
           min-width: 180px
-
+  section#landline_city
+    .poster_wrap
+      margin-top: 2rem
+      .poster-content
+        padding-bottom: 0
+        .content_wrap
+          display: flex
+          flex-direction: column
+          .text_wrap
+            width: 100%
+            order: 1
+            margin-bottom: 1.5rem
+          .img_wrap
+            order: 2
+            width: 100%
+  .data-table_body
+    .data-table-list-item
+      .text
+        max-width: 330px
 
 @media screen and (max-width: 576px)
   section
@@ -1453,6 +1508,13 @@
       .small_item_content
         .title
           font-size: 1.5rem
+  .dual_poster_item
+    .link_wrap .text
+      max-width: 280px
+  .data-table_body
+    .data-table-list-item
+      .text
+        max-width: 220px
 @media screen and (max-width: 414px)
   section
     .section-container
@@ -1620,8 +1682,24 @@
         td
           vertical-align: middle
           font-size: 14px
-
-
+  section#result_section
+    .request_wrap_btn
+      max-width: 270px
+  section#landline_city
+    .poster_wrap
+      .poster-content
+        padding: 1.5rem
+        padding-bottom: 0
+        .header_wrap
+          padding-left: 0
+          h5
+            font-size: 2rem
+          h6
+            font-size: 1.25rem
+        .content_wrap
+          .text_wrap
+            padding-left: 0
+            padding-bottom: 0
 @media screen and (max-width: 375px)
   section
     .section-container_header
@@ -1705,7 +1783,6 @@
   section#landline_city
     .poster_wrap
       .poster-content
-        padding: 2.5rem
         .poster_main_header
           font-size: 2.5rem
         .poster_sub_header
@@ -1743,6 +1820,10 @@
     .video-banner-btn
       .maxNet-btn
         padding: 0.75rem 1.25rem
+  .data-table_body
+    .data-table-list-item
+      .text
+        max-width: 200px
 @media screen and (max-width: 320px)
   html,main
     overflow-x: hidden
@@ -1827,3 +1908,8 @@
       .maxNet-btn
         background-color: $main_blue
         padding: 0.75rem 1rem
+  section#landline_city
+    .poster_wrap
+      .poster-content
+        padding: 1.25rem
+        padding-bottom: 0

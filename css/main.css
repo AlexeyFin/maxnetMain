@@ -880,6 +880,7 @@ section .grey-section {
   font-size: 1.875rem;
   font-weight: bold;
   line-height: 2.25rem;
+  margin-bottom: 0;
 }
 .data-table-list {
   list-style-type: none;
@@ -2569,6 +2570,9 @@ section#landline_city .poster_wrap .poster-content .poster-text {
   font-weight: 300;
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
+}
+section#landline_city .poster_wrap .poster-content .content_wrap .img_wrap {
+  display: none;
 }
 
 section#service_0000 .all_tariff_link {

@@ -219,10 +219,43 @@
   section#FAQ_directory {
     background-size: cover;
   }
+
+  section#landline_city .poster_wrap .poster-img {
+    display: none;
+  }
+  section#landline_city .poster_wrap .poster-content {
+    padding: 2.5rem 2.5rem 0 0;
+  }
+  section#landline_city .poster_wrap .poster-content .header_wrap {
+    padding-left: 2.5rem;
+    margin-bottom: 2.25rem;
+  }
+  section#landline_city .poster_wrap .poster-content .content_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section#landline_city .poster_wrap .poster-content .content_wrap .img_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 40%;
+  }
+  section#landline_city .poster_wrap .poster-content .content_wrap .text_wrap {
+    width: 60%;
+    padding-left: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
 @media screen and (max-width: 1024px) {
   section .section-container {
     padding: 2.25rem 2.5rem;
+  }
+  section .section-container_header {
+    margin-bottom: 2.25rem;
   }
 
   section#main_top_banner .section-container .main_top_banner_header {
@@ -562,6 +595,44 @@
   section#check_section form .form-group button.btn {
     margin-top: 24px;
   }
+
+  .data-table_body {
+    padding: 1rem 1.25rem;
+  }
+  .data-table_body .data-table-big-item {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+  .data-table_body .data-table-list-item {
+    font-size: 1rem;
+  }
+  .data-table_body .data-table-list-item .text {
+    max-width: 200px;
+  }
+
+  .dual_poster_item {
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dual_poster_item .link_wrap {
+    margin-bottom: 4rem;
+  }
+  .dual_poster_item .link_wrap .text {
+    max-width: 210px;
+  }
+  .dual_poster_item.dark-item .img_wrap {
+    margin-bottom: 2.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   section .section-container {
@@ -769,17 +840,6 @@
     width: 320px;
   }
 
-  .data-table_body {
-    padding: 1rem 1.25rem;
-  }
-  .data-table_body .data-table-big-item {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .data-table_body .data-table-list-item {
-    font-size: 1rem;
-  }
-
   section#landline_city .poster_wrap .poster-content .poster_main_header {
     font-size: 3rem;
   }
@@ -901,6 +961,10 @@
   section.internet_data_wrap .internet-nav_wrap {
     padding: 1rem 1rem 0;
   }
+
+  section#result_section .request_wrap_btn {
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 767px) {
   section .section-container_left_header h3 {
@@ -1018,6 +1082,39 @@
 
   section#equipment_store .store_wrap .store-item .maxNet-btn {
     min-width: 180px;
+  }
+
+  section#landline_city .poster_wrap {
+    margin-top: 2rem;
+  }
+  section#landline_city .poster_wrap .poster-content {
+    padding-bottom: 0;
+  }
+  section#landline_city .poster_wrap .poster-content .content_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#landline_city .poster_wrap .poster-content .content_wrap .text_wrap {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 1.5rem;
+  }
+  section#landline_city .poster_wrap .poster-content .content_wrap .img_wrap {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+
+  .data-table_body .data-table-list-item .text {
+    max-width: 330px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1716,6 +1813,14 @@
   section#equipment_catalog .equipment_catalog_wrap .small_item_content .title {
     font-size: 1.5rem;
   }
+
+  .dual_poster_item .link_wrap .text {
+    max-width: 280px;
+  }
+
+  .data-table_body .data-table-list-item .text {
+    max-width: 220px;
+  }
 }
 @media screen and (max-width: 414px) {
   section .section-container {
@@ -1904,6 +2009,28 @@
     vertical-align: middle;
     font-size: 14px;
   }
+
+  section#result_section .request_wrap_btn {
+    max-width: 270px;
+  }
+
+  section#landline_city .poster_wrap .poster-content {
+    padding: 1.5rem;
+    padding-bottom: 0;
+  }
+  section#landline_city .poster_wrap .poster-content .header_wrap {
+    padding-left: 0;
+  }
+  section#landline_city .poster_wrap .poster-content .header_wrap h5 {
+    font-size: 2rem;
+  }
+  section#landline_city .poster_wrap .poster-content .header_wrap h6 {
+    font-size: 1.25rem;
+  }
+  section#landline_city .poster_wrap .poster-content .content_wrap .text_wrap {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
 }
 @media screen and (max-width: 375px) {
   section .section-container_header h2 {
@@ -1976,9 +2103,6 @@
     font-size: 1.25rem;
   }
 
-  section#landline_city .poster_wrap .poster-content {
-    padding: 2.5rem;
-  }
   section#landline_city .poster_wrap .poster-content .poster_main_header {
     font-size: 2.5rem;
   }
@@ -2023,6 +2147,10 @@
 
   section#video_banner .video-banner-btn .maxNet-btn {
     padding: 0.75rem 1.25rem;
+  }
+
+  .data-table_body .data-table-list-item .text {
+    max-width: 200px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2111,5 +2239,10 @@
   section#video_banner .video-banner-btn .maxNet-btn {
     background-color: #003893;
     padding: 0.75rem 1rem;
+  }
+
+  section#landline_city .poster_wrap .poster-content {
+    padding: 1.25rem;
+    padding-bottom: 0;
   }
 }

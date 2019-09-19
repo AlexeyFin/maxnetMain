@@ -130,10 +130,6 @@
     font-size: 2rem;
   }
 
-  .card_slider_item .item_card .options_list {
-    padding-left: 1rem;
-  }
-
   section#main_tariff_plans .tariff_item {
     border-left: 1px solid #969696;
   }
@@ -831,8 +827,17 @@
   .card_slider .slick-arrow-right {
     right: -24px;
   }
+
+  section.internet_data_wrap .internet-nav_wrap {
+    padding: 1rem 1rem 0;
+  }
 }
 @media screen and (max-width: 767px) {
+  section .section-container_left_header h3 {
+    width: 100%;
+    text-align: center;
+  }
+
   section#tv_main .alternative_tv_table_wrap {
     display: block;
   }
@@ -1625,7 +1630,7 @@
     padding: 2.75rem 0.75rem 1.5rem 0.75rem;
   }
   section .section-container_header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
   }
   section .section-container_header h2 {
     font-size: 2.5rem;

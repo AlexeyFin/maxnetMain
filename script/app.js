@@ -206,10 +206,11 @@ $(document).ready(function(){
         trigger: 'hover'
     });
     $('.internet-slider').slick({
-        nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',
-        prevArrow: '<button class="slick-arrow-left"><i class="fas fa-arrow-left"></i></button>',
+        nextArrow: '<button class="slick-arrow-right  slick-arrow"><i class="fas fa-chevron-right"></i></button>',
+        prevArrow: '<button class="slick-arrow-left  slick-arrow"><i class="fas fa-chevron-left"></i></button>',
         slidesToShow: 3,
         infinite: false,
+        autoplay: false,
         responsive: [
             {
                 breakpoint: 1367,
@@ -225,7 +226,7 @@ $(document).ready(function(){
                 breakpoint: 1025,
                 settings: {
                     arrows: false,
-                    autoplay: true,
+                    autoplay: false,
                     infinite: true,
                     slidesToShow: 2
                 }
@@ -334,6 +335,50 @@ function toggle_check(elem) {
 function slider_link(elem) {
     elem.checked ? window.location = elem.dataset['onlink'] : window.location = elem.dataset['offlink'];
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

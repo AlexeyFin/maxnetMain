@@ -83,10 +83,10 @@ button.btn, a.btn {
 }
 
 section .section-container {
-  padding: 4.5rem 9rem;
+  padding: 3.5rem 9rem;
 }
 section .section-container_header {
-  margin-bottom: 2.25rem;
+  margin-bottom: 3.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,6 +935,7 @@ section .grey-section {
   font-family: "Roboto", sans-serif;
   padding: 1.5rem 0.75rem;
   font-weight: 400;
+  vertical-align: middle;
   font-size: 1rem;
 }
 .maxNet-table thead tr th:first-child {
@@ -2850,6 +2851,7 @@ section#check_section .check_message {
   margin-bottom: 2.5rem;
 }
 .satellite_connection .title h5 {
+  line-height: 1.75rem;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -3685,14 +3687,43 @@ table {
   width: 100%;
 }
 
+.light_table thead {
+  border-top: 2px solid #C8C8C8;
+}
+.light_table thead tr th {
+  padding-top: 28px;
+  padding-bottom: 20px;
+  color: #003893;
+  font-size: 16px;
+  line-height: 22px;
+}
+.light_table tbody tr td {
+  font-size: 20px;
+  padding-bottom: 8px;
+  background-color: #e5e5e5;
+  font-weight: 300;
+  color: #111F4D;
+}
+.light_table tbody tr td:nth-child(2) {
+  background-color: rgba(229, 229, 229, 0.6);
+  text-align: center;
+  font-weight: 400;
+}
+.light_table tbody tr:first-child td {
+  padding-top: 20px;
+}
+.light_table tbody tr:last-child td {
+  padding-bottom: 20px;
+}
+
 @media screen and (max-width: 600px) {
-  table {
+  table.custom_adaptive {
     border: 0;
   }
-  table caption {
+  table.custom_adaptive caption {
     font-size: 1.3em;
   }
-  table thead {
+  table.custom_adaptive thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -3702,18 +3733,18 @@ table {
     position: absolute;
     width: 1px;
   }
-  table tr {
+  table.custom_adaptive tr {
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: 0.625em;
   }
-  table td {
+  table.custom_adaptive td {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: 0.8em;
     text-align: right !important;
   }
-  table td::before {
+  table.custom_adaptive td::before {
     /** aria-label has no advantage, it won't be read inside a table
      *content: attr(aria-label); */
     content: attr(data-label);
@@ -3722,7 +3753,7 @@ table {
     color: #111F4D;
     text-transform: uppercase;
   }
-  table td:last-child {
+  table.custom_adaptive td:last-child {
     border-bottom: 0;
   }
 

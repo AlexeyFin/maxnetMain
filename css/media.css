@@ -397,15 +397,28 @@
     left: 2.5%;
   }
 
-  .card_slider .slick-arrow {
+  .maxNet-table thead tr th img {
+    display: none;
+  }
+  .maxNet-table tbody tr td:first-child {
+    padding-left: 0.75rem;
+    text-align: left;
+  }
+  .maxNet-table tbody tr td {
+    text-align: center;
+  }
+  .maxNet-table tbody tr td img {
+    display: none;
+  }
+  .maxNet-table .slick-arrow {
     top: 39%;
     z-index: 1;
     color: #003893;
   }
-  .card_slider .slick-arrow-left {
+  .maxNet-table .slick-arrow-left {
     left: -48px;
   }
-  .card_slider .slick-arrow-right {
+  .maxNet-table .slick-arrow-right {
     right: -48px;
   }
 
@@ -940,6 +953,13 @@
             box-shadow: none;
     border: none;
   }
+
+  .light_table thead tr th {
+    font-size: 14px;
+  }
+  .light_table tbody tr td {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 576px) {
   section .section-container {
@@ -1329,7 +1349,7 @@
   }
   section#international_calls table.maxNet-table tbody tr td {
     padding-left: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 
   .satellite_connection {
@@ -1808,6 +1828,14 @@
 
   section#express_help .section-container .help_cards_wrap .help_card_wrap .help_card {
     padding: 1.5rem 1.15rem 1.75rem 1.15rem;
+  }
+
+  .light_table thead tr th {
+    font-size: 14px;
+  }
+  .light_table tbody tr td {
+    vertical-align: middle;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 375px) {

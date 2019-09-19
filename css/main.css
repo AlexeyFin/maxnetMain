@@ -3315,6 +3315,16 @@ form[name="check_form"] input[name="build_number"], form[name="check_form"] inpu
 .content-banner .banner-wrap .banner-text {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .content-banner .banner-wrap .banner-text_header {
   margin-bottom: 42px;
@@ -3326,13 +3336,9 @@ form[name="check_form"] input[name="build_number"], form[name="check_form"] inpu
   margin-bottom: 0;
 }
 .content-banner .banner-wrap .banner-text_header p {
-  padding-left: 64px;
   font-size: 1.5rem;
   line-height: 40px;
   color: #ffffff;
-}
-.content-banner .banner-wrap .banner-text_body {
-  padding-left: 64px;
 }
 .content-banner .banner-wrap .banner-text_body .text_wrap {
   margin-bottom: 53px;
@@ -3351,8 +3357,8 @@ form[name="check_form"] input[name="build_number"], form[name="check_form"] inpu
 .content-banner .banner-wrap .banner-text_img {
   display: none;
 }
-.content-banner .banner-wrap .negative-mt {
-  margin-top: -40px;
+.content-banner .banner-wrap .banner-img {
+  padding: 3rem 0;
 }
 
 .space-left {

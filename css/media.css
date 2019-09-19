@@ -345,6 +345,10 @@
     background-size: cover;
     background-position: bottom;
   }
+
+  .content-banner .banner-wrap .banner-text_header h4 {
+    font-size: 3rem;
+  }
 }
 @media screen and (max-width: 992px) {
   section#main_top_banner .section-container {
@@ -428,11 +432,12 @@
     text-align: center;
   }
 
-  .content-banner .banner-wrap .img_wrap {
+  .content-banner .banner-wrap .banner-img {
     display: none;
   }
   .content-banner .banner-wrap .banner-text_header {
     padding-left: 20%;
+    margin-bottom: 0;
   }
   .content-banner .banner-wrap .banner-text_header h4 {
     margin-bottom: 1rem;

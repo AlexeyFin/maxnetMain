@@ -798,6 +798,7 @@ section .grey-section {
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  z-index: 50;
 }
 .card_slider .slick-arrow:focus, .card_slider .slick-arrow:active {
   outline: none;
@@ -1559,7 +1560,7 @@ section#FAQ .section-container_body .accordion .card .card-body a {
 section#FAQ_directory {
   background-color: #e5e5e5;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 section#FAQ_directory .directory_content_wrap .directory_content_text {
   font-size: 1.25rem;

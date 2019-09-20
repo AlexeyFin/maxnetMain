@@ -1,8 +1,6 @@
-
 $("body").children().each(function () {
     document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
 });
-
 
 $(document).ready(function(){
     $('#top_slider').slick({
@@ -17,9 +15,7 @@ $(document).ready(function(){
         infinite: true
 
     });
-
     $('#phone_number') ? $('#phone_number').inputmask("+38 (099) 999-99-99", {clearIncomplete: true}) : '';
-
     $('#main_slider_wrap').slick({
         appendArrows: '.main_slider_arrows_wrap',
         nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',
@@ -29,7 +25,6 @@ $(document).ready(function(){
         draggable: false,
         autoplay: true
     });
-
     $('#about_slider_wrap').slick({
         appendArrows: '.slider_arrows_wrap',
         nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',
@@ -148,7 +143,7 @@ $(document).ready(function(){
         ]
 
     });
-    $(' #sas_hosting_slider').slick({
+    $('#sas_hosting_slider').slick({
         nextArrow: '<button class="slick-arrow-right  slick-arrow"><i class="fas fa-chevron-right"></i></button>',
         prevArrow: '<button class="slick-arrow-left  slick-arrow"><i class="fas fa-chevron-left"></i></button>',
         slidesToShow: 4,
@@ -199,7 +194,6 @@ $(document).ready(function(){
         ]
 
     });
-
     $('.custom_tooltip_price, .custom_tooltip_details, .custom_about_tooltip').tooltipster({
         contentCloning: true,
         theme: 'tooltipster-shadow',
@@ -262,8 +256,6 @@ $(document).ready(function(){
         ]
 
     });
-
-
     $('#video_tariff_slider').slick({
         slidesToShow: 4,
         infinite: false,
@@ -314,10 +306,8 @@ $(document).ready(function(){
         ]
 
     });
-
     $('[data-toggle="tooltip"]').tooltip();
 });
-
 
 function toggle_check(elem) {
     let wrap = elem.closest('.checkbox_wrap_content');
@@ -330,8 +320,6 @@ function toggle_check(elem) {
         wrap.classList.remove('checked')
     }
 }
-
-
 function slider_link(elem) {
     elem.checked ? window.location = elem.dataset['onlink'] : window.location = elem.dataset['offlink'];
 }

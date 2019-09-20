@@ -1,6 +1,5 @@
 @import "colors"
 
-
 body
   background-color: $text_color_white
   font-size: 16px
@@ -8,9 +7,11 @@ body
   font-family: 'Roboto', sans-serif
   position: relative
 
+
 h1, h2, h3, h4, h5, h6
   color: $text_color_dark
   font-weight: bold
+
 
 h1
   font-size: 4.25rem
@@ -34,12 +35,9 @@ p, a
   font-size: 1rem
   color: $text_color_dark
 
+
 a
   font-family: 'Work Sans', sans-serif
-
-img
-  //width: 100%
-
 
 button.btn, a.btn
   font-family: 'Work Sans', sans-serif
@@ -48,25 +46,6 @@ button.btn, a.btn
   .container
     max-width: 1440px
 
-
-.sub_header
-  background-color: #81A8E9
-  padding: 20px
-  &_content
-    display: flex
-    justify-content: center
-    .sub_header_message,.sub_header_link
-      color: $text_color_white
-      margin-bottom: 0
-    .sub_header_message
-      font-size: 1rem
-      font-weight: 500
-    .sub_header_link
-      margin-left: 1.25rem
-      font-family: "Work Sans", sans-serif
-      font-weight: 900
-      text-decoration: underline
-      white-space: nowrap
 
 section
   .section-container
@@ -104,6 +83,28 @@ section
   .grey-section
     background-color: #F2F4FB
 
+
+.sub_header
+  background-color: #81A8E9
+  padding: 20px
+  &_content
+    display: flex
+    justify-content: center
+    .sub_header_message,.sub_header_link
+      color: $text_color_white
+      margin-bottom: 0
+    .sub_header_message
+      font-size: 1rem
+      font-weight: 500
+    .sub_header_link
+      margin-left: 1.25rem
+      font-family: "Work Sans", sans-serif
+      font-weight: 900
+      text-decoration: underline
+      white-space: nowrap
+
+
+// Buttons
 .maxNet-btn
   border-radius: .5rem
   border: 1px solid $text_color_white
@@ -118,7 +119,6 @@ section
   &:hover
     color: $text_color_white
     text-decoration: none
-
 
 .maxNet-btn-purple
   border-color: $main_purple
@@ -292,11 +292,21 @@ section
     border-color: $main_purple
     color: $text_color_white
 
-
 .simple_blue_btn
   color: $main_blue
   border: 1px solid $main_blue
 
+.maxNet-btn-white
+  border-color: $text_color_white
+  background-color: $text_color_white
+  color: #003893
+
+  &:hover
+    background-color: transparent
+    color: $text_color_white
+
+
+//Checkboxes and Radios
 .maxNet_check_wrap
   input[type="checkbox"]
     display: none
@@ -427,14 +437,6 @@ section
     .back
       transform: rotateY(360deg)
 
-.maxNet-btn-white
-  border-color: $text_color_white
-  background-color: $text_color_white
-  color: #003893
-
-  &:hover
-    background-color: transparent
-    color: $text_color_white
 
 .maxNet_easy_form
   input
@@ -449,6 +451,21 @@ section
     &:focus, &:active
       outline: none
       box-shadow: none
+
+
+.maxNet-input
+  border-color: #B4B4B4
+  border-radius: 0
+  padding: 1rem
+  margin: 0 .5rem
+  transition: all .3s ease-in-out
+  min-height: 50px
+
+  &:focus, &:after
+    outline: none
+    box-shadow: none
+    border-color: $main_purple
+
 
 // Colored border top
 
@@ -486,10 +503,10 @@ section
 .card_slider
   &_item
     padding: 1rem
-
+    .item_card_data
+      padding:  0 1rem
     &:focus, &:active
       outline: none
-
     .item_card
       padding: 1.5rem 1rem 2rem 1rem
       position: relative
@@ -594,7 +611,6 @@ section
 
           img
             opacity: .55
-
   .internet-slider-item
     display: flex
     justify-content: center
@@ -641,7 +657,6 @@ section
         margin-bottom: auto
         margin-top: auto
 
-
   .slick-arrow
     position: absolute
     top: calc(50% - 50px)
@@ -664,19 +679,10 @@ section
 
   .slick-arrow-right
     right: -3.5rem
-
   .slick-arrow-left
     left: -3.5rem
-
   .slick-disabled
     opacity: 0
-
-
-.card_slider
-  &_item
-    .item_card_data
-      padding:  0 1rem
-
 
 // End of Card slider
 
@@ -686,7 +692,6 @@ section
   display: flex
   flex-direction: column
   align-items: center
-
   .img_wrap
     width: 140px
     height: 140px
@@ -725,9 +730,8 @@ section
   &.transparent_data_item
     .img_wrap
       border: 1px solid #81A8E9
+
 // End of Data Item
-
-
 
 //Data-table
 .data-table
@@ -780,20 +784,6 @@ section
           font-weight: 300
 
 //
-
-.maxNet-input
-  border-color: #B4B4B4
-  border-radius: 0
-  padding: 1rem
-  margin: 0 .5rem
-  transition: all .3s ease-in-out
-  min-height: 50px
-
-  &:focus, &:after
-    outline: none
-    box-shadow: none
-    border-color: $main_purple
-
 
 //MaxNet table
 .maxNet-table
@@ -859,6 +849,7 @@ section
         td
           background-color: #EBEBEB
 
+
 .mobile_bottom
   display: none
   padding: 12px 12px 24px 12px
@@ -875,520 +866,8 @@ section
     padding: .5rem .75rem !important
     width: 48%
 
-section#main_top_banner
-  position: relative
-  .section-container
-    min-height: 412px
-    //background: url("../images/subscribe-banner.png") $main_blue no-repeat
-    background-size: cover
-    background-position: center
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: space-between
 
-    .main_top_banner_header
-      color: $text_color_white
-      font-size: 4rem
-      margin-bottom: 4rem
-
-      &::after
-        display: block
-        content: ''
-        width: 100%
-        height: 2px
-        background-color: $text_color_white
-        transform: translateY(1.125rem)
-
-    .main_top_banner_text
-      color: $text_color_white
-      font-size: 1.25rem
-      margin-bottom: 1.5rem
-
-    .main_top_banner_button
-      background-color: $main_blue
-      position: relative
-      z-index: 100
-      display: inline-block
-      box-shadow: 0px 4px 10px 2px rgba(black, 0.2)
-      overflow: hidden
-
-      &::before
-        position: absolute
-        content: ''
-        width: 0
-        height: 100%
-        background: $text_color_white
-        top: 0
-        left: 50%
-        transition: all 300ms ease-in-out
-
-      &:hover
-        color: $main_blue
-        box-shadow: none
-        border-color: $text_color_white
-        border-radius: .5rem
-
-        &:before
-          background-color: $text_color_white
-          position: absolute
-          content: ''
-          width: 100%
-          height: 100%
-          top: 0
-          left: 0%
-          z-index: -1
-          transition: all 300ms ease-in-out
-
-      .text
-        z-index: 2
-        position: relative
-  .main_banner_arrows
-    position: absolute
-    top: 80px
-    //top: 50%
-    left: 20%
-    width: 60%
-    height: 0 !important
-    z-index: 10
-
-    display: flex
-    justify-content: space-between
-    .slick-arrow
-      background: transparent
-      border: none
-      color: $text_color_white
-      font-size: 36px
-      &:focus,&:active
-        box-shadow: none
-        outline: none
-
-
-section#main_services
-  .service_card
-    border: 1px solid #969696
-    display: flex
-    flex-direction: column
-
-    &_link
-      display: flex
-      flex-direction: column
-      align-items: self-start
-      justify-content: space-between
-      padding: 2.75rem 2.75rem 1.75rem 2.75rem
-      height: 100%
-      width: 100%
-      text-decoration: none
-      position: relative
-      background-size: 100%
-      transition: all .5s ease-in-out
-
-      &::after
-        content: ''
-        display: block
-        background-color: $text_color_white
-        width: 100%
-        height: 100%
-        top: 0
-        left: 0
-        position: absolute
-        opacity: 1
-        transition: all .3s ease-in-out
-
-      &:hover
-        background-size: 110%
-
-        &::after
-          opacity: .25
-
-    &_header
-      z-index: 2
-      font-size: 1.875rem
-      position: relative
-      line-height: 37px
-      min-height: 85px
-      flex-grow: 1
-      margin-bottom: 3.25rem
-
-      &::after
-        position: absolute
-        width: 100%
-        display: block
-        content: ''
-        height: 2px
-        background-color: $main_purple
-        bottom: -1.75rem
-
-    &_text
-      z-index: 2
-      position: relative
-      min-height: 80px
-      margin-bottom: 0
-      line-height: 27px
-
-    &_chevron
-      z-index: 2
-      position: relative
-      margin-bottom: 0
-      display: flex
-      justify-content: flex-end
-      align-items: center
-      //text-align: right
-      //width: 100%
-    .wrap
-      width: 100%
-      display: flex
-      flex-wrap: wrap
-      justify-content: flex-end
-
-
-
-section#main_sub_banner
-  .section-container
-    background-repeat: no-repeat
-    background-size: cover
-
-  .main_sub_banner_header, .main_sub_banner_link
-    text-align: center
-    color: $text_color_white
-
-  .main_sub_banner_link_wrap
-    text-align: center
-
-    a
-      color: white
-      padding: 0.7em calc(0.7em * 1.2)
-      display: inline-block
-      position: relative
-      font-size: 1.15em
-      cursor: pointer
-      letter-spacing: 0.07em
-      text-decoration: none
-      border: 1px solid $text_color_white
-      width: 240px
-      border-radius: .5rem
-
-
-
-section#main_tariff_plans
-  .tariff_title
-    background-color: $main_blue
-    padding: 2rem 3rem 6rem 3rem
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-
-    &_header
-      font-size: 4rem
-      color: $text_color_white
-      margin-bottom: 1rem
-
-    &_text
-      font-size: 1.25rem
-      line-height: 1.75rem
-      color: $text_color_white
-      margin-bottom: 5rem
-
-    &_link_wrap
-      margin-top: auto
-
-    &_link
-      color: $text_color_white
-      text-decoration: none
-      display: flex
-      align-items: center
-      justify-content: space-between
-      width: 100%
-      font-weight: 900
-      transition: all .3s ease-in-out
-
-      .text
-        text-decoration: underline
-        font-size: 1rem
-
-      &:hover
-        transform: scale(1.05)
-
-  .tariff_item
-    padding: 2rem
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    background-color: $text_color_white
-    border: 1px solid #969696
-    border-left: none
-
-    &_header
-      margin-bottom: 1rem
-
-    &_list_wrap
-      margin-bottom: 4.5rem
-      position: relative
-      flex-grow: 1
-
-      &_title
-        font-size: 1.25rem
-        margin-bottom: 0
-
-      &_list
-        padding-left: 0.625rem
-        font-size: 1.25rem
-        list-style: none
-        position: relative
-
-        li
-          &::before
-            content: "-"
-            font-weight: 900
-
-            position: absolute
-            left: -2px
-
-      &::before
-        display: block
-        content: ''
-        width: 100%
-        height: 2px
-        background-color: $main_purple
-        position: absolute
-        bottom: -2rem
-
-    &_price_wrap
-      margin-bottom: 2rem
-
-      .price
-        font-weight: 900
-        font-size: 1.25rem
-        text-align: center
-
-    &_link_wrap
-      margin-bottom: .75rem
-
-section#main_mobile_tariff_plans, section.mobile_proposition_banner
-  display: none
-
-section#main_news
-  .section-container
-    background-color: $background_grey
-
-  .news_section_wrap
-    .static_wrap
-      img
-        width: 100%
-
-      .social_link_wrap
-        margin-bottom: 1.5rem
-
-        .social_link
-          display: flex
-          text-decoration: none
-          color: $text_color_dark
-
-          .icon
-            width: 30px
-            height: 30px
-            display: flex
-            justify-content: center
-            align-items: center
-            border-radius: 50%
-            font-size: 1.25rem
-            background-color: $main_blue
-            color: $text_color_white
-            transition: all .3s ease-in-out
-            margin-right: .75rem
-
-          &:hover
-            .icon
-              background-color: transparent
-              color: $main_blue
-
-      .blog_link_wrap
-        padding-top: 4rem
-
-        a.blog_link
-          text-decoration: none
-          display: flex
-          flex-direction: column
-
-          img
-            margin-bottom: 1.75rem
-
-          .text
-            display: block
-            text-align: center
-            font-family: 'Work Sans', sans-serif
-            font-weight: 900
-            line-height: 2rem
-            text-decoration: underline
-            transition: all .3s ease-in-out
-
-          &:hover
-            .text
-              color: $text_color_dark
-
-
-    .dynamic_wrap
-      .news_wrap
-        .news_item
-          margin-bottom: 3rem
-
-          .date_posted
-            margin-bottom: 0
-            font-size: .85rem
-            color: #5F71A7
-
-          .news_text
-            font-size: 1.25rem
-            line-height: 1.75rem
-            text-decoration: none
-            color: $text_color_dark
-
-section#main_slider
-  .main_slider_container
-    background-color: $text_color_white
-    padding: 4.5rem 6rem 2.5rem 1.5rem
-
-    .section-container_body
-      position: relative
-
-    .main_slider_wrap_item
-      padding: 0 1rem
-      outline: none !important
-      box-shadow: none !important
-
-      .slider_img
-        img
-          width: 100%
-      .slider_content
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        padding: 3.75rem .5rem 6.25rem 1.75rem
-
-        &_header
-          h2
-            color: $main_purple
-
-        &_body
-          //flex-grow: 2
-          min-height: 230px
-
-          p
-            font-size: 1.875rem
-            font-weight: 900
-            line-height: 2rem
-
-          ul
-            list-style-type: none
-            padding: 0
-
-            li
-              font-size: 1.25rem
-
-        &_btn
-          margin-top: 48px
-
-    .main_slider_arrows_wrap
-      position: absolute
-      top: calc(3.75rem + 6px)
-      right: 7rem
-      width: 32px
-      display: flex
-
-      button
-        border: none
-        outline: none !important
-        box-shadow: none !important
-        background-color: transparent
-        font-size: 3rem
-        color: $main_blue
-        margin-right: 2rem
-        transition: all .3s ease-in-out
-
-        &:hover
-          color: $main_purple
-
-      .slick-disabled
-        opacity: 0
-
-
-section#main_form
-  .section-container
-    background-color: $main_blue
-
-    .form_section_title_wrap
-      padding-top: 4rem
-
-      .form_section_title_header
-        color: $text_color_white
-        line-height: 4rem
-        margin-bottom: 2.5rem
-
-      .form_section_title_sub_text
-        font-size: 1.25rem
-        color: $text_color_white
-        line-height: 1.7rem
-
-    .main_form_wrap
-      background-color: $text_color_white
-      padding: 4rem
-
-      label
-        margin-bottom: 0
-        cursor: pointer
-
-      .check_group
-        .checkbox_wrap
-          margin-bottom: 1rem
-
-
-          &_content
-            background-color: #F5F5F5
-            transition: all .3s ease-in-out
-            border: 1px solid $dark_grey
-            display: flex
-            justify-content: space-between
-            align-items: center
-            padding: 1rem
-
-            &.checked
-              background-color: #D2D2E6
-
-      .input_group
-        .input_wrap
-          padding: 0
-          margin-bottom: 1rem
-          input
-            width: 100%
-            padding: 1rem
-          .form-group
-            .max-net-form-input
-              padding: 1rem
-              border-radius: 0
-              height: 59px
-
-        .confirm_wrap
-          display: flex
-          padding: 0
-          margin-top: 1.15rem
-
-          .maxNet_check_wrap
-            margin-right: .75rem
-
-      .select-group
-        display: none
-
-        select
-          width: 100%
-          padding: 1rem
-          border-radius: 0
-          border-color: #A9A9A9
-
-      .btn_wrap
-        padding: 0
-        //margin-top: 4rem
-        margin: 4rem -15px 0 -15px
-
+//Sections
 
 section#about_about_company
   .container
@@ -1438,6 +917,85 @@ section#about_about_company
         color: $text_color_white
 
 
+section#about_carrier
+  .section-container
+    background-color: $text_color_white
+
+    .carrier_wrap
+      margin-top: 6rem
+      margin-bottom: 2rem
+
+      .carrier-img
+        border: 1px solid #003893
+        border-right: none
+
+        &_item
+          height: 177px
+
+          &.icon
+            display: flex
+            justify-content: center
+            align-items: center
+
+          &.photo
+            background-size: cover
+            background-repeat: no-repeat
+
+      .carrier-content
+
+        background-color: $main_blue
+        padding: 3rem 3rem 4rem 3rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        .carrier-content_title
+          color: $text_color_white
+          width: 66.66%
+          font-size: 3.5rem
+
+        .carrier-content_btn
+          width: 220px
+
+
+section#about_hosting
+  .features_wrap
+    &_title
+      color: #003893
+      font-weight: 500
+      font-size: 1.875rem
+      line-height: 37px
+      margin-bottom: 3rem
+
+    .features_list
+      padding: 0 80px
+
+      &_item
+        margin-bottom: 1.5rem
+
+        &_title
+          position: relative
+          display: flex
+          align-items: center
+
+          h6
+            font-family: "Work Sans", sans-serif
+            font-size: 1.25rem
+            line-height: 2rem
+
+          img
+            position: absolute
+            left: -80px
+            width: auto
+
+        &_text
+          p
+            font-family: "Roboto", sans-serif
+            font-weight: 300
+            font-size: 1rem
+            line-height: 25px
+
+
 section#about_maxnet_is
   .section-container
     background-color: $text_color_white
@@ -1461,6 +1019,30 @@ section#about_maxnet_is
           text-align: center
           font-size: 1.25rem
           font-weight: 300
+
+
+section#about_partners
+  .container
+    background-color: $text_color_white
+
+  .section-container
+    &_header
+      margin-bottom: 0
+
+  .partners_container
+    padding: 0
+
+    .partners_wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      .partner_logo
+        display: flex
+        justify-content: center
+
+      .partner
+        width: 100%
 
 
 section#about_stages_of_development
@@ -1512,70 +1094,13 @@ section#about_stages_of_development
       top: 0
 
 
-section#about_partners
-  .container
-    background-color: $text_color_white
-
-  .section-container
-    &_header
-      margin-bottom: 0
-
-  .partners_container
-    padding: 0
-
-    .partners_wrap
-      display: flex
-      justify-content: space-between
-      align-items: center
-      flex-wrap: wrap
-      .partner_logo
-        display: flex
-        justify-content: center
-
-      .partner
-        width: 100%
-        //height: 62px
-
-
-section#about_carrier
-  .section-container
-    background-color: $text_color_white
-
-    .carrier_wrap
-      margin-top: 6rem
-      margin-bottom: 2rem
-
-      .carrier-img
-        border: 1px solid #003893
-        border-right: none
-
-        &_item
-          height: 177px
-
-          &.icon
-            display: flex
-            justify-content: center
-            align-items: center
-
-          &.photo
-            background-size: cover
-            background-repeat: no-repeat
-
-      .carrier-content
-
-        background-color: $main_blue
-        padding: 3rem 3rem 4rem 3rem
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-
-        .carrier-content_title
-          color: $text_color_white
-          width: 66.66%
-          font-size: 3.5rem
-
-        .carrier-content_btn
-          width: 220px
+section#check_section
+  .check_message
+    text-align: center
+    font-size: 14px
+    font-weight: 300
+    color: #646464
+    line-height: 16px
 
 
 section#express_help
@@ -1630,434 +1155,6 @@ section#express_help
       .maxNet_rotate_card
         .front,.back
           padding: 0 1.75rem
-
-
-section#FAQ
-  .section-container
-    background-color: $text_color_white
-    padding: 4.5rem 0
-
-    &_body
-      .faq_wrap
-      .accordion
-        .card
-          .card-header
-            background-color: $text_color_white
-            padding: 0 2.25rem
-            border-bottom: none
-
-            h5
-              button
-                width: 100%
-                text-align: left
-                display: flex
-                justify-content: space-between
-                align-items: center
-                color: $text_color_dark
-                font-family: 'Roboto', sans-serif
-                line-height: 21px
-                font-weight: 500
-                font-size: 1.125rem
-                text-decoration: none
-                border-radius: 0
-                border-bottom: 1px solid $main_purple
-                transition: all .3s ease-in-out
-                padding: .5rem 0
-
-                .icon
-                  width: 30px
-                  min-width: 30px
-                  height: 30px
-                  border: 1px solid $text_color_dark
-                  border-radius: 50%
-                  display: flex
-                  justify-content: center
-                  align-items: center
-                  font-weight: 900
-                  font-family: "Font Awesome 5 Free"
-                  font-style: normal
-
-                  &::before
-                    content: '\f00d'
-
-                &.collapsed
-                  border-bottom: 1px solid transparent
-
-                  .icon
-                    &::before
-                      content: "\f078"
-
-          .card-body
-            padding: 1.25rem 2.25rem
-            font-weight: 300
-
-            a
-              font-weight: 400
-              color: $main_blue
-              text-decoration: underline
-              line-height: 27px
-
-
-section#FAQ_theme_search
-  .section-container
-    background-color: $text_color_white
-
-    &_header.advanced_header
-      display: flex
-      justify-content: space-between
-      align-items: center
-
-      h2
-        text-align: left
-
-        &::after
-          display: none
-
-      .search_form
-        .search_wrap
-          display: flex
-          justify-content: flex-end
-
-          input
-            padding: 1rem 1.875rem
-            font-size: .875rem
-            border: 1px solid #9E9E9E
-            width: 380px
-            color: $text_color_dark
-            letter-spacing: 1.08px
-            font-family: "Roboto", sans-serif
-            border-radius: .25rem 0 0 .25rem
-            border-right: none
-
-            &:focus, &:after
-              outline: none
-              box-shadow: none
-
-          button
-            padding: 1rem 1.25rem
-            display: flex
-            justify-content: center
-            align-items: center
-            background-color: #007AFF
-            border: 1px solid #007AFF
-            border-radius: 0 .25rem .25rem 0
-            color: $text_color_white
-            transition: all .3s ease-in-out
-
-    .keywords_list_wrap
-      .keywords_list
-        list-style-type: none
-        margin-bottom: 2.5rem
-
-        li
-          margin-bottom: 1.25rem
-
-          a
-            color: $text_color_dark
-            font-weight: 300
-            line-height: 1.2rem
-            transition: all .3s ease-in-out
-            text-decoration-color: $main_purple
-
-          &:first-child
-            font-weight: 700
-            font-size: 1.125rem
-            letter-spacing: 0.015rem
-            position: relative
-
-            &::before
-              position: absolute
-              display: block
-              content: ''
-              background-color: $light_blue
-              height: 100%
-              width: 4px
-              left: -1.25rem
-
-
-section#FAQ_directory
-  background-color: #e5e5e5
-  background-position: center
-  background-size: contain
-  .directory_content_wrap
-    .directory_content_text
-      font-size: 1.25rem
-      line-height: 1.75rem
-      margin-bottom: 3.25rem
-
-    .get_directory_form_wrap
-      .form-content
-        display: flex
-        justify-content: flex-start
-      input
-        width: 360px
-        padding: .5rem 1.25rem
-        box-sizing: border-box
-        font-size: .875rem
-        border: 1px solid #9E9E9E
-        color: $text_color_dark
-        letter-spacing: 1.08px
-        font-family: "Roboto", sans-serif
-        border-radius: .25rem
-        margin-right: 28px
-
-        &:focus, &:after
-          outline: none
-          box-shadow: none
-
-
-section#news_content_section
-  .section-container
-    background-color: $background_grey
-    padding-top: 0
-    padding-bottom: 0
-
-    &_body
-      display: flex
-      justify-content: center
-      padding: 0 8rem 4.5rem 8rem
-
-  .news_wrap
-    width: 100%
-    margin-top: -315px
-
-    &_header
-      margin-bottom: 3rem
-
-      h4
-        font-size: 1.875rem
-        color: $text_color_white
-
-    &_content
-      width: 100%
-      background-color: $text_color_white
-      padding: 2.5rem 4.25rem
-
-      .news_date
-        p
-          font-size: 1.25rem
-          line-height: 1.875rem
-          color: #81A8E9
-          margin-bottom: 1.25rem
-
-      .news_text
-        &, p
-          margin-bottom: 4.75rem
-          font-size: 1.25rem
-          line-height: 1.875rem
-          font-weight: 500
-          color: $text_color_dark
-
-      .news_img_wrap
-        img
-          width: 100%
-
-    .news_navigation
-      display: flex
-      justify-content: space-between
-      padding: 2.25rem 4.25rem 1.25rem 4.25rem
-      background-color: $text_color_white
-
-      .news_nav_link
-        color: $text_color_dark
-        line-height: 19px
-        font-weight: 900
-        text-decoration: none
-        transition: all .3s ease-in-out
-
-        &:hover
-          color: $main_purple
-
-    .news_bottom_img_wrap
-      padding: 0 4.25rem 4.25rem 4.25rem
-      background-color: $text_color_white
-      display: flex
-      justify-content: center
-
-      img
-        margin-top: -46px
-
-
-section#news_want_to_know_more
-  .section-container
-    background-color: $text_color_white
-
-    .want_to_know_more_wrap
-      margin-top: 1.25rem
-    .want_to_know_more_img
-      img
-        width: 100%
-
-    .want_to_know_more_content
-      display: flex
-      flex-direction: column
-      justify-content: center
-
-      &_header
-        margin-bottom: 2rem
-
-
-section#video_banner
-  .video-banner-container
-    background-color: $main_blue
-    min-height: 383px
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-
-    .video-banner-title
-      width: 475px
-      margin-bottom: 2rem
-
-      h2
-        color: $text_color_white
-        font-size: 1.875rem
-        text-align: center
-        line-height: 35px
-    .video-banner-btn
-      position: relative
-
-section#video_about
-  .section-container
-    background-color: $text_color_white
-
-  .video_about_content
-    .content_text
-      font-size: 1.25rem
-      font-weight: 300
-      line-height: 27px
-      margin-bottom: 3.5rem
-
-    .list_title
-      font-size: 1.875rem
-      font-weight: 400
-      margin-bottom: 1.25rem
-
-    .video_list
-      padding-left: 0
-
-      li
-        list-style-type: none
-        font-size: 1.25rem
-        font-weight: 300
-
-        &::before
-          content: '-'
-          margin-right: .75rem
-
-
-section#video_main_section
-  .section-container
-    background-color: #F2F4FB
-
-    .section_sub_title
-      margin-bottom: 2.5rem
-
-  .video_tariff_card
-    padding: 1.5rem 1rem 2rem 1rem
-    position: relative
-    background-color: $text_color_white
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
-    border-radius: .25rem
-    margin-bottom: 4.25rem
-
-    .tariff_title
-      padding-left: 1rem
-      font-size: 1.875rem
-      margin-bottom: 0
-      font-weight: bold
-
-    .camera_count
-      padding-left: 1rem
-      color: #003893
-      font-size: 1.25rem
-      display: flex
-      align-items: center
-
-      .info
-        font-size: .75rem
-        border: 1px solid $text_color_dark
-        border-radius: 50%
-        margin-left: .75rem
-        width: 20px
-        height: 20px
-        display: flex
-        justify-content: center
-        align-items: center
-
-    .options_list
-      margin-top: 1.75rem
-      margin-bottom: 5rem
-      padding-left: 0
-
-      li
-        list-style-type: none
-
-    .price
-      text-align: center
-      margin-bottom: 1.5rem
-      font-size: 1.25rem
-      font-weight: 500
-
-    .get_btn_wrap
-      display: flex
-      justify-content: center
-
-      a, button
-        min-width: 180px
-
-    .ask_wrap
-      text-align: center
-      margin-top: 2rem
-
-      a
-        line-height: 1.25rem
-        font-weight: 500
-        text-decoration: underline
-        transition: all .3s ease-in-out
-
-        &:hover
-          color: $main_purple
-
-    .camera_icon
-      position: absolute
-      top: 0
-      right: 0
-      padding: 0.5rem 0.5rem 1.25rem 1.25rem
-      border-radius: 0 .25rem 0 60px
-      background-color: rgba(150, 180, 255, 0.15)
-
-      &.gold
-        background-color: rgba(255, 218, 68, 0.8) !important
-
-        img
-          opacity: .55
-
-
-section#get_consultation
-  .consultation-container
-    background-color: #468CFF
-    display: flex
-    justify-content: space-between
-    align-items: center
-    padding: 2rem 9rem
-
-    p
-      margin-bottom: 0
-      color: $text_color_white
-      font-size: 1.875rem
-      font-weight: bold
-
-    .link_wrap
-      i
-        font-size: 1.5rem
-        color: #FFDD00
-
-      a
-        color: $text_color_white
-        font-size: 1.875rem
-        text-decoration: none
 
 
 section#equipment_catalog
@@ -2190,6 +1287,199 @@ section#equipment_store
             font-size: 30px
 
 
+section#FAQ
+  .section-container
+    background-color: $text_color_white
+    padding: 4.5rem 0
+    &_body
+      .faq_wrap
+      .accordion
+        .card
+          .card-header
+            background-color: $text_color_white
+            padding: 0 2.25rem
+            border-bottom: none
+            h5
+              button
+                width: 100%
+                text-align: left
+                display: flex
+                justify-content: space-between
+                align-items: center
+                color: $text_color_dark
+                font-family: 'Roboto', sans-serif
+                line-height: 21px
+                font-weight: 500
+                font-size: 1.125rem
+                text-decoration: none
+                border-radius: 0
+                border-bottom: 1px solid $main_purple
+                transition: all .3s ease-in-out
+                padding: .5rem 0
+
+                .icon
+                  width: 30px
+                  min-width: 30px
+                  height: 30px
+                  border: 1px solid $text_color_dark
+                  border-radius: 50%
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  font-weight: 900
+                  font-family: "Font Awesome 5 Free", sans-serif
+                  font-style: normal
+                  &::before
+                    content: '\f00d'
+                &.collapsed
+                  border-bottom: 1px solid transparent
+                  .icon
+                    &::before
+                      content: "\f078"
+
+          .card-body
+            padding: 1.25rem 2.25rem
+            font-weight: 300
+            a
+              font-weight: 400
+              color: $main_blue
+              text-decoration: underline
+              line-height: 27px
+
+
+section#FAQ_directory
+  background-color: #e5e5e5
+  background-position: center
+  background-size: contain
+  .directory_content_wrap
+    .directory_content_text
+      font-size: 1.25rem
+      line-height: 1.75rem
+      margin-bottom: 3.25rem
+
+    .get_directory_form_wrap
+      .form-content
+        display: flex
+        justify-content: flex-start
+      input
+        width: 360px
+        padding: .5rem 1.25rem
+        box-sizing: border-box
+        font-size: .875rem
+        border: 1px solid #9E9E9E
+        color: $text_color_dark
+        letter-spacing: 1.08px
+        font-family: "Roboto", sans-serif
+        border-radius: .25rem
+        margin-right: 28px
+
+        &:focus, &:after
+          outline: none
+          box-shadow: none
+
+
+section#FAQ_theme_search
+  .section-container
+    background-color: $text_color_white
+
+    &_header.advanced_header
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      h2
+        text-align: left
+
+        &::after
+          display: none
+
+      .search_form
+        .search_wrap
+          display: flex
+          justify-content: flex-end
+
+          input
+            padding: 1rem 1.875rem
+            font-size: .875rem
+            border: 1px solid #9E9E9E
+            width: 380px
+            color: $text_color_dark
+            letter-spacing: 1.08px
+            font-family: "Roboto", sans-serif
+            border-radius: .25rem 0 0 .25rem
+            border-right: none
+
+            &:focus, &:after
+              outline: none
+              box-shadow: none
+
+          button
+            padding: 1rem 1.25rem
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #007AFF
+            border: 1px solid #007AFF
+            border-radius: 0 .25rem .25rem 0
+            color: $text_color_white
+            transition: all .3s ease-in-out
+
+    .keywords_list_wrap
+      .keywords_list
+        list-style-type: none
+        margin-bottom: 2.5rem
+
+        li
+          margin-bottom: 1.25rem
+
+          a
+            color: $text_color_dark
+            font-weight: 300
+            line-height: 1.2rem
+            transition: all .3s ease-in-out
+            text-decoration-color: $main_purple
+
+          &:first-child
+            font-weight: 700
+            font-size: 1.125rem
+            letter-spacing: 0.015rem
+            position: relative
+
+            &::before
+              position: absolute
+              display: block
+              content: ''
+              background-color: $light_blue
+              height: 100%
+              width: 4px
+              left: -1.25rem
+
+
+section#get_consultation
+  .consultation-container
+    background-color: #468CFF
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2rem 9rem
+
+    p
+      margin-bottom: 0
+      color: $text_color_white
+      font-size: 1.875rem
+      font-weight: bold
+
+    .link_wrap
+      i
+        font-size: 1.5rem
+        color: #FFDD00
+
+      a
+        color: $text_color_white
+        font-size: 1.875rem
+        text-decoration: none
+
+
 section#landline_city
   .poster_wrap
     margin-top: 6rem
@@ -2224,6 +1514,625 @@ section#landline_city
         .img_wrap
           display: none
 
+
+section#main_form
+  .section-container
+    background-color: $main_blue
+
+    .form_section_title_wrap
+      padding-top: 4rem
+
+      .form_section_title_header
+        color: $text_color_white
+        line-height: 4rem
+        margin-bottom: 2.5rem
+
+      .form_section_title_sub_text
+        font-size: 1.25rem
+        color: $text_color_white
+        line-height: 1.7rem
+
+    .main_form_wrap
+      background-color: $text_color_white
+      padding: 4rem
+
+      label
+        margin-bottom: 0
+        cursor: pointer
+
+      .check_group
+        .checkbox_wrap
+          margin-bottom: 1rem
+
+
+          &_content
+            background-color: #F5F5F5
+            transition: all .3s ease-in-out
+            border: 1px solid $dark_grey
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 1rem
+
+            &.checked
+              background-color: #D2D2E6
+
+      .input_group
+        .input_wrap
+          padding: 0
+          margin-bottom: 1rem
+          input
+            width: 100%
+            padding: 1rem
+          .form-group
+            .max-net-form-input
+              padding: 1rem
+              border-radius: 0
+              height: 59px
+
+        .confirm_wrap
+          display: flex
+          padding: 0
+          margin-top: 1.15rem
+
+          .maxNet_check_wrap
+            margin-right: .75rem
+
+      .select-group
+        display: none
+
+        select
+          width: 100%
+          padding: 1rem
+          border-radius: 0
+          border-color: #A9A9A9
+
+      .btn_wrap
+        padding: 0
+        //margin-top: 4rem
+        margin: 4rem -15px 0 -15px
+
+
+section#main_mobile_tariff_plans,section.mobile_proposition_banner
+  display: none
+
+section#main_news
+  .section-container
+    background-color: $background_grey
+
+  .news_section_wrap
+    .static_wrap
+      img
+        width: 100%
+
+      .social_link_wrap
+        margin-bottom: 1.5rem
+
+        .social_link
+          display: flex
+          text-decoration: none
+          color: $text_color_dark
+
+          .icon
+            width: 30px
+            height: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            font-size: 1.25rem
+            background-color: $main_blue
+            color: $text_color_white
+            transition: all .3s ease-in-out
+            margin-right: .75rem
+
+          &:hover
+            .icon
+              background-color: transparent
+              color: $main_blue
+
+      .blog_link_wrap
+        padding-top: 4rem
+
+        a.blog_link
+          text-decoration: none
+          display: flex
+          flex-direction: column
+
+          img
+            margin-bottom: 1.75rem
+
+          .text
+            display: block
+            text-align: center
+            font-family: 'Work Sans', sans-serif
+            font-weight: 900
+            line-height: 2rem
+            text-decoration: underline
+            transition: all .3s ease-in-out
+
+          &:hover
+            .text
+              color: $text_color_dark
+
+
+    .dynamic_wrap
+      .news_wrap
+        .news_item
+          margin-bottom: 3rem
+
+          .date_posted
+            margin-bottom: 0
+            font-size: .85rem
+            color: #5F71A7
+
+          .news_text
+            font-size: 1.25rem
+            line-height: 1.75rem
+            text-decoration: none
+            color: $text_color_dark
+
+
+section#main_services
+  .service_card
+    border: 1px solid #969696
+    display: flex
+    flex-direction: column
+
+    &_link
+      display: flex
+      flex-direction: column
+      align-items: self-start
+      justify-content: space-between
+      padding: 2.75rem 2.75rem 1.75rem 2.75rem
+      height: 100%
+      width: 100%
+      text-decoration: none
+      position: relative
+      background-size: 100%
+      transition: all .5s ease-in-out
+
+      &::after
+        content: ''
+        display: block
+        background-color: $text_color_white
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        position: absolute
+        opacity: 1
+        transition: all .3s ease-in-out
+
+      &:hover
+        background-size: 110%
+
+        &::after
+          opacity: .25
+
+    &_header
+      z-index: 2
+      font-size: 1.875rem
+      position: relative
+      line-height: 37px
+      min-height: 85px
+      flex-grow: 1
+      margin-bottom: 3.25rem
+
+      &::after
+        position: absolute
+        width: 100%
+        display: block
+        content: ''
+        height: 2px
+        background-color: $main_purple
+        bottom: -1.75rem
+
+    &_text
+      z-index: 2
+      position: relative
+      min-height: 80px
+      margin-bottom: 0
+      line-height: 27px
+
+    &_chevron
+      z-index: 2
+      position: relative
+      margin-bottom: 0
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      //text-align: right
+      //width: 100%
+    .wrap
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-end
+
+
+section#main_slider
+  .main_slider_container
+    background-color: $text_color_white
+    padding: 4.5rem 6rem 2.5rem 1.5rem
+
+    .section-container_body
+      position: relative
+
+    .main_slider_wrap_item
+      padding: 0 1rem
+      outline: none !important
+      box-shadow: none !important
+
+      .slider_img
+        img
+          width: 100%
+      .slider_content
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 3.75rem .5rem 6.25rem 1.75rem
+
+        &_header
+          h2
+            color: $main_purple
+
+        &_body
+          //flex-grow: 2
+          min-height: 230px
+
+          p
+            font-size: 1.875rem
+            font-weight: 900
+            line-height: 2rem
+
+          ul
+            list-style-type: none
+            padding: 0
+
+            li
+              font-size: 1.25rem
+
+        &_btn
+          margin-top: 48px
+
+    .main_slider_arrows_wrap
+      position: absolute
+      top: calc(3.75rem + 6px)
+      right: 7rem
+      width: 32px
+      display: flex
+
+      button
+        border: none
+        outline: none !important
+        box-shadow: none !important
+        background-color: transparent
+        font-size: 3rem
+        color: $main_blue
+        margin-right: 2rem
+        transition: all .3s ease-in-out
+
+        &:hover
+          color: $main_purple
+
+      .slick-disabled
+        opacity: 0
+
+
+section#main_sub_banner
+  .section-container
+    background-repeat: no-repeat
+    background-size: cover
+
+  .main_sub_banner_header, .main_sub_banner_link
+    text-align: center
+    color: $text_color_white
+
+  .main_sub_banner_link_wrap
+    text-align: center
+
+    a
+      color: white
+      padding: 0.7em calc(0.7em * 1.2)
+      display: inline-block
+      position: relative
+      font-size: 1.15em
+      cursor: pointer
+      letter-spacing: 0.07em
+      text-decoration: none
+      border: 1px solid $text_color_white
+      width: 240px
+      border-radius: .5rem
+
+
+section#main_tariff_plans
+  .tariff_title
+    background-color: $main_blue
+    padding: 2rem 3rem 6rem 3rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    &_header
+      font-size: 4rem
+      color: $text_color_white
+      margin-bottom: 1rem
+
+    &_text
+      font-size: 1.25rem
+      line-height: 1.75rem
+      color: $text_color_white
+      margin-bottom: 5rem
+
+    &_link_wrap
+      margin-top: auto
+
+    &_link
+      color: $text_color_white
+      text-decoration: none
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      font-weight: 900
+      transition: all .3s ease-in-out
+
+      .text
+        text-decoration: underline
+        font-size: 1rem
+
+      &:hover
+        transform: scale(1.05)
+
+  .tariff_item
+    padding: 2rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-color: $text_color_white
+    border: 1px solid #969696
+    border-left: none
+
+    &_header
+      margin-bottom: 1rem
+
+    &_list_wrap
+      margin-bottom: 4.5rem
+      position: relative
+      flex-grow: 1
+
+      &_title
+        font-size: 1.25rem
+        margin-bottom: 0
+
+      &_list
+        padding-left: 0.625rem
+        font-size: 1.25rem
+        list-style: none
+        position: relative
+
+        li
+          &::before
+            content: "-"
+            font-weight: 900
+
+            position: absolute
+            left: -2px
+
+      &::before
+        display: block
+        content: ''
+        width: 100%
+        height: 2px
+        background-color: $main_purple
+        position: absolute
+        bottom: -2rem
+
+    &_price_wrap
+      margin-bottom: 2rem
+
+      .price
+        font-weight: 900
+        font-size: 1.25rem
+        text-align: center
+
+    &_link_wrap
+      margin-bottom: .75rem
+
+
+section#main_top_banner
+  position: relative
+  .section-container
+    min-height: 412px
+    //background: url("../images/subscribe-banner.png") $main_blue no-repeat
+    background-size: cover
+    background-position: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+
+    .main_top_banner_header
+      color: $text_color_white
+      font-size: 4rem
+      margin-bottom: 4rem
+
+      &::after
+        display: block
+        content: ''
+        width: 100%
+        height: 2px
+        background-color: $text_color_white
+        transform: translateY(1.125rem)
+
+    .main_top_banner_text
+      color: $text_color_white
+      font-size: 1.25rem
+      margin-bottom: 1.5rem
+
+    .main_top_banner_button
+      background-color: $main_blue
+      position: relative
+      z-index: 100
+      display: inline-block
+      box-shadow: 0px 4px 10px 2px rgba(black, 0.2)
+      overflow: hidden
+
+      &::before
+        position: absolute
+        content: ''
+        width: 0
+        height: 100%
+        background: $text_color_white
+        top: 0
+        left: 50%
+        transition: all 300ms ease-in-out
+
+      &:hover
+        color: $main_blue
+        box-shadow: none
+        border-color: $text_color_white
+        border-radius: .5rem
+
+        &:before
+          background-color: $text_color_white
+          position: absolute
+          content: ''
+          width: 100%
+          height: 100%
+          top: 0
+          left: 0%
+          z-index: -1
+          transition: all 300ms ease-in-out
+
+      .text
+        z-index: 2
+        position: relative
+  .main_banner_arrows
+    position: absolute
+    top: 80px
+    //top: 50%
+    left: 20%
+    width: 60%
+    height: 0 !important
+    z-index: 10
+
+    display: flex
+    justify-content: space-between
+    .slick-arrow
+      background: transparent
+      border: none
+      color: $text_color_white
+      font-size: 36px
+      &:focus,&:active
+        box-shadow: none
+        outline: none
+
+
+section#news_content_section
+  .section-container
+    background-color: $background_grey
+    padding-top: 0
+    padding-bottom: 0
+
+    &_body
+      display: flex
+      justify-content: center
+      padding: 0 8rem 4.5rem 8rem
+
+  .news_wrap
+    width: 100%
+    margin-top: -315px
+
+    &_header
+      margin-bottom: 3rem
+
+      h4
+        font-size: 1.875rem
+        color: $text_color_white
+
+    &_content
+      width: 100%
+      background-color: $text_color_white
+      padding: 2.5rem 4.25rem
+
+      .news_date
+        p
+          font-size: 1.25rem
+          line-height: 1.875rem
+          color: #81A8E9
+          margin-bottom: 1.25rem
+
+      .news_text
+        &, p
+          margin-bottom: 4.75rem
+          font-size: 1.25rem
+          line-height: 1.875rem
+          font-weight: 500
+          color: $text_color_dark
+
+      .news_img_wrap
+        img
+          width: 100%
+
+    .news_navigation
+      display: flex
+      justify-content: space-between
+      padding: 2.25rem 4.25rem 1.25rem 4.25rem
+      background-color: $text_color_white
+
+      .news_nav_link
+        color: $text_color_dark
+        line-height: 19px
+        font-weight: 900
+        text-decoration: none
+        transition: all .3s ease-in-out
+
+        &:hover
+          color: $main_purple
+
+    .news_bottom_img_wrap
+      padding: 0 4.25rem 4.25rem 4.25rem
+      background-color: $text_color_white
+      display: flex
+      justify-content: center
+
+      img
+        margin-top: -46px
+
+
+section#news_want_to_know_more
+  .section-container
+    background-color: $text_color_white
+
+    .want_to_know_more_wrap
+      margin-top: 1.25rem
+    .want_to_know_more_img
+      img
+        width: 100%
+
+    .want_to_know_more_content
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      &_header
+        margin-bottom: 2rem
+
+
+section#result_section
+  .request_wrap
+    margin-top: 24px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 6px
+
+    &_btn
+      width: 436px
+
+
 section#service_0000
   .all_tariff_link
     display: flex
@@ -2244,43 +2153,6 @@ section#service_0000
     p
       font-size: 1.25rem
       font-weight: 200
-
-section#about_hosting
-  .features_wrap
-    &_title
-      color: #003893
-      font-weight: 500
-      font-size: 1.875rem
-      line-height: 37px
-      margin-bottom: 3rem
-
-    .features_list
-      padding: 0 80px
-
-      &_item
-        margin-bottom: 1.5rem
-
-        &_title
-          position: relative
-          display: flex
-          align-items: center
-
-          h6
-            font-family: "Work Sans", sans-serif
-            font-size: 1.25rem
-            line-height: 2rem
-
-          img
-            position: absolute
-            left: -80px
-            width: auto
-
-        &_text
-          p
-            font-family: "Roboto", sans-serif
-            font-weight: 300
-            font-size: 1rem
-            line-height: 25px
 
 
 section#speed_test
@@ -2342,18 +2214,6 @@ section#speed_test
           color: #479AFB
 
 
-section#result_section
-  .request_wrap
-    margin-top: 24px
-    display: flex
-    justify-content: center
-    align-items: center
-    margin-bottom: 6px
-
-    &_btn
-      width: 436px
-
-
 section#tv_main
   .alternative_tv_table_wrap
     display: none
@@ -2391,13 +2251,442 @@ section#tv_main
               font-size: 18px
 
 
-section#check_section
-  .check_message
-    text-align: center
-    font-size: 14px
-    font-weight: 300
-    color: #646464
-    line-height: 16px
+section#video_about
+  .section-container
+    background-color: $text_color_white
+
+  .video_about_content
+    .content_text
+      font-size: 1.25rem
+      font-weight: 300
+      line-height: 27px
+      margin-bottom: 3.5rem
+
+    .list_title
+      font-size: 1.875rem
+      font-weight: 400
+      margin-bottom: 1.25rem
+
+    .video_list
+      padding-left: 0
+
+      li
+        list-style-type: none
+        font-size: 1.25rem
+        font-weight: 300
+
+        &::before
+          content: '-'
+          margin-right: .75rem
+
+
+section#video_banner
+  .video-banner-container
+    background-color: $main_blue
+    min-height: 383px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .video-banner-title
+      width: 475px
+      margin-bottom: 2rem
+
+      h2
+        color: $text_color_white
+        font-size: 1.875rem
+        text-align: center
+        line-height: 35px
+    .video-banner-btn
+      position: relative
+
+
+section#video_main_section
+  .section-container
+    background-color: #F2F4FB
+
+    .section_sub_title
+      margin-bottom: 2.5rem
+
+  .video_tariff_card
+    padding: 1.5rem 1rem 2rem 1rem
+    position: relative
+    background-color: $text_color_white
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+    border-radius: .25rem
+    margin-bottom: 4.25rem
+
+    .tariff_title
+      padding-left: 1rem
+      font-size: 1.875rem
+      margin-bottom: 0
+      font-weight: bold
+
+    .camera_count
+      padding-left: 1rem
+      color: #003893
+      font-size: 1.25rem
+      display: flex
+      align-items: center
+
+      .info
+        font-size: .75rem
+        border: 1px solid $text_color_dark
+        border-radius: 50%
+        margin-left: .75rem
+        width: 20px
+        height: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .options_list
+      margin-top: 1.75rem
+      margin-bottom: 5rem
+      padding-left: 0
+
+      li
+        list-style-type: none
+
+    .price
+      text-align: center
+      margin-bottom: 1.5rem
+      font-size: 1.25rem
+      font-weight: 500
+
+    .get_btn_wrap
+      display: flex
+      justify-content: center
+
+      a, button
+        min-width: 180px
+
+    .ask_wrap
+      text-align: center
+      margin-top: 2rem
+
+      a
+        line-height: 1.25rem
+        font-weight: 500
+        text-decoration: underline
+        transition: all .3s ease-in-out
+
+        &:hover
+          color: $main_purple
+
+    .camera_icon
+      position: absolute
+      top: 0
+      right: 0
+      padding: 0.5rem 0.5rem 1.25rem 1.25rem
+      border-radius: 0 .25rem 0 60px
+      background-color: rgba(150, 180, 255, 0.15)
+
+      &.gold
+        background-color: rgba(255, 218, 68, 0.8) !important
+
+        img
+          opacity: .55
+
+
+section.internet_data_wrap
+  .internet-nav_wrap
+    border-top: 2px solid #C8C8C8
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 1rem 1rem .75rem
+
+    .internet_nav_link_wrap
+      margin: 0 36px
+
+      a.internet_nav_link
+        text-decoration: none
+        font-size: 15px
+        display: block
+        font-weight: 500
+        text-align: center
+        font-family: "Roboto", sans-serif
+        color: $text_color_dark
+        transition: all .3s ease-in-out
+        position: relative
+
+        &:hover
+          color: $main_purple
+
+        &::after
+          content: ''
+          position: absolute
+          border: 10px solid transparent
+          border-bottom: 10px solid transparent
+          left: calc(50% - 5px)
+          bottom: -15px
+
+        &.active
+          color: $main_purple
+
+          &::after
+            border-bottom-color: #D2D2E6
+
+  .internet_tariff_main_wrap
+    background-color: #D2D2E6
+    padding: 48px
+
+
+footer
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  section#mobile_footer_menu
+    display: none
+    .menu_list_link_big
+      font-size: 16px !important
+      color: $main_blue !important
+      line-height: 23px !important
+
+  section#footer_menu,section#mobile_footer_menu
+    background-color: $text_color_white
+    .section-container
+      background-color: $text_color_white
+      padding-bottom: 0
+
+    .menu_group
+      margin-bottom: 5rem
+      width: 48%
+
+      &_item
+        &_title
+          margin-bottom: 1.25rem
+          min-height: 22px
+
+          h5
+            font-size: 1rem
+            text-transform: uppercase
+
+        &_body
+          ul, ul.menu_list
+            list-style-type: none
+            padding: 0
+            margin-bottom: 1.5rem
+
+            li.menu_list_title
+              font-weight: 900
+              margin-bottom: .5rem
+
+            li
+              margin-bottom: .4rem
+              font-size: .875rem
+
+              a
+                text-decoration: none
+                font-size: .875rem
+                color: $text_color_dark
+                transition: all .3s ease-in-out
+
+
+
+                &:hover
+                  color: $main_purple
+
+          ul.big_margin_list
+            li
+              margin-bottom: 1.75rem
+              display: flex
+              flex-direction: column
+
+              .title
+                color: #003893
+
+              .content
+                font-weight: 900
+
+  section#footer
+    background-color: $main_blue
+
+    .footer_container
+      padding-top: 2rem
+      padding-bottom: 1rem
+
+      .footer_top
+        text-align: center
+        margin-bottom: 2rem
+
+        h6
+          line-height: 1.75rem
+          color: $text_color_white
+          font-size: .875rem
+          letter-spacing: 0.015em
+          font-weight: 400
+
+        a
+          color: $text_color_white
+          text-decoration: none
+          font-weight: 900
+          transition: all .3s ease-in-out
+
+          &:hover
+            color: $main_purple
+
+      .footer_middle
+        border-top: 1px solid $text_color_white
+        border-bottom: 1px solid $text_color_white
+        padding-top: .75rem
+        padding-bottom: .75rem
+        margin: 0 4.5rem 2rem 4.5rem
+
+        .title
+          color: $text_color_white
+          margin-right: 2rem
+
+        .mobile_application
+          text-align: left
+          display: flex
+          align-items: center
+
+          .application_link
+            color: $text_color_white
+            text-decoration: none
+            margin-right: 1.5rem
+            display: flex
+            align-items: center
+            font-size: .875rem
+
+            i
+              font-size: 1.75rem
+              margin-right: .75rem
+              transition: all .3s ease-in-out
+
+            &:hover
+              i
+                color: $main_purple
+
+        .phone_numbers
+          color: $text_color_white
+          justify-content: center
+          display: flex
+          white-space: nowrap
+          a.tel_link
+            color: $text_color_white
+            text-decoration: none
+            transition: all .3s ease-in-out
+            font-size: 1rem
+            font-weight: 900
+            white-space: nowrap
+
+            &:hover
+              color: $main_purple
+
+            &:nth-child(1)
+              margin-right: 1.25rem
+
+            &:nth-child(2)
+              margin-left: 1.25rem
+
+        .social_links
+          display: flex
+          justify-content: flex-end
+          align-items: center
+
+          .social_links_item
+            margin-left: 1rem
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            background-color: $text_color_white
+            color: $main_blue
+            width: 29px
+            height: 29px
+            text-decoration: none
+            font-size: 1.25rem
+            transition: all .3s ease-in-out
+
+            &:hover
+              background-color: transparent
+              color: $text_color_white
+
+        .blog_link
+          display: none
+
+      .footer_bottom
+        p
+          text-align: center
+          color: $text_color_white
+          text-transform: uppercase
+          font-size: .75rem
+
+
+form[name="check_form"]
+  input[name="street_name"]
+    width: 300px
+
+  input[name="build_number"], input[name="porch_number"]
+    width: 100px
+
+
+table
+  border-collapse: collapse
+  margin: 0
+  padding: 0
+  width: 100%
+
+
+.top_banner_slider_item:nth-child(n+2)
+  display: none !important
+.top_banner_slider_item.slick-slide
+  display: flex !important
+
+#get_equipment
+  .modal-dialog
+    max-width: 600px
+
+    .modal-content
+      border: none
+      padding: 1.5rem 1.5rem 2rem 1.5rem
+
+      .modal-header
+        padding: 0
+        border: none
+        margin-bottom: 28px
+
+        h5
+          font-size: 1.25rem
+
+      .modal-body
+        padding: 0 46px
+
+        .form-group
+          label
+            color: #5F71A7
+
+          .input_wrap
+            position: relative
+            display: flex
+            align-items: center
+
+            .icon
+              position: absolute
+              left: -36px
+              color: #5F71A7
+              font-size: 18px
+
+            input
+              border: none
+              border-bottom: 1px solid #646464
+              border-radius: 0
+
+          small
+            font-size: 12px
+            font-weight: 300
+
+      .modal-footer
+        border-top: none
+
+        button
+          min-width: 200px
+
+
 .dual_poster
   &_item
     border: 1px solid #969696
@@ -2458,55 +2747,6 @@ section#check_section
       line-height: 1.75rem
       font-size: 1.25rem
       font-weight: 400
-
-#get_equipment
-  .modal-dialog
-    max-width: 600px
-
-    .modal-content
-      border: none
-      padding: 1.5rem 1.5rem 2rem 1.5rem
-
-      .modal-header
-        padding: 0
-        border: none
-        margin-bottom: 28px
-
-        h5
-          font-size: 1.25rem
-
-      .modal-body
-        padding: 0 46px
-
-        .form-group
-          label
-            color: #5F71A7
-
-          .input_wrap
-            position: relative
-            display: flex
-            align-items: center
-
-            .icon
-              position: absolute
-              left: -36px
-              color: #5F71A7
-              font-size: 18px
-
-            input
-              border: none
-              border-bottom: 1px solid #646464
-              border-radius: 0
-
-          small
-            font-size: 12px
-            font-weight: 300
-
-      .modal-footer
-        border-top: none
-
-        button
-          min-width: 200px
 
 
 .whois_card
@@ -2715,13 +2955,12 @@ section#check_section
       width: 300px
 
 
-
-
 .light_title
   font-size: 1.25rem
   text-transform: uppercase
   color: #969696
   font-weight: 400
+
 
 .light_blue_title
   font-size: 1.25rem
@@ -2729,55 +2968,13 @@ section#check_section
   color: $main_blue
   font-weight: 400
 
+
 .fw-300
   font-weight: 300
 
 .light_link
   color: $main_blue
   text-decoration: underline
-
-section.internet_data_wrap
-  .internet-nav_wrap
-    border-top: 2px solid #C8C8C8
-    display: flex
-    justify-content: center
-    align-items: center
-    padding: 1rem 1rem .75rem
-
-    .internet_nav_link_wrap
-      margin: 0 36px
-
-      a.internet_nav_link
-        text-decoration: none
-        font-size: 15px
-        display: block
-        font-weight: 500
-        text-align: center
-        font-family: "Roboto", sans-serif
-        color: $text_color_dark
-        transition: all .3s ease-in-out
-        position: relative
-
-        &:hover
-          color: $main_purple
-
-        &::after
-          content: ''
-          position: absolute
-          border: 10px solid transparent
-          border-bottom: 10px solid transparent
-          left: calc(50% - 5px)
-          bottom: -15px
-
-        &.active
-          color: $main_purple
-
-          &::after
-            border-bottom-color: #D2D2E6
-
-  .internet_tariff_main_wrap
-    background-color: #D2D2E6
-    padding: 48px
 
 
 .slide_check_wrap
@@ -2829,15 +3026,6 @@ section.internet_data_wrap
         left: 26px
         background: #003893
         box-shadow: inset 0px -5px 4px rgba(0, 0, 0, 0.25)
-
-
-
-form[name="check_form"]
-  input[name="street_name"]
-    width: 300px
-
-  input[name="build_number"], input[name="porch_number"]
-    width: 100px
 
 
 .recommended_img_wrap
@@ -2931,6 +3119,7 @@ form[name="check_form"]
   font-size: 1.25rem
   color: #646464
 
+
 .info_icon
   width: 18px
   height: 18px
@@ -2957,188 +3146,6 @@ form[name="check_form"]
   ul
     padding-left: 21px
 
-footer
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  section#mobile_footer_menu
-    display: none
-    .menu_list_link_big
-      font-size: 16px !important
-      color: $main_blue !important
-      line-height: 23px !important
-
-  section#footer_menu,section#mobile_footer_menu
-    background-color: $text_color_white
-    .section-container
-      background-color: $text_color_white
-      padding-bottom: 0
-
-    .menu_group
-      margin-bottom: 5rem
-      width: 48%
-
-      &_item
-        &_title
-          margin-bottom: 1.25rem
-          min-height: 22px
-
-          h5
-            font-size: 1rem
-            text-transform: uppercase
-
-        &_body
-          ul, ul.menu_list
-            list-style-type: none
-            padding: 0
-            margin-bottom: 1.5rem
-
-            li.menu_list_title
-              font-weight: 900
-              margin-bottom: .5rem
-
-            li
-              margin-bottom: .4rem
-              font-size: .875rem
-
-              a
-                text-decoration: none
-                font-size: .875rem
-                color: $text_color_dark
-                transition: all .3s ease-in-out
-
-
-
-                &:hover
-                  color: $main_purple
-
-          ul.big_margin_list
-            li
-              margin-bottom: 1.75rem
-              display: flex
-              flex-direction: column
-
-              .title
-                color: #003893
-
-              .content
-                font-weight: 900
-
-  section#footer
-    background-color: $main_blue
-
-    .footer_container
-      padding-top: 2rem
-      padding-bottom: 1rem
-
-      .footer_top
-        text-align: center
-        margin-bottom: 2rem
-
-        h6
-          line-height: 1.75rem
-          color: $text_color_white
-          font-size: .875rem
-          letter-spacing: 0.015em
-          font-weight: 400
-
-        a
-          color: $text_color_white
-          text-decoration: none
-          font-weight: 900
-          transition: all .3s ease-in-out
-
-          &:hover
-            color: $main_purple
-
-      .footer_middle
-        border-top: 1px solid $text_color_white
-        border-bottom: 1px solid $text_color_white
-        padding-top: .75rem
-        padding-bottom: .75rem
-        margin: 0 4.5rem 2rem 4.5rem
-
-        .title
-          color: $text_color_white
-          margin-right: 2rem
-
-        .mobile_application
-          text-align: left
-          display: flex
-          align-items: center
-
-          .application_link
-            color: $text_color_white
-            text-decoration: none
-            margin-right: 1.5rem
-            display: flex
-            align-items: center
-            font-size: .875rem
-
-            i
-              font-size: 1.75rem
-              margin-right: .75rem
-              transition: all .3s ease-in-out
-
-            &:hover
-              i
-                color: $main_purple
-
-        .phone_numbers
-          color: $text_color_white
-          justify-content: center
-          display: flex
-          white-space: nowrap
-          a.tel_link
-            color: $text_color_white
-            text-decoration: none
-            transition: all .3s ease-in-out
-            font-size: 1rem
-            font-weight: 900
-            white-space: nowrap
-
-            &:hover
-              color: $main_purple
-
-            &:nth-child(1)
-              margin-right: 1.25rem
-
-            &:nth-child(2)
-              margin-left: 1.25rem
-
-        .social_links
-          display: flex
-          justify-content: flex-end
-          align-items: center
-
-          .social_links_item
-            margin-left: 1rem
-            display: flex
-            justify-content: center
-            align-items: center
-            border-radius: 50%
-            background-color: $text_color_white
-            color: $main_blue
-            width: 29px
-            height: 29px
-            text-decoration: none
-            font-size: 1.25rem
-            transition: all .3s ease-in-out
-
-            &:hover
-              background-color: transparent
-              color: $text_color_white
-
-        .blog_link
-          display: none
-
-      .footer_bottom
-        p
-          text-align: center
-          color: $text_color_white
-          text-transform: uppercase
-          font-size: .75rem
-
 
 .price_tooltip
   p
@@ -3157,9 +3164,11 @@ footer
     color: $text_color_dark
     img
       width: 14px
+
 .about_tooltip
   p
     max-width: 310px
+
 
 .text_blue
   color: #5C84FE
@@ -3170,12 +3179,14 @@ footer
     overflow-y: auto
     img
       width: auto
+
 .interactive_list_item
   font-weight: 300
   text-decoration: underline
   color: #003893
   i
     color: $text_color_dark
+
 
 .animated_wrap
   position: absolute
@@ -3186,15 +3197,9 @@ footer
   img
     width: 100%
 
+
 .noSpace
   white-space: nowrap
-
-
-table
-  border-collapse: collapse
-  margin: 0
-  padding: 0
-  width: 100%
 
 .light_table
   thead
@@ -3224,6 +3229,7 @@ table
       &:last-child
         td
           padding-bottom: 20px
+
 @media screen and (max-width: 600px)
   table.custom_adaptive
     border: 0

@@ -1,6 +1,16 @@
 @import "colors"
 
 @media screen and (max-width: 1500px)
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          height: 450px
+  section#FAQ_directory
+    .directory_content_wrap
+      .get_directory_form_wrap
+        input
+          width: 320px
   section#main_services
     .service_card_header
       font-size: 1.5rem
@@ -23,21 +33,32 @@
               margin-right: .75rem
           .title
             margin-right: 1rem
-  section#express_help
-    .section-container
-      .help_cards_wrap
-        .help_card_wrap
-          height: 450px
-  section#FAQ_directory
-    .directory_content_wrap
-      .get_directory_form_wrap
-        input
-          width: 320px
+
 @media screen and (max-width: 1366px)
   section
     .section-container
       padding: 2.25rem 4.5rem
 
+  section#about_partners
+    .partners_container
+      .partners_wrap
+        justify-content: center
+        .partner_logo
+          width: 18%
+          margin-bottom: 1rem
+        .partner
+          //height: 62px
+          width: 100%
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .small_item
+        padding: 0
+  section#get_consultation
+    .consultation-container
+      padding: 2rem 3rem
+  section#news_content_section
+    .section-container_body
+      padding: 0 5rem 4rem 5rem
   section#main_top_banner
     .section-container
       background-size: cover
@@ -60,6 +81,7 @@
       &_header
         h4
           font-size: 2rem
+      border-left: 1px solid #969696
   section#main_slider
     .main_slider_container
       .main_slider_wrap
@@ -70,31 +92,25 @@
             justify-content: flex-end
             img
               width: 100%
+      .main_slider_arrows_wrap
+        top: calc(4.5rem + 6px)
+        button
+          font-size: 2rem
+
   section#main_form
     .section-container
+      .main_form_wrap
+        .input_group
+          .input_wrap
+            input
       .form_section_title_wrap
         .form_section_title_header
           font-size: 3.75rem
-  section#about_partners
-    .partners_container
-      .partners_wrap
-        justify-content: center
-        .partner_logo
-          width: 18%
-          margin-bottom: 1rem
-        .partner
-          //height: 62px
-          width: 100%
-  section#equipment_catalog
-    .equipment_catalog_wrap
-      .small_item
-        padding: 0
-  section#news_content_section
-    .section-container_body
-      padding: 0 5rem 4rem 5rem
-  section#get_consultation
-    .consultation-container
-      padding: 2rem 3rem
+  section#FAQ_directory
+    background-position: center
+    background-size: auto
+    .directory_content_wrap
+      padding: 0 36px 0 48px
   section#video_banner
     .video-banner-container
       background-position: center
@@ -110,49 +126,8 @@
         .package_img
           p
             width: 355px
-  section#main_slider
-    .main_slider_container
-      .main_slider_arrows_wrap
-        top: calc(4.5rem + 6px)
-        button
-          font-size: 2rem
-
-  section#main_form
-    .section-container
-      .main_form_wrap
-        .input_group
-          .input_wrap
-            input
-  section#main_tariff_plans
-    .tariff_item
-      border-left: 1px solid #969696
-  section#FAQ_directory
-    background-position: center
-    background-size: auto
-    .directory_content_wrap
-      padding: 0 36px 0 48px
-
 
 @media screen and (max-width: 1280px)
-  footer
-    section#footer
-      .footer_container
-        .footer_middle
-          margin: 0 0 2.5rem 0
-          .phone_numbers
-            font-size: 1.15rem
-            display: flex
-            align-items: center
-            justify-content: center
-            a.tel_link
-              font-size: 1.15rem
-          .mobile_application
-            .title
-              margin-right: 1rem
-            .application_link
-              margin-right: .75rem
-          .title
-            margin-right: 1rem
   section#about_partners
     .partners_container
       padding: 0 24px
@@ -173,8 +148,34 @@
       .get_directory_form_wrap
         input
           width: 330px
+  footer
+    section#footer
+      .footer_container
+        .footer_middle
+          margin: 0 0 2.5rem 0
+          .phone_numbers
+            font-size: 1.15rem
+            display: flex
+            align-items: center
+            justify-content: center
+            a.tel_link
+              font-size: 1.15rem
+          .mobile_application
+            .title
+              margin-right: 1rem
+            .application_link
+              margin-right: .75rem
+          .title
+            margin-right: 1rem
 
 @media screen and (max-width: 1200px)
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          height: 420px
+  section#FAQ_directory
+    background-size: cover
   section#main_slider
     .main_slider_container
       .main_slider_arrows_wrap
@@ -183,23 +184,6 @@
     .main_banner_arrows
       width: 86%
       left: 7%
-  footer section#footer
-    .footer_container
-      .footer_middle
-        .phone_numbers,.mobile_application,.social_links,.blog_link
-          margin: 1.25rem 0
-          justify-content: center
-        .mobile_application
-          .application_link
-            margin-left: 1rem
-            margin-right: 0
-  section#express_help
-    .section-container
-      .help_cards_wrap
-        .help_card_wrap
-          height: 420px
-  section#FAQ_directory
-    background-size: cover
   section#landline_city
     .poster_wrap
       .poster-img
@@ -219,6 +203,18 @@
             width: 60%
             padding-left: 2.5rem
             padding-bottom: 2.5rem
+  footer
+    section#footer
+      .footer_container
+        .footer_middle
+          .phone_numbers,.mobile_application,.social_links,.blog_link
+            margin: 1.25rem 0
+            justify-content: center
+          .mobile_application
+            .application_link
+              margin-left: 1rem
+              margin-right: 0
+
 @media screen and (max-width: 1024px)
   section
     .section-container
@@ -226,6 +222,52 @@
       &_header
         margin-bottom: 2.25rem
 
+  section#about_carrier
+    .section-container
+      .carrier_wrap
+        .carrier-content
+          .carrier-content_title
+            font-size: 3rem
+  section#about_stages_of_development
+    .about_slider_container
+      .icon_wrap
+        top: -70px
+  section#about_about_company
+    .about_services_item
+      height: 300px
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .small_item_content
+        background-position: 80px 10px
+
+  section#express_help
+    .section-container
+      .help_cards_wrap
+        .help_card_wrap
+          padding: 0 1rem
+          margin-bottom: 2rem
+          &:last-child
+            margin-bottom: 0
+        .maxNet_rotate_card
+          .front,.back
+            padding: 0 1rem
+
+  section#FAQ
+    .section-container
+      padding: 2.5rem 0
+
+  section#FAQ_directory
+    background-size: cover
+    background-position: bottom
+
+  section#get_consultation
+    .consultation-container
+      .text_wrap,.link_wrap
+        font-size: 1.5rem
+
+  section#news_content_section
+    .section-container_body
+      padding: 0 4rem 4rem 4rem
   section#main_top_banner
     .section-container
       .main_top_banner_header
@@ -280,48 +322,12 @@
             margin-top: 1.5rem
             justify-content: center
             text-align: center
-  section#express_help
-    .section-container
-      .help_cards_wrap
-        .help_card_wrap
-          padding: 0 1rem
-        .maxNet_rotate_card
-          .front,.back
-            padding: 0 1rem
-  section#express_help
-    .section-container
-      .help_cards_wrap
-        .help_card_wrap
-          margin-bottom: 2rem
-          &:last-child
-            margin-bottom: 0
-  section#FAQ
-    .section-container
-      padding: 2.5rem 0
-  section#about_carrier
-    .section-container
-      .carrier_wrap
-        .carrier-content
-          .carrier-content_title
-            font-size: 3rem
-  section#about_stages_of_development
-    .about_slider_container
-      .icon_wrap
-        top: -70px
-  section#about_about_company
-    .about_services_item
-      height: 300px
-  section#equipment_catalog
-    .equipment_catalog_wrap
-      .small_item_content
-        background-position: 80px 10px
-  section#news_content_section
-    .section-container_body
-      padding: 0 4rem 4rem 4rem
-  section#get_consultation
-    .consultation-container
-      .text_wrap,.link_wrap
-        font-size: 1.5rem
+
+  .content-banner
+    .banner-wrap
+      .banner-text_header
+        h4
+          font-size: 3rem
   .satellite_connection
     .title
       width: 100%
@@ -331,48 +337,9 @@
         .package_title
           h5
             font-size: 1.25rem
-  .select_tv_tariff_wrap
-    .tv_packages_wrap
-      .tv_package
-        .package_img
-          p
-            width: 205px
-  .select_tv_tariff_wrap
-    .tv_packages_wrap
-      .tv_package
-        .right-part
-          .btn_wrap
-            .btn
-              min-width: 120px
-              width: 100%
-  section#FAQ_directory
-    background-size: cover
-    background-position: bottom
-  .content-banner
-    .banner-wrap
-      .banner-text_header
-        h4
-          font-size: 3rem
-
 
 
 @media screen and (max-width: 992px)
-  section#main_top_banner
-    .section-container
-      padding: 2.75rem 2.5rem
-
-  footer section#footer
-    .footer_container
-      .footer_middle
-        .social_links
-          justify-content: center
-          .title
-            margin-right: 1rem
-
-  section#about_stages_of_development
-    .about_slider_container
-      .icon_wrap
-        display: none
   section#about_maxnet_is
     .section-container
       .maxnet_is_body
@@ -380,13 +347,31 @@
           .maxnet_is_title
             min-height: 60px
             margin-bottom: 0.25rem
+
   section#about_stages_of_development
     .about_slider_container
+      .icon_wrap
+        display: none
       .slider_arrows_wrap
         button
           font-size: 2rem
           &:first-child
             margin-right: 2rem
+
+  section#main_top_banner
+    .section-container
+      padding: 2.75rem 2.5rem
+
+  footer
+    section#footer
+    .footer_container
+      .footer_middle
+        .social_links
+          justify-content: center
+          .title
+            margin-right: 1rem
+
+
 @media screen and (max-width: 823px)
   section
     .section-container_header
@@ -395,44 +380,13 @@
         font-size: 3.5rem
         &::after
           display: none
-  section#main_top_banner
-    .section-container
-      .main_top_banner_header
-        font-size: 3rem
-    .main_banner_arrows
-      width: 95%
-      left: 2.5%
-  .maxNet-table
-    thead
-      tr
-        th
-          img
-            display: none
-    tbody
-      tr
-        td:first-child
-          padding-left: 0.75rem
-          text-align: left
-        td
-          text-align: center
-          img
-            display: none
-    .slick-arrow
-      top: 39%
-      z-index: 1
-      //font-size: 2rem
-      //background-color: transparent
-      //box-shadow: none
-      //border: none
-      color: $main_blue
-    .slick-arrow-left
-      left: -48px
-    .slick-arrow-right
-      right: -48px
-  section#main_services
-    .service_card
-      .wrap
-        justify-content: space-between
+  section#check_section
+    form
+      .form-group
+        flex-wrap: wrap
+        justify-content: center
+        button.btn
+          margin-top: 24px
   section#equipment_catalog
     .equipment_catalog_wrap
       .big_item
@@ -449,13 +403,76 @@
             margin-bottom: 32px
           .equipment_store_link,.title
             font-size: 24px
-  .space-left
-    padding-left: 0
+
+  section#FAQ_directory
+    background-size: cover
+    background-position-x: -520px
+    .directory_content_wrap
+      .get_directory_form_wrap
+        .form-content
+          flex-wrap: wrap
+          input
+            height: 50px
+            width: 100%
+            margin-bottom: 20px
+  section#get_consultation
+    .consultation-container
+      padding: 2rem
+      .text_wrap
+        font-size: 1.25rem
+      .link_wrap
+        .consult_link
+          font-size: 1.25rem
+
   section.internet_data_wrap
     .internet-nav_wrap
       .internet_nav_link_wrap
         margin: 0 12px
         text-align: center
+  section#news_content_section
+    .news_wrap
+      .news_bottom_img_wrap
+        display: flex
+        img
+          margin-top: 0
+  section#news_want_to_know_more
+    .want_to_know_more_wrap
+      .want_to_know_more_img
+        display: flex
+        justify-content: center
+        img
+          width: auto
+      .want_to_know_more_content
+        &_header
+          h4
+            text-align: center
+        &_form
+          form
+            display: flex
+            flex-direction: column
+            align-items: center
+  section#main_top_banner
+    .section-container
+      .main_top_banner_header
+        font-size: 3rem
+    .main_banner_arrows
+      width: 95%
+      left: 2.5%
+  section#main_services
+    .service_card
+      .wrap
+        justify-content: space-between
+
+  section#main_tariff_plans
+    .tariff_item_header
+      h4
+        font-size: 2.5rem
+  section#main_form
+    .section-container
+      .form_section_title_wrap
+        padding-top: 0
+        .form_section_title_header
+          font-size: 2.5rem
   .content-banner
     .banner-wrap
       .banner-img
@@ -487,54 +504,6 @@
           .text_wrap,.btn_wrap
             display: flex
             justify-content: center
-  section#get_consultation
-    .consultation-container
-      padding: 2rem
-      .text_wrap
-        font-size: 1.25rem
-      .link_wrap
-        .consult_link
-          font-size: 1.25rem
-  section#FAQ_directory
-    background-size: cover
-    background-position-x: -520px
-    .directory_content_wrap
-      .get_directory_form_wrap
-        .form-content
-          flex-wrap: wrap
-          input
-            height: 50px
-            width: 100%
-            margin-bottom: 20px
-  section#news_content_section
-    .news_wrap
-      .news_bottom_img_wrap
-        display: flex
-        img
-          margin-top: 0
-  section#news_want_to_know_more
-    .want_to_know_more_wrap
-      .want_to_know_more_img
-        display: flex
-        justify-content: center
-        img
-          width: auto
-      .want_to_know_more_content
-        &_header
-          h4
-            text-align: center
-        &_form
-          form
-            display: flex
-            flex-direction: column
-            align-items: center
-  section#check_section
-    form
-      .form-group
-        flex-wrap: wrap
-        justify-content: center
-        button.btn
-          margin-top: 24px
   .data-table_body
     padding: 1rem 1.25rem
     .data-table-big-item
@@ -577,13 +546,40 @@
         .img_wrap
           display: flex
           justify-content: center
-  .select_tv_tariff_wrap
     .tv_get_more_info
       margin-top: 2rem
       p
         i
           display: none
-
+  .maxNet-table
+    thead
+      tr
+        th
+          img
+            display: none
+    tbody
+      tr
+        td:first-child
+          padding-left: 0.75rem
+          text-align: left
+        td
+          text-align: center
+          img
+            display: none
+    .slick-arrow
+      top: 39%
+      z-index: 1
+      //font-size: 2rem
+      //background-color: transparent
+      //box-shadow: none
+      //border: none
+      color: $main_blue
+    .slick-arrow-left
+      left: -48px
+    .slick-arrow-right
+      right: -48px
+  .space-left
+    padding-left: 0
 @media screen and (max-width: 768px)
   section
     .section-container
@@ -648,18 +644,6 @@
       .main_slider_wrap_item
         .slider_content
           padding: 1.75rem 0.5rem 3.25rem 0rem
-  footer section#footer_menu
-    .menu_group
-      margin-bottom: 2rem
-
-  footer section#footer
-    .footer_container
-      .footer_middle
-        .social_links,.mobile_application
-          justify-content: space-between
-          margin-top: 1.5rem
-          .title
-            margin-right: auto
   section#express_help
     .section-container
       .help_cards_wrap
@@ -717,13 +701,6 @@
   section#get_consultation
     .consultation-container
       padding: 2rem
-      .text_wrap
-        font-size: 1.25rem
-      .link_wrap
-        a
-          font-size: 1.25rem
-  section#get_consultation
-    .consultation-container
       flex-wrap: wrap
       justify-content: space-between
       align-items: center
@@ -733,7 +710,6 @@
       .link_wrap
         display: flex
         align-items: center
-
         a
           font-size: 1rem
         i
@@ -755,7 +731,6 @@
       .poster-content
         .poster_main_header
           font-size: 3rem
-
 
   section#international_calls
     table
@@ -779,24 +754,10 @@
     .data_item
       .text_wrap
         font-size: 1rem
-  .space-left
-    padding-left: 0
-  .satellite_connection
-    margin-top: 3rem
   section#result_section
     .request_wrap
-
       margin-bottom: 6px
-  .select_tv_tariff_wrap
-    margin-top: 40px
-  .dual_poster_item
-    .dual_poster_item_title
-      h4
-        min-height: 144px
-    .link_wrap
-      a
-        i
-          margin-left: 14px
+
   section#about_about_company
     .content
       margin-top: 1rem
@@ -808,6 +769,25 @@
           width: 100%
           padding: 1rem
           margin-bottom: 1.25rem
+  section.internet_data_wrap
+    .internet-nav_wrap
+      padding: 1rem 1rem 0
+  section#result_section
+    .request_wrap_btn
+      max-width: 300px
+
+  footer section#footer_menu
+    .menu_group
+      margin-bottom: 2rem
+
+  footer section#footer
+    .footer_container
+      .footer_middle
+        .social_links,.mobile_application
+          justify-content: space-between
+          margin-top: 1.5rem
+          .title
+            margin-right: auto
   footer
     section#mobile_footer_menu
       display: block
@@ -815,6 +795,22 @@
         margin-bottom: 2rem
     section#footer_menu
       display: none
+
+  .space-left
+    padding-left: 0
+  .satellite_connection
+    margin-top: 3rem
+
+  .select_tv_tariff_wrap
+    margin-top: 40px
+  .dual_poster_item
+    .dual_poster_item_title
+      h4
+        min-height: 144px
+    .link_wrap
+      a
+        i
+          margin-left: 14px
   .get_call_section
     h6
       white-space: nowrap
@@ -829,12 +825,7 @@
       left: -24px
     .slick-arrow-right
       right: -24px
-  section.internet_data_wrap
-    .internet-nav_wrap
-      padding: 1rem 1rem 0
-  section#result_section
-    .request_wrap_btn
-      max-width: 300px
+
 @media screen and (max-width: 767px)
   section
     .section-container_left_header
@@ -844,23 +835,6 @@
   section#tv_main
     .alternative_tv_table_wrap
       display: block
-  #tv_table
-    display: none
-  .maxNet-table
-    thead
-      tr
-        th
-          img
-            display: none
-
-  footer
-    section#footer
-      .footer_container
-        .footer_middle
-          .mobile_application
-            .application_link:last-child
-              margin-right: 0
-
   section#about_maxnet_is
     .section-container
       .maxnet_is_body
@@ -917,23 +891,6 @@
     .main_banner_arrows
       width: 95%
       left: 2.5%
-  .card_slider
-    .slick-arrow
-      top: 39%
-      z-index: 1
-      font-size: 2rem
-      background-color: transparent
-      box-shadow: none
-      border: none
-  .light_table
-    thead
-      tr
-        th
-          font-size: 14px
-    tbody
-      tr
-        td
-          font-size: 16px
   section#equipment_store
     .store_wrap
       .store-item
@@ -954,6 +911,14 @@
           .img_wrap
             order: 2
             width: 100%
+  footer
+    section#footer
+      .footer_container
+        .footer_middle
+          .mobile_application
+            .application_link:last-child
+              margin-right: 0
+
   .data-table_body
     .data-table-list-item
       .text
@@ -979,6 +944,31 @@
               width: 100%
               order: 3
               margin-top: 1.25rem
+  #tv_table
+    display: none
+  .maxNet-table
+    thead
+      tr
+        th
+          img
+            display: none
+  .card_slider
+    .slick-arrow
+      top: 39%
+      z-index: 1
+      font-size: 2rem
+      background-color: transparent
+      box-shadow: none
+      border: none
+  .light_table
+    thead
+      tr
+        th
+          font-size: 14px
+    tbody
+      tr
+        td
+          font-size: 16px
 
 @media screen and (max-width: 576px)
   section
@@ -1097,18 +1087,6 @@
                 padding: 0 2rem
                 .btn
                   width: 100%
-
-  .data-table
-    margin: 0
-    &_body
-      margin-top: .5rem
-      margin-bottom: 1.25rem
-
-  .select_tv_tariff_wrap
-    .tv_packages_wrap
-      .tv_package
-        .package_img
-          display: none
 
   section.mobile_proposition_banner
     display: block
@@ -1285,14 +1263,34 @@
           td
             padding-left: .5rem
             font-size: .85rem
-  .satellite_connection
-    margin-top: 4rem
-  .sub_header
-    &_content
-      flex-wrap: wrap
-      justify-content: flex-start
-      .sub_header_link
-        margin-left: 0
+  section.internet_data_wrap
+    .internet-nav_wrap
+      .internet_nav_link_wrap
+        width: 50%
+        a.internet_nav_link
+          font-size: 14px
+
+  section#get_consultation
+    .consultation-container
+
+      .text_wrap,.link_wrap
+        width: 100%
+        text-align: center
+        margin-bottom: 18px
+        justify-content: center
+        font-size: 1.25rem
+  section#main_form
+    .section-container
+      .main_form_wrap
+        .input_group
+          .input_wrap
+            margin-bottom: 0
+
+  section#news_want_to_know_more
+    .section-container
+      .want_to_know_more_content_header
+        font-size: 3rem
+
   footer
     section#footer
       .footer_container
@@ -1303,12 +1301,27 @@
             margin-top: 1.25rem
             img
               width: 150px
-  section.internet_data_wrap
-    .internet-nav_wrap
-      .internet_nav_link_wrap
-        width: 50%
-        a.internet_nav_link
-          font-size: 14px
+
+  .data-table
+    margin: 0
+    &_body
+      margin-top: .5rem
+      margin-bottom: 1.25rem
+
+  .select_tv_tariff_wrap
+    .tv_packages_wrap
+      .tv_package
+        .package_img
+          display: none
+
+  .satellite_connection
+    margin-top: 4rem
+  .sub_header
+    &_content
+      flex-wrap: wrap
+      justify-content: flex-start
+      .sub_header_link
+        margin-left: 0
   .content-banner
     .banner-wrap
       .banner-text
@@ -1327,21 +1340,6 @@
         img
           width: 320px
           height: 320px
-  section#get_consultation
-    .consultation-container
-
-      .text_wrap,.link_wrap
-        width: 100%
-        text-align: center
-        margin-bottom: 18px
-        justify-content: center
-        font-size: 1.25rem
-  section#main_form
-    .section-container
-      .main_form_wrap
-        .input_group
-          .input_wrap
-            margin-bottom: 0
   .get_call_section
     flex-wrap: wrap
     h6
@@ -1352,10 +1350,6 @@
       width: 100%
     button
       width: auto
-  section#news_want_to_know_more
-    .section-container
-      .want_to_know_more_content_header
-        font-size: 3rem
   .select_tv_tariff_wrap
     .tv_packages_wrap
       .tv_package
@@ -1442,6 +1436,59 @@
     .all_tariff_link
       a
         font-size: 1rem
+  section#main_mobile_tariff_plans
+    .section-container_body
+      .mobile_tariff_card
+        .tariff-header
+          padding: 12px 15px
+          h5
+            button
+              padding: 1.25rem 0
+  section#news_want_to_know_more
+    .section-container
+      .want_to_know_more_content_header
+        margin-bottom: 2rem
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .big_item
+        .item_content
+          .title
+            font-size: 1.5rem
+  section#equipment_catalog
+    .equipment_catalog_wrap
+      .small_item_content
+        .title
+          font-size: 1.5rem
+  section#FAQ_directory
+    .directory_content_wrap
+      .get_directory_form_wrap
+        input
+          height: 50px
+          width: 100%
+          margin-bottom: 1.25rem
+        button
+          width: 100%
+  section#about_maxnet_is
+    .section-container
+      .maxnet_is_body
+        .maxnet_is_item
+          .maxnet_img_wrap
+            margin-bottom: 1.25rem
+          .maxnet_is_title
+            min-height: 30px
+          p
+            font-size: 1rem
+  section.internet_data_wrap
+    .internet-nav_wrap
+      .internet_nav_link_wrap
+        width: 100%
+        text-align: center
+  section#FAQ_theme_search
+    .section-container_header.advanced_header
+      .search_form
+        .search_wrap
+          input
+            width: 260px
   .satellite_connection
     margin-top: 2.5rem
   .select_tv_tariff_wrap
@@ -1472,30 +1519,6 @@
         font-size: .75rem
       .sub_header_link
         font-size: .75rem
-  section#FAQ_directory
-    .directory_content_wrap
-      .get_directory_form_wrap
-        input
-          height: 50px
-          width: 100%
-          margin-bottom: 1.25rem
-        button
-          width: 100%
-  section#about_maxnet_is
-    .section-container
-      .maxnet_is_body
-        .maxnet_is_item
-          .maxnet_img_wrap
-            margin-bottom: 1.25rem
-          .maxnet_is_title
-            min-height: 30px
-          p
-            font-size: 1rem
-  section.internet_data_wrap
-    .internet-nav_wrap
-      .internet_nav_link_wrap
-        width: 100%
-        text-align: center
   .internet_equipment_table
     .light_title
       font-size: 1rem
@@ -1509,37 +1532,9 @@
       text-align: center
       margin-bottom: 1.5rem
       margin-right: 0
-  section#FAQ_theme_search
-    .section-container_header.advanced_header
-      .search_form
-        .search_wrap
-          input
-            width: 260px
   .mobile_bottom
     display: block
-  section#main_mobile_tariff_plans
-    .section-container_body
-      .mobile_tariff_card
-        .tariff-header
-          padding: 12px 15px
-          h5
-            button
-              padding: 1.25rem 0
-  section#news_want_to_know_more
-    .section-container
-      .want_to_know_more_content_header
-        margin-bottom: 2rem
-  section#equipment_catalog
-    .equipment_catalog_wrap
-      .big_item
-        .item_content
-          .title
-            font-size: 1.5rem
-  section#equipment_catalog
-    .equipment_catalog_wrap
-      .small_item_content
-        .title
-          font-size: 1.5rem
+
   .dual_poster_item
     .link_wrap .text
       max-width: 280px
@@ -1547,6 +1542,8 @@
     .data-table-list-item
       .text
         max-width: 220px
+
+
 @media screen and (max-width: 414px)
   section
     .section-container

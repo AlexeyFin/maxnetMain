@@ -3023,56 +3023,76 @@ section#check_section .check_message {
 }
 .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .btn_wrap {
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .btn_wrap .btn {
+  max-width: 300px !important;
 }
 .select_tv_tariff_wrap .tv_packages_wrap .tv_package {
   border: 1px solid #C8C8C8;
   background-color: #F5F5F5;
-  padding: 24px 32px 0 32px;
+  padding: 24px 32px 24px 32px;
   border-radius: 0.125rem;
   margin-bottom: 1rem;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package img {
-  width: auto;
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_title {
-  border-right: 2px solid #B824A4;
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_title {
+  margin-bottom: 1rem;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_title h5 {
-  font-weight: 400;
-  font-size: 1.875rem;
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_title h5 {
+  font-size: 30px;
+  line-height: 35px;
+  color: #111F4D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .package_img p {
-  width: 430px;
-  font-size: 14px;
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_title h5 .def {
+  font-size: 20px;
   font-weight: 300;
-  margin-top: 64px;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package p.default {
-  font-size: 1rem;
-  color: #111F4D;
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .chanel_count {
-  font-size: 1.875rem;
-  color: #B824A4;
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_logo {
+  width: 33%;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .list_link {
-  margin-top: 1rem;
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_text {
+  width: 33%;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .list_link a {
-  font-weight: 700;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #111F4D;
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_text p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 0;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .list_link a .text {
-  text-decoration: underline;
-}
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .list_link a:hover {
-  color: #B824A4;
-}
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part {
-  padding: 24px 0;
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_details {
+  margin-left: 2rem;
+  width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3083,11 +3103,51 @@ section#check_section .check_message {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-left: 2px solid #B824A4;
+  padding-left: 18px;
+  max-height: 100px;
+}
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_details .chanel_count {
+  font-size: 30px;
+  line-height: 35px;
+  color: #B824A4;
+}
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_details .chanel_count .default {
+  font-size: 16px;
+  line-height: 18px;
+  color: #111F4D;
+  font-weight: 300;
+}
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_details .list_link a {
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #111F4D;
+}
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_details .list_link a .text {
+  text-decoration: underline;
+}
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_details .list_link a:hover {
+  color: #B824A4;
+}
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_get {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part .price {
+.select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_get .price {
   font-size: 1.25rem;
   font-weight: 900;
   margin-bottom: 28px;

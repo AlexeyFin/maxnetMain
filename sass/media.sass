@@ -568,6 +568,21 @@
       max-width: 540px
     .btn_wrap
       max-width: 340px
+  .select_tv_tariff_wrap
+    .tv_packages_wrap
+      .equipment_banner
+        width: 100%
+        .title
+          text-align: center
+        .img_wrap
+          display: flex
+          justify-content: center
+  .select_tv_tariff_wrap
+    .tv_get_more_info
+      margin-top: 2rem
+      p
+        i
+          display: none
 
 @media screen and (max-width: 768px)
   section
@@ -747,15 +762,7 @@
       tbody
         img
           display: none
-  .select_tv_tariff_wrap
-    .tv_packages_wrap
-      .equipment_banner
-        width: 100%
-        .title
-          text-align: center
-        .img_wrap
-          display: flex
-          justify-content: center
+
   section.internet_data_wrap
     .internet-nav_wrap
       flex-wrap: wrap
@@ -951,6 +958,27 @@
     .data-table-list-item
       .text
         max-width: 330px
+  .select_tv_tariff_wrap
+    .tv_packages_wrap
+      .tv_package
+        .wrap
+
+          .package_info
+            flex-wrap: wrap
+            .package_info_logo
+              display: none
+            .package_info_details
+              width: 50%
+              margin-left: 0
+              order: 1
+
+            .package_info_get
+              width: 50%
+              order:  2
+            .package_info_text
+              width: 100%
+              order: 3
+              margin-top: 1.25rem
 
 @media screen and (max-width: 576px)
   section
@@ -1331,9 +1359,8 @@
   .select_tv_tariff_wrap
     .tv_packages_wrap
       .tv_package
-        padding: 24px 16px 0 16px
-        .right-part
-          padding: 24px 16px
+        padding: 24px 16px 24px 16px
+
 @media screen and (max-width: 475px)
   main
     overflow-x: hidden
@@ -1709,7 +1736,14 @@
     .features_wrap
       .features_list
         padding: 0 32px 0 80px
-
+  .select_tv_tariff_wrap
+    .tv_packages_wrap
+      .tv_package
+        .wrap
+          .package_info
+            .package_info_get
+              .price
+                font-size: 1.15rem
 
 
 @media screen and (max-width: 375px)
@@ -1836,6 +1870,20 @@
     .data-table-list-item
       .text
         max-width: 200px
+  .select_tv_tariff_wrap
+    .tv_packages_wrap
+      .tv_package
+        .wrap
+          .package_info
+            .package_info_details
+              width: 44%
+              max-height: 120px
+            .package_info_get
+              width: 56%
+              .price
+                font-size: 1rem
+              .maxNet-btn
+                padding: 0.75rem 1.25rem
 @media screen and (max-width: 320px)
   html,main
     overflow-x: hidden
@@ -1925,3 +1973,4 @@
       .poster-content
         padding: 1.25rem
         padding-bottom: 0
+

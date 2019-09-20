@@ -649,6 +649,28 @@
   .whois_card .btn_wrap {
     max-width: 340px;
   }
+
+  .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner {
+    width: 100%;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .title {
+    text-align: center;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .img_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .select_tv_tariff_wrap .tv_get_more_info {
+    margin-top: 2rem;
+  }
+  .select_tv_tariff_wrap .tv_get_more_info p i {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   section .section-container {
@@ -862,21 +884,6 @@
 
   section#international_calls table tbody img {
     display: none;
-  }
-
-  .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner {
-    width: 100%;
-  }
-  .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .title {
-    text-align: center;
-  }
-  .select_tv_tariff_wrap .tv_packages_wrap .equipment_banner .img_wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   section.internet_data_wrap .internet-nav_wrap {
@@ -1119,6 +1126,34 @@
 
   .data-table_body .data-table-list-item .text {
     max-width: 330px;
+  }
+
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_logo {
+    display: none;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_details {
+    width: 50%;
+    margin-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_get {
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_text {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 1.25rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1601,10 +1636,7 @@
   }
 
   .select_tv_tariff_wrap .tv_packages_wrap .tv_package {
-    padding: 24px 16px 0 16px;
-  }
-  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .right-part {
-    padding: 24px 16px;
+    padding: 24px 16px 24px 16px;
   }
 }
 @media screen and (max-width: 475px) {
@@ -2039,6 +2071,10 @@
   section#about_hosting .features_wrap .features_list {
     padding: 0 32px 0 80px;
   }
+
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_get .price {
+    font-size: 1.15rem;
+  }
 }
 @media screen and (max-width: 375px) {
   section .section-container_header h2 {
@@ -2159,6 +2195,20 @@
 
   .data-table_body .data-table-list-item .text {
     max-width: 200px;
+  }
+
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_details {
+    width: 44%;
+    max-height: 120px;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_get {
+    width: 56%;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_get .price {
+    font-size: 1rem;
+  }
+  .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_get .maxNet-btn {
+    padding: 0.75rem 1.25rem;
   }
 }
 @media screen and (max-width: 320px) {

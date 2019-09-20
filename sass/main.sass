@@ -2586,65 +2586,94 @@ section#check_section
         margin-bottom: 48px
 
       .btn_wrap
+        .btn
+          max-width: 300px !important
         margin-bottom: 1rem
+        display: flex
+        justify-content: center
 
     .tv_package
       border: 1px solid #C8C8C8
       background-color: #F5F5F5
-      padding: 24px 32px 0 32px
+      padding: 24px 32px 24px 32px
       border-radius: .125rem
       margin-bottom: 1rem
-      img
-        width: auto
 
-      .package_title
-        border-right: 2px solid $main_purple
 
-        h5
-          font-weight: 400
-          font-size: 1.875rem
-
-      .package_img
-        p
-          width: 430px
-          font-size: 14px
-          font-weight: 300
-          margin-top: 64px
-
-      p.default
-        font-size: 1rem
-        color: $text_color_dark
-
-      .chanel_count
-        font-size: 1.875rem
-        color: $main_purple
-
-      .list_link
-        margin-top: 1rem
-
-        a
-          font-weight: 700
-          text-decoration: none
-          transition: all .3s ease-in-out
-          color: $text_color_dark
-
-          .text
-            text-decoration: underline
-
-          &:hover
-            color: $main_purple
-
-      .right-part
-        padding: 24px 0
+      .wrap
         display: flex
         flex-direction: column
-        justify-content: space-between
-        align-items: center
+        .package_title
+          margin-bottom: 1rem
+          h5
+            font-size: 30px
+            line-height: 35px
+            color: #111F4D
+            display: flex
+            flex-direction: column
+            .def
+              font-size: 20px
+              font-weight: 300
+        .package_info
 
-        .price
-          font-size: 1.25rem
-          font-weight: 900
-          margin-bottom: 28px
+          display: flex
+          justify-content: space-between
+          align-items: center
+          .package_info_logo
+            width: 33%
+
+          .package_info_text
+            width: 33%
+            p
+              font-size: 12px
+              font-weight: 300
+              margin-bottom: 0
+          .package_info_details
+            margin-left: 2rem
+            width: 33%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            border-left: 2px solid $main_purple
+            padding-left: 18px
+            max-height: 100px
+            .chanel_count
+              font-size: 30px
+              line-height: 35px
+              color: $main_purple
+              .default
+                font-size: 16px
+                line-height: 18px
+                color: $text_color_dark
+                font-weight: 300
+            .list_link
+              a
+                font-weight: 700
+                text-decoration: none
+                transition: all .3s ease-in-out
+                color: $text_color_dark
+
+                .text
+                  text-decoration: underline
+
+                &:hover
+                  color: $main_purple
+          .package_info_get
+            width: 33%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            .price
+              font-size: 1.25rem
+              font-weight: 900
+              margin-bottom: 28px
+
+
+
+
+
+
 
 
 
@@ -2684,6 +2713,8 @@ section#check_section
 
     .btn
       width: 300px
+
+
 
 
 .light_title

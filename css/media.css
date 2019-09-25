@@ -44,6 +44,9 @@
   section .section-container {
     padding: 2.25rem 4.5rem;
   }
+  section .section-container_header {
+    margin-bottom: 1.75rem;
+  }
 
   section#about_partners .partners_container .partners_wrap {
     -webkit-box-pack: center;
@@ -121,7 +124,7 @@
   }
 
   section#FAQ_directory {
-    background-position: center;
+    background-position: 100%;
     background-size: auto;
   }
   section#FAQ_directory .directory_content_wrap {
@@ -154,7 +157,7 @@
   }
 
   section#FAQ_directory {
-    background-position: right;
+    background-position: 80%;
     background-size: auto;
   }
   section#FAQ_directory .directory_content_wrap .get_directory_form_wrap input {
@@ -248,12 +251,43 @@
     margin-right: 0;
   }
 }
+@media screen and (max-width: 1199px) {
+  section#FAQ_directory {
+    background-image: none !important;
+  }
+  section#FAQ_directory .directory_content_wrap {
+    padding: 0;
+  }
+  section#FAQ_directory .directory_content_wrap .image_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section#FAQ_directory .directory_content_wrap .content_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media screen and (max-width: 1024px) {
   section .section-container {
     padding: 2.25rem 2.5rem;
   }
   section .section-container_header {
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.75rem;
+  }
+  section .section-container_header h2::after {
+    min-width: auto;
   }
 
   section#about_carrier .section-container .carrier_wrap .carrier-content .carrier-content_title {
@@ -290,6 +324,25 @@
   section#FAQ_directory {
     background-size: cover;
     background-position: bottom;
+  }
+  section#FAQ_directory .section-container_header h2 {
+    width: 100%;
+    text-align: left;
+  }
+  section#FAQ_directory .section-container_header h2::after {
+    display: none;
+  }
+  section#FAQ_directory .section-container_body {
+    margin: 0;
+  }
+  section#FAQ_directory .directory_content_wrap .content_wrap {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 60%;
+  }
+  section#FAQ_directory .directory_content_wrap .directory_content_text {
+    text-align: left;
   }
 
   section#get_consultation .consultation-container .text_wrap, section#get_consultation .consultation-container .link_wrap {
@@ -400,11 +453,7 @@
 }
 @media screen and (max-width: 823px) {
   section .section-container_header h2 {
-    border: none;
     font-size: 3.5rem;
-  }
-  section .section-container_header h2::after {
-    display: none;
   }
 
   section#check_section form .form-group {
@@ -439,6 +488,9 @@
   section#FAQ_directory .directory_content_wrap .get_directory_form_wrap .form-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   section#FAQ_directory .directory_content_wrap .get_directory_form_wrap .form-content input {
     height: 50px;
@@ -515,11 +567,40 @@
     font-size: 2.5rem;
   }
 
+  section#main_form .section-container .main_form_wrap .btn_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#main_form .section-container .main_form_wrap .btn_wrap button[type="submit"] {
+    max-width: 220px;
+  }
   section#main_form .section-container .form_section_title_wrap {
     padding-top: 0;
   }
   section#main_form .section-container .form_section_title_wrap .form_section_title_header {
     font-size: 2.5rem;
+  }
+
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body {
+    min-height: 160px;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_btn {
+    margin-top: 0;
+  }
+
+  section#about_carrier .section-container .carrier_wrap .carrier-content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  section#about_carrier .section-container .carrier_wrap .carrier-content .carrier-content_title {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
   }
 
   .content-banner .banner-wrap .banner-img {
@@ -728,6 +809,12 @@
   section#main_slider .main_slider_container .main_slider_arrows_wrap {
     top: 48px;
   }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body {
+    min-height: 160px;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_btn {
+    margin-top: 0;
+  }
 
   section#main_form .section-container .form_section_title_wrap {
     padding-top: 2.25rem;
@@ -863,7 +950,7 @@
         flex-wrap: wrap;
   }
   section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap {
-    width: 45%;
+    width: 100%;
     margin: 0 0 18px 0;
     text-align: center;
     padding: 0 0.5rem;
@@ -957,10 +1044,10 @@
   }
 
   .card_slider .slick-arrow-left {
-    left: -48px;
+    left: -40px;
   }
   .card_slider .slick-arrow-right {
-    right: -48px;
+    right: -40px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -983,10 +1070,6 @@
   section#about_carrier .section-container .carrier_wrap .carrier-content .carrier-content_title {
     width: 100%;
     margin-bottom: 2rem;
-  }
-
-  section#about_stages_of_development {
-    display: none;
   }
 
   section#check_section form .form-group {
@@ -1033,19 +1116,88 @@
     text-align: center;
   }
 
-  section#FAQ_directory {
-    background-position: -700px;
-  }
   section#FAQ_directory .directory_content_wrap {
-    padding: 0 48px 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#FAQ_directory .directory_content_wrap .image_wrap {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.25rem;
+  }
+  section#FAQ_directory .directory_content_wrap .image_wrap img {
+    width: 300px;
+  }
+  section#FAQ_directory .directory_content_wrap .content_wrap {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
+  section#FAQ_theme_search .section-container_header.advanced_header .search_form .search_wrap input {
+    padding: 0.75rem 1rem;
+  }
+
+  section#main_top_banner .section-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   section#main_top_banner .section-container .main_top_banner_header {
     font-size: 3rem;
+  }
+  section#main_top_banner .section-container .main_top_banner_text {
+    margin-bottom: 2.5rem;
   }
   section#main_top_banner .main_banner_arrows {
     width: 95%;
     left: 2.5%;
+  }
+
+  section#main_tariff_plans .tariff_item_link_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#main_tariff_plans .tariff_item_link_wrap .maxNet-btn {
+    max-width: 220px;
+  }
+
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body {
+    min-height: 146px;
+  }
+  section#main_slider .main_slider_container .main_slider_wrap_item .slider_content_body ul li {
+    font-size: 1rem;
+  }
+
+  section#main_slider .main_slider_container {
+    padding: 16px 24px 36px;
+  }
+  section#main_slider .main_slider_container .main_slider_arrows_wrap {
+    top: auto;
+    bottom: 25%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  section#main_slider .main_slider_container .main_slider_arrows_wrap .slick-arrow {
+    margin-right: 0;
   }
 
   section#equipment_store .store_wrap .store-item .maxNet-btn {
@@ -1079,6 +1231,10 @@
         -ms-flex-order: 2;
             order: 2;
     width: 100%;
+  }
+
+  section#about_stages_of_development .section-container {
+    padding-top: 0;
   }
 
   footer section#footer .footer_container .footer_middle .mobile_application .application_link:last-child {
@@ -1148,8 +1304,23 @@
   .card_slider .slick-arrow-right {
     right: -24px;
   }
+
+  .select_tv_tariff_wrap .tv_radio_nav form .row {
+    margin: 0;
+  }
+  .select_tv_tariff_wrap .tv_radio_nav .checkbox_wrap_content label {
+    font-size: 0.85rem;
+  }
+
+  .maxNet_radio_wrap label {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media screen and (max-width: 576px) {
+  section {
+    overflow-x: hidden;
+  }
   section .section-container {
     padding: 2.75rem 0.75rem;
   }
@@ -1163,9 +1334,6 @@
     width: 100%;
     color: #003893;
     font-size: 2.75rem;
-  }
-  section .section-container_header h2::after {
-    display: none;
   }
 
   section#main_top_banner .section-container {
@@ -1187,7 +1355,7 @@
             flex: 1 1 auto;
   }
   section#main_top_banner .main_banner_arrows {
-    top: 300px;
+    top: 200px;
   }
 
   section#main_services .service_card {
@@ -1204,7 +1372,10 @@
     border-bottom: 1px solid #B824A4;
   }
   section#main_services .service_card .service_card_link .wrap {
-    width: auto;
+    width: 7%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   section#main_services .service_card .service_card_link .service_card_text {
     display: none;
@@ -1213,6 +1384,7 @@
     margin-bottom: 0;
     border: none;
     width: 75%;
+    max-width: 310px;
   }
   section#main_services .service_card .service_card_link .service_card_header::after {
     display: none;
@@ -1307,6 +1479,7 @@
     padding: 0 2rem;
   }
   section#main_mobile_tariff_plans .section-container_body .mobile_tariff_card .tariff-body .mobile_tariff_body .btn_wrap .btn {
+    max-width: 220px;
     width: 100%;
   }
 
@@ -1479,7 +1652,29 @@
     margin: 0;
   }
   section#equipment_catalog .equipment_catalog_wrap .small_item_content {
-    background-position: 120px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section#equipment_catalog .equipment_catalog_wrap .small_item_content .title {
+    width: 100%;
+  }
+  section#equipment_catalog .equipment_catalog_wrap .small_item_content .description {
+    width: 85%;
+  }
+  section#equipment_catalog .equipment_catalog_wrap .small_item_content .arrow {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   section#equipment_store .store_wrap .store-item .item_control {
@@ -1566,6 +1761,10 @@
     width: 150px;
   }
 
+  section#video_banner .video-banner-container .video-banner-title {
+    width: auto;
+  }
+
   .data-table {
     margin: 0;
   }
@@ -1598,6 +1797,9 @@
   }
   .content-banner .banner-wrap .banner-text_body ul li {
     font-size: 1.25rem;
+  }
+  .content-banner .banner-wrap .banner-text_body .btn_wrap button.maxNet-btn {
+    max-width: 270px;
   }
   .content-banner .banner-wrap .banner-text_img {
     display: -webkit-box;
@@ -1753,8 +1955,10 @@
     width: 100%;
     margin-bottom: 1.25rem;
   }
-  section#FAQ_directory .directory_content_wrap .get_directory_form_wrap button {
-    width: 100%;
+  section#FAQ_directory .directory_content_wrap .get_directory_form_wrap form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   section#about_maxnet_is .section-container .maxnet_is_body .maxnet_is_item .maxnet_img_wrap {
@@ -1873,11 +2077,13 @@
   section#FAQ_directory form .form-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   section#FAQ_directory form .form-content button.maxNet-btn {
     margin-top: 0.75rem;
     min-width: 175px;
-    width: 100%;
     padding: 0.75rem;
   }
 
@@ -1906,6 +2112,9 @@
 
   section#check_section form .form-group {
     padding: 0;
+  }
+  section#check_section .img_wrap img {
+    width: 100%;
   }
 
   section#service_0000 .all_tariff_link a i {
@@ -2121,6 +2330,10 @@
     padding: 0 1.25rem;
   }
 
+  section#FAQ_directory .directory_content_wrap .image_wrap img {
+    width: 220px;
+  }
+
   section#equipment_catalog .equipment_catalog_wrap .small_item_content {
     background-position: 190px 10px;
   }
@@ -2183,6 +2396,7 @@
   }
 
   section#video_banner .video-banner-btn .maxNet-btn {
+    font-size: 0.85rem;
     padding: 0.75rem 1.25rem;
   }
 
@@ -2202,6 +2416,10 @@
   }
   .select_tv_tariff_wrap .tv_packages_wrap .tv_package .wrap .package_info .package_info_get .maxNet-btn {
     padding: 0.75rem 1.25rem;
+  }
+
+  section#check_section .img_wrap img {
+    width: 92%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2295,5 +2513,14 @@
   section#landline_city .poster_wrap .poster-content {
     padding: 1.25rem;
     padding-bottom: 0;
+  }
+
+  section#video_banner .video-banner-container .video-banner-title h2 {
+    padding: 0 0.75rem;
+  }
+
+  section#main_top_banner .main_banner_arrows {
+    top: 220px;
+    opacity: 0.85;
   }
 }

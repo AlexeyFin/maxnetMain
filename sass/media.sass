@@ -38,6 +38,8 @@
   section
     .section-container
       padding: 2.25rem 4.5rem
+      &_header
+        margin-bottom: 1.75rem
 
   section#about_partners
     .partners_container
@@ -107,7 +109,7 @@
         .form_section_title_header
           font-size: 3.75rem
   section#FAQ_directory
-    background-position: center
+    background-position: 100%
     background-size: auto
     .directory_content_wrap
       padding: 0 36px 0 48px
@@ -142,7 +144,7 @@
               min-height: 64px
               margin-bottom: 24px
   section#FAQ_directory
-    background-position: right
+    background-position: 80%
     background-size: auto
     .directory_content_wrap
       .get_directory_form_wrap
@@ -176,6 +178,11 @@
           height: 420px
   section#FAQ_directory
     background-size: cover
+    //background-image: none !important
+    //.directory_content_wrap
+    //  padding: 0
+    //  .image_wrap
+    //    display: block
   section#main_slider
     .main_slider_container
       .main_slider_arrows_wrap
@@ -215,12 +222,28 @@
               margin-left: 1rem
               margin-right: 0
 
+@media screen and (max-width: 1199px)
+  section#FAQ_directory
+    background-image: none !important
+    .directory_content_wrap
+      padding: 0
+      .image_wrap
+        display: flex
+        align-items: flex-start
+      .content_wrap
+        display: flex
+        flex-direction: column
+        justify-content: center
+
 @media screen and (max-width: 1024px)
   section
     .section-container
       padding: 2.25rem 2.5rem
       &_header
-        margin-bottom: 2.25rem
+        margin-bottom: 1.75rem
+        h2
+          &::after
+            min-width: auto
 
   section#about_carrier
     .section-container
@@ -259,7 +282,21 @@
   section#FAQ_directory
     background-size: cover
     background-position: bottom
-
+    .section-container
+      &_header
+        h2
+          width: 100%
+          text-align: left
+          &::after
+            display: none
+      &_body
+        margin: 0
+    .directory_content_wrap
+      .content_wrap
+        align-items: flex-start
+        width: 60%
+      .directory_content_text
+        text-align: left
   section#get_consultation
     .consultation-container
       .text_wrap,.link_wrap
@@ -376,10 +413,8 @@
   section
     .section-container_header
       h2
-        border: none
         font-size: 3.5rem
-        &::after
-          display: none
+
   section#check_section
     form
       .form-group
@@ -411,6 +446,7 @@
       .get_directory_form_wrap
         .form-content
           flex-wrap: wrap
+          justify-content: flex-start
           input
             height: 50px
             width: 100%
@@ -469,10 +505,32 @@
         font-size: 2.5rem
   section#main_form
     .section-container
+      .main_form_wrap
+        .btn_wrap
+          display: flex
+          justify-content: center
+          button[type="submit"]
+            max-width: 220px
       .form_section_title_wrap
         padding-top: 0
         .form_section_title_header
           font-size: 2.5rem
+  section#main_slider
+    .main_slider_container
+      .main_slider_wrap_item
+        .slider_content_body
+          min-height: 160px
+        .slider_content_btn
+          margin-top: 0
+  section#about_carrier
+    .section-container
+      .carrier_wrap
+        .carrier-content
+          justify-content: flex-start
+          .carrier-content_title
+            width: 100%
+            font-size: 2.5rem
+            margin-bottom: 3rem
   .content-banner
     .banner-wrap
       .banner-img
@@ -627,7 +685,11 @@
     .main_slider_container
       .main_slider_arrows_wrap
         top: 48px
-
+      .main_slider_wrap_item
+        .slider_content_body
+          min-height: 160px
+        .slider_content_btn
+          margin-top: 0
   section#main_form
     .section-container
       .form_section_title_wrap
@@ -742,7 +804,7 @@
     .internet-nav_wrap
       flex-wrap: wrap
       .internet_nav_link_wrap
-        width: 45%
+        width: 100%
         margin: 0 0 18px 0
         text-align: center
         padding: 0 0.5rem
@@ -822,9 +884,9 @@
       text-align: center
   .card_slider
     .slick-arrow-left
-      left: -48px
+      left: -40px
     .slick-arrow-right
-      right: -48px
+      right: -40px
 
 @media screen and (max-width: 767px)
   section
@@ -850,7 +912,7 @@
             width: 100%
             margin-bottom: 2rem
   section#about_stages_of_development
-    display: none
+    //display: none
   section#check_section
     form
       .form-group
@@ -881,16 +943,59 @@
         margin-bottom: 1rem
         text-align: center
   section#FAQ_directory
-    background-position: -700px
     .directory_content_wrap
-      padding: 0 48px 0 0
+      flex-direction: column
+      .image_wrap
+        order: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 1.25rem
+        img
+          width: 300px
+      .content_wrap
+        order: 2
+
+  section#FAQ_theme_search
+    .section-container_header.advanced_header
+      .search_form
+        .search_wrap
+          input
+            padding: 0.75rem 1rem
   section#main_top_banner
     .section-container
+      justify-content: flex-start
       .main_top_banner_header
         font-size: 3rem
+      .main_top_banner_text
+        margin-bottom: 2.5rem
     .main_banner_arrows
       width: 95%
       left: 2.5%
+  section#main_tariff_plans
+    .tariff_item_link_wrap
+      display: flex
+      justify-content: center
+      .maxNet-btn
+        max-width: 220px
+  section#main_slider
+    .main_slider_container
+      .main_slider_wrap_item
+        .slider_content_body
+          min-height: 146px
+          ul
+            li
+              font-size: 1rem
+  section#main_slider
+    .main_slider_container
+      padding: 16px 24px 36px
+      .main_slider_arrows_wrap
+        top: auto
+        bottom: 25%
+        justify-content: space-between
+        width: 100%
+        .slick-arrow
+          margin-right: 0
   section#equipment_store
     .store_wrap
       .store-item
@@ -911,6 +1016,9 @@
           .img_wrap
             order: 2
             width: 100%
+  section#about_stages_of_development
+    .section-container
+      padding-top: 0
   footer
     section#footer
       .footer_container
@@ -974,8 +1082,22 @@
       left: -24px
     .slick-arrow-right
       right: -24px
+  .select_tv_tariff_wrap
+    .tv_radio_nav
+      form
+        .row
+          margin: 0
+      .checkbox_wrap_content
+        label
+          font-size: 0.85rem
+  .maxNet_radio_wrap
+    label
+      width: 20px
+      height: 20px
+
 @media screen and (max-width: 576px)
   section
+    overflow-x: hidden
     .section-container
       padding: 2.75rem .75rem
       &_header
@@ -986,8 +1108,6 @@
           //text-align: left
           color: $main_blue
           font-size: 2.75rem
-          &::after
-            display: none
 
   section#main_top_banner
     .section-container
@@ -1002,7 +1122,7 @@
       .btn_wrap
         flex: 1 1 auto
     .main_banner_arrows
-      top: 300px
+      top: 200px
   section#main_services
     .service_card
       border: none
@@ -1012,13 +1132,15 @@
         align-items: center
         border-bottom: 1px solid $main_purple
         .wrap
-          width: auto
+          width: 7%
+          justify-content: flex-end
         .service_card_text
           display: none
         .service_card_header
           margin-bottom: 0
           border: none
           width: 75%
+          max-width: 310px
           &::after
             display: none
         .service_card_chevron
@@ -1090,6 +1212,7 @@
                 width: 100%
                 padding: 0 2rem
                 .btn
+                  max-width: 220px
                   width: 100%
 
   section.mobile_proposition_banner
@@ -1224,8 +1347,19 @@
   section#equipment_catalog
     .equipment_catalog_wrap
       margin: 0
-      .small_item_content
-        background-position: 120px 10px
+      .small_item
+        &_content
+          display: flex
+          flex-wrap: wrap
+          .title
+            width: 100%
+          .description
+            width: 85%
+          .arrow
+            width: 15%
+            display: flex
+            justify-content: flex-end
+            align-items: center
   section#equipment_store
     .store_wrap
       .store-item
@@ -1306,6 +1440,10 @@
             img
               width: 150px
 
+  section#video_banner
+    .video-banner-container
+      .video-banner-title
+        width: auto
   .data-table
     margin: 0
     &_body
@@ -1337,6 +1475,9 @@
           ul
             li
               font-size: 1.25rem
+          .btn_wrap
+            button.maxNet-btn
+              max-width: 270px
       .banner-text_img
         display: flex
         justify-content: center
@@ -1470,8 +1611,9 @@
           height: 50px
           width: 100%
           margin-bottom: 1.25rem
-        button
-          width: 100%
+        form
+          justify-content: center
+
   section#about_maxnet_is
     .section-container
       .maxnet_is_body
@@ -1570,10 +1712,10 @@
     form
       .form-content
         flex-wrap: wrap
+        justify-content: center !important
         button.maxNet-btn
           margin-top: .75rem
           min-width: 175px
-          width: 100%
           padding: 0.75rem
   section#FAQ
     .section-container_body
@@ -1599,6 +1741,9 @@
     form
       .form-group
         padding: 0
+    .img_wrap
+      img
+        width: 100%
   section#service_0000
     .all_tariff_link
       a
@@ -1807,6 +1952,11 @@
         .card
           .card-header
             padding: 0 1.25rem
+  section#FAQ_directory
+    .directory_content_wrap
+      .image_wrap
+        img
+          width: 220px
   section#equipment_catalog
     .equipment_catalog_wrap
       .small_item_content
@@ -1866,6 +2016,7 @@
   section#video_banner
     .video-banner-btn
       .maxNet-btn
+        font-size: 0.85rem
         padding: 0.75rem 1.25rem
   .data-table_body
     .data-table-list-item
@@ -1885,6 +2036,11 @@
                 font-size: 1rem
               .maxNet-btn
                 padding: 0.75rem 1.25rem
+  section#check_section
+    .img_wrap
+      img
+        width: 92%
+
 @media screen and (max-width: 320px)
   html,main
     overflow-x: hidden
@@ -1974,4 +2130,12 @@
       .poster-content
         padding: 1.25rem
         padding-bottom: 0
-
+  section#video_banner
+    .video-banner-container
+      .video-banner-title
+        h2
+          padding: 0 0.75rem
+  section#main_top_banner
+    .main_banner_arrows
+      top: 220px
+      opacity: 0.85

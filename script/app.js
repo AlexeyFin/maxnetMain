@@ -219,8 +219,8 @@ $(document).ready(function(){
             {
                 breakpoint: 1025,
                 settings: {
-                    arrows: false,
-                    autoplay: false,
+                    arrows: true,
+                    autoplay: true,
                     infinite: true,
                     slidesToShow: 2
                 }

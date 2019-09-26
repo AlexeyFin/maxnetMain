@@ -747,6 +747,10 @@
   .space-left {
     padding-left: 0;
   }
+
+  section.internet_data_wrap .internet-nav_wrap {
+    border-top: none;
+  }
 }
 @media screen and (max-width: 768px) {
   section .section-container {
@@ -1316,6 +1320,24 @@
     width: 20px;
     height: 20px;
   }
+
+  section#FAQ_directory .section-container_header h2 {
+    text-align: center;
+  }
+  section#FAQ_directory .directory_content_wrap .content_wrap {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#FAQ_directory .directory_content_wrap .content_wrap .directory_content_text {
+    text-align: center;
+  }
+  section#FAQ_directory .directory_content_wrap .content_wrap .get_directory_form_wrap .form-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (max-width: 576px) {
   section {
@@ -1832,6 +1854,21 @@
 
   .select_tv_tariff_wrap .tv_packages_wrap .tv_package {
     padding: 24px 16px 24px 16px;
+  }
+
+  section#FAQ_directory .section-container_header h2 {
+    text-align: center;
+  }
+  section#FAQ_directory .directory_content_wrap .content_wrap {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#FAQ_directory .directory_content_wrap .content_wrap .get_directory_form_wrap .form-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 475px) {

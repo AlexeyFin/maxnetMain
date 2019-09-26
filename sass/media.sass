@@ -638,6 +638,9 @@
       right: -48px
   .space-left
     padding-left: 0
+  section.internet_data_wrap
+    .internet-nav_wrap
+      border-top: none
 @media screen and (max-width: 768px)
   section
     .section-container
@@ -1094,7 +1097,20 @@
     label
       width: 20px
       height: 20px
-
+  section#FAQ_directory
+    .section-container
+      &_header
+        h2
+          text-align: center
+    .directory_content_wrap
+      .content_wrap
+        width: 100%
+        align-items: center
+        .directory_content_text
+          text-align: center
+        .get_directory_form_wrap
+          .form-content
+            justify-content: center
 @media screen and (max-width: 576px)
   section
     overflow-x: hidden
@@ -1499,6 +1515,19 @@
     .tv_packages_wrap
       .tv_package
         padding: 24px 16px 24px 16px
+  section#FAQ_directory
+    .section-container
+      &_header
+        h2
+          text-align: center
+    .directory_content_wrap
+      .content_wrap
+        width: 100%
+        align-items: center
+        .get_directory_form_wrap
+          .form-content
+            justify-content: center
+
 
 @media screen and (max-width: 475px)
   main

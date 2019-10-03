@@ -471,9 +471,14 @@
     left: -3rem;
   }
 
+  .d-md-none {
+    display: block !important;
+  }
 }
 @media screen and (max-width: 991px) {
-
+  .d-md-none {
+    display: none;
+  }
 }
 @media screen and (max-width: 823px) {
   section .section-container_header h2 {
@@ -1371,12 +1376,24 @@
     display: none;
   }
 
+  .loyalty_item .loyalty_item_title h4 {
+    text-align: center;
+  }
   .loyalty_item .loyalty_item_description p, .loyalty_item .loyalty_item_description ul li {
     font-size: 16px;
   }
   .loyalty_item .loyalty_item_regulations a.btn.maxNet-btn, .loyalty_item .loyalty_item_regulations button.maxNet-btn.btn {
     max-width: 220px;
     margin-top: 1.25rem;
+  }
+
+  .loyalty-slider .card_slider_item .item_card .btn_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 576px) {

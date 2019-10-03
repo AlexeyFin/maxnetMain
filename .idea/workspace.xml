@@ -3,18 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b014a83b-26fa-4c0d-beb6-afad6e01b66d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-hosting.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-hosting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/video.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +36,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../struchaieva-business/struchaieva-business" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -55,16 +49,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images/icons" />
-      <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images/icons" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/images/gif" />
       <recent name="$PROJECT_DIR$/images/channels" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/icons" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -155,6 +149,7 @@
       <workItem from="1569477642629" duration="299000" />
       <workItem from="1569484806000" duration="4291000" />
       <workItem from="1569566006666" duration="17236000" />
+      <workItem from="1570092566552" duration="5442000" />
     </task>
     <servers />
   </component>

@@ -128,7 +128,11 @@
         .package_img
           p
             width: 355px
-
+  .news_list_wrap
+    .news_list
+      padding-left: 0
+  .pagination-wrap
+    padding-left: 0
 @media screen and (max-width: 1280px)
   section#about_partners
     .partners_container
@@ -417,7 +421,12 @@
       right: -3rem
     .slick-arrow-left
       left: -3rem
+  .d-md-none
+    display: block !important
 
+@media screen and (max-width: 991px)
+  .d-md-none
+    display: none
 @media screen and (max-width: 823px)
   section
     .section-container_header

@@ -210,6 +210,11 @@
             width: 60%
             padding-left: 2.5rem
             padding-bottom: 2.5rem
+  .data_item
+    .side_img
+      width: 34px
+      height: 34px
+
   footer
     section#footer
       .footer_container
@@ -407,7 +412,11 @@
           justify-content: center
           .title
             margin-right: 1rem
-
+  .card_slider
+    .slick-arrow-right
+      right: -3rem
+    .slick-arrow-left
+      left: -3rem
 
 @media screen and (max-width: 823px)
   section
@@ -638,6 +647,9 @@
       right: -48px
   .space-left
     padding-left: 0
+  .data_item
+    .text_wrap
+      font-size: 16px
   section.internet_data_wrap
     .internet-nav_wrap
       border-top: none
@@ -1111,6 +1123,18 @@
         .get_directory_form_wrap
           .form-content
             justify-content: center
+  .data_item
+    .side_img
+      display: none
+  .loyalty_item
+    .loyalty_item_description
+      p, ul li
+        font-size: 16px
+
+    .loyalty_item_regulations
+      a.btn.maxNet-btn,button.maxNet-btn.btn
+        max-width: 220px
+        margin-top: 1.25rem
 @media screen and (max-width: 576px)
   section
     overflow-x: hidden
@@ -1709,6 +1733,21 @@
       margin-right: 0
   .mobile_bottom
     display: block
+  .loyalty-slider
+    .card_slider_item
+      .item_card
+        width: 280px
+        min-height: 530px
+        .small_title
+          margin-bottom: 18px
+        .item_card_data
+          p
+            font-size: 1rem
+            margin-bottom: 18px
+        .btn_wrap
+          display: flex
+          justify-content: center
+
 
   .dual_poster_item
     .link_wrap .text

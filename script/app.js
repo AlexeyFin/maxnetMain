@@ -2,7 +2,11 @@ $("body").children().each(function () {
     document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
 });
 
+
+
 $(document).ready(function(){
+
+
     $('#top_slider').slick({
         appendArrows: '.main_banner_arrows',
         nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',
@@ -306,6 +310,68 @@ $(document).ready(function(){
         ]
 
     });
+    $('#loyalty_slider').slick({
+        slidesToShow: 3,
+        infinite: false,
+        nextArrow: '<button class="slick-arrow-right  slick-arrow"><i class="fas fa-chevron-right"></i></button>',
+        prevArrow: '<button class="slick-arrow-left  slick-arrow"><i class="fas fa-chevron-left"></i></button>',
+        responsive: [
+            {
+                breakpoint: 1367,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    autoplay: false,
+                    arrows: true
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 1025,
+                settings: {
+                    arrows: true,
+                    autoplay: false,
+                    infinite: true,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 813,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    autoplay: false,
+                    arrows: true
+
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 475,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    autoplay: false,
+                    infinity: true
+
+                }
+            }
+
+        ]
+
+    });
     $('[data-toggle="tooltip"]').tooltip();
 });
 
@@ -323,7 +389,15 @@ function toggle_check(elem) {
 function slider_link(elem) {
     elem.checked ? window.location = elem.dataset['onlink'] : window.location = elem.dataset['offlink'];
 }
+document.querySelectorAll('a[href^="#"].slide').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 
 

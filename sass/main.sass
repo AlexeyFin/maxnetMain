@@ -107,7 +107,7 @@ section
 .maxNet-btn
   border-radius: .5rem
   border: 1px solid $text_color_white
-  padding: .75rem 1rem
+  padding: .5rem 1rem
   color: $text_color_white
   position: relative
   display: inline-block
@@ -285,6 +285,7 @@ section
 .maxNet-btn-blue-transparent-to-purple
   color: $main_blue
   border: 1px solid $main_blue
+  background-color: transparent
 
   &:hover
     background-color: $main_purple
@@ -518,11 +519,15 @@ section
       justify-content: space-between
 
       .tariff_title
-        padding-left: 1rem
+        padding: 0 1rem
         font-size: 1.875rem
         margin-bottom: 0
         font-weight: bold
 
+      .small_title
+        padding-left: 1rem
+        font-size: 20px
+        line-height: 27px
       .count
         padding-left: 1rem
         color: #003893
@@ -582,6 +587,10 @@ section
         a, button
           min-width: 180px
 
+      .btn_wrap
+        padding-left: 1rem
+        a, button
+          min-width: 180px
       .ask_wrap
         text-align: center
         margin-top: 2rem
@@ -683,6 +692,52 @@ section
   .slick-disabled
     opacity: 0
 
+
+.loyalty-slider
+  .card_slider
+    &_item
+      padding: 1rem
+      display: flex
+      justify-content: center
+      .item_card
+        max-width: 320px
+        width: 320px
+        min-height: 583px
+        justify-content: flex-start
+        box-shadow: none
+        border: 1px solid #969696
+        .small_title
+          min-height: 53px
+          margin-bottom: 26px
+        .item_card_data
+          display: flex
+          flex-direction: column
+          flex:  1 1 auto
+          p
+            font-weight: 300
+            font-size: 20px
+            line-height: 27px
+            margin-bottom: 24px
+          .img_wrap
+            display: flex
+            flex: 1 1 auto
+            justify-content: center
+            align-items: center
+        .btn_wrap
+          margin-top: 28px
+    &_item:nth-child(odd)
+      .item_card
+        background-color: #F2F4FB
+    &_item:nth-child(3n+1)
+      .item_card
+        border-top: 8px solid #B824A4
+    &_item:nth-child(3n+2)
+      .item_card
+        border-top: 8px solid #003893
+    &_item:nth-child(3n+3)
+      .item_card
+        border-top: 8px solid #007AFF
+
 // End of Card slider
 
 //Data Item
@@ -691,6 +746,7 @@ section
   display: flex
   flex-direction: column
   align-items: center
+  position: relative
   .img_wrap
     width: 140px
     height: 140px
@@ -701,6 +757,15 @@ section
     border-radius: 50%
     img
       width: auto
+    p
+      margin: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #81A8E9
+      font-weight: bold
+      font-size: 20px
+      line-height: 27px
 
   .text_wrap
     font-size: 1.25rem
@@ -720,6 +785,15 @@ section
       font-size: 1rem
       text-decoration: underline
       color: $text_color_dark
+
+  .side_img
+    position: absolute
+    width: 45px
+    height: 45px
+    top: calc(70px)
+    right: -22px
+    img
+      width: 100%
 
   &.grey_data_item
     .img_wrap
@@ -2440,6 +2514,55 @@ section.internet_data_wrap
   .internet_tariff_main_wrap
     background-color: #D2D2E6
     padding: 48px
+
+
+.loyalty_item
+  background-color: #F2F4FB
+  &:nth-child(even)
+    background-color: transparent
+  &_title
+    h4
+      font-size: 30px
+      line-height: 37px
+      margin-bottom: 40px
+  &_description
+    margin-bottom: 60px
+    p
+      font-size: 20px
+      line-height: 27px
+      font-weight: 300
+      margin-bottom: 1.5rem
+    ul
+      padding-left: 20px
+      li
+        font-size: 20px
+        line-height: 27px
+        font-weight: 300
+  &_data_wrap
+    .data_item:last-child
+      .side_img
+        display: none
+  &_regulations
+    border-top: 2px dashed black
+    padding-top: 2rem
+    margin-top: 3rem
+    .regulations_wrap
+      display: flex
+      .img_wrap
+        margin-right: 28px
+      .text_wrap
+        display: flex
+        flex-direction: column
+        justify-content: center
+        a
+          font-size: 20px
+          color: $text_color_dark
+          line-height: 27px
+        p.small
+          color: #5F71A7
+          font-size: 14px
+          margin-bottom: 0
+          line-height: 32px
 
 
 footer

@@ -32,10 +32,11 @@
     <link rel="stylesheet" href="css/media.min.css">
 
     <title>MaxNet</title>
+
 </head>
-<body >
+<body style="position: relative">
 <header>
-    <div class=" cd-main-header">
+    <div class="cd-main-header">
         <a class="cd-logo" href="#0"><img src="images/Maxnet-logo-2017-blue-ru-550x339.png" alt="Logo"></a>
 
         <ul class="cd-header-buttons d-flex">
@@ -201,7 +202,7 @@
                             <a href="http://codyhouse.co/?p=409">Вопрос-ответ</a>
 
                         </li>
-                        <li class="">
+                        <li class="" style="width: 280px">
                             <a href="http://codyhouse.co/?p=409">Оборудование и сервис</a>
 
                         </li>
@@ -213,7 +214,6 @@
                             <a href="http://codyhouse.co/?p=409">Блог</a>
 
                         </li>
-
 
 
                     </ul>
@@ -245,11 +245,11 @@
                         </li>
 
 
-
                     </ul>
                 </li>
                 <li class="has-children dropdown ">
-                    <a href="#" data-toggle="dropdown" onclick="$('a.selected').click();"   id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">Ru</a>
+                    <a href="#" data-toggle="dropdown" onclick="$('a.selected').click();" id="dropdownMenuButton"
+                       aria-haspopup="true" aria-expanded="false">Ru</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Ua</a>
                         <a class="dropdown-item" href="#">En</a>
@@ -280,367 +280,311 @@
 
         </div>
     </div>
-    <section id="video_banner">
-        <div class="container-fluid video-banner-container" style="background-image: url('images/CCTV.png'); background-repeat: no-repeat; background-position: center">
-            <div class="video-banner-title">
-                <h2>Облачные и локальные решения</h2>
-            </div>
-            <div class="video-banner-title">
-                <h2>Доступ с телефона, <br> планшета, компьютера</h2>
-            </div>
-            <div class="video-banner-btn">
-                <div class="animated_wrap">
-                    <img src="images/gif/lg.eat-bean-pie-loading-gif.gif" alt="">
-                </div>
-                <a href="#" class="btn maxNet-btn maxNet-btn-transparent-white">Расчитать объем HDD</a>
-            </div>
-        </div>
-    </section>
-    <section id="video_about">
+
+    <section class="loyalties">
         <div class="container section-container">
             <div class="section-container_header">
-                <h2>Видеонаблюдение</h2>
+                <h2>Программы лояльности</h2>
             </div>
             <div class="section-container_body">
-                <div class="row video_about_content">
-                    <div class="col-md-12">
-                        <p class="content_text">
-                            Видеонаблюдение (Closed Circuit Television — CCTV) —
-                            это важная составляющая комплексных систем безопасности.
-                            Услуга «Видеонаблюдение» предусматривает установку камер, запись, трансляцию и хранение видео.
-                        </p>
+                <div class="card_slider loyalty-slider" id="loyalty_slider">
+                    <div class="card_slider_item">
+                        <div class="item_card">
+                            <h6 class="small_title">
+                                1. Заплати меньше — получи больше
+                            </h6>
+                            <div class="item_card_data">
+                                <p>
+                                    Оплачивай шесть месяцев и получай седьмой в подарок!
+                                </p>
+
+                                <div class="img_wrap">
+                                    <img src="images/loyalty_1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="btn_wrap">
+                                <a href="#loyalty_1" class="btn maxNet-btn maxNet-btn-blue-transparent-to-purple slide">Подробнее</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 pr-lg-5 pr-md-4">
-                        <h6 class="list_title text-center text-md-left">Локальное хранение</h6>
-                        <ul class="video_list">
-                            <li>данные хранятся на жестком диске, который установлен в видеорегистраторе</li>
-                            <li>при выходе из строя жесткого диска все данные могут быть потеряны</li>
-                            <li>в случае вторжения в помещение, где установлен регистратор, данные могут быть намерено уничтожены</li>
-                        </ul>
+                    <div class="card_slider_item">
+                        <div class="item_card">
+                            <h6 class="small_title">
+                                2. Рекомендуй Макснет
+                            </h6>
+                            <div class="item_card_data">
+                                <p>
+                                    Приводи друзей — получай до 6 месяцев услуг в подарок!
+                                </p>
+
+                                <div class="img_wrap">
+                                    <img src="images/loyalty_2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="btn_wrap">
+                                <a href="#loyalty_2" class="btn maxNet-btn maxNet-btn-blue-transparent-to-purple slide">Подробнее</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 pl-lg-5 pl-md-4">
-                        <h6 class="list_title text-center text-md-left">Облачное хранение</h6>
-                        <ul class="video_list">
-                            <li>данные хранятся на серверах «Макснет»</li>
-                            <li>используются PoE коммутаторы</li>
-                            <li>абоненты имеют доступ 24/7 к записям видеокамер</li>
-                            <li>умный поиск сокращает время реагирования на инциденты</li>
-                            <li>при выходе из строя жесткого диска, а также при вмешательстве третьих лиц в работу видеосистемы данные не теряются</li>
-                        </ul>
+                    <div class="card_slider_item">
+                        <div class="item_card">
+                            <h6 class="small_title">
+                                3. Доступное <br> оборудование
+                            </h6>
+                            <div class="item_card_data">
+                                <p>
+                                    Бери в аренду или покупай оборудование в рассрочку
+                                </p>
+
+                                <div class="img_wrap">
+                                    <img src="images/loyalty_3.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="btn_wrap">
+                                <a href="#loyalty_3" class="btn maxNet-btn maxNet-btn-blue-transparent-to-purple slide">Подробнее</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
     </section>
-    <section id="video_main_section">
+    <section id="loyalty_1" class="loyalty_item">
         <div class="container section-container">
             <div class="section-container_body">
-                <div class="section_sub_title">
-                    <h5>Тарифы по услуге «Облачное видеонаблюдение»</h5>
+                <div class="loyalty_item_title">
+                    <h4>
+                        1. Заплати меньше — получи больше
+                    </h4>
                 </div>
-
-                <div class="card_slider" id="video_tariff_slider">
-                    <div class="card_slider_item">
-                        <div class="video_tariff_card">
-                            <div class="camera_icon">
-                                <img src="images/icons/icon-camera.svg" alt="">
-                            </div>
-                            <h5 class="tariff_title">Lite</h5>
-                            <p class="camera_count">1 camera <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
-                            <ul class="options_list">
-                                <li> <i class="fas fa-check-square mr-1"></i> 1 день хранения архива</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Умный поиск</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Безлимит подключений с телефона/компьютера</li>
-                            </ul>
-
-                            <p class="price">
-                                130 UAH/Month
-                            </p>
-
-                            <div class="get_btn_wrap">
-                                <a href="#" class="btn maxNet-btn maxNet-btn-purple">Get it</a>
-                            </div>
-
-                            <div class="ask_wrap">
-                                <a href="#">Ask the question</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_slider_item">
-                        <div class="video_tariff_card">
-                            <div class="camera_icon">
-                                <img src="images/icons/icon-camera.svg" alt="">
-                            </div>
-                            <h5 class="tariff_title">Lite</h5>
-                                                        <p class="camera_count">1 camera <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
-
-                            <ul class="options_list">
-                                <li> <i class="fas fa-check-square mr-1"></i> 1 день хранения архива</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Умный поиск</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Безлимит подключений с телефона/компьютера</li>
-                            </ul>
-
-                            <p class="price">
-                                130 UAH/Month
-                            </p>
-
-                            <div class="get_btn_wrap">
-                                <a href="#" class="btn maxNet-btn maxNet-btn-purple">Get it</a>
-                            </div>
-
-                            <div class="ask_wrap">
-                                <a href="#">Ask the question</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_slider_item">
-                        <div class="video_tariff_card">
-                            <div class="camera_icon">
-                                <img src="images/icons/icon-camera.svg" alt="">
-                            </div>
-                            <h5 class="tariff_title">Lite</h5>
-                                                        <p class="camera_count">1 camera <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
-
-                            <ul class="options_list">
-                                <li> <i class="fas fa-check-square mr-1"></i> 1 день хранения архива</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Умный поиск</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Безлимит подключений с телефона/компьютера</li>
-                            </ul>
-
-                            <p class="price">
-                                130 UAH/Month
-                            </p>
-
-                            <div class="get_btn_wrap">
-                                <a href="#" class="btn maxNet-btn maxNet-btn-purple">Get it</a>
-                            </div>
-
-                            <div class="ask_wrap">
-                                <a href="#">Ask the question</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_slider_item">
-                        <div class="video_tariff_card">
-                            <div class="camera_icon gold">
-                                <img src="images/icons/icon-camera.svg" alt="">
-                            </div>
-                            <h5 class="tariff_title">Lite</h5>
-                                                        <p class="camera_count">1 camera <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
-
-                            <ul class="options_list">
-                                <li> <i class="fas fa-check-square mr-1"></i> 1 день хранения архива</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Умный поиск</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Безлимит подключений с телефона/компьютера</li>
-                            </ul>
-
-                            <p class="price">
-                                130 UAH/Month
-                            </p>
-
-                            <div class="get_btn_wrap">
-                                <a href="#" class="btn maxNet-btn maxNet-btn-purple">Get it</a>
-                            </div>
-
-                            <div class="ask_wrap">
-                                <a href="#">Ask the question</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_slider_item">
-                        <div class="video_tariff_card">
-                            <div class="camera_icon">
-                                <img src="images/icons/icon-camera.svg" alt="">
-                            </div>
-                            <h5 class="tariff_title">Lite</h5>
-                                                        <p class="camera_count">1 camera <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
-
-                            <ul class="options_list">
-                                <li> <i class="fas fa-check-square mr-1"></i> 1 день хранения архива</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Умный поиск</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Безлимит подключений с телефона/компьютера</li>
-                            </ul>
-
-                            <p class="price">
-                                130 UAH/Month
-                            </p>
-
-                            <div class="get_btn_wrap">
-                                <a href="#" class="btn maxNet-btn maxNet-btn-purple">Get it</a>
-                            </div>
-
-                            <div class="ask_wrap">
-                                <a href="#">Ask the question</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_slider_item">
-                        <div class="video_tariff_card">
-                            <div class="camera_icon">
-                                <img src="images/icons/icon-camera.svg" alt="">
-                            </div>
-                            <h5 class="tariff_title">Lite</h5>
-                                                        <p class="camera_count">1 camera <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
-
-                            <ul class="options_list">
-                                <li> <i class="fas fa-check-square mr-1"></i> 1 день хранения архива</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Умный поиск</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Безлимит подключений с телефона/компьютера</li>
-                            </ul>
-
-                            <p class="price">
-                                130 UAH/Month
-                            </p>
-
-                            <div class="get_btn_wrap">
-                                <a href="#" class="btn maxNet-btn maxNet-btn-purple">Get it</a>
-                            </div>
-
-                            <div class="ask_wrap">
-                                <a href="#">Ask the question</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_slider_item">
-                        <div class="video_tariff_card">
-                            <div class="camera_icon">
-                                <img src="images/icons/icon-camera.svg" alt="">
-                            </div>
-                            <h5 class="tariff_title">Lite</h5>
-                                                        <p class="camera_count">1 camera <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
-
-                            <ul class="options_list">
-                                <li> <i class="fas fa-check-square mr-1"></i> 1 день хранения архива</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Умный поиск</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Безлимит подключений с телефона/компьютера</li>
-                            </ul>
-
-                            <p class="price">
-                                130 UAH/Month
-                            </p>
-
-                            <div class="get_btn_wrap">
-                                <a href="#" class="btn maxNet-btn maxNet-btn-purple">Get it</a>
-                            </div>
-
-                            <div class="ask_wrap">
-                                <a href="#">Ask the question</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_slider_item">
-                        <div class="video_tariff_card">
-                            <div class="camera_icon">
-                                <img src="images/icons/icon-camera.svg" alt="">
-                            </div>
-                            <h5 class="tariff_title">Lite</h5>
-                                                        <p class="camera_count">1 camera <span class="info" data-toggle="tooltip" data-placement="top" title="Абонентская плата взимается за прием, обработку потока и хранение записей с 1 камеры."> <i class="fas fa-info"></i></span></p>
-
-                            <ul class="options_list">
-                                <li> <i class="fas fa-check-square mr-1"></i> 1 день хранения архива</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Умный поиск</li>
-                                <li> <i class="fas fa-check-square mr-1"></i> Безлимит подключений с телефона/компьютера</li>
-                            </ul>
-
-                            <p class="price">
-                                130 UAH/Month
-                            </p>
-
-                            <div class="get_btn_wrap">
-                                <a href="#" class="btn maxNet-btn maxNet-btn-purple">Get it</a>
-                            </div>
-
-                            <div class="ask_wrap">
-                                <a href="#">Ask the question</a>
-                            </div>
-                        </div>
-                    </div>
-
-
+                <div class="loyalty_item_description">
+                    <p>
+                        В рамках программы лояльности «Заплати меньше — получи больше»
+                        абоненты оплачивают шесть месяцев пользования услугами и
+                        получают седьмой в подарок.
+                    </p>
                 </div>
-
-                <div class="section_sub_title">
-                    <h5>Что нужно знать</h5>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-4 col-sm-4 col-12 data_item grey_data_item">
+                <div class="row loyalty_item_data_wrap">
+                    <div class="col-md-4 col-sm-4 col-12 data_item transparent_data_item">
                         <div class="img_wrap">
-                            <img src="images/icons/Vector.svg" alt="">
-                        </div>
+                            <img src="images/icons/icon-pay.svg" alt=""></div>
                         <div class="text_wrap">
-                            Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-12 data_item grey_data_item">
-                        <div class="img_wrap">
-                            <img src="images/icons/Vector.svg" alt="">
-                        </div>
-                        <div class="text_wrap">
-                            Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-12 data_item grey_data_item">
-                        <div class="img_wrap">
-                            <img src="images/icons/Vector.svg" alt="">
-                        </div>
-                        <div class="text_wrap">
-                            Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
-                        </div>
-                    </div>
+                            Внесите на свой лицевой счет сумму, которая соответствует абонентской плате за 6 месяцев.
 
+                        </div>
+                        <div class="side_img">
+                            <img src="images/icons/arrow-right.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-12 data_item transparent_data_item">
+                        <div class="img_wrap">
+                            <img src="images/icons/icon-telegram.svg" alt=""></div>
+                        <div class="text_wrap">
+                            Сообщите нашим специалистам об оплате любым доступным способом (Телеграм, Мессенжер, звонок,
+                            обратный звонок).
+
+                        </div>
+                        <div class="side_img">
+                            <img src="images/icons/arrow-right.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-12 data_item transparent_data_item">
+                        <div class="img_wrap">
+                            <img src="images/icons/icon-gift.svg" alt=""></div>
+                        <div class="text_wrap">
+                            После активации получаете один месяц пользования услугами в подарок.
+                        </div>
+                        <div class="side_img">
+                            <img src="images/icons/arrow-right.svg" alt="">
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <section id="advantages">
-        <div class="container section-container white-section">
+    <section id="loyalty_2" class="loyalty_item">
+        <div class="container section-container">
             <div class="section-container_body">
-                <div class="section_sub_title">
-                    <h5>Преимущества</h5>
+                <div class="loyalty_item_title">
+                    <h4>
+                        2. Рекомендуй «Макснет»
+                    </h4>
                 </div>
+                <div class="loyalty_item_description">
+                    <p>
+                        Программа лояльности «Рекомендуй Макснет» — удобный способ сэкономить на оплате услуг. Для
+                        участия Вам нужно порекомендовать «Макснет» знакомым, которые собираются подключать интернет или
+                        ТВ.
+                    </p>
+                    <p>
+                        Если новый абонент назовет Ваш лицевой счет или адрес при подключении, мы начислим Вам бонус в
+                        виде месяца промопользования услугами. Если Вы приведете сразу двух друзей — получите три
+                        месяца; три друга — это целых полгода услуг в подарок! Количество рекомендаций не ограничено,
+                        как и количество месяцев!
+                    </p>
+                </div>
+                <div class="row loyalty_item_data_wrap">
+                    <div class="col-md-4 col-sm-4 col-12 data_item transparent_data_item">
+                        <div class="img_wrap">
+                            <p>
+                                1 друг = <br>
+                                1 месяц
+                            </p>
+                        </div>
+                        <div class="text_wrap">
+                            Внесите на свой лицевой счет сумму, которая соответствует абонентской плате за 6 месяцев.
 
-                <div class="row mt-4 justify-content-center">
-                    <div class="col-md-4 col-sm-4 col-12 data_item transparent_data_item">
-                        <div class="img_wrap">
-                            <img src="images/icons/Vector.svg" alt="">
                         </div>
-                        <div class="text_wrap">
-                            Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
+                        <div class="side_img">
+                            <img src="images/icons/thumbs_up.svg" alt="">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-12 data_item transparent_data_item">
                         <div class="img_wrap">
-                            <img src="images/icons/Vector.svg" alt="">
+                            <p>2 друга = <br> 3 месяца</p>
                         </div>
                         <div class="text_wrap">
-                            Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-12 data_item transparent_data_item">
-                        <div class="img_wrap">
-                            <img src="images/icons/Vector.svg" alt="">
-                        </div>
-                        <div class="text_wrap">
-                            Оборудование и подключение оплачиваются отдельно. Сумма зависит от конфигурации системы
-                        </div>
-                    </div>
+                            Сообщите нашим специалистам об оплате любым доступным способом (Телеграм, Мессенжер, звонок,
+                            обратный звонок).
 
+                        </div>
+                        <div class="side_img">
+                            <img src="images/icons/thumbs_up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-12 data_item transparent_data_item">
+                        <div class="img_wrap">
+                            <p>3 друга = <br>полгода</p>
+                        </div>
+                        <div class="text_wrap">
+                            После активации получаете один месяц пользования услугами в подарок.
+                        </div>
+                        <div class="side_img">
+                            <img src="images/icons/thumbs_up.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="loyalty_item_regulations">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-8 col-12 col-xl-9 col-12">
+                            <div class="regulations_wrap">
+                                <div class="img_wrap">
+                                    <img src="images/icons/pdf-icon.svg" alt="">
+                                </div>
+                                <div class="text_wrap">
+                                    <a href="http://www.bavtailor.com/wp-content/uploads/2018/10/Lorem-Ipsum.pdf" target="_blank" download="regulations.pdf">Регламент. Программа лояльности «Рекомендуй
+                                        Макснет»</a>
+                                    <p class="small">02.03.2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-12 col-xl-3 col-12">
+                            <a href="http://www.bavtailor.com/wp-content/uploads/2018/10/Lorem-Ipsum.pdf" target="_blank" download="regulations.pdf"
+                               class="btn btn-block maxNet-btn maxNet-btn-blue-transparent-to-purple">
+                                Загрузить PDF
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="get_consultation">
-        <div class="container consultation-container">
-            <p class="text_wrap">Получить консультацию</p>
-            <p class="link_wrap"><i class="fas fa-phone-alt"></i> <a class="consult_link" href="tel:+380577209720">(057) 720-9-960 </a></p>
-            <p class="link_wrap"><i class="far fa-envelope"></i> <a class="consult_link" href = "mailto: cctv@maxnet.ua">cctv@maxnet.ua </a></p>
+    <section id="loyalty_3" class="loyalty_item">
+        <div class="container section-container">
+            <div class="section-container_body">
+                <div class="loyalty_item_title">
+                    <h4>
+                        3. Доступное оборудование
+                    </h4>
+                </div>
+                <div class="loyalty_item_description">
+                    <p>
+                        Программа лояльности «Рекомендуй Макснет» — удобный способ сэкономить на оплате услуг. Для
+                        участия Вам нужно порекомендовать «Макснет» знакомым, которые собираются подключать интернет или
+                        ТВ.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Стоимость рассрочки оборудования для DVB-C и IPTV — от 100,00 грн/мес.
+                        </li>
+                        <li>
+                            Стоимость аренды оборудования для IPTV — от 40,00 грн/мес.
+
+                        </li>
+                        <li>
+                            Стоимость рассрочки маршрутизатора — от 137,00 грн/мес.
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="d-none row loyalty_item_data_wrap">
+                    <div class="col-md-4 col-sm-6 col-12 data_item transparent_data_item">
+                        <div class="img_wrap">
+                            <p>
+                                1 друг = <br>
+                                1 месяц
+                            </p>
+                        </div>
+                        <div class="text_wrap">
+                            Внесите на свой лицевой счет сумму, которая соответствует абонентской плате за 6 месяцев.
+
+                        </div>
+                        <div class="side_img">
+                            <img src="images/icons/thumbs_up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 data_item transparent_data_item">
+                        <div class="img_wrap">
+                            <p>2 друга = <br> 3 месяца</p>
+                        </div>
+                        <div class="text_wrap">
+                            Сообщите нашим специалистам об оплате любым доступным способом (Телеграм, Мессенжер, звонок,
+                            обратный звонок).
+
+                        </div>
+                        <div class="side_img">
+                            <img src="images/icons/thumbs_up.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 data_item transparent_data_item">
+                        <div class="img_wrap">
+                            <p>3 друга = <br>полгода</p>
+                        </div>
+                        <div class="text_wrap">
+                            После активации получаете один месяц пользования услугами в подарок.
+                        </div>
+                        <div class="side_img">
+                            <img src="images/icons/thumbs_up.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none loyalty_item_regulations">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-9 col-12">
+                            <div class="regulations_wrap">
+                                <div class="img_wrap">
+                                    <img src="images/icons/pdf-icon.svg" alt="">
+                                </div>
+                                <div class="text_wrap">
+                                    <a href="" download="regulations.pdf">Регламент. Программа лояльности «Рекомендуй
+                                        Макснет»</a>
+                                    <p class="small">02.03.2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 col-12">
+                            <a href="#" download="regulations.pdf"
+                               class="btn btn-block maxNet-btn maxNet-btn-blue-transparent-to-purple">
+                                Загрузить PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
 </main>
 
 
@@ -1057,6 +1001,7 @@
         </div>
         <!-- /.container section-container -->
     </section>
+    <!-- /#footer_menu -->
     <section id="mobile_footer_menu">
         <div class="container section-container">
             <div class="row justify-content-between">
@@ -1194,17 +1139,17 @@
         </div>
 
     </section>
-    <!-- /#footer_menu -->
     <section id="footer">
         <div class="container footer_container">
             <div class="footer_top">
                 <h6>
-                    Ищете современные решения проектирования сетей? <br> Звоните <a href="tel:+380577209727">(057) 720-9-727</a>
+                    Ищете современные решения проектирования сетей? <br> Звоните <a href="tel:+380577209727">(057)
+                    720-9-727</a>
                 </h6>
             </div>
             <!-- /.footer_top -->
             <div class="footer_middle row">
-                <div class="col-md-12 order-1 col-xl-4 col-lg-6 order-xl-1 order-lg-1 order-md-2 order-2 mobile_application">
+                <div class="col-md-6 order-1 col-xl-4 col-lg-12 order-xl-1 order-lg-1 order-md-2 order-2 mobile_application">
                     <span class="title">
                         Мой Макснет
                     </span>
@@ -1222,11 +1167,11 @@
                 <div class="col-md-12 col-xl-4 col-lg-12 order-xl-2 order-md-3 order-3  phone_numbers">
                     <a href="tel:+380577209720" class="tel_link">(057) 720-9-720</a>
                     |
-                   <a href="tel:0800310800" class="tel_link">0-800-31-0-800</a>
+                    <a href="tel:0800310800" class="tel_link">0-800-31-0-800</a>
 
                 </div>
                 <!-- /.col-ml-4 -->
-                <div class="col-md-12 col-xl-4 col-lg-6 order-xl-3 order-md-1 order-1 social_links">
+                <div class="col-md-6 col-xl-4 col-lg-12 order-xl-3 order-md-1 order-1 social_links">
                     <span class="title">
                         Будьте с нами
                     </span>
@@ -1262,10 +1207,25 @@
     </section>
 </footer>
 
+<div class="d-none mobile_bottom">
+    <div class="wrap">
+        <h5 class="title">
+            Уже есть интернет? <br> Переходи на «Макснет»
+        </h5>
+        <div class="buttons d-flex justify-content-between">
+            <button class="btn maxNet-btn maxNet-btn-dark-blue-to-transparent">
+                Оставить заявку
+            </button>
+            <button class="btn maxNet-btn maxNet-btn-blue-transparent-to-purple">
+                Заказать звонок
+            </button>
+        </div>
+    </div>
+</div>
 
 <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -1273,13 +1233,16 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 <script src="script/modernizr.js"></script>
-<script src="script/jquery.inputmask.js"></script>
+
 <script src="script/site_nav.min.js"></script>
+
+<script src="script/jquery.inputmask.js"></script>
+
 <script src="script/slick.min.js"></script>
 <script src="script/tooltipster.bundle.min.js"></script>
 <script src="script/app.min.js"></script>
-
 
 
 </body>

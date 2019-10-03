@@ -126,7 +126,7 @@ section .grey-section {
 .maxNet-btn {
   border-radius: 0.5rem;
   border: 1px solid #ffffff;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
   color: #ffffff;
   position: relative;
   display: inline-block;
@@ -327,6 +327,7 @@ section .grey-section {
 .maxNet-btn-blue-transparent-to-purple {
   color: #003893;
   border: 1px solid #003893;
+  background-color: transparent;
 }
 .maxNet-btn-blue-transparent-to-purple:hover {
   background-color: #B824A4;
@@ -609,10 +610,15 @@ section .grey-section {
           justify-content: space-between;
 }
 .card_slider_item .item_card .tariff_title {
-  padding-left: 1rem;
+  padding: 0 1rem;
   font-size: 1.875rem;
   margin-bottom: 0;
   font-weight: bold;
+}
+.card_slider_item .item_card .small_title {
+  padding-left: 1rem;
+  font-size: 20px;
+  line-height: 27px;
 }
 .card_slider_item .item_card .count {
   padding-left: 1rem;
@@ -686,6 +692,12 @@ section .grey-section {
           justify-content: center;
 }
 .card_slider_item .item_card .get_btn_wrap a, .card_slider_item .item_card .get_btn_wrap button {
+  min-width: 180px;
+}
+.card_slider_item .item_card .btn_wrap {
+  padding-left: 1rem;
+}
+.card_slider_item .item_card .btn_wrap a, .card_slider_item .item_card .btn_wrap button {
   min-width: 180px;
 }
 .card_slider_item .item_card .ask_wrap {
@@ -813,6 +825,78 @@ section .grey-section {
   opacity: 0;
 }
 
+.loyalty-slider .card_slider_item {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.loyalty-slider .card_slider_item .item_card {
+  max-width: 320px;
+  width: 320px;
+  min-height: 583px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #969696;
+}
+.loyalty-slider .card_slider_item .item_card .small_title {
+  min-height: 53px;
+  margin-bottom: 26px;
+}
+.loyalty-slider .card_slider_item .item_card .item_card_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.loyalty-slider .card_slider_item .item_card .item_card_data p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 24px;
+}
+.loyalty-slider .card_slider_item .item_card .item_card_data .img_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.loyalty-slider .card_slider_item .item_card .btn_wrap {
+  margin-top: 28px;
+}
+.loyalty-slider .card_slider_item:nth-child(odd) .item_card {
+  background-color: #F2F4FB;
+}
+.loyalty-slider .card_slider_item:nth-child(3n+1) .item_card {
+  border-top: 8px solid #B824A4;
+}
+.loyalty-slider .card_slider_item:nth-child(3n+2) .item_card {
+  border-top: 8px solid #003893;
+}
+.loyalty-slider .card_slider_item:nth-child(3n+3) .item_card {
+  border-top: 8px solid #007AFF;
+}
+
 .data_item {
   padding: 1rem;
   display: -webkit-box;
@@ -825,6 +909,7 @@ section .grey-section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .data_item .img_wrap {
   width: 140px;
@@ -843,6 +928,22 @@ section .grey-section {
 }
 .data_item .img_wrap img {
   width: auto;
+}
+.data_item .img_wrap p {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #81A8E9;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
 }
 .data_item .text_wrap {
   font-size: 1.25rem;
@@ -869,6 +970,16 @@ section .grey-section {
   font-size: 1rem;
   text-decoration: underline;
   color: #111F4D;
+}
+.data_item .side_img {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: calc(70px);
+  right: -22px;
+}
+.data_item .side_img img {
+  width: 100%;
 }
 .data_item.grey_data_item .img_wrap {
   background-color: #E5E5E5;
@@ -2852,6 +2963,74 @@ section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap a.internet
 section.internet_data_wrap .internet_tariff_main_wrap {
   background-color: #D2D2E6;
   padding: 48px;
+}
+
+.loyalty_item {
+  background-color: #F2F4FB;
+}
+.loyalty_item:nth-child(even) {
+  background-color: transparent;
+}
+.loyalty_item_title h4 {
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 40px;
+}
+.loyalty_item_description {
+  margin-bottom: 60px;
+}
+.loyalty_item_description p {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.loyalty_item_description ul {
+  padding-left: 20px;
+}
+.loyalty_item_description ul li {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 300;
+}
+.loyalty_item_data_wrap .data_item:last-child .side_img {
+  display: none;
+}
+.loyalty_item_regulations {
+  border-top: 2px dashed black;
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+.loyalty_item_regulations .regulations_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.loyalty_item_regulations .regulations_wrap .img_wrap {
+  margin-right: 28px;
+}
+.loyalty_item_regulations .regulations_wrap .text_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.loyalty_item_regulations .regulations_wrap .text_wrap a {
+  font-size: 20px;
+  color: #111F4D;
+  line-height: 27px;
+}
+.loyalty_item_regulations .regulations_wrap .text_wrap p.small {
+  color: #5F71A7;
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 32px;
 }
 
 footer {

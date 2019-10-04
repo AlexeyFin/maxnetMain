@@ -446,6 +446,84 @@
             </div>
         </div>
     </section>
+    <section class="calculator_wrap">
+        <div class="container section-container">
+            <div class="section-container_header">
+                <h2>
+                    Рассчет времени автономной работы аккумулятора
+                </h2>
+            </div>
+
+            <div class="section-container_body">
+                <div class="calculator_frame" id="working_time_calculator_frame">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 col-12 order-2 order-lg-1 mt-3 mt-lg-0 calculator_frame_column">
+                            <form name="bat_time_calculator">
+                                <div class="form-row">
+                                    <div class="form-group col-lg-12 col-12">
+                                        <label for="time_summary_power">Общая мощность оборудования, Вт</label>
+                                        <input data-type="number" type="text" class="form-control" name="time_summary_power" id="time_summary_power" required>
+                                    </div>
+                                    <div class="form-group col-lg-12 col-12">
+                                        <label for="time_voltage">Номинальное напряжение батареи, В</label>
+                                        <input data-type="number" type="text" class="form-control" name="time_voltage" id="time_voltage" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-12 col-12">
+                                        <label for="time_battery_count">Количество батарей, шт.</label>
+                                        <input data-type="number" type="text" class="form-control" name="time_battery_count" id="time_battery_count" required>
+                                    </div>
+                                    <div class="form-group col-lg-12 col-12">
+                                        <label for="time_battery_capacity">Емкость 1-й батареи, А&bull;ч</label>
+                                        <input data-type="number" type="text" class="form-control" name="time_battery_capacity" id="time_battery_capacity" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group btn_wrap">
+                                    <button type="submit" class="btn maxNet-btn maxNet-btn-purple">
+                                        Рассчитать
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-xl-6 col-lg-5 col-12 order-1 order-lg-2">
+                            <div class="result_frame">
+                                <div class="row mx-0">
+                                    <div class="col-lg-12 col-md-6 col-12">
+                                        <h5>
+                                            Время автономной работы
+                                        </h5>
+                                        <div class="form-group result_wrap">
+                                            <input type="text" class=" result_field" placeholder="0.00" name="time_result"
+                                                   id="time_result" readonly>
+                                            <p><span class="units">ч</span>*</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6 col-12">
+                                        <h5>
+                                            Общая емкость
+                                        </h5>
+                                        <div class="form-group result_wrap">
+                                            <input type="text" class=" result_field" placeholder="0.00" name="time_capacity_result"
+                                                   id="time_capacity_result" readonly>
+                                            <p><span class="units">Вт&bull;ч</span>*</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <p class="small">
+                                    * Данное средство оценки времени автономной работы предназначено только для иллюстративных целей
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>

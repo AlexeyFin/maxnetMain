@@ -173,9 +173,96 @@ class hdd_calculator {
     }
 
 }
+class battery_time_calculator {
+    constructor(settings) {
+
+        this.settings = settings;
+        this.form = document.forms['bat_time_calculator'];
+        this.totalPower = this.form.elements['time_summary_power'];
+        this.nominalVoltage = this.form.elements['time_voltage'];
+        this.batteryesCount = this.form.elements['time_battery_count'];
+        this.batteryCapacity = this.form.elements['time_battery_capacity'];
+        this.capacity_result_field = document.querySelector('input[name="time_capacity_result"]');
+        this.time_result_field = document.querySelector('input[name="time_result"]');
+        this.wrap = document.querySelector(this.settings.frame_selector);
+
+        this.KPD = 0.85;
+        this.powerReserv = 1.2;
+
+        this.init();
+    }
+
+    init() {
+        this.checkForm();
+        this.events();
+    }
+
+    events() {
+        this.form.addEventListener('submit', e => {
+            e.preventDefault();
+            this.setResult(this.getResult());
+            this.scrollToTop()
+
+
+        });
+
+        this.form.addEventListener('change', e => {
+            this.checkForm();
+        });
+
+        let numInputs = Array.from(this.form.querySelectorAll('[data-type="number"]'))
+
+        numInputs.forEach(input => {
+            input.addEventListener("input", e => {
+                battery_time_calculator.numberRegExp(input)
+            })
+        })
+    }
+
+    checkForm() {
+        if (!this.totalPower.value || !this.nominalVoltage.value || !this.batteryesCount.value || !this.nominalVoltage.value) {
+
+            this.form.querySelector('button[type="submit"]').setAttribute('disabled', 'disabled')
+        } else {
+            this.form.querySelector('button[type="submit"]').removeAttribute('disabled')
+        }
+    }
+
+    getResult() {
+        let totalCapacity = this.nominalVoltage.value * this.batteryCapacity.value * this.batteryesCount.value;
+        let time = (totalCapacity * this.KPD) / (this.totalPower.value * this.powerReserv);
+
+        return {
+            cap: totalCapacity.toFixed(0),
+            time: Math.floor(time)
+        }
+    }
+
+    setResult(result) {
+        this.capacity_result_field.value = result.cap;
+        this.time_result_field.value = result.time;
+    }
+
+    static numberRegExp(inp) {
+        if (!(/^[0-9]*$/).test(inp.value)) {
+            inp.value = inp.value.slice(0, inp.value.length -1);
+        }
+    }
+
+    scrollToTop() {
+        this.wrap.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+
+
+
+}
 
 let hdd_calc = new hdd_calculator(cameras, {
     cameras_count: 20,
     fps_list: ["30", "25", "20", "15", "12.5", "10", "1"],
     frame_selector: '#hdd_calculator_frame'
-})
+});
+let bat_time_calc = new battery_time_calculator({'frame_selector' : '#working_time_calculator_frame'});

@@ -145,10 +145,10 @@ class hdd_calculator {
 
         if (result / 1000 < 1) {
             this.result_field.value = result;
-            this.units_wrap.innerHTML = "GB"
+            this.units_wrap.innerHTML = "ГБ"
         } else if (result / 1000 > 1) {
             this.result_field.value = (result / 1000).toFixed(2);
-            this.units_wrap.innerHTML = "TB"
+            this.units_wrap.innerHTML = "ТБ"
         }
 
     }

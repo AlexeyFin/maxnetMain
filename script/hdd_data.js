@@ -533,46 +533,46 @@ let cameras = [
 
     },
 
-    {
-        "camera_type": "7MP(3072x2304)",
-        "compression": [
-            {
-                "compression_format": "H.264",
-                "property": [
-                    {
-                        "fps": "30",
-                        "bitrate": "10240"
-                    },
-                    {
-                        "fps": "25",
-                        "bitrate": "10240"
-                    },
-                    {
-                        "fps": "20",
-                        "bitrate": "7680"
-                    },
-                    {
-                        "fps": "15",
-                        "bitrate": "5120"
-                    },
-                    {
-                        "fps": "'12.5",
-                        "bitrate": "5120"
-                    },
-                    {
-                        "fps": "10",
-                        "bitrate": "3840"
-                    },
-                    {
-                        "fps": "1",
-                        "bitrate": "3840"
-                    },
-                ]
-            }
-        ],
-
-
-    },
+    // {
+    //     "camera_type": "7MP(3072x2304)",
+    //     "compression": [
+    //         {
+    //             "compression_format": "H.264",
+    //             "property": [
+    //                 {
+    //                     "fps": "30",
+    //                     "bitrate": "10240"
+    //                 },
+    //                 {
+    //                     "fps": "25",
+    //                     "bitrate": "10240"
+    //                 },
+    //                 {
+    //                     "fps": "20",
+    //                     "bitrate": "7680"
+    //                 },
+    //                 {
+    //                     "fps": "15",
+    //                     "bitrate": "5120"
+    //                 },
+    //                 {
+    //                     "fps": "'12.5",
+    //                     "bitrate": "5120"
+    //                 },
+    //                 {
+    //                     "fps": "10",
+    //                     "bitrate": "3840"
+    //                 },
+    //                 {
+    //                     "fps": "1",
+    //                     "bitrate": "3840"
+    //                 },
+    //             ]
+    //         }
+    //     ],
+    //
+    //
+    // },
 
     {
         "camera_type": "6MP(3072x2048)",
@@ -1323,46 +1323,46 @@ let cameras = [
 
     },
 
-    {
-        "camera_type": "4MP(2048x2048)",
-        "compression": [
-            {
-                "compression_format": "H.264",
-                "property": [
-                    {
-                        "fps": "30",
-                        "bitrate": "8192"
-                    },
-                    {
-                        "fps": "25",
-                        "bitrate": "8192"
-                    },
-                    {
-                        "fps": "20",
-                        "bitrate": "6144"
-                    },
-                    {
-                        "fps": "15",
-                        "bitrate": "4096"
-                    },
-                    {
-                        "fps": "'12.5",
-                        "bitrate": "4096"
-                    },
-                    {
-                        "fps": "10",
-                        "bitrate": "3072"
-                    },
-                    {
-                        "fps": "1",
-                        "bitrate": "3072"
-                    },
-                ]
-            }
-        ],
-
-
-    },
+    // {
+    //     "camera_type": "4MP(2048x2048)",
+    //     "compression": [
+    //         {
+    //             "compression_format": "H.264",
+    //             "property": [
+    //                 {
+    //                     "fps": "30",
+    //                     "bitrate": "8192"
+    //                 },
+    //                 {
+    //                     "fps": "25",
+    //                     "bitrate": "8192"
+    //                 },
+    //                 {
+    //                     "fps": "20",
+    //                     "bitrate": "6144"
+    //                 },
+    //                 {
+    //                     "fps": "15",
+    //                     "bitrate": "4096"
+    //                 },
+    //                 {
+    //                     "fps": "'12.5",
+    //                     "bitrate": "4096"
+    //                 },
+    //                 {
+    //                     "fps": "10",
+    //                     "bitrate": "3072"
+    //                 },
+    //                 {
+    //                     "fps": "1",
+    //                     "bitrate": "3072"
+    //                 },
+    //             ]
+    //         }
+    //     ],
+    //
+    //
+    // },
 
     {
         "camera_type": "4MP(2560x1440)",
@@ -1471,47 +1471,47 @@ let cameras = [
 
     },
 
-    {
-        "camera_type": "3MP(3012x1152)",
-        "compression": [
-            {}
-        ],
-        "compression_format": "H.264",
-        "property": [
-            {
-                "fps": "30",
-                "bitrate": "6144"
-            },
-            {
-                "fps": "25",
-                "bitrate": "6144"
-            },
-            {
-                "fps": "20",
-                "bitrate": "4608"
-            },
-            {
-                "fps": "15",
-                "bitrate": "3072"
-            },
-            {
-                "fps": "'12.5",
-                "bitrate": "3072"
-            },
-            {
-                "fps": "10",
-                "bitrate": "2304"
-            },
-            {
-                "fps": "1",
-                "bitrate": "2304"
-            },
-        ]
+    // {
+    //     "camera_type": "3MP(3012x1152)",
+    //     "compression": [
+    //         {"compression_format": "H.264",
+    //             "property": [
+    //                 {
+    //                     "fps": "30",
+    //                     "bitrate": "6144"
+    //                 },
+    //                 {
+    //                     "fps": "25",
+    //                     "bitrate": "6144"
+    //                 },
+    //                 {
+    //                     "fps": "20",
+    //                     "bitrate": "4608"
+    //                 },
+    //                 {
+    //                     "fps": "15",
+    //                     "bitrate": "3072"
+    //                 },
+    //                 {
+    //                     "fps": "'12.5",
+    //                     "bitrate": "3072"
+    //                 },
+    //                 {
+    //                     "fps": "10",
+    //                     "bitrate": "2304"
+    //                 },
+    //                 {
+    //                     "fps": "1",
+    //                     "bitrate": "2304"
+    //                 },
+    //             ]}
+    //     ],
+    //
+    //
+    // },
 
-    },
-
     {
-        "camera_type": "1080P(1920x1080)",
+        "camera_type": "2MP(1920x1080)",
 
         "compression": [
             {

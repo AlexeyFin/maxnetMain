@@ -279,7 +279,6 @@
 
         </div>
     </div>
-
     <section class="calculator_wrap">
         <div class="container section-container">
             <div class="section-container_header">
@@ -288,30 +287,29 @@
                 </h2>
             </div>
             <div class="section-container_body">
-                <div class="calculator_frame">
+                <div class="calculator_frame" id="hdd_calculator_frame">
                     <div class="row">
-                        <div class="col-lg-6 calculator_frame_column">
+                        <div class="col-xl-6 col-lg-7 col-12 order-2 order-lg-1 mt-3 mt-lg-0 calculator_frame_column">
                             <form name="hdd_calculator">
                                 <div class="form-group">
                                     <label for="camera_type">Разрешение камеры</label>
-                                    <select class="form-control" name="camera_type" id="camera_type">
-                                        <option>-- Выбрать --</option>
-
+                                    <select class="form-control" name="camera_type" id="camera_type" required>
+                                        <option value="">-- Выбрать --</option>
                                     </select>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="fps">Кол-во кадров в секунду</label>
-                                        <select class="form-control" name="fps" id="fps">
-                                            <option>-- Выбрать --</option>
+                                        <select class="form-control" name="fps" id="fps" required>
+                                            <option value="">-- Выбрать --</option>
 
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="camera_count">Кол-во. камер</label>
 
-                                        <select class="form-control" name="cameras_count" id="camera_count">
-                                            <option>-- Выбрать --</option>
+                                        <select class="form-control" name="cameras_count" id="camera_count" required>
+                                            <option value="">-- Выбрать --</option>
 
                                         </select>
                                     </div>
@@ -319,96 +317,107 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="record_duration">Часов съемки</label>
-                                        <select class="form-control" name="record_duration" id="record_duration">
-                                            <option>-- Выбрать --</option>
-
+                                        <select class="form-control" name="record_duration" id="record_duration"
+                                                required>
+                                            <option value="">-- Выбрать --</option>
                                         </select>
-
-
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="storage_duration">Дни хранения архива</label>
-                                        <select class="form-control" name="storage_duration" id="storage_duration">
-                                            <option>-- Выбрать --</option>
-
+                                        <select class="form-control" name="storage_duration" id="storage_duration"
+                                                required>
+                                            <option value="">-- Выбрать --</option>
                                         </select>
-
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Интенсивность движения</label>
-                                    <div class="row">
-                                        <div class="col-lg col-md-3 mb-lg-0 mb-md-3 col-sm-3 col-6 d-flex checkbox_wrap_content">
+                                <div class="form-row">
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-6 col-12">
+                                        <label>Интенсивность движения</label>
+                                        <div class="row">
+                                            <div class="col-lg col-md-4 mb-lg-0 mb-3 col-sm-12 col-12  d-flex checkbox_wrap_content">
 
-                                            <label class="order-2 ml-3" for="camera_calc_low">Низкая</label>
+                                                <label class="order-2 ml-3" for="camera_calc_low">Низкая</label>
 
-                                            <div class="maxNet_radio_wrap">
-                                                <input onchange="toggle_check(this)" type="radio" class="maxNet-checkbox" name="intensity_of_recording" id="camera_calc_low" value="1.1" >
-                                                <label for="camera_calc_low"></label>
+                                                <div class="maxNet_radio_wrap">
+                                                    <input onchange="toggle_check(this)" checked type="radio" required
+                                                           class="maxNet-checkbox" name="intensity_of_recording"
+                                                           id="camera_calc_low" value="0.5">
+                                                    <label for="camera_calc_low"></label>
+                                                </div>
+                                                <!-- /.maxNet_check_wrap -->
                                             </div>
-                                            <!-- /.maxNet_check_wrap -->
+                                            <div class="col-lg col-md-4 mb-lg-0 mb-3 col-sm-12 col-12  d-flex checkbox_wrap_content">
+
+                                                <label class="order-2 ml-3" for="camera_calc_middle">Средняя</label>
+
+                                                <div class="maxNet_radio_wrap">
+                                                    <input onchange="toggle_check(this)" required  type="radio"
+                                                           class="maxNet-checkbox" name="intensity_of_recording"
+                                                           id="camera_calc_middle" value="1">
+                                                    <label for="camera_calc_middle"></label>
+                                                </div>
+                                                <!-- /.maxNet_check_wrap -->
+                                            </div>
+                                            <div class="col-lg col-md-4 mb-lg-0 mb-3 col-sm-12 col-12  d-flex checkbox_wrap_content">
+
+                                                <label class="order-2 ml-3" for="camera_calc_high">Высокая</label>
+
+                                                <div class="maxNet_radio_wrap">
+                                                    <input onchange="toggle_check(this)" required type="radio"
+                                                           class="maxNet-checkbox" name="intensity_of_recording"
+                                                           id="camera_calc_high" value="2">
+                                                    <label for="camera_calc_high"></label>
+                                                </div>
+                                                <!-- /.maxNet_check_wrap -->
+                                            </div>
                                         </div>
-                                        <div class="col-lg col-md-3 mb-lg-0 mb-md-3 col-sm-3 col-6 d-flex checkbox_wrap_content">
+                                    </div>
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-6 col-12">
+                                        <label>Формат сжатия</label>
+                                        <div class="row">
+                                            <div class="col-lg col-md-4 mb-lg-0 mb-3 col-sm-12 col-12  d-flex checkbox_wrap_content">
 
-                                            <label class="order-2 ml-3" for="camera_calc_middle">Средняя</label>
+                                                <label class="order-2 ml-3" for="compression_format_3">ULTRA 265</label>
 
-                                            <div class="maxNet_radio_wrap">
-                                                <input onchange="toggle_check(this)" type="radio" class="maxNet-checkbox" name="intensity_of_recording" id="camera_calc_middle" value="1.2" >
-                                                <label for="camera_calc_middle"></label>
+                                                <div class="maxNet_radio_wrap">
+                                                    <input onchange="toggle_check(this)" checked required type="radio"
+                                                           class="maxNet-checkbox" name="compression_format"
+                                                           id="compression_format_3" value="ULTRA 265">
+                                                    <label for="compression_format_3"></label>
+                                                </div>
+                                                <!-- /.maxNet_check_wrap -->
+
                                             </div>
-                                            <!-- /.maxNet_check_wrap -->
-                                        </div>
-                                        <div class="col-lg col-md-3 mb-lg-0 mb-md-3 col-sm-3 col-6 d-flex checkbox_wrap_content">
+                                            <div class="col-lg col-md-4 mb-lg-0 mb-3 col-sm-12 col-12  d-flex checkbox_wrap_content">
 
-                                            <label class="order-2 ml-3" for="camera_calc_high">Высокая</label>
+                                                <label class="order-2 ml-3" for="compression_format_2">H.265</label>
 
-                                            <div class="maxNet_radio_wrap">
-                                                <input onchange="toggle_check(this)" type="radio" class="maxNet-checkbox" name="intensity_of_recording" id="camera_calc_high" value="1.4" >
-                                                <label for="camera_calc_high"></label>
+                                                <div class="maxNet_radio_wrap">
+                                                    <input onchange="toggle_check(this)" required type="radio"
+                                                           class="maxNet-checkbox" name="compression_format"
+                                                           id="compression_format_2" value="H.265">
+                                                    <label for="compression_format_2"></label>
+                                                </div>
+                                                <!-- /.maxNet_check_wrap -->
                                             </div>
-                                            <!-- /.maxNet_check_wrap -->
+                                            <div class="col-lg col-md-4 mb-lg-0 mb-3 col-sm-12 col-12  d-flex checkbox_wrap_content">
+
+                                                <label class="order-2 ml-3" for="compression_format_1">H.264</label>
+
+                                                <div class="maxNet_radio_wrap">
+                                                    <input onchange="toggle_check(this)" required type="radio"
+                                                           class="maxNet-checkbox" name="compression_format"
+                                                           id="compression_format_1" value="H.264">
+                                                    <label for="compression_format_1"></label>
+                                                </div>
+                                                <!-- /.maxNet_check_wrap -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Формат сжатия</label>
-                                    <div class="row">
-                                        <div class="col-lg col-md-3 mb-lg-0 mb-md-3 col-sm-3 col-6 d-flex checkbox_wrap_content">
 
-                                            <label class="order-2 ml-3" for="compression_format_3">ULTRA 265</label>
-
-                                            <div class="maxNet_radio_wrap">
-                                                <input onchange="toggle_check(this)" type="radio" class="maxNet-checkbox" name="compression_format" id="compression_format_3" value="ULTRA 265" >
-                                                <label for="compression_format_3"></label>
-                                            </div>
-                                            <!-- /.maxNet_check_wrap -->
-
-                                        </div>
-
-                                        <div class="col-lg col-md-3 mb-lg-0 mb-md-3 col-sm-3 col-6 d-flex checkbox_wrap_content">
-
-                                            <label class="order-2 ml-3" for="compression_format_2">H.265</label>
-
-                                            <div class="maxNet_radio_wrap">
-                                                <input onchange="toggle_check(this)" type="radio" class="maxNet-checkbox" name="compression_format" id="compression_format_2" value="H.265" >
-                                                <label for="compression_format_2"></label>
-                                            </div>
-                                            <!-- /.maxNet_check_wrap -->
-                                        </div>
-                                        <div class="col-lg col-md-3 mb-lg-0 mb-md-3 col-sm-3 col-6 d-flex checkbox_wrap_content">
-
-                                            <label class="order-2 ml-3" for="compression_format_1">H.264</label>
-
-                                            <div class="maxNet_radio_wrap">
-                                                <input onchange="toggle_check(this)" type="radio" class="maxNet-checkbox" name="compression_format" id="compression_format_1" value="H.264" >
-                                                <label for="compression_format_1"></label>
-                                            </div>
-                                            <!-- /.maxNet_check_wrap -->
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="form-group btn_wrap">
-                                    <button class="btn maxNet-btn maxNet-btn-purple">
+                                    <button type="submit" class="btn maxNet-btn maxNet-btn-purple">
                                         Рассчитать
                                     </button>
                                 </div>
@@ -416,17 +425,19 @@
 
                             </form>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-xl-6 col-lg-5 col-12 order-1 order-lg-2">
                             <div class="result_frame">
                                 <h5>
                                     Требуемый объем жесткого диска
                                 </h5>
                                 <div class="form-group result_wrap">
-                                    <input type="text" class=" result_field" placeholder="0.00" name="result_field" id="hdd_result" readonly>
-                                    <p>тБайт*</p>
+                                    <input type="text" class=" result_field" placeholder="0.00" name="result_field"
+                                           id="hdd_result" readonly>
+                                    <p><span class="units">GB</span>*</p>
                                 </div>
                                 <p class="small">
-                                    * Данное средство оценки емкости хранилища данных видеонаблюдения предназначено только для иллюстративных целей
+                                    * Данное средство оценки емкости хранилища данных видеонаблюдения предназначено
+                                    только для иллюстративных целей
                                 </p>
                             </div>
                         </div>
@@ -435,9 +446,7 @@
             </div>
         </div>
     </section>
-
 </main>
-
 
 <footer>
     <section id="footer_menu">
@@ -1001,9 +1010,9 @@
             <!-- /.footer_top -->
             <div class="footer_middle row">
                 <div class="col-md-12 order-1 col-md-6 col-xl-4 col-lg-6 order-xl-1 order-lg-1 order-md-2 order-2 mobile_application">
-                    <span class="title">
-                        Мой Макснет
-                    </span>
+                <span class="title">
+                    Мой Макснет
+                </span>
                     <!-- /.title -->
                     <a href="#" class="application_link ">
                         <i class="fab fa-android"></i>
@@ -1023,9 +1032,9 @@
                 </div>
                 <!-- /.col-ml-4 -->
                 <div class="col-md-12 col-xl-4 col-md-6 col-lg-6 order-xl-3 order-md-1 order-1 social_links">
-                    <span class="title">
-                        Будьте с нами
-                    </span>
+                <span class="title">
+                    Будьте с нами
+                </span>
                     <!-- /.title -->
                     <a href="" class="social_links_item"><i class="fab fa-facebook-f"></i></a>
                     <!-- /.social_links_item -->
@@ -1057,8 +1066,6 @@
         <!-- /.container -->
     </section>
 </footer>
-
-
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

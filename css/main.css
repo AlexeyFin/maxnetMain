@@ -3102,8 +3102,11 @@ section.internet_data_wrap .internet_tariff_main_wrap {
   background-color: #f9f9f9;
   padding: 40px;
 }
+.calculator_frame .calculator_frame_column {
+  padding-right: 84px;
+}
 .calculator_frame .form-group {
-  margin-bottom: 26px;
+  margin-bottom: 1.5rem;
 }
 .calculator_frame .form-group label {
   color: #646464;
@@ -3121,7 +3124,7 @@ section.internet_data_wrap .internet_tariff_main_wrap {
           align-items: center;
 }
 .calculator_frame .btn_wrap {
-  margin-top: 62px;
+  margin-top: 1.5rem;
   margin-bottom: 0;
 }
 .calculator_frame .btn_wrap button {
@@ -3129,6 +3132,7 @@ section.internet_data_wrap .internet_tariff_main_wrap {
 }
 
 .result_frame {
+  margin-top: 32px;
   background-color: #E5E5E5;
   padding: 26px 48px 18px;
 }

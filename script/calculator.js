@@ -108,7 +108,7 @@ class hdd_calculator {
         let data = this.getFormData();
         let kbytes = bitrate / 8;
         let result = data.intensity_of_recording * kbytes * data.record_duration * 3600 *
-        data.storage_duration * data.cameras_count / 1000000;
+            data.storage_duration * data.cameras_count / 1000000;
 
 
         return result.toFixed(2)
@@ -135,11 +135,6 @@ class hdd_calculator {
 
     }
 
-    scrollToTop() {
-        this.wrap.scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
 
     setResult(result) {
 
@@ -162,7 +157,6 @@ class hdd_calculator {
             let camera = this.getCameraByCamera_type(this.camera_type.value);
             let bitrate = this.getBitrate(camera);
             let res = this.getTotalResult(bitrate);
-            this.scrollToTop();
             this.setResult(res);
             console.log(res)
         });
@@ -173,6 +167,7 @@ class hdd_calculator {
     }
 
 }
+
 class battery_time_calculator {
     constructor(settings) {
 
@@ -201,7 +196,6 @@ class battery_time_calculator {
         this.form.addEventListener('submit', e => {
             e.preventDefault();
             this.setResult(this.getResult());
-            this.scrollToTop()
 
 
         });
@@ -210,7 +204,7 @@ class battery_time_calculator {
             this.checkForm();
         });
 
-        let numInputs = Array.from(this.form.querySelectorAll('[data-type="number"]'))
+        let numInputs = Array.from(this.form.querySelectorAll('[data-type="number"]'));
 
         numInputs.forEach(input => {
             input.addEventListener("input", e => {
@@ -244,20 +238,162 @@ class battery_time_calculator {
     }
 
     static numberRegExp(inp) {
-        if (!(/^[0-9]*$/).test(inp.value)) {
-            inp.value = inp.value.slice(0, inp.value.length -1);
+        if (!(/^[0-9.]*$/).test(inp.value)) {
+            inp.value = inp.value.slice(0, inp.value.length - 1);
         }
     }
 
-    scrollToTop() {
-        this.wrap.scrollIntoView({
-            behavior: 'smooth'
+}
+
+class battery_capacity_calculator {
+
+    constructor(settings) {
+        this.settings = settings;
+        this.form = document.forms['bat_capacity_calculator'];
+        this.totalPower = this.form.elements['capacity_summary_power'];
+        this.nominalVoltage = this.form.elements['capacity_voltage'];
+        this.workingTime = this.form.elements['capacity_time'];
+
+        this.capacity_result_field_1 = document.querySelector('input[name="capacity_result_1"]');
+        this.capacity_result_field_2 = document.querySelector('input[name="capacity_result_2"]');
+
+        this.KPD = 0.85;
+        this.powerReserv = 1.2;
+
+        this.init()
+    }
+
+    init() {
+
+        this.checkForm();
+        this.events();
+    }
+
+    events() {
+        this.form.addEventListener('change', e => {
+            this.checkForm();
+        });
+
+        let numInputs = Array.from(this.form.querySelectorAll('[data-type="number"]'));
+        numInputs.forEach(input => {
+            input.addEventListener("input", e => {
+                battery_capacity_calculator.numberRegExp(input)
+            })
+        })
+
+        this.form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            // console.log(this.getResult())
+            this.setResult(this.getResult());
+
+
         });
     }
 
+    checkForm() {
+        if (!this.totalPower.value || !this.nominalVoltage.value || !this.workingTime.value) {
+
+            this.form.querySelector('button[type="submit"]').setAttribute('disabled', 'disabled')
+        } else {
+            this.form.querySelector('button[type="submit"]').removeAttribute('disabled')
+        }
+    }
+
+    getResult() {
+
+        let res_2 = this.totalPower.value * this.powerReserv * this.workingTime.value / this.KPD;
+        let res_1 = res_2 / this.nominalVoltage.value;
+
+        return {
+            res_1: Math.ceil(res_1),
+            res_2: Math.ceil(res_2)
+        }
+    }
+
+    setResult(result) {
+        this.capacity_result_field_1.value = result.res_1;
+        this.capacity_result_field_2.value = result.res_2;
+    }
+
+    static numberRegExp(inp) {
+        if (!(/^[0-9.]*$/).test(inp.value)) {
+            inp.value = inp.value.slice(0, inp.value.length - 1);
+        }
+    }
+
+}
+
+class charge_duration_calculator {
+    constructor(settings) {
+        this.settings = settings;
+        this.form = document.forms['charge_duration_calculator'];
+
+        this.accum_capacity = this.form.elements['charge_duration'];
+        this.amperage = this.form.elements['charge_amperage'];
 
 
+        this.coefficient = this.settings.coefficient;
+        this.result_field = document.querySelector('input[name="charge_result"]');
+        this.init()
+    }
 
+    init() {
+
+        this.checkForm();
+        this.events();
+    }
+
+    events() {
+        this.form.addEventListener('change', e => {
+            this.checkForm();
+        });
+
+        let numInputs = Array.from(this.form.querySelectorAll('[data-type="number"]'));
+        numInputs.forEach(input => {
+            input.addEventListener("input", e => {
+                charge_duration_calculator.numberRegExp(input)
+            })
+        });
+
+        this.form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            this.setResult(this.getResult());
+
+
+        });
+    }
+
+    checkForm() {
+        if (!this.accum_capacity.value || !this.amperage.value) {
+
+            this.form.querySelector('button[type="submit"]').setAttribute('disabled', 'disabled')
+        } else {
+            this.form.querySelector('button[type="submit"]').removeAttribute('disabled')
+        }
+    }
+
+    getResult() {
+
+        let result = this.coefficient * this.accum_capacity.value / this.amperage.value;
+
+        result = Math.ceil(result * 100) / 100;
+
+        return {
+            result
+        }
+    }
+
+    setResult(result) {
+        this.result_field.value = result.result || 0
+    }
+
+    static numberRegExp(inp) {
+        if (!(/^[0-9.]*$/).test(inp.value)) {
+            inp.value = inp.value.slice(0, inp.value.length - 1);
+        }
+    }
 }
 
 let hdd_calc = new hdd_calculator(cameras, {
@@ -265,4 +401,6 @@ let hdd_calc = new hdd_calculator(cameras, {
     fps_list: ["30", "25", "20", "15", "12.5", "10", "1"],
     frame_selector: '#hdd_calculator_frame'
 });
-let bat_time_calc = new battery_time_calculator({'frame_selector' : '#working_time_calculator_frame'});
+let bat_time_calc = new battery_time_calculator({'frame_selector': '#working_time_calculator_frame'});
+let bat_capacity_calc = new battery_capacity_calculator({});
+let charge_duration_manager = new charge_duration_calculator({coefficient: 1.4});

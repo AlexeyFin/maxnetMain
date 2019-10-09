@@ -244,6 +244,14 @@
               margin-right: 0
 
 @media screen and (max-width: 1199px)
+  section
+    .section-container
+      padding: 2.25rem 2.5rem
+      &_header
+        margin-bottom: 1.75rem
+        h2
+          &::after
+            min-width: auto
   section#FAQ_directory
     background-image: none !important
     .directory_content_wrap
@@ -260,6 +268,9 @@
   .calculator_frame
     .calculator_frame_column
       padding-right: 36px
+  .contacts_main_wrap
+    padding: 0
+
 @media screen and (max-width: 1024px)
   section
     .section-container
@@ -446,6 +457,32 @@
   .calculator_frame
     .calculator_frame_column
       padding-right: 15px
+  .contacts_main_wrap
+    margin-bottom: 48px
+    &:last-child
+      margin-bottom: calc(48px - 2rem)
+    .contacts_main
+      max-width: 100%
+      margin: 0
+      &_item
+        .title
+          min-height: 48px
+          text-align: center
+          &::after
+            display: none !important
+
+    #map
+      height: 480px
+    .contact_cards_wrap
+      .contact_card_item
+        padding: 16px
+        width: 100%
+        .title
+          min-height: 96px
+    .contacts_mails_item
+      .mail_wrap
+        a
+          font-size: 16px
 @media screen and (max-width: 823px)
   section
     .section-container_header
@@ -1180,7 +1217,27 @@
           justify-content: center
   .calculator_frame
     padding: 28px 18px
-
+  .contacts_main_wrap
+    .contacts_main
+      margin: 0
+  .contacts_main_wrap
+    .contacts_main_item
+      .contact_main_item_phone_link
+        a
+          font-size: 28px
+  .contacts_main_wrap
+    .contact_cards_wrap
+      .contact_card_item
+        max-width: 305px
+        height: 240px
+        .title
+          min-height: auto
+    .item_wrap
+      margin-bottom: 30px
+      display: flex
+      justify-content: center
+      &:last-child
+        margin-bottom: 0
 @media screen and (max-width: 576px)
   section
     overflow-x: hidden
@@ -1597,6 +1654,21 @@
         .get_directory_form_wrap
           .form-content
             justify-content: center
+
+@media screen and (max-width: 576px)
+  .contacts_main_wrap
+    .contacts_main_item
+      .title
+        min-height: auto
+      .text
+        text-align: center
+        margin-bottom: 20px
+  .contacts_main_wrap
+    .contacts_main_item
+      .btn_wrap
+        margin-bottom: 20px
+        .btn
+          width: auto
 
 
 @media screen and (max-width: 475px)
@@ -2253,3 +2325,7 @@
     .main_banner_arrows
       top: 220px
       opacity: 0.85
+
+@media screen and (orientation: landscape) and (max-width: 826px)
+  #map
+    height: 320px !important

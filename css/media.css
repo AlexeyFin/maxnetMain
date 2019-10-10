@@ -2837,4 +2837,9 @@
   #map {
     height: 320px !important;
   }
+
+  .news_list_wrap .news_list_img .img_wrap {
+    max-height: 80vh;
+    padding: 12.5% 25% 0;
+  }
 }

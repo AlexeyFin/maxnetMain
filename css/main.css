@@ -4511,14 +4511,14 @@ table {
   letter-spacing: 0.015em;
   color: #646464;
 }
-.big_form_wrap .big_form_wrap_content .form_wrap .big_form-group input {
+.big_form_wrap .big_form_wrap_content .form_wrap .big_form-group input, .big_form_wrap .big_form_wrap_content .form_wrap .big_form-group textarea {
   border: none;
   border-bottom: 1px solid #BBBBBB;
   border-radius: 0;
   letter-spacing: 1.12px;
   margin-bottom: 46px;
 }
-.big_form_wrap .big_form_wrap_content .form_wrap .big_form-group input:active, .big_form_wrap .big_form_wrap_content .form_wrap .big_form-group input:focus {
+.big_form_wrap .big_form_wrap_content .form_wrap .big_form-group input:active, .big_form_wrap .big_form_wrap_content .form_wrap .big_form-group input:focus, .big_form_wrap .big_form_wrap_content .form_wrap .big_form-group textarea:active, .big_form_wrap .big_form_wrap_content .form_wrap .big_form-group textarea:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;

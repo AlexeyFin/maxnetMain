@@ -19,7 +19,7 @@ $(document).ready(function(){
         infinite: true
 
     });
-    $('#phone_number') ? $('#phone_number').inputmask("+38 (099) 999-99-99", {clearIncomplete: true}) : '';
+    $('#phone_number,.phone_number') ? $('#phone_number,.phone_number').inputmask("+38 (099) 999-99-99", {clearIncomplete: true}) : '';
     $('#main_slider_wrap').slick({
         appendArrows: '.main_slider_arrows_wrap',
         nextArrow: '<button class="slick-arrow-right"><i class="fas fa-arrow-right"></i></button>',

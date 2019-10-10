@@ -46,6 +46,11 @@
   .vacancy_list_wrap
     .vacancy_item
       margin-bottom: 30px
+  .raise_section
+    .raise_wrap_header
+      h4
+        font-size: 1.5rem
+
 @media screen and (max-width: 1366px)
   section
     .section-container
@@ -70,7 +75,7 @@
   section#get_consultation
     .consultation-container
       padding: 2rem 3rem
-  section#news_content_section
+  section#news_content_section,.raise_section
     .section-container_body
       padding: 0 5rem 4rem 5rem
   section#main_top_banner
@@ -272,7 +277,9 @@
       padding-right: 36px
   .contacts_main_wrap
     padding: 0
-
+  .vacancy_wrap_content
+    .about_vacancy
+      margin-bottom: 50px
 @media screen and (max-width: 1024px)
   section
     .section-container
@@ -340,7 +347,7 @@
       .text_wrap,.link_wrap
         font-size: 1.5rem
 
-  section#news_content_section
+  section#news_content_section,.raise_section
     .section-container_body
       padding: 0 4rem 4rem 4rem
   section#main_top_banner
@@ -485,6 +492,11 @@
       .mail_wrap
         a
           font-size: 16px
+  .vacancy_wrap_content
+    .vacancy_side
+      position: relative
+      width: 100%
+      height: 864px
 @media screen and (max-width: 823px)
   section
     .section-container_header
@@ -541,8 +553,8 @@
       .internet_nav_link_wrap
         margin: 0 12px
         text-align: center
-  section#news_content_section
-    .news_wrap
+  section#news_content_section,.raise_section
+    .news_wrap,.raise_wrap
       .news_bottom_img_wrap
         display: flex
         img
@@ -823,10 +835,10 @@
         background-position: 180px 10px
         .title
           padding-bottom: 25px
-  section#news_content_section
+  section#news_content_section,.raise_section
     .section-container_body
       padding: 0 2rem 4rem 2rem
-      .news_wrap
+      .news_wrap,.raise_wrap
         .news_bottom_img_wrap
           img
             margin-top: 12px
@@ -1245,6 +1257,11 @@
       padding: 24px 18px
   .company_offers_item:nth-child(5)
     margin-bottom: 36px
+  .vacancy_wrap_content
+    .vacancy_side
+      .content_wrap
+        p
+          text-align: center
 @media screen and (max-width: 576px)
   section
     overflow-x: hidden
@@ -1515,7 +1532,7 @@
       .store-item
         .item_control
           justify-content: center
-  section#news_content_section
+  section#news_content_section,.raise_section
     .section-container_body
       padding: 0 1.5rem 4rem 1.5rem
     .news_wrap_content
@@ -1525,7 +1542,7 @@
         line-height: 1.5rem
         margin-bottom: 2.75rem
 
-    .news_wrap
+    .news_wrap,.raise_wrap
       .news_navigation
         padding: 2.25rem 2.25rem 1.25rem 2.25rem
   section#check_section
@@ -1662,7 +1679,7 @@
           .form-content
             justify-content: center
 
-@media screen and (max-width: 576px)
+@media screen and (max-width: 575px)
   .contacts_main_wrap
     .contacts_main_item
       .title
@@ -1676,6 +1693,9 @@
         margin-bottom: 20px
         .btn
           width: auto
+  .raise_section
+    .raise_wrap_content
+      padding: 2.5rem 2.25rem
 
 
 @media screen and (max-width: 475px)
@@ -1724,8 +1744,8 @@
       margin: 0
       .small_item_content
         background-position: 240px 10px
-  section#news_content_section
-    .news_wrap
+  section#news_content_section,.raise_section
+    .news_wrap,.raise_wrap
       .news_navigation
         flex-wrap: wrap
         align-items: center
@@ -1881,7 +1901,9 @@
     .data-table-list-item
       .text
         max-width: 220px
-
+  .vacancy_wrap_content
+    .vacancy_side
+      padding: 24px
 
 @media screen and (max-width: 414px)
   section
@@ -2005,7 +2027,7 @@
         .item_content
           .description
             justify-content: space-between
-  section#news_content_section
+  section#news_content_section,.raise_section
     .section-container
       &_body
         padding: 0
@@ -2013,7 +2035,7 @@
     .news_wrap_content
       padding: 2.5rem 1.25rem
 
-    .news_wrap
+    .news_wrap,.raise_wrap
       .news_navigation
         padding: 2.25rem 1.25rem 1.25rem 1.25rem
         justify-content: space-between
@@ -2154,7 +2176,7 @@
     .equipment_catalog_wrap
       .small_item_content
         background-position: 190px 10px
-  section#news_content_section
+  section#news_content_section,.raise_section
     .section-container_body
       padding: 0 0.5rem 4rem 0.5rem
       .news_wrap_content
@@ -2233,7 +2255,19 @@
     .img_wrap
       img
         width: 92%
-
+  .vacancy_wrap_content
+    .about_vacancy
+      p
+        font-size: 16px
+      h4
+        font-size: 24px
+      ul
+        li
+          font-size: 16px
+          line-height: 24px
+  .raise_section
+    .raise_wrap_content
+      padding: 2.25rem 1.25rem
 @media screen and (max-width: 320px)
   html,main
     overflow-x: hidden

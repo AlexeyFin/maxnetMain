@@ -55,8 +55,10 @@ section
       margin-bottom: 3rem
       display: flex
       justify-content: center
+
       h2
         text-align: center
+
         &:after
           display: block
           min-width: 680px
@@ -83,18 +85,27 @@ section
     background-color: #F2F4FB
 
 
+.raised_up_section
+  background-color: #e0dfdf
+  padding-top: 0 !important
+
+
 .sub_header
   background-color: #81A8E9
   padding: 20px
+
   &_content
     display: flex
     justify-content: center
-    .sub_header_message,.sub_header_link
+
+    .sub_header_message, .sub_header_link
       color: $text_color_white
       margin-bottom: 0
+
     .sub_header_message
       font-size: 1rem
       font-weight: 500
+
     .sub_header_link
       margin-left: 1.25rem
       font-family: "Work Sans", sans-serif
@@ -264,6 +275,7 @@ section
   .text
     z-index: 2
     position: relative
+
 .maxNet-btn-white-transparent
   background-color: white
   color: $text_color_dark
@@ -503,10 +515,13 @@ section
 .card_slider
   &_item
     padding: 1rem
+
     .item_card_data
-      padding:  0 1rem
+      padding: 0 1rem
+
     &:focus, &:active
       outline: none
+
     .item_card
       padding: 1.5rem 1rem 2rem 1rem
       position: relative
@@ -528,6 +543,7 @@ section
         padding-left: 1rem
         font-size: 20px
         line-height: 27px
+
       .count
         padding-left: 1rem
         color: #003893
@@ -567,6 +583,7 @@ section
               width: 1em
           /* same as padding-left set on li */
 
+
           li:first-child
             padding-left: 0
 
@@ -589,8 +606,10 @@ section
 
       .btn_wrap
         padding-left: 1rem
+
         a, button
           min-width: 180px
+
       .ask_wrap
         text-align: center
         margin-top: 2rem
@@ -619,6 +638,7 @@ section
 
           img
             opacity: .55
+
   .internet-slider-item
     display: flex
     justify-content: center
@@ -682,13 +702,16 @@ section
     opacity: 1
     transition: all .3s ease-in-out
     z-index: 50
+
     &:focus, &:active
       outline: none
 
   .slick-arrow-right
     right: -3.5rem
+
   .slick-arrow-left
     left: -3.5rem
+
   .slick-disabled
     opacity: 0
 
@@ -699,6 +722,7 @@ section
       padding: 1rem
       display: flex
       justify-content: center
+
       .item_card
         max-width: 320px
         width: 320px
@@ -706,34 +730,43 @@ section
         justify-content: flex-start
         box-shadow: none
         border: 1px solid #969696
+
         .small_title
           min-height: 53px
           margin-bottom: 26px
+
         .item_card_data
           display: flex
           flex-direction: column
-          flex:  1 1 auto
+          flex: 1 1 auto
+
           p
             font-weight: 300
             font-size: 20px
             line-height: 27px
             margin-bottom: 24px
+
           .img_wrap
             display: flex
             flex: 1 1 auto
             justify-content: center
             align-items: center
+
         .btn_wrap
           margin-top: 28px
+
     &_item:nth-child(odd)
       .item_card
         background-color: #F2F4FB
+
     &_item:nth-child(3n+1)
       .item_card
         border-top: 8px solid #B824A4
+
     &_item:nth-child(3n+2)
       .item_card
         border-top: 8px solid #003893
+
     &_item:nth-child(3n+3)
       .item_card
         border-top: 8px solid #007AFF
@@ -747,6 +780,7 @@ section
   flex-direction: column
   align-items: center
   position: relative
+
   .img_wrap
     width: 140px
     height: 140px
@@ -755,8 +789,10 @@ section
     align-items: center
     margin-bottom: 1.5rem
     border-radius: 50%
+
     img
       width: auto
+
     p
       margin: 0
       display: flex
@@ -792,6 +828,7 @@ section
     height: 45px
     top: calc(70px)
     right: -22px
+
     img
       width: 100%
 
@@ -843,6 +880,7 @@ section
       font-size: 1.25rem
       line-height: 27px
       font-weight: 300
+
       img
         width: auto
 
@@ -868,17 +906,21 @@ section
         font-weight: 400
         vertical-align: middle
         font-size: 1rem
+
         &:first-child
           color: #003893
+
   tbody
     tr
       td
         border: none
         font-size: 1.25rem
         font-family: "Roboto", sans-serif
+
         &:first-child
           padding-left: 2.25rem
           font-weight: 300
+
   img
     width: auto
 
@@ -931,9 +973,11 @@ section
   bottom: 0
   left: 0
   z-index: 100
+
   .title
     font-size: 1.25rem
     margin-bottom: 1rem
+
   button
     font-size: 14px !important
     padding: .5rem .75rem !important
@@ -1109,6 +1153,7 @@ section#about_partners
       justify-content: space-between
       align-items: center
       flex-wrap: wrap
+
       .partner_logo
         display: flex
         justify-content: center
@@ -1135,8 +1180,9 @@ section#about_stages_of_development
     .about_slider_wrap_item
       outline: none !important
       box-shadow: none !important
+
       img
-        //width: 100%
+    //width: 100%
 
     .slider_arrows_wrap
       position: absolute
@@ -1153,8 +1199,10 @@ section#about_stages_of_development
         font-size: 3rem
         color: $main_blue
         transition: all .3s ease-in-out
+
         &:first-child
           margin-right: 2rem
+
         &:hover
           color: $main_purple
 
@@ -1225,8 +1273,9 @@ section#express_help
             button, a
               width: 100%
               box-shadow: none
+
       .maxNet_rotate_card
-        .front,.back
+        .front, .back
           padding: 0 1.75rem
 
 
@@ -1308,6 +1357,7 @@ section#equipment_catalog
             font-size: 1.5rem
             margin-left: 1.5rem
             transition: all .3s ease-in-out
+
         .img_wrap
           img
             width: 100%
@@ -1327,6 +1377,7 @@ section#equipment_store
     .store-item
       border-top: 2px dashed #000000
       padding: 40px 0
+
       .item_img
         img
           width: 100%
@@ -1334,7 +1385,8 @@ section#equipment_store
       .item_data
         .title
           margin-bottom: 20px
-        .title,.equipment_store_link
+
+        .title, .equipment_store_link
           font-size: 30px
           line-height: 37px
           font-weight: 400
@@ -1342,7 +1394,6 @@ section#equipment_store
 
         .equipment_store_link
           text-decoration: underline
-
 
 
         .description
@@ -1364,6 +1415,7 @@ section#FAQ
   .section-container
     background-color: $text_color_white
     padding: 4.5rem 0
+
     &_body
       .faq_wrap
       .accordion
@@ -1372,6 +1424,7 @@ section#FAQ
             background-color: $text_color_white
             padding: 0 2.25rem
             border-bottom: none
+
             h5
               button
                 width: 100%
@@ -1402,10 +1455,13 @@ section#FAQ
                   font-weight: 900
                   font-family: "Font Awesome 5 Free", sans-serif
                   font-style: normal
+
                   &::before
                     content: '\f00d'
+
                 &.collapsed
                   border-bottom: 1px solid transparent
+
                   .icon
                     &::before
                       content: "\f078"
@@ -1413,6 +1469,7 @@ section#FAQ
           .card-body
             padding: 1.25rem 2.25rem
             font-weight: 300
+
             a
               font-weight: 400
               color: $main_blue
@@ -1425,6 +1482,7 @@ section#FAQ_directory
   background-position: 30%
   background-size: contain
   min-height: 502px
+
   .directory_content_wrap
     .directory_content_text
       font-size: 1.25rem
@@ -1437,6 +1495,7 @@ section#FAQ_directory
       .form-content
         display: flex
         justify-content: center
+
       input
         width: 360px
         padding: .5rem 1.25rem
@@ -1452,10 +1511,13 @@ section#FAQ_directory
         &:focus, &:after
           outline: none
           box-shadow: none
+
       button
         white-space: nowrap
+
     .image_wrap
       display: none
+
       img
         width: 100%
 
@@ -1592,6 +1654,7 @@ section#landline_city
         font-weight: 300
         font-size: 1.25rem
         margin-bottom: 2.5rem
+
       .content_wrap
         .img_wrap
           display: none
@@ -1643,9 +1706,11 @@ section#main_form
         .input_wrap
           padding: 0
           margin-bottom: 1rem
+
           input
             width: 100%
             padding: 1rem
+
           .form-group
             .max-net-form-input
               padding: 1rem
@@ -1675,7 +1740,7 @@ section#main_form
         margin: 4rem -15px 0 -15px
 
 
-section#main_mobile_tariff_plans,section.mobile_proposition_banner
+section#main_mobile_tariff_plans, section.mobile_proposition_banner
   display: none
 
 section#main_news
@@ -1739,7 +1804,7 @@ section#main_news
 
 
     .dynamic_wrap
-      .news_wrap
+      .news_wrap, .raise_wrap
         .news_item
           margin-bottom: 3rem
 
@@ -1824,8 +1889,8 @@ section#main_services
       display: flex
       justify-content: flex-end
       align-items: center
-      //text-align: right
-      //width: 100%
+    //text-align: right
+    //width: 100%
     .wrap
       width: 100%
       display: flex
@@ -1849,6 +1914,7 @@ section#main_slider
       .slider_img
         img
           width: 100%
+
       .slider_content
         display: flex
         flex-direction: column
@@ -2025,6 +2091,7 @@ section#main_tariff_plans
 
 section#main_top_banner
   position: relative
+
   .section-container
     min-height: 412px
     //background: url("../images/subscribe-banner.png") $main_blue no-repeat
@@ -2091,6 +2158,7 @@ section#main_top_banner
       .text
         z-index: 2
         position: relative
+
   .main_banner_arrows
     position: absolute
     top: 80px
@@ -2102,17 +2170,19 @@ section#main_top_banner
 
     display: flex
     justify-content: space-between
+
     .slick-arrow
       background: transparent
       border: none
       color: $text_color_white
       font-size: 36px
-      &:focus,&:active
+
+      &:focus, &:active
         box-shadow: none
         outline: none
 
 
-section#news_content_section
+section#news_content_section, .raise_section
   .section-container
     background-color: $background_grey
     padding-top: 0
@@ -2121,18 +2191,19 @@ section#news_content_section
     &_body
       display: flex
       justify-content: center
-      padding: 0 8rem 4.5rem 8rem
+      padding: 0 6rem 4.5rem 6rem
 
-  .news_wrap
+  .news_wrap, .raise_wrap
     width: 100%
     margin-top: -315px
 
     &_header
-      margin-bottom: 3rem
+      margin-bottom: 2rem
 
       h4
         font-size: 1.875rem
         color: $text_color_white
+        margin-bottom: 0
 
     &_content
       width: 100%
@@ -2190,6 +2261,7 @@ section#news_want_to_know_more
 
     .want_to_know_more_wrap
       margin-top: 1.25rem
+
     .want_to_know_more_img
       img
         width: 100%
@@ -2221,6 +2293,7 @@ section#service_0000
     justify-content: flex-end
     margin-top: 1.25rem
     align-items: center
+
     a
       font-size: 1.25rem
       text-decoration: underline
@@ -2231,6 +2304,7 @@ section#service_0000
 
       &:hover
         color: $main_purple
+
   .about_service
     p
       font-size: 1.25rem
@@ -2299,35 +2373,43 @@ section#speed_test
 section#tv_main
   .alternative_tv_table_wrap
     display: none
+
     .alternative_tv_table
 
       &_item
         margin-top: 30px
         padding-bottom: 16px
         border-bottom: 2px solid #c8c8c8
+
         .alternative_tv_table_body
           .title
             margin-bottom: 29px
+
             h3
               font-size: 24px
               color: #003893
               text-align: center
               font-weight: 400
-          .feature,.value
+
+          .feature, .value
             margin-bottom: 14px
+
           .feature
             font-size: 14px
             line-height: 20px
             font-weight: 300
+
           .value
             text-align: center
             font-size: 14px
             display: flex
             justify-content: center
             align-items: center
+
             span.check
               color: #003893
               font-size: 18px
+
             span.big_text
               font-weight: 500
               font-size: 18px
@@ -2362,7 +2444,7 @@ section#video_about
           margin-right: .75rem
 
 
-section#video_banner,.simple_banner
+section#video_banner, .simple_banner
   .video-banner-container
     background-color: $main_blue
     min-height: 383px
@@ -2380,6 +2462,7 @@ section#video_banner,.simple_banner
         font-size: 1.875rem
         text-align: center
         line-height: 35px
+
     .video-banner-btn
       position: relative
 
@@ -2519,19 +2602,23 @@ section.internet_data_wrap
 .news_list_wrap
   .news_list
     padding-left: 18%
+
     &_item
       margin-bottom: 40px
+
       .date
         font-size: 14px
         line-height: 32px
         margin-bottom: 0
         color: #5F71A7
+
       .news_link
         font-size: 20px
         line-height: 27px
         color: $text_color_dark
         margin-top: 8px
         display: block
+
   .news_list_img
     position: relative
     height: 100%
@@ -2543,51 +2630,65 @@ section.internet_data_wrap
       display: flex
       justify-content: center
       padding: 12.5%
+
       img
         width: 100%
 
 .loyalty_item
   background-color: #F2F4FB
+
   &:nth-child(even)
     background-color: transparent
+
   &_title
     h4
       font-size: 30px
       line-height: 37px
       margin-bottom: 40px
+
   &_description
     margin-bottom: 60px
+
     p
       font-size: 20px
       line-height: 27px
       font-weight: 300
       margin-bottom: 1.5rem
+
     ul
       padding-left: 20px
+
       li
         font-size: 20px
         line-height: 27px
         font-weight: 300
+
   &_data_wrap
     .data_item:last-child
-      .side_img
-        display: none
+    .side_img
+      display: none
+
   &_regulations
     border-top: 2px dashed black
     padding-top: 2rem
     margin-top: 3rem
+
     .regulations_wrap
       display: flex
+
       .img_wrap
         margin-right: 28px
+
       .text_wrap
         display: flex
         flex-direction: column
         justify-content: center
+
         a
           font-size: 20px
           color: $text_color_dark
           line-height: 27px
+
         p.small
           color: #5F71A7
           font-size: 14px
@@ -2598,14 +2699,18 @@ section.internet_data_wrap
 .pagination-wrap
   padding-left: 18%
   margin-top: 90px
+
   .pagination
     border-radius: 0
+
   .pajinatify
     justify-content: flex-start
-    &__button,span
+
+    &__button, span
       font-size: 16px
       color: #646464
       border: 1px solid transparent
+
     .pajinatify__current
       background-color: transparent
       border-color: #c4c4c4
@@ -2617,12 +2722,16 @@ section.internet_data_wrap
   border: 1px solid #c8c8c8
   background-color: #f9f9f9
   padding: 40px
+
   .calculator_frame_column
     padding-right: 84px
+
   .form-group
     margin-bottom: 1.5rem
+
     label
       color: #646464
+
     .checkbox_wrap_content
       label
         color: $text_color_dark
@@ -2631,25 +2740,31 @@ section.internet_data_wrap
         margin-bottom: 0
         display: flex
         align-items: center
+
   .btn_wrap
     //margin-top: 62px
     margin-top: 1.5rem
     margin-bottom: 0
+
     button
       width: 160px
+
 .result_frame
   margin-top: 32px
   background-color: #E5E5E5
   padding: 26px 48px 18px
+
   h5
     font-size: 20px
     line-height: 23px
     margin-bottom: 26px
+
   .result_wrap
     display: flex
     justify-content: flex-start
     align-items: center
     margin-bottom: 48px
+
     p
       margin-bottom: 0
       font-size: 24px
@@ -2662,6 +2777,7 @@ section.internet_data_wrap
       height: 70px
       width: 130px
       margin-right: 16px
+
   p.small
     font-size: 10px
     margin-bottom: 0
@@ -2673,23 +2789,29 @@ section.internet_data_wrap
 .contacts_main_wrap
   padding: 0 64px
   margin-bottom: 60px
+
   &:last-child
     margin-bottom: 0
+
   .contacts_main
     max-width: 250px
     box-sizing: border-box
+
     &_item
       .title
-        font-size: 20px
-        line-height: 24px
-        font-weight: 900
-        margin-bottom: 18px
+      font-size: 20px
+      line-height: 24px
+      font-weight: 900
+      margin-bottom: 18px
+
       .text
         font-size: 20px
         font-weight: 300
         margin-bottom: 36px
+
       .bordered_title
         position: relative
+
         &::after
           width: 100%
           height: 2px
@@ -2697,31 +2819,40 @@ section.internet_data_wrap
           content: ''
           background-color: $main_purple
           margin-top: 24px
+
       .contact_main_item_phone_link
         margin-bottom: 14px
+
         a
           font-size: 33px
           font-weight: bold
           color: #003893
           display: block
           text-align: center
+
       .btn_wrap
         display: flex
         justify-content: center
+
         .btn
           width: 100%
+
   #map
     height: 100%
+
     .map
       height: 100%
+
     iframe
       height: 100% !important
       width: 100% !important
+
   .contact_cards_wrap
     .contact_card_item
       border: 1px solid #969696
       padding: 29px
       height: 100%
+
       .title
         font-size: 20px
         line-height: 24px
@@ -2730,6 +2861,7 @@ section.internet_data_wrap
         margin-bottom: 40px
         min-height: 51px
         position: relative
+
         &::after
           position: absolute
           display: block
@@ -2738,11 +2870,13 @@ section.internet_data_wrap
           width: 100%
           height: 2px
           background-color: $main_purple
+
       .content
         display: flex
         flex-direction: column
         align-items: center
-        a,p
+
+        a, p
           display: block
           font-family: "Roboto", sans-serif
           text-align: center
@@ -2751,19 +2885,23 @@ section.internet_data_wrap
           margin-bottom: 14px
           color: $text_color_dark
           text-decoration: none
+
         p
           margin-bottom: 0
+
   .contacts_mails
     &_item
       display: flex
       flex-direction: column
       align-items: center
+
       .title
         font-size: 20px
         font-weight: 900
         line-height: 24px
         text-align: center
         margin-bottom: 24px
+
       .mail_wrap
         a
           font-size: 20px
@@ -2775,20 +2913,24 @@ section.internet_data_wrap
 .manager_contact_section
   .section-container
     padding-top: 0
+
   .manager_contact_wrap
     padding: 30px
     background-color: #EEEEEE
     display: flex
     flex-direction: column
     align-items: center
+
     .title
       font-weight: 900
       font-size: 20px
       line-height: 24px
       margin-bottom: 36px
+
     .text
       margin-bottom: 36px
       max-width: 628px
+
       p
         font-weight: 300
         font-family: "Roboto", sans-serif
@@ -2806,16 +2948,20 @@ section.internet_data_wrap
     flex-direction: column
     justify-content: center
     align-items: center
+
     .simple_banner-title
       max-width: 475px
       margin-bottom: 2rem
+
       h2
         color: $text_color_white
         font-size: 1.875rem
         text-align: center
         line-height: 35px
+
     .simple_banner-text
       max-width: 475px
+
       p
         font-size: 20px
         line-height: 28px
@@ -2823,16 +2969,19 @@ section.internet_data_wrap
         color: white
 
 
-
 .company_offers
   max-width: 837px
+
   &_item
     display: flex
     margin-bottom: 36px
+
     &:nth-child(5)
       margin-bottom: 0
+
     &:nth-child(6)
       margin-bottom: 0
+
     &_icon
       display: flex
       justify-content: center
@@ -2841,6 +2990,7 @@ section.internet_data_wrap
       width: 72px
       min-width: 72px
       height: 100%
+
     &_text
       display: flex
       align-items: center
@@ -2855,6 +3005,7 @@ section.internet_data_wrap
     padding: 40px 24px
     max-width: 320px
     margin-bottom: 46px
+
     .vacancy_title
       h4
         font-size: 20px
@@ -2863,6 +3014,7 @@ section.internet_data_wrap
         min-height: 74px
         position: relative
         margin-bottom: 46px
+
         &::after
           content: ''
           display: block
@@ -2871,6 +3023,7 @@ section.internet_data_wrap
           background-color: $main_purple
           position: absolute
           bottom: -23px
+
     .vacancy_link
       a
         display: flex
@@ -2882,20 +3035,22 @@ section.internet_data_wrap
         text-decoration: none
 
 
-
 footer
   display: flex
   flex-direction: column
   justify-content: space-between
+
   section#mobile_footer_menu
     display: none
+
     .menu_list_link_big
       font-size: 16px !important
       color: $main_blue !important
       line-height: 23px !important
 
-  section#footer_menu,section#mobile_footer_menu
+  section#footer_menu, section#mobile_footer_menu
     background-color: $text_color_white
+
     .section-container
       background-color: $text_color_white
       padding-bottom: 0
@@ -2932,7 +3087,6 @@ footer
                 font-size: .875rem
                 color: $text_color_dark
                 transition: all .3s ease-in-out
-
 
 
                 &:hover
@@ -3015,6 +3169,7 @@ footer
           justify-content: center
           display: flex
           white-space: nowrap
+
           a.tel_link
             color: $text_color_white
             text-decoration: none
@@ -3083,6 +3238,7 @@ table
 
 .top_banner_slider_item:nth-child(n+2)
   display: none !important
+
 .top_banner_slider_item.slick-slide
   display: flex !important
 
@@ -3192,6 +3348,7 @@ table
   .title
     width: 60%
     margin-bottom: 2.5rem
+
     h5
       line-height: 1.75rem
       font-size: 1.25rem
@@ -3292,31 +3449,38 @@ table
       .wrap
         display: flex
         flex-direction: column
+
         .package_title
           margin-bottom: 1rem
+
           h5
             font-size: 30px
             line-height: 35px
             color: #111F4D
             display: flex
             flex-direction: column
+
             .def
               font-size: 20px
               font-weight: 300
+
         .package_info
 
           display: flex
           justify-content: space-between
           align-items: center
+
           .package_info_logo
             width: 33%
 
           .package_info_text
             width: 33%
+
             p
               font-size: 12px
               font-weight: 300
               margin-bottom: 0
+
           .package_info_details
             margin-left: 2rem
             width: 33%
@@ -3326,15 +3490,18 @@ table
             border-left: 2px solid $main_purple
             padding-left: 18px
             max-height: 100px
+
             .chanel_count
               font-size: 30px
               line-height: 35px
               color: $main_purple
+
               .default
                 font-size: 16px
                 line-height: 18px
                 color: $text_color_dark
                 font-weight: 300
+
             .list_link
               a
                 font-weight: 700
@@ -3347,23 +3514,18 @@ table
 
                 &:hover
                   color: $main_purple
+
           .package_info_get
             width: 33%
             display: flex
             flex-direction: column
             align-items: center
             justify-content: space-between
+
             .price
               font-size: 1.25rem
               font-weight: 900
               margin-bottom: 28px
-
-
-
-
-
-
-
 
 
       &.basic_package
@@ -3432,10 +3594,12 @@ table
     z-index: -1
     opacity: 0
     margin: 10px 0 0 20px
-    &~label
+
+    & ~ label
       color: #646464
       font-weight: 900
-    &[checked]~label
+
+    &[checked] ~ label
       color: $text_color_dark
 
     + label
@@ -3540,21 +3704,23 @@ table
         //padding-left: 64px
 
         .text_wrap
-          margin-bottom: 53px
+        margin-bottom: 53px
 
-          ul, p
-            color: $text_color_white
-            font-size: 1.875rem
-            line-height: 37px
+        ul, p
+          color: $text_color_white
+          font-size: 1.875rem
+          line-height: 37px
 
-          ul
-            padding-left: 21px
+        ul
+          padding-left: 21px
 
         .btn_wrap
           .btn
             width: 316px
+
       &_img
         display: none
+
     .banner-img
       padding: 3rem 0
 
@@ -3611,6 +3777,7 @@ table
     margin: 1.25rem
     font-size: 1.125rem
     color: $text_color_dark
+
     img
       width: 14px
 
@@ -3626,6 +3793,7 @@ table
   .modal-body
     max-height: 510px
     overflow-y: auto
+
     img
       width: auto
 
@@ -3633,6 +3801,7 @@ table
   font-weight: 300
   text-decoration: underline
   color: #003893
+
   i
     color: $text_color_dark
 
@@ -3643,10 +3812,79 @@ table
   height: 60px
   top: calc(50% - 30px)
   left: -75px
+
   img
     width: 100%
 
 
+.vacancy_wrap_content
+  position: relative
+  .about_vacancy
+    margin-bottom: 100px
+
+    h4
+      font-weight: 500
+      font-size: 28px
+      margin-bottom: 20px
+
+    p
+      font-size: 20px
+
+    ul
+      padding-left: 20px
+      margin-bottom: 42px
+      li
+        font-size: 20px
+        line-height: 30px
+        font-weight: 300
+
+  .vacancy_side
+    width: 264px
+    position: absolute
+    top: 0
+    height: 956px
+    right: 0
+    padding: 40px
+    background: linear-gradient(180deg, #81A8E9 0%, rgba(255, 255, 255, 0) 100%)
+
+    .content_wrap
+      width: 100%
+      height: 100%
+      background-image: url("../images/_.png")
+      background-repeat: no-repeat
+      background-position: center 0
+      background-size: contain
+      display: flex
+      flex-direction: column
+      align-items: center
+      h5
+        font-size: 30px
+        line-height: 37px
+        text-align: center
+        color: #FFFFFF
+        margin-bottom: 18px
+      p
+        font-size: 18px
+        line-height: 27px
+        color: #FFFFFF
+        margin-bottom: 18px
+      .link
+        display: block
+        align-items: center
+        font-size: 24px
+        font-weight: bold
+        font-family: "Work Sans", sans-serif
+        line-height: 37px
+        color: #003893
+        text-decoration: none
+        margin-bottom: 24px
+      .img_wrap
+        margin-bottom: 28px
+      .btn
+        margin: 30px 0
+  .vacancy_banner
+    img
+      width: 100%
 
 .noSpace
   white-space: nowrap
@@ -3654,6 +3892,7 @@ table
 .light_table
   thead
     border-top: 2px solid #C8C8C8
+
     tr
       th
         padding-top: 28px
@@ -3661,6 +3900,7 @@ table
         color: $main_blue
         font-size: 16px
         line-height: 22px
+
   tbody
     tr
       td
@@ -3669,13 +3909,16 @@ table
         background-color: #e5e5e5
         font-weight: 300
         color: #111F4D
+
         &:nth-child(2)
           background-color: rgba(229, 229, 229, 0.6)
           text-align: center
           font-weight: 400
+
       &:first-child
         td
           padding-top: 20px
+
       &:last-child
         td
           padding-bottom: 20px
@@ -3683,8 +3926,10 @@ table
 @media screen and (max-width: 600px)
   table.custom_adaptive
     border: 0
+
     caption
       font-size: 1.3em
+
     thead
       border: none
       clip: rect(0 0 0 0)
@@ -3694,15 +3939,18 @@ table
       padding: 0
       position: absolute
       width: 1px
+
     tr
       border-bottom: 3px solid #ddd
       display: block
       margin-bottom: .625em
+
     td
       border-bottom: 1px solid #ddd
       display: block
       font-size: .8em
       text-align: right !important
+
       &::before
         /*
          ** aria-label has no advantage, it won't be read inside a table
@@ -3712,6 +3960,7 @@ table
         font-weight: bold
         color: $text_color_dark
         text-transform: uppercase
+
       &:last-child
         border-bottom: 0
 
@@ -3727,17 +3976,20 @@ table
 .custom_stages
   .line_wrap
     margin: 0
+
   .stage_item
     min-height: 500px
     display: flex
     align-items: center
     padding: 0
+
     .line_box
       width: 100%
       display: flex
       flex-direction: column
       position: relative
       max-width: 100%
+
       &::after
         content: ''
         display: none
@@ -3752,10 +4004,12 @@ table
         height: 120px
         width: 205px
         padding-top: 12px
+
       .circle
         width: 100%
         order: 2
         position: relative
+
         &::after
           display: block
           height: 2px
@@ -3763,22 +4017,28 @@ table
           position: absolute
           z-index: -1
           content: ''
-          background:  #5F71A7
+          background: #5F71A7
+
         .mobile
           display: none
+
       .year
         width: 100%
+
   .stage_item:nth-child(odd)
     .line_box
       .year
         order: 3
         margin-bottom: 180px
+
       .text
         order: 1
         width: 205px
+
       .circle
         &::after
           bottom: 16px
+
         .point-bottom
           display: none
 
@@ -3787,20 +4047,24 @@ table
       .year
         order: 1
         margin-top: 180px
+
       .text
         order: 3
+
       .circle
         &::after
           top: 16px
+
         .point-top
           display: none
 
   .stage_item:last-child
     .text
       width: 150px !important
+
     .circle
       &::after
-        background: linear-gradient(270deg,  #FFFFFF 30%, #5F71A7 100%)
+        background: linear-gradient(270deg, #FFFFFF 30%, #5F71A7 100%)
 
 @media screen and (max-width: 1200px)
   .custom_stages
@@ -3808,19 +4072,23 @@ table
       .line_box
         .text
           font-size: 14px
+
 @media screen and (max-width: 826px)
   .custom_stages
     .stage_item
       min-height: auto
+
       .line_box
         flex-direction: row
         justify-content: center
+
         .year
           font-weight: 300
           margin: 0 !important
           width: 42% !important
           display: flex
           align-items: center
+
         .text
           font-size: 14px
           font-weight: 300
@@ -3837,6 +4105,7 @@ table
           justify-content: center
           align-items: center
           width: 16%
+
           &::after
             height: 100%
             width: 1px
@@ -3845,39 +4114,51 @@ table
 
           .desktop
             display: none
+
           .mobile
             display: block
+
     .stage_item:nth-child(odd)
       .line_box
         .year
           order: 1
           justify-content: flex-end
+
         .text
           padding-right: 12px
           order: 3
+
         .circle
           &::after
             bottom: 16px
+
           .point-bottom
             display: none
+
           .point-blue
             display: none
+
     .stage_item:nth-child(even)
       .line_box
         .year
           order: 3
+
         .text
           padding-left: 12px
           order: 1
+
         .circle
           &::after
             top: 16px
+
           .point-top
             display: none
+
           .point-red
             display: none
+
     .stage_item:last-child
       .circle
         &::after
           height: 100%
-          background: linear-gradient(360deg,  #FFFFFF 5%, #5F71A7 100%)
+          background: linear-gradient(360deg, #FFFFFF 5%, #5F71A7 100%)

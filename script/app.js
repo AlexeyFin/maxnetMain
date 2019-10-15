@@ -198,7 +198,7 @@ $(document).ready(function(){
         ]
 
     });
-    $('.custom_tooltip_price, .custom_tooltip_details, .custom_about_tooltip').tooltipster({
+    $('.custom_tooltip_price, .custom_tooltip_details, .custom_about_tooltip, .tooltip_label').tooltipster({
         contentCloning: true,
         theme: 'tooltipster-shadow',
         trigger: 'hover'

@@ -55,7 +55,6 @@ section
       margin-bottom: 3rem
       display: flex
       justify-content: center
-
       h2
         text-align: center
 
@@ -68,6 +67,10 @@ section
           content: ''
           margin-top: 1rem
 
+  .underline-none
+    h2
+      &::after
+        display: none !important
 
     &_left_header
       justify-content: flex-start
@@ -78,11 +81,16 @@ section
         font-size: 1.875rem
 
 
+  .blue-header
+    h2
+      color: #003893
+
+
   .white-section
     background: $text_color_white
 
-  .grey-section
-    background-color: #F2F4FB
+.grey-section
+  background-color: #F2F4FB
 
 
 .raised_up_section
@@ -3963,6 +3971,195 @@ table
       &:last-child
         td
           padding-bottom: 20px
+
+.light_tooltip
+  p
+    font-weight: 300
+    font-size: 16px
+
+.youtube-video-banner-container
+  padding: 88px 15px
+  display: flex
+  justify-content: center
+  align-items: center
+  iframe
+    max-width: 963px
+    height: 542px
+
+
+.payment_info_items_wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  margin-bottom: 3.25rem
+  .payment_info_item
+    width: 28%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .img_wrap
+      margin-right: 30px
+    .text_wrap
+      p
+        font-size: 16px
+        line-height: 22px
+        font-family: "Roboto", sans-serif
+        color: black
+        font-weight: 300
+        margin-bottom: 0
+
+
+.e-commerce_wrap
+  margin-bottom: 52px
+  .e-commerce_item
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 46px
+    width: 100%
+    background-color: #FFFFFF
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+    position: relative
+    .img_wrap
+      img
+        width: 100%
+    .additional_title
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      background-color: rgba(0, 122, 255, 0.29)
+      text-align: center
+      line-height: 32px
+    .label_icon
+      position: absolute
+      top: -26px
+      right: -16px
+
+
+.e-commerce-full-width_wrap
+  .e-commerce-fw_item
+    border-bottom: 1px solid black
+    margin-bottom: 40px
+    .item_content
+      display: flex
+      flex-direction: column
+      justify-content: center
+      height: 100%
+      padding-left: 36px
+      .title
+        font-size: 24px
+        line-height: 32px
+        margin-bottom: 21px
+      .text
+        ol
+          margin: 0
+          padding: 0
+          counter-reset: item
+        ol>li
+          margin: 0
+          padding: 0 0 0 2em
+          text-indent: -2em
+          list-style-type: none
+          counter-increment: item
+        ol>li:before
+          display: inline-block
+          width: 1.5em
+          padding-right: 0.5em
+          font-weight: bold
+          text-align: right
+          content: counter(item) "."
+        li,p
+          font-size: 18px
+          line-height: 25px
+          font-family: "Roboto", sans-serif
+    .landed_img
+      height: 100%
+      display: flex
+      align-items: flex-end
+
+  .col-12:last-child
+    .e-commerce-fw_item
+      margin-bottom: 0
+
+  .qr_item
+    border: 1px solid #969696
+    background: #DADADA
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+    .qr_code_wrap
+      padding: 35px
+    .qr_wrap
+      padding: 35px
+      background-color: white
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 155px
+      width: 178px
+
+
+.bank-commerce-wrap
+  .bank-commerce-item
+    margin-bottom: 48px
+    &_content
+      display: flex
+      flex-direction: column
+      justify-content: center
+      height: 100%
+      padding-left: 36px
+      .title
+        font-size: 24px
+        line-height: 32px
+        color: black
+        margin-bottom: 21px
+      .text
+        p,li
+          font-size: 18px
+          line-height: 25px
+          font-weight: 300
+          font-family: "Roboto", sans-serif
+    &_optional_link
+      a
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-decoration: none !important
+        .img_wrap
+          margin-bottom: 24px
+        .title
+          margin-bottom: 0
+          color: #007AFF
+          font-size: 16px
+          font-weight: 300
+          font-family: "Roboto", sans-serif
+          line-height: 20px
+
+
+.terminals_wrap
+  .slick-arrow
+    top: calc(50% - 21px)
+  .terminals_slider_item
+    .img_wrap
+      display: flex
+      justify-content: center
+
+
+.instruction_wrap
+  .instruction_item
+    margin-bottom: 70px
+    a
+      display: flex
+      flex-direction: column
+      align-items: center
+      .img_wrap
+        margin-bottom: 36px
+      .text_wrap
+        padding: 0 36px
+        p
+          margin-bottom: 0
+          text-align: center
+
 
 @media screen and (max-width: 600px)
   table.custom_adaptive

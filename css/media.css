@@ -1636,6 +1636,12 @@
   .terminals_wrap .slick-arrow {
     top: 20% !important;
   }
+  .terminals_wrap .slick-arrow-left {
+    left: 0;
+  }
+  .terminals_wrap .slick-arrow-right {
+    right: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   section {
@@ -2213,6 +2219,9 @@
     text-align: left;
   }
 
+  .e-commerce-full-width_wrap {
+    margin: 0;
+  }
   .e-commerce-full-width_wrap .qr_item {
     max-width: 360px;
   }
@@ -2232,6 +2241,10 @@
 
   .instruction_wrap .instruction_item a .text_wrap p {
     max-width: 280px;
+  }
+
+  .instruction_wrap .instruction_item a .text_wrap {
+    padding: 0;
   }
 }
 @media screen and (max-width: 475px) {
@@ -3013,5 +3026,10 @@
   .news_list_wrap .news_list_img .img_wrap {
     max-height: 80vh;
     padding: 12.5% 25% 0;
+  }
+
+  .youtube-video-banner-container iframe {
+    height: 295px;
+    max-width: 580px;
   }
 }

@@ -5,9 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/directory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet.html" beforeDir="false" afterPath="$PROJECT_DIR$/internet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +162,7 @@
       <workItem from="1570601836800" duration="44916000" />
       <workItem from="1571131673688" duration="626000" />
       <workItem from="1571231978157" duration="2000" />
-      <workItem from="1571235591196" duration="11032000" />
+      <workItem from="1571235591196" duration="13238000" />
     </task>
     <servers />
   </component>

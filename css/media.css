@@ -223,6 +223,23 @@
   footer section#footer .footer_container .footer_middle .title {
     margin-right: 1rem;
   }
+
+  .service_items_wrap .service_item {
+    padding: 20px;
+  }
+  .service_items_wrap .service_item .title {
+    font-size: 16px;
+  }
+
+  .service_items_wrap .service_item.default_service_item .content .title {
+    font-size: 26px;
+  }
+  .service_items_wrap .service_item.default_service_item .content .text {
+    font-size: 18px;
+  }
+  .service_items_wrap .service_item.default_service_item .content .phone {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 1200px) {
   section#express_help .section-container .help_cards_wrap .help_card_wrap {
@@ -364,6 +381,23 @@
 
   .bank-commerce-wrap .bank-commerce-item_content .text li, .bank-commerce-wrap .bank-commerce-item_content .text p {
     font-size: 16px;
+  }
+
+  .service_items_wrap .service_item {
+    padding: 24px;
+  }
+  .service_items_wrap .service_item .title {
+    font-size: 18px;
+  }
+
+  .service_items_wrap .service_item.default_service_item .content .title {
+    font-size: 30px;
+  }
+  .service_items_wrap .service_item.default_service_item .content .text {
+    font-size: 20px;
+  }
+  .service_items_wrap .service_item.default_service_item .content .phone {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -691,6 +725,27 @@
   .big_form_wrap .big_form_wrap_content .form_header h4 {
     font-size: 48px;
     line-height: 54px;
+  }
+
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap {
+    width: 100%;
+  }
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap .internet_nav_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap .internet_nav_wrap li {
+    max-width: 100%;
+    margin-bottom: 18px;
+  }
+  section.internet_data_wrap .internet-nav_wrap .internet_nav_link_wrap .internet_nav_wrap li a::after {
+    display: none;
   }
 }
 @media screen and (max-width: 823px) {
@@ -1735,6 +1790,24 @@
     font-size: 42px;
     line-height: 48px;
   }
+
+  .service_items_wrap .service_item {
+    padding: 20px;
+  }
+  .service_items_wrap .service_item .title {
+    font-size: 16px;
+  }
+
+  .service_items_wrap .service_item.default_service_item .content .title {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .service_items_wrap .service_item.default_service_item .content .text {
+    font-size: 18px;
+  }
+  .service_items_wrap .service_item.default_service_item .content .phone {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 576px) {
   section {
@@ -2338,6 +2411,18 @@
 
   .instruction_wrap .instruction_item a .text_wrap {
     padding: 0;
+  }
+
+  .service_items_wrap .service_item_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .service_items_wrap .service_item {
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 475px) {

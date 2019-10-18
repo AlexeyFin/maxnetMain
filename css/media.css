@@ -399,6 +399,10 @@
   .service_items_wrap .service_item.default_service_item .content .phone {
     font-size: 24px;
   }
+
+  .partners_list_wrap .partner_wrap {
+    margin-bottom: 48px;
+  }
 }
 @media screen and (max-width: 1024px) {
   section .section-container {
@@ -1808,6 +1812,10 @@
   .service_items_wrap .service_item.default_service_item .content .phone {
     font-size: 20px;
   }
+
+  .partners_list_wrap .partner_wrap {
+    margin-bottom: 36px;
+  }
 }
 @media screen and (max-width: 576px) {
   section {
@@ -2423,6 +2431,10 @@
   }
   .service_items_wrap .service_item {
     max-width: 300px;
+  }
+
+  .partners_list_wrap .partner_wrap .partner img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 475px) {
@@ -3279,5 +3291,9 @@
   .youtube-video-banner-container iframe {
     height: 295px;
     max-width: 580px;
+  }
+
+  .partners_list_wrap .partner_wrap .partner img {
+    width: auto;
   }
 }

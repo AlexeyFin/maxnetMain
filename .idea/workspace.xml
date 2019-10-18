@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/css/media.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/media.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/media.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -62,8 +61,8 @@
       <recent name="$PROJECT_DIR$/css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images/icons" />
       <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/images/icons" />
       <recent name="$PROJECT_DIR$/images/gif" />
       <recent name="$PROJECT_DIR$/images/channels" />
     </key>
@@ -162,7 +161,7 @@
       <workItem from="1570601836800" duration="44916000" />
       <workItem from="1571131673688" duration="626000" />
       <workItem from="1571231978157" duration="2000" />
-      <workItem from="1571235591196" duration="13238000" />
+      <workItem from="1571235591196" duration="15341000" />
     </task>
     <servers />
   </component>

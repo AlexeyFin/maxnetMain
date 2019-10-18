@@ -848,6 +848,13 @@ section
   &.transparent_data_item
     .img_wrap
       border: 1px solid #81A8E9
+  &.text-small
+    .img_wrap
+      width: auto
+      height: auto
+    .text_wrap
+      font-size: 15px
+      font-weight: 500
 
 // End of Data Item
 
@@ -1477,7 +1484,6 @@ section#FAQ
           .card-body
             padding: 1.25rem 2.25rem
             font-weight: 300
-
             a
               font-weight: 400
               color: $main_blue
@@ -2573,6 +2579,17 @@ section.internet_data_wrap
 
     .internet_nav_link_wrap
       margin: 0 36px
+      width: 100%
+      .internet_nav_wrap
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-bottom: 0
+        border-bottom: none
+        li
+          max-width: 200px
+          margin-bottom: 0
+          padding-bottom: 0
 
       a.internet_nav_link
         text-decoration: none
@@ -2584,6 +2601,7 @@ section.internet_data_wrap
         color: $text_color_dark
         transition: all .3s ease-in-out
         position: relative
+        height: 100%
 
         &:hover
           color: $main_purple
@@ -4051,7 +4069,6 @@ table
 
 
 .e-commerce-full-width_wrap
-
   .e-commerce-fw_item
     border-bottom: 1px solid black
     margin-bottom: 40px
@@ -4160,6 +4177,68 @@ table
       justify-content: center
 
 
+.service_items_wrap
+  .service_item
+    padding: 24px
+    background-color: #FFFFFF
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+    .title
+      font-weight: 500
+      font-size: 18px
+      line-height: 22px
+      color: $main_blue
+      margin-bottom: 14px
+      min-height: 62px
+    .text
+      min-height: 46px
+      font-size: 12px
+      font-weight: 300
+      color: $text_color_dark
+      line-height: 14px
+      margin-bottom: 16px
+    .img_wrap
+      display: flex
+      justify-content: center
+      margin-bottom: 16px
+    .price
+      text-align: center
+      color: $main_blue
+      font-size: 20px
+      line-height: 22px
+      font-weight: 500
+    .btn_wrap
+      display: flex
+      justify-content: center
+      .btn
+        min-width: 180px
+    &.default_service_item
+      background: linear-gradient(0, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%), #81A8E9
+      height: 100%
+      .content
+        background-position: center top
+        background-repeat: no-repeat
+        height: 100%
+        padding-top: 25px
+        .title
+          color: #F2F4FB
+          font-size: 30px
+          line-height: 37px
+          font-family: "Work Sans", sans-serif
+          text-align: center
+          font-weight: bold
+        .text
+          color: #FFFFFF
+          font-size: 20px
+          line-height: 27px
+          font-weight: 400
+        .phone
+          text-align: center
+          color: #003893
+          font-size: 24px
+          line-height: 37px
+          font-weight: bold
+
+
 .instruction_wrap
   .instruction_item
     margin-bottom: 70px
@@ -4175,6 +4254,8 @@ table
           margin-bottom: 0
           text-align: center
 
+.items_wrap
+  margin-bottom: 56px
 
 @media screen and (max-width: 600px)
   table.custom_adaptive
